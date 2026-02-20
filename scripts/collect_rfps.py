@@ -155,7 +155,11 @@ def passes_age_filter(entry: dict, max_age_days: int, now: datetime) -> bool:
 def passes_country_filter(entry: dict, country_terms: list[str], geo_terms: list[str]) -> bool:
     text = _text(entry)
     all_terms = [t.lower() for t in country_terms + geo_terms]
-    return any(t in text for t in all_terms)
+    if any(t in text for t in all_terms):
+        return True
+
+    source = (entry.get("source_url", "") or "").lower()
+    return "venezuela" in source or "venezuelan" in source
 
 
 def passes_exclude_filter(entry: dict, exclude_terms: list[str]) -> bool:
@@ -194,7 +198,7 @@ def _title_key(title: str) -> str:
     return re.sub(r"\W+", " ", title.lower()).strip()
 
 
-def deduplicate(entries: list[dict], threshold: float = 0.90) -> list[dict]:
+def deduplicate(entries: list[dict], threshold: float = 0.90, cfg: dict | None = None) -> list[dict]:
     """Remove duplicate entries using URL + title-similarity checks."""
     seen_urls: set[str] = set()
     seen_titles: list[str] = []
@@ -207,9 +211,15 @@ def deduplicate(entries: list[dict], threshold: float = 0.90) -> list[dict]:
 
         title = _title_key(e.get("title", ""))
         duplicate = False
-        for seen in seen_titles:
+        for idx, seen in enumerate(seen_titles):
             ratio = SequenceMatcher(None, title, seen).ratio()
             if ratio >= threshold:
+                if cfg is not None:
+                    existing = unique[idx]
+                    new_label = detect_sector_label(e, cfg)
+                    existing_label = detect_sector_label(existing, cfg)
+                    if new_label != existing_label:
+                        continue
                 duplicate = True
                 break
         if duplicate:
@@ -304,6 +314,67 @@ def score_and_rank(entries: list[dict], cfg: dict, now: datetime) -> list[dict]:
     return sorted(entries, key=lambda x: x["score"], reverse=True)
 
 
+def select_diverse_top_entries(entries: list[dict], cfg: dict, max_results: int) -> list[dict]:
+    """Select top entries while preserving sector diversity when available."""
+    if not entries or max_results <= 0:
+        return []
+
+    selection_cfg = cfg.get("selection", {})
+    min_per_section = max(0, int(selection_cfg.get("min_per_section", 1)))
+    max_per_section = max(1, int(selection_cfg.get("max_per_section", max_results)))
+    section_order = cfg.get("brief_sections", [])
+
+    grouped: dict[str, list[dict]] = {section: [] for section in section_order}
+    for entry in entries:
+        label = detect_sector_label(entry, cfg)
+        grouped.setdefault(label, []).append(entry)
+
+    selected: list[dict] = []
+    selected_keys: set[str] = set()
+    section_counts: dict[str, int] = {section: 0 for section in grouped}
+
+    def _entry_key(item: dict) -> str:
+        link = item.get("link", "")
+        title = _title_key(item.get("title", ""))
+        return f"{link}::{title}"
+
+    def _try_add(item: dict, section: str, enforce_cap: bool = True) -> bool:
+        if len(selected) >= max_results:
+            return False
+        if enforce_cap and section_counts.get(section, 0) >= max_per_section:
+            return False
+        key = _entry_key(item)
+        if key in selected_keys:
+            return False
+        selected.append(item)
+        selected_keys.add(key)
+        section_counts[section] = section_counts.get(section, 0) + 1
+        return True
+
+    # Pass 1: guarantee a minimum number per configured section if entries exist.
+    for section in section_order:
+        section_entries = grouped.get(section, [])
+        for item in section_entries[:min_per_section]:
+            _try_add(item, section)
+
+    # Pass 2: fill remaining slots by global score while respecting section caps.
+    for item in entries:
+        section = detect_sector_label(item, cfg)
+        _try_add(item, section)
+        if len(selected) >= max_results:
+            break
+
+    # Pass 3: if caps leave spare slots, backfill by score regardless of caps.
+    if len(selected) < max_results:
+        for item in entries:
+            section = detect_sector_label(item, cfg)
+            _try_add(item, section, enforce_cap=False)
+            if len(selected) >= max_results:
+                break
+
+    return selected
+
+
 # ---------------------------------------------------------------------------
 # Flag detection
 # ---------------------------------------------------------------------------
@@ -321,7 +392,35 @@ def detect_flags(entry: dict, cfg: dict) -> list[str]:
     return flags
 
 
+def _sector_hint_from_source(entry: dict, cfg: dict) -> str | None:
+    """Infer sector from source URL/query hints when content keywords are sparse."""
+    source = (entry.get("source_url", "") or "").lower()
+    if not source:
+        return None
+
+    section_order = cfg.get("brief_sections", [])
+    valid_sections = set(section_order)
+    hint_map = {
+        "Extractives & Mining": ["oil", "gas", "pdvsa", "mining", "orinoco", "energy"],
+        "Food & Agriculture": ["agriculture", "food", "fertilizer", "irrigation"],
+        "Health & Water": ["health", "hospital", "dengue", "malaria", "water", "sanitation"],
+        "Education & Workforce": ["education", "schools", "teachers", "workforce", "vocational", "university", "students", "jobs", "labor"],
+        "Finance & Investment": ["banking", "inflation", "exchange", "debt", "bonds", "investment", "fdi"],
+    }
+
+    for label, hints in hint_map.items():
+        if label not in valid_sections:
+            continue
+        if any(hint in source for hint in hints):
+            return label
+    return None
+
+
 def detect_sector_label(entry: dict, cfg: dict) -> str:
+    source_hint_label = _sector_hint_from_source(entry, cfg)
+    if source_hint_label:
+        return source_hint_label
+
     sectors = cfg.get("sectors", {})
     text = _text(entry)
     best_label = "Cross-cutting / Policy / Risk"
@@ -469,13 +568,13 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     logger.info("After filtering: %d", filtered_count)
 
     threshold = cfg.get("deduplication", {}).get("title_similarity_threshold", 0.90)
-    deduped = deduplicate(filtered, threshold)
+    deduped = deduplicate(filtered, threshold, cfg=cfg)
     deduped_count = len(deduped)
     logger.info("After deduplication: %d", deduped_count)
 
     ranked = score_and_rank(deduped, cfg, now)
     max_results = cfg.get("max_results", 35)
-    top = ranked[:max_results]
+    top = select_diverse_top_entries(ranked, cfg, max_results)
     selected_count = len(top)
     logger.info("Selected top %d entries", selected_count)
 

@@ -10,11 +10,15 @@ country:
   currency_code: "VES"   # Venezuelan bolívar soberano
 
 # --- Scheduling / Recency ---
-max_age_days: 7
+max_age_days: 14
 prefer_published_date: true
 
 # --- Output Control ---
 max_results: 35
+
+selection:
+  min_per_section: 2
+  max_per_section: 10
 
 brief_sections:
   - "Extractives & Mining"
