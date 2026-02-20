@@ -467,6 +467,80 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
     return (clipped or clean[:max_chars]).strip() + "…"
 
 
+def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
+    section_order = cfg.get("brief_sections", [])
+    if not entries:
+        return [
+            "This run did not identify qualifying Venezuela news items across the configured sectors.",
+            "No validated sector signals were strong enough to populate the ranked shortlist.",
+            "Opportunity-linked terms were not present in qualifying entries for this cycle.",
+            "Risk-linked terms were not present in qualifying entries for this cycle.",
+            "Source activity was observed, but filtering and relevance controls removed all candidates.",
+            "The next scheduled run will refresh this summary as new sector-relevant items are published.",
+        ]
+
+    sector_counts: dict[str, int] = {}
+    for entry in entries:
+        label = detect_sector_label(entry, cfg)
+        sector_counts[label] = sector_counts.get(label, 0) + 1
+
+    represented = [s for s in section_order if sector_counts.get(s, 0) > 0]
+    top_sector_pairs = sorted(sector_counts.items(), key=lambda kv: kv[1], reverse=True)
+    top_sector_text = ", ".join([f"{name} ({count})" for name, count in top_sector_pairs[:3]])
+
+    opportunity_count = 0
+    risk_count = 0
+    domains: dict[str, int] = {}
+    dated_entries = []
+    for entry in entries:
+        flags = detect_flags(entry, cfg)
+        if "🟢 Opportunity" in flags:
+            opportunity_count += 1
+        if "🔴 Risk" in flags:
+            risk_count += 1
+        domain = entry.get("source_domain", "")
+        if domain:
+            domains[domain] = domains.get(domain, 0) + 1
+        if entry.get("published") is not None:
+            dated_entries.append(entry)
+
+    top_domains = sorted(domains.items(), key=lambda kv: kv[1], reverse=True)
+    domain_text = ", ".join([d for d, _ in top_domains[:3]]) or "mixed sources"
+
+    # Lightweight theme extraction from high-scoring titles/summaries.
+    theme_map = {
+        "energy and extractives": ["oil", "gas", "pdvsa", "orinoco", "mining", "gold"],
+        "finance and macro policy": ["inflation", "debt", "bonds", "banking", "fx", "exchange", "investment"],
+        "public services and health": ["health", "hospital", "water", "sanitation", "outbreak", "dengue", "malaria"],
+        "food systems": ["food", "agriculture", "fertilizer", "imports", "food security"],
+        "workforce and education": ["education", "students", "schools", "jobs", "labor", "workforce"],
+    }
+    theme_scores: dict[str, int] = {k: 0 for k in theme_map}
+    for entry in entries[:20]:
+        text = _text(entry)
+        for theme, terms in theme_map.items():
+            if any(term in text for term in terms):
+                theme_scores[theme] += 1
+    top_themes = [name for name, score in sorted(theme_scores.items(), key=lambda kv: kv[1], reverse=True) if score > 0][:3]
+    themes_text = ", ".join(top_themes) if top_themes else "cross-sector policy developments"
+
+    if dated_entries:
+        latest_date = _fmt_date(max(e["published"] for e in dated_entries))
+        earliest_date = _fmt_date(min(e["published"] for e in dated_entries))
+        date_span = f"from {earliest_date} to {latest_date}"
+    else:
+        date_span = "with undated entries"
+
+    return [
+        f"This brief synthesizes {len(entries)} ranked Venezuela-focused items spanning {len(represented)} sectors: {', '.join(represented)}.",
+        f"The strongest concentration is in {top_sector_text}.",
+        f"Across headlines and summaries, the dominant themes are {themes_text}.",
+        f"Opportunity signals appear in {opportunity_count} items, indicating active commercial or partnership openings.",
+        f"Risk signals appear in {risk_count} items, highlighting policy, sanctions, or operational uncertainty to monitor.",
+        f"Coverage is sourced primarily from {domain_text}, with publication timing {date_span}.",
+    ]
+
+
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
     now_str = run_meta.get("run_at", datetime.now(timezone.utc).isoformat())
@@ -480,6 +554,15 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         f"> After filtering: {run_meta['filtered']}  ",
         f"> After deduplication: {run_meta['deduplicated']}  ",
         f"> Top results shown: {run_meta['selected']}",
+        "",
+        "## Latest News Synthesis",
+        "",
+    ]
+
+    for sentence in _latest_news_synthesis(entries, cfg):
+        lines.append(f"- {sentence}")
+
+    lines += [
         "",
         "---",
         "",

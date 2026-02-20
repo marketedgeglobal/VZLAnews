@@ -1,10 +1,19 @@
 # Venezuela News Intelligence
 
-> Generated: 2026-02-20T20:50:05.701004+00:00  
-> Entries fetched: 1489  
+> Generated: 2026-02-20T20:53:38.033231+00:00  
+> Entries fetched: 1497  
 > After filtering: 114  
-> After deduplication: 109  
+> After deduplication: 110  
 > Top results shown: 35
+
+## Latest News Synthesis
+
+- This brief synthesizes 35 ranked Venezuela-focused items spanning 6 sectors: Extractives & Mining, Food & Agriculture, Health & Water, Education & Workforce, Finance & Investment, Cross-cutting / Policy / Risk.
+- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Education & Workforce (6).
+- Across headlines and summaries, the dominant themes are energy and extractives, finance and macro policy, food systems.
+- Opportunity signals appear in 1 items, indicating active commercial or partnership openings.
+- Risk signals appear in 4 items, highlighting policy, sanctions, or operational uncertainty to monitor.
+- Coverage is sourced primarily from news.google.com, paho.org, with publication timing from 2026-01-13 to 2026-02-20.
 
 ---
 
@@ -12,9 +21,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Fetched | 1489 |
+| Fetched | 1497 |
 | Filtered | 114 |
-| Deduplicated | 109 |
+| Deduplicated | 110 |
 | Selected | 35 |
 
 ## Scoring Summary
@@ -22,7 +31,7 @@
 | Metric | Value |
 |--------|-------|
 | Entries scored | 35 |
-| Average score | 0.266 |
+| Average score | 0.268 |
 | Highest score | 0.469 |
 | Lowest score | 0.157 |
 
@@ -72,13 +81,13 @@
   Score: 0.343 | Date: 2026-02-19 | Source: news.google.com
   Summary: Are Indian firms intent on moving to Venezuelan oil? | Explained The Hindu
 
+- **[FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA - Baird Maritime](https://news.google.com/rss/articles/CBMizwFBVV95cUxNdmxqMlB3WXVhdzVVVnE0MDVqVWE3ajIwYUU2eDNwUmFNbWs0NWlmY21GN2hVWXBhSVJXWWh0aHllQUVyeXVIbjZOUGIzMDVhWGxBMTBGTExfdk1pcV94ZkMwMGZwSXZ6WEJRWGFBekhtTExWZTMweFlhSHdVODg4RlRZS0cteDBSak1wXzV4Zm9DeFd1TjZzWC02LTJSWHdkNTVXMFVhSGRLQkVmRmF1cElkR2FpaEtZZEVtRnBXekRJTUJHTElNeDd3dFIyMTTSAc8BQVVfeXFMTXZsajJQd1l1YXc1VVZxNDA1alVhN2oyMGFFNngzcFJhTW1rNDVpZmNtRjdoVVlwYUlSV1lodGh5ZUFFcnl1SG42TlBiMzA1YVhsQTEwRkxMX3ZNaXFfeGZDMDBmcEl2elhCUVhhQXpIbUxMVmUzMHhZYUh3VTg4OEZUWUtHLXgwUmpNcF81eGZvQ3hXdU42c1gtNi0yUlh3ZDU1VzBVYUhkS0JFZkZhdXBJZEdhaWhLWWRFbUZwV3pESU1CR0xJTXg3d3RSMjE0?oc=5)**  
+  Score: 0.340 | Date: 2026-02-18 | Source: news.google.com
+  Summary: FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA Baird Maritime
+
 - **[Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt - Devdiscourse](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeW42RDNWLWN5TVota2I0Z29fNW1vWXZteERuWDhFUkVNTHRsZUpramFZb1NzeDdDTXcxS0UtQXhSVFpQbGhSMlJrcTlWU1NqV2pwWXY0d1Q2NS0xY3VoTFJNUFlEeEttZ2ZHcXQtbXl3TTk2MUNydThmbVRLTkFsOFY2Ul9HZlFEeG12UExucERrX1o4a0c0RHQ5YUdzeUhZSkgtdWZnUXNCaktBTzBHSjdXVUZaUdIBuwFBVV95cUxOdkFmR2ZVQkJmeXJScVhjMm1mRU0tUXEtQjd3T0F1MUFZRzJmUTNQYmF0dWhLdkpGc2lrY0k0MGFURDNWaU5aeGt6NXh0TG5OcWlRUXZiYnUySVN1Y0FZdHgtZ25tTWI1Y2dQa2pRajBNZy1ieDZ3WkszSkRVeGROTTE0c01HVFJwVTBRd1ZvUHdCaUVjYXFya3BEWEpUN1plSngwdTJQcDF6U1RwcnNPckdvRkxRQzI3N3BR?oc=5)**  
   Score: 0.333 | Date: 2026-02-09 | Source: news.google.com
   Summary: Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt Devdiscourse
-
-- **[US Energy Secretary announces multimillion-dollar investments in Venezuelan oil - EL PAÍS English](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZF94dVVwSUoxR3F4V0FCaC1mUEZyaTEtTXFoLXFnOUxhR3Vxc3hJRWpNMXJNbUh3TFc4NGQtUUpfMEFYbDRLRHZtMXN2RFZ0MkRnbWwxemhmajFwRlpYbnlxMXRJLU1ydk95cWU5anl2WTFHSXAtUDJuTTlINGRLMy1WR3hzQjU3c05tUWlITndvT1BZdUZjTU81a3M5Q09IMktZTGFwUENCcWxoeUhuQkJyMm83Rmx3TG1rczJVbFVsbG9vRkZ0YnBjazl5M18wbHFqYWZSX0xfRVHSAe8BQVVfeXFMTmNxU2ZWbFVhT1p1MWNNN24yYTB1X0ZQSWtqTldvTkpkSTZtQklVOWd4NUM3R3NiRjBBTlBzNEZHWXZWcldobF9QTndvR2dlMF9EM2kyZ2VhS1BnSURnQTFfNkZiMnB0VXRLank0NFBoRGtUd3BtMEhKUXhwOEVtQTJ1WFMyUWtHbWJXUDR4dlo3cUkxTW05bzhYb29RNFFHZW4xTDVPODViWDBWSV9sclM2U0xjZG5RSEI4R3FadjBQMlBlczZkaDZ1MUNXWnpZR0RYSWZPWVJ0cllUSGprNzJBMXhZUHZCWnVIT0hHT2M?oc=5)**  
-  Score: 0.319 | Date: 2026-02-13 | Source: news.google.com
-  Summary: US Energy Secretary announces multimillion-dollar investments in Venezuelan oil EL PAÍS English
 
 ### Food & Agriculture
 
@@ -134,9 +143,9 @@
   Score: 0.204 | Date: 2026-02-10 | Source: news.google.com
   Summary: Venezuelans test limits of new freedoms NPR
 
-- **[Penn offers support to Venezuelan students following U.S. military action - The Daily Pennsylvanian](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMFZCeFJrYVVUZXg4bF9hVkZlSzE3eVNLbjZoUV9aNFhydjNaV09NVloyUFNaSGxVZ3ZndFhVdFZQOXVRaHNqWUV1WGkxSmpZRlNQbDlVVkdhUjRTWVN5YjdINGMyVVRyTW81UkVEVWV3SjdCTV81cHdVMDNDMm9aMnFudXdBRjIxLTJUVkx2bkhCdGRJQnFoNmdGLXlUdUlnWk9nMi1aVVhYUQ?oc=5)**  
-  Score: 0.167 | Date: 2026-01-09 | Source: news.google.com
-  Summary: Penn offers support to Venezuelan students following U.S. military action The Daily Pennsylvanian
+- **[Families of Venezuelans detained for political activism demand their release outside infamous prison - MyNorthwest.com](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYXA1THJsYWJwa0FtcWdnUGxrd3hzMWRTOWNqODFpZEJBUU5HQ3ZDUU5EbjI0eGtZc09FQVBiUlR4eEdrUUttLVpyRERIaUt5YWpwWmZ4UXpmdExseDNvc2VzQ2NJVnVOZEd6ZkJfaTBMZWZxTXBnX1VrWDZrMVBiOHUwUWVoSXJObmRIemoxa2tKVi00WHRKXzVlLUY5YThPTC1sNUdLM05SUFNvMHdPV2k5WUNaV1hRSXFkdlBRZFFLUkNIZ1JuNi1sMUowU0U1MkRBdA?oc=5)**  
+  Score: 0.172 | Date: 2026-02-07 | Source: news.google.com
+  Summary: Families of Venezuelans detained for political activism demand their release outside infamous prison MyNorthwest.com
 
 ### Finance & Investment
 
@@ -151,6 +160,10 @@
 - **[Volatility, Adjustments, and Expectations About the Exchange Rate System in Venezuela - Orinoco Tribune](https://news.google.com/rss/articles/CBMisAFBVV95cUxPR2FoVHhQYlRDWjhtZm5LQVJrRVNNSjFKaVVFNEFJektkbzNXaUpkRDJicnVHeEp5TjI1ZVV6OVJoR3JJckxleEYxV2d1eTBNRHBKWG9WaW1oaHpIR25tSXF6SFZteV9xNzNNVWRDc296bENCdHI1S3BNUGpoOXRWUTZlWGhzM0hKaTdsQUlReDc4NmtZRWk1NHRkMzV5TGxxelhUNF9GYWxxZjVQWkR5cw?oc=5)**  
   Score: 0.249 | Date: 2026-01-30 | Source: news.google.com
   Summary: Volatility, Adjustments, and Expectations About the Exchange Rate System in Venezuela Orinoco Tribune
+
+- **[Repsol Intends to Increase Venezuela Production Threefold Following U.S. Authorization - Bitget](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBULWxGWkY2RGZXaFlnVS1aYjBJSzhEbnpOb1dwX0JiZjhKRmR6VmdJdlRfckxjeHhZeVQtYUFaanp1Qk1wWGUwVU4wZDNBa3doc3JiWE56eU15ZVM2aXVXeTNpY9IBY0FVX3lxTFBULWxGWkY2RGZXaFlnVS1aYjBJSzhEbnpOb1dwX0JiZjhKRmR6VmdJdlRfckxjeHhZeVQtYUFaanp1Qk1wWGUwVU4wZDNBa3doc3JiWE56eU15ZVM2aXVXeTNpYw?oc=5)**  
+  Score: 0.222 | Date: 2026-02-19 | Source: news.google.com
+  Summary: Repsol Intends to Increase Venezuela Production Threefold Following U.S. Authorization Bitget
 
 - **[Venezuela: Creditors Hunger for 170B Debt Renegotiation - Venezuelanalysis](https://news.google.com/rss/articles/CBMikwFBVV95cUxPWWpLRjZIZ0R3MElNUkJXWnptLWhSNW1XVFZwdHZxei1xeUFmMjl0b0QwTWtQMzVJYnQwYS1saEtsNGQwY3pTUzV2YjBfRDFRU2E0ZTByM2FwZjBGd3AtcjdZYnBvSjNIMXhITFQyQkc5b29WSmpfcjNXSnZRZXVkWGtlVDRxYjVwLW5QZ1FGbVh4TGs?oc=5)**  
   Score: 0.219 | Date: 2026-01-28 | Source: news.google.com
@@ -175,10 +188,6 @@
 - **[Venezuelan lawmakers approve easing state control of oil industry - Source ONE News](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNTWhKdHRBVTRtZzlHZ2NCU1Y2TE1TNW1NZ1JFanU2d0Nkd1IxcjBRMWU4THRQRWpqMm9QM2NidEJ5Zk02dU5jU2tyTmxLN1J6bm1faFVsVU16RzBFWERzNGdxdERzWG9sT2I1QlRTYXVPcDVLeUNNRDcydVE0RC1UMFd6MjliRmZJQUkyTUU1T1k2VlJ0ZVM5Ul92d1VmdXZWeFg0THRqc21HaG8tcnRkeGlQamRZOHgxMnFkS2E5OFNfZUZBUlB0eDdfOUROalVsNWhTZjJwRjdTNlcxVDluQlE0SVlzdFVfMFBCNlVLa0wzbXFSLWtV?oc=5)**  
   Score: 0.212 | Date: 2026-01-29 | Source: news.google.com
   Summary: Venezuelan lawmakers approve easing state control of oil industry Source ONE News
-
-- **[Venezuela’s oil sector remains uninvestable - GIS Reports](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxUlVJSGJxR3FLRGJGcWxJRFZRSERHMzBLZ1hQZEgzU0kxdVN1bmlIT0hyTmJNM18zUUFuTmV0bzhZUzNZOVZoS1hMV1pNMzkzOWNlNUlrcFFJMGk0aEVCakZrSkRYVFU?oc=5)**  
-  Score: 0.187 | Date: 2026-02-12 | Source: news.google.com
-  Summary: Venezuela’s oil sector remains uninvestable GIS Reports
 
 ### Cross-cutting / Policy / Risk
 
