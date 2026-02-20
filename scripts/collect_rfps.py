@@ -16,6 +16,7 @@ import logging
 import os
 import re
 import sys
+from html import unescape
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from urllib.parse import urlparse
@@ -453,9 +454,23 @@ def _fmt_date(dt: datetime | None) -> str:
     return dt.strftime("%Y-%m-%d")
 
 
+def _summary_excerpt(entry: dict, max_chars: int) -> str:
+    raw = entry.get("summary", "") or ""
+    clean = re.sub(r"<[^>]+>", " ", raw)
+    clean = unescape(clean)
+    clean = re.sub(r"\s+", " ", clean).strip()
+    if not clean:
+        return ""
+    if len(clean) <= max_chars:
+        return clean
+    clipped = clean[:max_chars].rsplit(" ", 1)[0].strip()
+    return (clipped or clean[:max_chars]).strip() + "…"
+
+
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
     now_str = run_meta.get("run_at", datetime.now(timezone.utc).isoformat())
+    summary_max_chars = int(cfg.get("summary_max_chars", 520))
 
     lines = [
         f"# {country_name} News Intelligence",
@@ -548,6 +563,9 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             if flag_str:
                 meta_parts.append(flag_str)
             lines.append(f"  {' | '.join(meta_parts)}")
+            excerpt = _summary_excerpt(e, summary_max_chars)
+            if excerpt:
+                lines.append(f"  Summary: {excerpt}")
             lines.append("")
 
     return "\n".join(lines) + "\n"

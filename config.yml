@@ -21,6 +21,7 @@ sector_max_age_days:
 
 # --- Output Control ---
 max_results: 35
+summary_max_chars: 520
 
 selection:
   min_per_section: 2
