@@ -19,7 +19,7 @@ import sys
 from html import unescape
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 import time as _time
 
@@ -90,6 +90,7 @@ def fetch_feed(url: str) -> list[dict]:
         for e in feed.entries:
             title = e.get("title", "").strip()
             link = e.get("link", "").strip()
+            link = _resolve_entry_link(link)
             summary = e.get("summary", "") or e.get("description", "") or ""
             published = _parse_date(e)
             entries.append(
@@ -106,6 +107,23 @@ def fetch_feed(url: str) -> list[dict]:
     except Exception as exc:  # noqa: BLE001
         logger.warning("Failed to fetch %s: %s", url, exc)
         return []
+
+
+def _resolve_entry_link(link: str) -> str:
+    if not link:
+        return ""
+
+    try:
+        parsed = urlparse(link)
+        host = parsed.netloc.lower()
+        if "bing.com" in host and "apiclick.aspx" in parsed.path:
+            query = parse_qs(parsed.query)
+            target = query.get("url", [""])[0]
+            if target.startswith("http"):
+                return unquote(target)
+        return link
+    except Exception:  # noqa: BLE001
+        return link
 
 
 def _extract_visible_text(html: str) -> str:
@@ -151,7 +169,13 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
 
     fetched_count = 0
     enriched_count = 0
-    for entry in entries:
+
+    prioritized_entries = sorted(
+        entries,
+        key=lambda item: 1 if "news.google.com" in (item.get("link", "") or "") else 0,
+    )
+
+    for entry in prioritized_entries:
         if fetched_count >= max_items:
             break
         link = entry.get("link", "")

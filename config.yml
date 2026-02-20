@@ -25,7 +25,7 @@ summary_max_chars: 520
 
 article_extraction:
   enabled: true
-  max_items: 12
+  max_items: 20
   timeout_seconds: 6
   min_chars: 240
   max_chars: 6000

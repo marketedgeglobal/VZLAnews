@@ -3,11 +3,11 @@
 ## Latest News Synthesis
 
 - This brief synthesizes 35 ranked Venezuela-focused items spanning 6 sectors: Extractives & Mining, Food & Agriculture, Health & Water, Education & Workforce, Finance & Investment, Cross-cutting / Policy / Risk.
-- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Education & Workforce (7).
+- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Health & Water (4).
 - Across headlines and summaries, the dominant themes are energy and extractives, finance and macro policy, food systems.
 - Opportunity signals appear in 1 items, indicating active commercial or partnership openings.
 - Risk signals appear in 4 items, highlighting policy, sanctions, or operational uncertainty to monitor.
-- Coverage is sourced primarily from news.google.com, paho.org, with publication timing from 2026-01-09 to 2026-02-20.
+- Coverage is sourced primarily from news.google.com, bing.com, en.mercopress.com, with publication timing from 2026-01-21 to 2026-02-20.
 
 ---
 
@@ -36,6 +36,13 @@
   - Venezuela boosts oil output in Orinoco Belt, country's production approaches 1 million bpd, sources say marketscreener.com.
   - This article is categorized under Extractives & Mining in the Venezuela brief.
 
+- **[My Family Helped Build Venezuela’s Oil State. Now I’m Reckoning With It.](https://www.politico.com/news/magazine/2026/02/20/venezuela-oil-petrostate-erwin-arrieta-history-00765480)**  
+  Date: 2026-02-20
+  Summary:
+  - My Family Helped Build Venezuela’s Oil State. Now I’m Reckoning With It.
+  - My family is inextricably linked to the Venezuelan petrostate, a history that includes family pride and family trauma, corruption and exile.
+  - This article is categorized under Extractives & Mining in the Venezuela brief.
+
 - **[Venezuelan energy consultant: Renegotiate Dragon deal - Trinidad Guardian](https://news.google.com/rss/articles/CBMirwFBVV95cUxPMDhxZ29fcl9pc1VIWDNPanJMZnZiNk5JTWljdWFsekdtV0d6eS1uc2l1dnc4U1ZYR3k1RjQwRTNub1dFX2k5X01ab2VlXzA0dHVQZlBFWlNJUUdESVlZZWtuVXNVbjdxbDBXWE5fejUyQTRibWtlVzE4dUNOZDNTc1dSeWxUVjJwdXgzUl9kUlNmY01aX2dSUFRGdkozcGZIcG9YXzYycFpyOGhvTnVF?oc=5)**  
   Date: 2026-02-20
   Summary:
@@ -43,12 +50,26 @@
   - Venezuelan energy consultant: Renegotiate Dragon deal Trinidad Guardian.
   - This article is categorized under Extractives & Mining in the Venezuela brief.
 
+- **[Texas refineries see opportunity in Venezuelan oil amid Mexico export declines](https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/02/20/543949/texas-venezuela-oil-imports-gulf-coast-refineries-mexico/)**  
+  Date: 2026-02-20
+  Summary:
+  - Texas refineries see opportunity in Venezuelan oil amid Mexico export declines.
+  - As President Donald Trump seeks to boost U.S.
+  - investment in Venezuela’s oil fields, Mexico is poised to export less heavy crude to Gulf refineries, creating an opening for Venezuelan oil.
+
 - **[Trinidad and Tobago Venezuela Gas Plans Transform Caribbean Energy Security - Discovery Alert](https://news.google.com/rss/articles/CBMie0FVX3lxTE9hQXJSa01WWVJVYk5MQmdDSlhwTGVqQnJVdzJrWTY0dzB6WGFNMURPNlJ1VnhzbkpaVHQwQVB4V3dXYVJFd1M0SnJvWFJhUDZiaWVzUjZiakJSUFpDOGhJTW5IWmZ2UmpQaURoMHBpS25NVWEyYmlTUUhoRQ?oc=5)**  
   Date: 2026-02-19
   Summary:
   - Trinidad and Tobago Venezuela Gas Plans Transform Caribbean Energy Security - Discovery Alert.
   - Trinidad and Tobago Venezuela Gas Plans Transform Caribbean Energy Security Discovery Alert.
   - This article is categorized under Extractives & Mining in the Venezuela brief.
+
+- **[Repsol aims to triple Venezuelan oil output after securing US permit](https://www.ft.com/content/8b2037bf-0950-42e4-999f-e7df5bf8c7dd)**  
+  Date: 2026-02-20
+  Summary:
+  - Subscribe to read Accessibility help Skip to navigation Skip to main content Skip to footer Sign In Subscribe Open side navigation menu Open search bar Financial Times Subscribe Sign In Search the FT Search Close search bar Close Home World Sections World Home Middle East war Global Economy UK US China Africa Asia Pacific Emerging Markets Europe War in Ukraine Americas Middle East & North Africa Most Read The ‘incredibly significant’ US military forces surrounding Iran Email blunder exposes $90bn Russian oil…
+  - How LA’s neighbourhoods fit together, mapped by locals for visitors Business Books: What to read this month Apprenticeships get a glow up Life & Arts Sections Life & Arts Home Arts Books Food & Drink FT Magazine House & Home Style Puzzles Travel FT Globetrotter Most Read Dave Lewis plans executive overhaul at ‘fat and happy’ Diageo Nobel chemistry laureate Frances Arnold: ‘Whole swaths of science are just going to die on the vine’ Marylebone property prices are ‘defying gravity’ Hampstead’s retro cafés fight back…
+  - Savings based on monthly annualised price - offer ends 25th February Subscribe for $299 What’s included Standard Digital Stay informed with global news & in-depth analysis Gain clarity from expert opinion First FT: the day’s biggest stories 20+ curated newsletters Follow topics & set alerts with myFT FT App on Android & iOS FT Videos & Podcasts 10 monthly gift articles to share Explore more offers.
 
 - **[Exclusive-Increased Orinoco Belt output boosts Venezuela's oil production to 1 million bpd, sources say - Yahoo Finance](https://news.google.com/rss/articles/CBMijgFBVV95cUxQWDBaVDRTQ0FOSHU5MjNXUzJ1X05lb1lhYW1WUWQ4aVVGUnZ1U1M0MXZHNmJOLW9kWDJjS3VnaTdDcWxQNDNzOXJsakNMNzZLcTg2c29xYUZlZmFnT2xqeXRNcGJfS2FzTzZfUnExM2dMeFFfOTV5N2xFazM0cTNkZWVHdVE0cXA5V1p1dDN3?oc=5)**  
   Date: 2026-02-09
@@ -62,27 +83,6 @@
   Summary:
   - Oil companies jostle for projects to boost Venezuelan output quickly; a real grind awaits - Reuters.
   - Oil companies jostle for projects to boost Venezuelan output quickly; a real grind awaits Reuters.
-  - This article is categorized under Extractives & Mining in the Venezuela brief.
-
-- **[Are Indian firms intent on moving to Venezuelan oil? | Explained - The Hindu](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPU2xHS1g5TXRyZlpFOXJDbzR0SmJsYzFtVy13cEowTzE3Tmt1UUdqZWNpc3VJMC0zRlI0UnZTVkpjTnVmc2JDdFFWRnNLSDZSeE05SWFaRndmZ3NqbHZOVGdJa3pKaVItWVhCeTFtdWo3QnpSaU9HT2pRYURDR2YxUnFKcWVueHRkcThqRTRPeEFHNXA3d3dKWk5sZ3BQdlVXaGFlNjdtUGxVd1VFRk1vaXJ0WlJ1TloxTDJ1UzJ2RW5ZQdIByAFBVV95cUxOSnZhcmFPNEZDNkRZTlhxaXpWU0VVNDFuS2tBR3ExMzZCbE9yN09aQlI0M1p3RTRUaWRvcS1wVWg0S0xRNlhhajBaZDVrT1V3N3pOQUMzZW1ORHppcElHTDcwUEFkSkdEX0NseVRUSWtfQUJQbjZiZmRYeGdqVDlqRm1kbVBuTDQ4RElZUGZMVnl5Y3ZmSGdBOUN6MHJ6azVKM2VXMGpCSTBUUFdlTVRXRk5lZTVZemZuOW11WXA1akxIWnRGTXU3Qw?oc=5)**  
-  Date: 2026-02-19
-  Summary:
-  - Are Indian firms intent on moving to Venezuelan oil? | Explained - The Hindu.
-  - Are Indian firms intent on moving to Venezuelan oil?
-  - This article is categorized under Extractives & Mining in the Venezuela brief.
-
-- **[FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA - Baird Maritime](https://news.google.com/rss/articles/CBMizwFBVV95cUxNdmxqMlB3WXVhdzVVVnE0MDVqVWE3ajIwYUU2eDNwUmFNbWs0NWlmY21GN2hVWXBhSVJXWWh0aHllQUVyeXVIbjZOUGIzMDVhWGxBMTBGTExfdk1pcV94ZkMwMGZwSXZ6WEJRWGFBekhtTExWZTMweFlhSHdVODg4RlRZS0cteDBSak1wXzV4Zm9DeFd1TjZzWC02LTJSWHdkNTVXMFVhSGRLQkVmRmF1cElkR2FpaEtZZEVtRnBXekRJTUJHTElNeDd3dFIyMTTSAc8BQVVfeXFMTXZsajJQd1l1YXc1VVZxNDA1alVhN2oyMGFFNngzcFJhTW1rNDVpZmNtRjdoVVlwYUlSV1lodGh5ZUFFcnl1SG42TlBiMzA1YVhsQTEwRkxMX3ZNaXFfeGZDMDBmcEl2elhCUVhhQXpIbUxMVmUzMHhZYUh3VTg4OEZUWUtHLXgwUmpNcF81eGZvQ3hXdU42c1gtNi0yUlh3ZDU1VzBVYUhkS0JFZkZhdXBJZEdhaWhLWWRFbUZwV3pESU1CR0xJTXg3d3RSMjE0?oc=5)**  
-  Date: 2026-02-18
-  Summary:
-  - FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA - Baird Maritime.
-  - FEATURE | US refiners seek direct Venezuelan crude deals with PDVSA Baird Maritime.
-  - This article is categorized under Extractives & Mining in the Venezuela brief.
-
-- **[Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt - Devdiscourse](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeW42RDNWLWN5TVota2I0Z29fNW1vWXZteERuWDhFUkVNTHRsZUpramFZb1NzeDdDTXcxS0UtQXhSVFpQbGhSMlJrcTlWU1NqV2pwWXY0d1Q2NS0xY3VoTFJNUFlEeEttZ2ZHcXQtbXl3TTk2MUNydThmbVRLTkFsOFY2Ul9HZlFEeG12UExucERrX1o4a0c0RHQ5YUdzeUhZSkgtdWZnUXNCaktBTzBHSjdXVUZaUdIBuwFBVV95cUxOdkFmR2ZVQkJmeXJScVhjMm1mRU0tUXEtQjd3T0F1MUFZRzJmUTNQYmF0dWhLdkpGc2lrY0k0MGFURDNWaU5aeGt6NXh0TG5OcWlRUXZiYnUySVN1Y0FZdHgtZ25tTWI1Y2dQa2pRajBNZy1ieDZ3WkszSkRVeGROTTE0c01HVFJwVTBRd1ZvUHdCaUVjYXFya3BEWEpUN1plSngwdTJQcDF6U1RwcnNPckdvRkxRQzI3N3BR?oc=5)**  
-  Date: 2026-02-09
-  Summary:
-  - Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt - Devdiscourse.
-  - Venezuela's Oil Surge: PDVSA Boosts Production in Orinoco Belt Devdiscourse.
   - This article is categorized under Extractives & Mining in the Venezuela brief.
 
 ### Food & Agriculture
@@ -109,6 +109,20 @@
   - This article is categorized under Food & Agriculture in the Venezuela brief.
 
 ### Health & Water
+
+- **[U.S. Oil Giants Are Wary of Inheriting Venezuela’s Massive Ecological Debt](https://oilprice.com/Energy/Crude-Oil/US-Oil-Giants-Are-Wary-of-Inheriting-Venezuelas-Massive-Ecological-Debt.html)**  
+  Date: 2026-02-10 | 🔴 Risk
+  Summary:
+  - U.S. Oil Giants Are Wary of Inheriting Venezuela’s Massive Ecological Debt.
+  - Venezuela's rapid oil industry collapse, compounded by U.S.
+  - sanctions and poor maintenance, has triggered an immense and escalating environmental disaster across the nation's waterways and ...
+
+- **[China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas - The SAIS Review of International Affairs](https://news.google.com/rss/articles/CBMixAFBVV95cUxOT1gzRnZOZUJqc3dWYVowa1RWbEZXc2pHVXhLT3VmY2o2cVFFOUpaRHdrMmNxa2VHU1Jma1huRnhFaS1TWUZTVXI4dGJjMDhGeVA4TEJiLWQzY0NaOWZVX2VJZE9hd19NWjR4dEgtdXg5dWZ3b1RYVlhDVEkzcThzQnJtS3VtYW5URnpJQmwwWkFBOF9tTTVtWGJDaXRCb05WOW5tOWs4NjFYZVpwX18wOVN2ckJST2hHSzgtYmNGci1nY1dH?oc=5)**  
+  Date: 2026-02-10
+  Summary:
+  - China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas - The SAIS Review of International Affairs.
+  - China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas The SAIS Review of International Affairs.
+  - This article is categorized under Health & Water in the Venezuela brief.
 
 - **[Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean](https://www.paho.org/en/news/29-1-2026-three-months-after-hurricane-melissa-paho-continues-supporting-health-system)**  
   Date: 2026-01-29
@@ -154,27 +168,6 @@
   - Venezuelans test limits of new freedoms NPR.
   - This article is categorized under Education & Workforce in the Venezuela brief.
 
-- **[Penn offers support to Venezuelan students following U.S. military action - The Daily Pennsylvanian](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMFZCeFJrYVVUZXg4bF9hVkZlSzE3eVNLbjZoUV9aNFhydjNaV09NVloyUFNaSGxVZ3ZndFhVdFZQOXVRaHNqWUV1WGkxSmpZRlNQbDlVVkdhUjRTWVN5YjdINGMyVVRyTW81UkVEVWV3SjdCTV81cHdVMDNDMm9aMnFudXdBRjIxLTJUVkx2bkhCdGRJQnFoNmdGLXlUdUlnWk9nMi1aVVhYUQ?oc=5)**  
-  Date: 2026-01-09
-  Summary:
-  - Penn offers support to Venezuelan students following U.S. military action - The Daily Pennsylvanian.
-  - Penn offers support to Venezuelan students following U.S.
-  - military action The Daily Pennsylvanian.
-
-- **[Venezuelan Migration: Past, Present, and Future - Georgetown Journal of International Affairs](https://news.google.com/rss/articles/CBMijAFBVV95cUxOUkJIdm5OS0E0dlV3Zm5CYWhudjA0REdwelBpV0szOXk4UkF6LU5aMFN4X3ZzVGxBcXY1Qmt5X2RwVzlDT003cjNVVEpYZTJDWjMyRTEzNzR3Rk9vT2hoVE9fSTdwVk9hTFBSUHNQMmt6RTN4WEJaWjJwVV9oUFlEOTJGMWt2bm1nb0ZuUg?oc=5)**  
-  Date: 2026-02-02
-  Summary:
-  - Venezuelan Migration: Past, Present, and Future - Georgetown Journal of International Affairs.
-  - Venezuelan Migration: Past, Present, and Future Georgetown Journal of International Affairs.
-  - This article is categorized under Education & Workforce in the Venezuela brief.
-
-- **[Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation - NIESR](https://news.google.com/rss/articles/CBMiggFBVV95cUxOaG1VanQxbWlpZ3J5cXR5RERESWxJV0dMOWc2dHd3aERTcE1Yc2dzNUxCUHY2ZzdzZThMOGUxV2pMNnJYeHNSaUhXdU43WHItZ1FRX3E3V0s3blZNVnozUVR6bkFPQk5Lc1ZwNF9xWkZ3VkxkQjdENkM2S3o2RFRPRlJ3?oc=5)**  
-  Date: 2026-01-27
-  Summary:
-  - Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation - NIESR.
-  - Characteristics of Venezuelan Migration to Brazil: General Aspects and Labour Market Allocation NIESR.
-  - This article is categorized under Education & Workforce in the Venezuela brief.
-
 ### Finance & Investment
 
 - **[Venezuela: Acting President Rodríguez Secures US $300 Million in Oil Revenue to Shield Workers From Inflation (+Exchange Rate) - Orinoco Tribune](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTjN1NEdCQzIyT1NiQU5zbjd5c1JobTNHbENhWmR4blh5LUs1OUFzOUxYTm9udzlicW9raXJ0TmVnV19aSzg4SEcwWDlUX05MdEI1aGpYemNqSk5ZS3JmX2lVZi1PUXRZS1JCbnNVamlrOFgwOVhjLWdOLWdGazQ3Q3NkakRJSHNYem1HYTNqWkZTRV9xWlFyVHlhWnVlX2ZnaWxoalJEUGJEZ01ETFNrb2lRX0lhRmstbzBxZm4xcTJMNDBVOVRaNHcwUEdQb0I4T1RYMjhMS2JFYUhDMW1CZmdLWQ?oc=5)**  
@@ -198,11 +191,25 @@
   - Volatility, Adjustments, and Expectations About the Exchange Rate System in Venezuela Orinoco Tribune.
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
-- **[Repsol Intends to Increase Venezuela Production Threefold Following U.S. Authorization - Bitget](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBULWxGWkY2RGZXaFlnVS1aYjBJSzhEbnpOb1dwX0JiZjhKRmR6VmdJdlRfckxjeHhZeVQtYUFaanp1Qk1wWGUwVU4wZDNBa3doc3JiWE56eU15ZVM2aXVXeTNpY9IBY0FVX3lxTFBULWxGWkY2RGZXaFlnVS1aYjBJSzhEbnpOb1dwX0JiZjhKRmR6VmdJdlRfckxjeHhZeVQtYUFaanp1Qk1wWGUwVU4wZDNBa3doc3JiWE56eU15ZVM2aXVXeTNpYw?oc=5)**  
-  Date: 2026-02-19
+- **[US energy secretary seeks ‘flood of investment’ in Venezuela](https://www.ft.com/content/ffaa0869-b874-42c5-a1ef-80664a933918)**  
+  Date: 2026-02-11
   Summary:
-  - Repsol Intends to Increase Venezuela Production Threefold Following U.S. Authorization - Bitget.
-  - Repsol Intends to Increase Venezuela Production Threefold Following U.S.
+  - Subscribe to read Accessibility help Skip to navigation Skip to main content Skip to footer Sign In Subscribe Open side navigation menu Open search bar Financial Times Subscribe Sign In Search the FT Search Close search bar Close Home World Sections World Home Middle East war Global Economy UK US China Africa Asia Pacific Emerging Markets Europe War in Ukraine Americas Middle East & North Africa Most Read The ‘incredibly significant’ US military forces surrounding Iran Email blunder exposes $90bn Russian oil…
+  - How LA’s neighbourhoods fit together, mapped by locals for visitors Business Books: What to read this month Apprenticeships get a glow up Life & Arts Sections Life & Arts Home Arts Books Food & Drink FT Magazine House & Home Style Puzzles Travel FT Globetrotter Most Read Dave Lewis plans executive overhaul at ‘fat and happy’ Diageo Nobel chemistry laureate Frances Arnold: ‘Whole swaths of science are just going to die on the vine’ Marylebone property prices are ‘defying gravity’ Hampstead’s retro cafés fight back…
+  - Savings based on monthly annualised price - offer ends 25th February Save 40% What’s included Standard Digital Stay informed with global news & in-depth analysis Gain clarity from expert opinion First FT: the day’s biggest stories 20+ curated newsletters Follow topics & set alerts with myFT FT App on Android & iOS FT Videos & Podcasts 10 monthly gift articles to share Explore more offers.
+
+- **[Trump eyes Venezuela visit – but obstacles to his oil plan remain](https://www.bbc.com/news/articles/c4gjx1j1nkjo)**  
+  Date: 2026-02-16
+  Summary:
+  - Trump eyes Venezuela visit – but obstacles to his oil plan remain Skip to content Watch Live British Broadcasting Corporation Home News Sport Business Technology Health Culture Arts Travel Earth Audio Video Live Documentaries Home News Sport Business Technology Health Culture Arts Travel Earth Audio Video Live Documentaries Weather Newsletters Watch Live Trump eyes Venezuela visit – but obstacles to his oil plan remain 4 days ago Share Save Robert Plummer Business reporter Share Save AFP via Getty Images Venezuela…
+  - Trump now says that he plans to visit the South American country, although no date has been set.
+  - His comments, made last Friday, came after US Energy Secretary Chris Wright completed a two-day trip to Venezuela to see how the nation is starting to reopen its oil sector to US companies.
+
+- **[THE ECONOMIST: Venezuela](https://finance.yahoo.com/news/economist-venezuela-010100904.html)**  
+  Date: 2026-02-14
+  Summary:
+  - THE ECONOMIST: Venezuela Oops, something went wrong Skip to navigation Skip to main content Skip to right column News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep…
+  - private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning Brief Opening Bid Market Catalysts Market Domination Market Domination Overtime Asking for a Trend Video podcasts Stocks in Translation Trader Talk Living Not So Fabulously The Big Idea Financial Freestyle FA Corner ETF Report Options Unlocked Watch Now Sports Olympics Fantasy Fantasy baseball News…
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
 - **[Venezuela: Creditors Hunger for 170B Debt Renegotiation - Venezuelanalysis](https://news.google.com/rss/articles/CBMikwFBVV95cUxPWWpLRjZIZ0R3MElNUkJXWnptLWhSNW1XVFZwdHZxei1xeUFmMjl0b0QwTWtQMzVJYnQwYS1saEtsNGQwY3pTUzV2YjBfRDFRU2E0ZTByM2FwZjBGd3AtcjdZYnBvSjNIMXhITFQyQkc5b29WSmpfcjNXSnZRZXVkWGtlVDRxYjVwLW5QZ1FGbVh4TGs?oc=5)**  
@@ -219,54 +226,47 @@
   - US control of Venezuela oil risks debt restructuring showdown with China Reuters.
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
-- **[The US Attack on Venezuela - Climate Change Performance Index (CCPI)](https://news.google.com/rss/articles/CBMiQEFVX3lxTE1RUGVvSEQydFpocjlnaUk2cUZPZzQ4RVRWcEhMRlNNVEh5b292LUdRVVRaQzVyOWk3ckZ0dDFYNHk?oc=5)**  
+- **[Venezuela Oil Sector Reform: Investment & Policy Changes - Discovery Alert](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbWJPRTlrXzl5X3V0RFF4TzNXYTh3VmRPd0pUbEZQdnNLN2cxcWJMaFJsTWFPc0NSaG90bWVERjliQUM2UTB4a3R6cS1Ia1lqc0d6d1B4UnkyLW9YdE80TWVPaU9RMzBuajRDQTczVmRaTk1lby1LLXlSajl0QlBCVS1TZE1qaktx?oc=5)**  
+  Date: 2026-01-29
+  Summary:
+  - Venezuela Oil Sector Reform: Investment & Policy Changes - Discovery Alert.
+  - Venezuela Oil Sector Reform: Investment & Policy Changes Discovery Alert.
+  - This article is categorized under Finance & Investment in the Venezuela brief.
+
+- **[Political risk and the cost of capital: Venezuela, Ecuador and Uruguay](https://www.msn.com/en-us/money/markets/political-risk-and-the-cost-of-capital-venezuela-ecuador-and-uruguay/ar-AA1WFz7C)**  
   Date: 2026-02-19
   Summary:
-  - The US Attack on Venezuela - Climate Change Performance Index (CCPI).
-  - The US Attack on Venezuela Climate Change Performance Index (CCPI).
-  - This article is categorized under Finance & Investment in the Venezuela brief.
-
-- **[Venezuelan MPs approve bill to open up oil sector to private firms - BBC](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pclJiYVprOU43T3RKa18yc0xUY1Npa2xRZzBabGc3eXJVdWd1bEtZMUtzOU5rTGo1eE1UZ05MTF9xZXJlNkZIblF2V3dmdTNBUENsSlJtNEstZw?oc=5)**  
-  Date: 2026-01-29
-  Summary:
-  - Venezuelan MPs approve bill to open up oil sector to private firms - BBC.
-  - Venezuelan MPs approve bill to open up oil sector to private firms BBC.
-  - This article is categorized under Finance & Investment in the Venezuela brief.
-
-- **[Venezuelan lawmakers approve easing state control of oil industry - Source ONE News](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNTWhKdHRBVTRtZzlHZ2NCU1Y2TE1TNW1NZ1JFanU2d0Nkd1IxcjBRMWU4THRQRWpqMm9QM2NidEJ5Zk02dU5jU2tyTmxLN1J6bm1faFVsVU16RzBFWERzNGdxdERzWG9sT2I1QlRTYXVPcDVLeUNNRDcydVE0RC1UMFd6MjliRmZJQUkyTUU1T1k2VlJ0ZVM5Ul92d1VmdXZWeFg0THRqc21HaG8tcnRkeGlQamRZOHgxMnFkS2E5OFNfZUZBUlB0eDdfOUROalVsNWhTZjJwRjdTNlcxVDluQlE0SVlzdFVfMFBCNlVLa0wzbXFSLWtV?oc=5)**  
-  Date: 2026-01-29
-  Summary:
-  - Venezuelan lawmakers approve easing state control of oil industry - Source ONE News.
-  - Venezuelan lawmakers approve easing state control of oil industry Source ONE News.
-  - This article is categorized under Finance & Investment in the Venezuela brief.
-
-- **[Venezuela’s oil sector remains uninvestable - GIS Reports](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxUlVJSGJxR3FLRGJGcWxJRFZRSERHMzBLZ1hQZEgzU0kxdVN1bmlIT0hyTmJNM18zUUFuTmV0bzhZUzNZOVZoS1hMV1pNMzkzOWNlNUlrcFFJMGk0aEVCakZrSkRYVFU?oc=5)**  
-  Date: 2026-02-12
-  Summary:
-  - Venezuela’s oil sector remains uninvestable - GIS Reports.
-  - Venezuela’s oil sector remains uninvestable GIS Reports.
+  - Political risk and the cost of capital: Venezuela, Ecuador and Uruguay.
+  - Expropriations, abrupt regulatory shifts, weak institutions and policy reversals do not merely create uncertainty: They increase a country's risk.
   - This article is categorized under Finance & Investment in the Venezuela brief.
 
 ### Cross-cutting / Policy / Risk
 
-- **[At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes - The Harvard Crimson](https://news.google.com/rss/articles/CBMiigFBVV95cUxQZnFRaVpScGtUSTdBc3JZMElhSjVMYjIwY0w0dEhoZGYzNDE1alM5NjEtSTdhbnBSVnEwT2RmTkxRSU03eXdyR093WE5HQmF0WjdpUklVQ1hpdmU0VkZoeXZfMDAwNUh6ZUtMREJXRWRLX3BlQ05sRHFzT0FmNTBJZDBvZG9CVURWYWc?oc=5)**  
+- **[Trump Targets Italy in His Push to Halt Cuba’s Export of Doctors](https://www.bloomberg.com/news/articles/2026-02-20/trump-targets-italy-in-his-push-to-halt-cuba-s-export-of-doctors)**  
   Date: 2026-02-20
   Summary:
-  - At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes - The Harvard Crimson.
-  - At a Stalemate: Venezuelan Exiles at Harvard are Caught Between Two Regimes The Harvard Crimson.
+  - Trump Targets Italy in His Push to Halt Cuba’s Export of Doctors.
+  - President Donald Trump is taking his pressure campaign against Cuba to Europe, mounting a renewed US push for Italy to halt its use of doctors from the struggling Caribbean nation.
   - This article is categorized under Cross-cutting / Policy / Risk in the Venezuela brief.
+
+- **[Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas](https://en.mercopress.com/2026/02/20/uruguay-foreign-minister-lubetkin-grilled-over-venezuela-china-taiwan-wording-and-us-visas?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss)**  
+  Date: 2026-02-20
+  Summary:
+  - Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas — MercoPress Current Edition Topics Agriculture Economy Energy & Oil Entertainment Environment Fisheries Health & Science Investments Politics Real Estate Tourism Regions Antarctica Argentina Brazil Chile Falkland Islands International Latin America Mercosur Pacific Alliance Paraguay Unasur United States Uruguay Venezuela News Archive MercoPress, en Español Search Login Search Get our news on your inbox!
+  - Wrong login information You must login to vote comments --> Remember me Login Forgot password Login with Facebook Create an account MercoPress.
+  - South Atlantic News Agency MercoPress, en Español Montevideo, February 20th 2026 - 21:28 UTC Mercosur–EU deal: Uruguay’s PIT-CNT urges sector impact studies for an “informed” Senate debate Senate commission to review Cardama contract after Uruguay cancels ocean patrol vessel deal Argentina–Uruguay river commission faces tensions over funding and infrastructure disputes Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas Friday, February 20th 2026 - 12:13 UTC Full article 0…
+
+- **[Venezuela passes unanimous amnesty law, excluding armed actions and serious crimes](https://en.mercopress.com/2026/02/20/venezuela-passes-unanimous-amnesty-law-excluding-armed-actions-and-serious-crimes?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss)**  
+  Date: 2026-02-20
+  Summary:
+  - Venezuela passes unanimous amnesty law, excluding armed actions and serious crimes — MercoPress Current Edition Topics Agriculture Economy Energy & Oil Entertainment Environment Fisheries Health & Science Investments Politics Real Estate Tourism Regions Antarctica Argentina Brazil Chile Falkland Islands International Latin America Mercosur Pacific Alliance Paraguay Unasur United States Uruguay Venezuela News Archive MercoPress, en Español Search Login Search Get our news on your inbox!
+  - Wrong login information You must login to vote comments --> Remember me Login Forgot password Login with Facebook Create an account MercoPress.
+  - South Atlantic News Agency MercoPress, en Español Montevideo, February 20th 2026 - 21:28 UTC Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas SOUTHCOM chief and senior Pentagon official visit Venezuela, meet interim government Trump says he will visit Venezuela, praises Delcy Rodríguez as U.S.
 
 - **[Ricardo Hausmann: Venezuela's rapid decline from AAA to default, the devastating impact of Chávez's nationalization policies, and the urgent need for economic diversification | Odd Lots - Crypto Briefing](https://news.google.com/rss/articles/CBMirwJBVV95cUxORzhsdzNFMDVkZTJVQVUwa3BQalZCMGdrUnJBZ2FUajBWUGdERjltQ2xWSjVocGtNeVRET3J6RVRtTDd5Z19MbllOem9PZUJ1djBIMU5MN0FZUkRDUlpyeWp0anpzeWpGTHczMEoxUUR2eVpLSEdSRTNrbl9MNDFqa25KUkszTmR4dmFQc1VXM0tVNVZITERQQ2JXdU5XaDlRRWZ0LWlJdkJtTVAtNjRKb1R4RHAtNFdmVmxXSFhZVHF4Qk9hMjdwWHdoc3lrUmp0SmEtTE5OV2xiMnNnaWU1eVlwalB6bHBIUlJxM0xGbGR3R2w1eGd3N050NnRGc3V6T2ZaTWdhUWxBcFFfQVJIQkFwNGZzbGJUR3lWRTU2ZXNjc3pZT1Z6VVhxNk04blU?oc=5)**  
   Date: 2026-02-17 | 🔴 Risk
   Summary:
   - Ricardo Hausmann: Venezuela's rapid decline from AAA to default, the devastating impact of Chávez's nationalization policies, and the urgent need for economic diversification | Odd Lots - Crypto Briefing.
   - Ricardo Hausmann: Venezuela's rapid decline from AAA to default, the devastating impact of Chávez's nationalization policies, and the urgent need for economic diversification | Odd Lots Crypto Briefing.
-  - This article is categorized under Cross-cutting / Policy / Risk in the Venezuela brief.
-
-- **[US Eases Venezuela Sanctions Through New General Licenses and FAQs - Hunton Andrews Kurth LLP](https://news.google.com/rss/articles/CBMipwFBVV95cUxNUWNkcHd3VVYxM01iVjZINEtyWGV0WDMyV3R2VklaWmFLVFFGNWtTU0dxYlNGY25XZXVLMDRFME5ZRUMzaHVYQnhMUVhoSzQ2OUhPNUZFLVVmdXIweGhkZXAybDBna04xeEdUdEtvd3VzM2g4UjVfNGtKMU5ZSzVXak9TQXVGYV9NYzlTS2dxdHUzZGhZUjhNeWRhdlBkVWhvMHpFZUotNA?oc=5)**  
-  Date: 2026-02-13 | 🔴 Risk
-  Summary:
-  - US Eases Venezuela Sanctions Through New General Licenses and FAQs - Hunton Andrews Kurth LLP.
-  - US Eases Venezuela Sanctions Through New General Licenses and FAQs Hunton Andrews Kurth LLP.
   - This article is categorized under Cross-cutting / Policy / Risk in the Venezuela brief.
 
