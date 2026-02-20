@@ -1,0 +1,58 @@
+# ============================
+# VENEZUELA – MACRO & POLICY
+# ============================
+
+ReliefWeb – Venezuela Updates - https://reliefweb.int/country/ven/rss.xml
+IMF Country News - https://www.imf.org/en/News/RSS
+World Bank News - https://www.worldbank.org/en/news/rss
+Inter-American Development Bank (IDB) News - https://www.iadb.org/en/rss
+CAF – Development Bank of Latin America - https://www.caf.com/en/currently/rss/
+Reuters – Venezuela - https://www.reutersagency.com/feed/?best-topics=venezuela
+UN OCHA - https://www.unocha.org/rss.xml
+
+
+# ============================
+# EXTRACTIVES & MINING
+# ============================
+
+OPEC News - https://www.opec.org/opec_web/en/press_room/rss.xml
+Mining.com - https://www.mining.com/feed/
+OilPrice.com - https://oilprice.com/rss/main
+S&P Global Commodity Insights - https://www.spglobal.com/commodityinsights/en/rss
+
+
+# ============================
+# FOOD & AGRICULTURE
+# ============================
+
+FAO News - https://www.fao.org/news/rss/en/
+World Food Programme (WFP) - https://www.wfp.org/rss.xml
+USDA Foreign Agricultural Service - https://www.fas.usda.gov/rss
+IICA News - https://iica.int/en/rss
+
+
+# ============================
+# HEALTH & WATER
+# ============================
+
+PAHO News - https://www.paho.org/en/rss.xml
+WHO News - https://www.who.int/rss-feeds/news-english.xml
+UNICEF News - https://www.unicef.org/rss.xml
+
+
+# ============================
+# EDUCATION & WORKFORCE
+# ============================
+
+UNESCO News - https://www.unesco.org/en/rss.xml
+ILO News - https://www.ilo.org/global/about-the-ilo/newsroom/rss/lang--en/index.htm
+
+
+# ============================
+# FINANCE & INVESTMENT
+# ============================
+
+UNCTAD News - https://unctad.org/rss.xml
+WTO News - https://www.wto.org/english/news_e/news_e.xml
+LatinFinance - https://www.latinfinance.com/rss
+BNAmericas - https://www.bnamericas.com/en/rss

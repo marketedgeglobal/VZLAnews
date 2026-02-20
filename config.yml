@@ -1,0 +1,340 @@
+# Venezuela Update Intelligence - config.yml
+# Purpose: Generate weekly, sector-structured news briefs and opportunity flags for Venezuela
+
+# --- Scope / Country Targeting ---
+country:
+  name: "Venezuela"
+  official_name: "Bolivarian Republic of Venezuela"
+  iso2: "VE"
+  iso3: "VEN"
+  currency_code: "VES"   # Venezuelan bolívar soberano
+
+# --- Scheduling / Recency ---
+max_age_days: 7
+prefer_published_date: true
+
+# --- Output Control ---
+max_results: 35
+
+brief_sections:
+  - "Extractives & Mining"
+  - "Food & Agriculture"
+  - "Health & Water"
+  - "Education & Workforce"
+  - "Finance & Investment"
+  - "Cross-cutting / Policy / Risk"
+
+# --- Core Entity Filters ---
+require_country_match: true
+
+country_terms:
+  - venezuela
+  - venezuelan
+  - "bolivarian republic of venezuela"
+  - caracas
+  - maracaibo
+  - valencia venezuela
+  - bolívar
+  - bolivar
+  - orinoco
+  - "arco minero"
+  - guayana
+  - zulia
+
+geo_context_terms:
+  - colombia border
+  - guyana border
+  - trinidad
+  - "essequibo"
+  - "caribbean"
+
+# --- Sectors & Keywords ---
+sectors:
+  extractives_mining:
+    label: "Extractives & Mining"
+    include:
+      - oil
+      - gas
+      - petro
+      - pdvsa
+      - refinery
+      - diesel
+      - gasoline
+      - "natural gas"
+      - "oil production"
+      - opec
+      - mining
+      - gold
+      - bauxite
+      - iron
+      - coltan
+      - nickel
+      - lithium
+      - "critical minerals"
+      - "mining concession"
+      - "joint venture"
+      - "oroco"
+      - orinoco
+    opportunity:
+      - licensing
+      - license
+      - tender
+      - procurement
+      - rfp
+      - "request for proposal"
+      - concession
+      - "production restart"
+      - "field development"
+      - "service contract"
+      - "offtake"
+      - "farm-in"
+      - "strategic partner"
+      - "capex"
+      - "project finance"
+    risk:
+      - spill
+      - explosion
+      - outage
+      - sanctions
+      - embargo
+      - seizure
+      - "asset freeze"
+
+  food_agriculture:
+    label: "Food & Agriculture"
+    include:
+      - food security
+      - agriculture
+      - farming
+      - fertilizer
+      - seeds
+      - irrigation
+      - livestock
+      - poultry
+      - fisheries
+      - aquaculture
+      - imports
+      - "supply chain"
+      - "price controls"
+      - subsidy
+    opportunity:
+      - "input supply"
+      - distribution
+      - cold chain
+      - storage
+      - logistics
+      - "agri financing"
+      - "food assistance program"
+      - "value chain"
+      - "public-private partnership"
+      - ppp
+    risk:
+      - shortage
+      - inflation
+      - "price spike"
+      - "food insecurity"
+      - drought
+      - flood
+
+  health_water:
+    label: "Health & Water"
+    include:
+      - health
+      - hospital
+      - clinic
+      - medicine
+      - vaccines
+      - surveillance
+      - epidemiology
+      - outbreak
+      - cholera
+      - dengue
+      - malaria
+      - "public health"
+      - water
+      - sanitation
+      - wastewater
+      - wwtp
+      - "drinking water"
+      - wssh
+      - wash
+      - hygiene
+    opportunity:
+      - rehabilitation
+      - upgrade
+      - "system expansion"
+      - "equipment supply"
+      - "medical equipment"
+      - "water treatment"
+      - "pipeline repair"
+      - "treatment plant"
+      - contracting
+      - tender
+      - procurement
+    risk:
+      - outbreak
+      - contamination
+      - "waterborne"
+      - "service disruption"
+      - emergency
+
+  education_workforce:
+    label: "Education & Workforce"
+    include:
+      - education
+      - schools
+      - teachers
+      - curriculum
+      - tvet
+      - "technical training"
+      - "workforce"
+      - employment
+      - labor
+      - skills
+      - "digital learning"
+      - "vocational"
+      - "higher education"
+      - university
+    opportunity:
+      - training program
+      - "capacity building"
+      - scholarship
+      - "edtech"
+      - "learning platform"
+      - "assessment system"
+      - "public-private partnership"
+      - ppp
+    risk:
+      - strike
+      - migration
+      - dropout
+
+  finance_investment:
+    label: "Finance & Investment"
+    include:
+      - finance
+      - banking
+      - central bank
+      - bcv
+      - inflation
+      - exchange rate
+      - fx
+      - "foreign exchange"
+      - debt
+      - bonds
+      - restructuring
+      - investment
+      - fdi
+      - "capital markets"
+      - "sovereign"
+      - "country risk"
+      - "sanctions relief"
+      - "compliance"
+      - remittances
+    opportunity:
+      - privatization
+      - "market opening"
+      - "investment framework"
+      - "regulatory reform"
+      - "credit facility"
+      - "development finance"
+      - "blended finance"
+      - "risk guarantee"
+      - "project pipeline"
+    risk:
+      - default
+      - devaluation
+      - "currency controls"
+      - sanctions
+      - "banking restrictions"
+
+# --- Cross-cutting Business Signal Terms ---
+business_signal_terms:
+  - tender
+  - procurement
+  - contract award
+  - "call for bids"
+  - "expression of interest"
+  - "request for proposals"
+  - rfp
+  - rfq
+  - "request for quotation"
+  - "grant funding"
+  - "financing approved"
+  - "loan approved"
+  - "project announced"
+  - "investment plan"
+  - "partnership"
+  - "joint venture"
+  - "regulatory reform"
+  - "sanctions relief"
+  - "license granted"
+  - "market liberalization"
+
+# --- Negative / Noise Filtering ---
+exclude_terms:
+  - football
+  - soccer
+  - baseball
+  - celebrity
+  - entertainment
+  - horoscope
+  - sports betting
+
+# --- Scoring ---
+scoring:
+  weights:
+    country_match: 0.20
+    sector_relevance: 0.30
+    business_signals: 0.25
+    recency: 0.15
+    source_priority: 0.10
+  recency_decay: "linear"
+  multi_sector_bonus: 0.10
+
+# --- Source Weights / Priorities ---
+source_weights:
+  "reliefweb.int": 1.4
+  "unocha.org": 1.3
+  "worldbank.org": 1.4
+  "imf.org": 1.4
+  "iadb.org": 1.3
+  "caf.com": 1.2
+  "undp.org": 1.2
+  "paho.org": 1.3
+  "who.int": 1.2
+  "unicef.org": 1.2
+  "fao.org": 1.2
+  "wfp.org": 1.2
+  "reuters.com": 1.1
+  "ft.com": 1.05
+  "bloomberg.com": 1.05
+
+# --- Deduplication ---
+deduplication:
+  strategy: "title_url"
+  title_similarity_threshold: 0.90
+
+# --- Optional Output Flags ---
+flags:
+  opportunity_flag_terms:
+    - tender
+    - procurement
+    - "call for bids"
+    - "expression of interest"
+    - concession
+    - licensing
+    - "sanctions relief"
+    - privatization
+    - "project finance"
+    - "investment framework"
+
+  risk_flag_terms:
+    - sanctions
+    - "political unrest"
+    - outage
+    - spill
+    - default
+    - devaluation
+    - outbreak
+    - emergency

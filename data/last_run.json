@@ -1,0 +1,9 @@
+{
+  "run_at": null,
+  "fetched": 0,
+  "filtered": 0,
+  "deduplicated": 0,
+  "selected": 0,
+  "output_file": "docs/index.md",
+  "metadata_file": "data/last_run.json"
+}

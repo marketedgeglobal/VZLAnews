@@ -1,0 +1,50 @@
+name: Weekly RFP Collection
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # Every Monday at 09:00 UTC
+  workflow_dispatch:        # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collection script
+        run: python scripts/collect_rfps.py
+
+      - name: Verify docs/index.md contains required sections
+        run: |
+          for section in "Pipeline Metrics" "Scoring Summary" "Run Metadata"; do
+            if ! grep -q "$section" docs/index.md; then
+              echo "ERROR: docs/index.md is missing section: $section"
+              exit 1
+            fi
+          done
+          echo "All required sections present in docs/index.md"
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.md data/last_run.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: weekly news intelligence update [skip ci]"
+            git push
+          fi
