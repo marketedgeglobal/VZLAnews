@@ -1,9 +1,9 @@
 {
-  "run_at": null,
-  "fetched": 0,
+  "run_at": "2026-02-20T20:20:09.577628+00:00",
+  "fetched": 51,
   "filtered": 0,
   "deduplicated": 0,
   "selected": 0,
-  "output_file": "docs/index.md",
-  "metadata_file": "data/last_run.json"
+  "output_file": "/workspaces/VZLAnews/docs/index.md",
+  "metadata_file": "/workspaces/VZLAnews/data/last_run.json"
 }
