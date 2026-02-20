@@ -554,60 +554,119 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
     return (clipped or clean[:max_chars]).strip() + "…"
 
 
-def _three_sentence_summary(entry: dict, cfg: dict, max_chars: int) -> list[str]:
+def _normalize_text_block(text: str) -> str:
+    clean = re.sub(r"<[^>]+>", " ", text or "")
+    clean = unescape(clean)
+    clean = re.sub(r"\s+", " ", clean).strip()
+    return clean
+
+
+def _sentence_is_noise(sentence: str) -> bool:
+    lower = sentence.lower()
+    noisy_markers = [
+        "subscribe to read",
+        "skip to",
+        "sign in",
+        "open side navigation",
+        "close search bar",
+        "home world sections",
+        "accessibility help",
+        "privacy policy",
+        "cookies",
+        "what’s included",
+        "current edition topics",
+        "get our news on your inbox",
+        "open search bar",
+        "close home",
+        "videos & podcasts",
+        "trial $1",
+        "then $",
+        "user account menu",
+        "wrong login information",
+        "forgot password",
+        "create an account",
+        "news today's news",
+        "complete digital access to quality ft journalism",
+    ]
+    return any(marker in lower for marker in noisy_markers)
+
+
+def _title_similarity(a: str, b: str) -> float:
+    if not a or not b:
+        return 0.0
+    return SequenceMatcher(None, a.lower().strip(), b.lower().strip()).ratio()
+
+
+def _is_fragment(sentence: str) -> bool:
+    words = sentence.strip().split()
+    if len(words) < 8:
+        return True
+    if re.search(r"\b(?:U\.S|UK|Mr|Ms|Dr)\.$", sentence.strip()):
+        return True
+    if sentence.count("|") >= 2:
+        return True
+    return False
+
+
+def _title_topic(entry: dict) -> str:
+    title = (entry.get("title", "") or "").strip()
+    if not title:
+        return "a material policy and market development"
+
+    # Drop trailing source tags like " - Reuters" when present.
+    topic = re.sub(r"\s[-–—]\s[^-–—]{2,40}$", "", title).strip()
+    topic = topic.rstrip(". ")
+    return topic or title
+
+
+def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
     base_text = (entry.get("article_text", "") or "").strip()
-    if not base_text:
-        raw = entry.get("summary", "") or ""
-        clean = re.sub(r"<[^>]+>", " ", raw)
-        base_text = unescape(clean)
-    clean = re.sub(r"\s+", " ", base_text).strip()
+    has_article_text = bool(base_text)
+    if not has_article_text:
+        base_text = ""
+    clean = _normalize_text_block(base_text)
 
     candidates = []
     if clean:
         parts = re.split(r"(?<=[.!?])\s+", clean)
         for part in parts:
             p = part.strip(" -\u2022\t\n\r")
-            if len(p) >= 25:
+            if len(p) >= 35 and not _sentence_is_noise(p) and not _is_fragment(p):
                 candidates.append(p)
 
     title = (entry.get("title", "") or "").strip().rstrip(".")
     sector = detect_sector_label(entry, cfg)
     domain = entry.get("source_domain", "") or "the source"
     pub = _fmt_date(entry.get("published"))
+    flags = detect_flags(entry, cfg)
 
-    if title and not any(title.lower() in s.lower() for s in candidates[:2]):
-        candidates.insert(0, f"{title}.")
+    # Prefer substantive extracted article text when available.
+    if has_article_text:
+        for sentence in candidates:
+            if _title_similarity(title, sentence) < 0.78:
+                chosen = sentence
+                if len(chosen) > max_chars:
+                    clipped = chosen[:max_chars].rsplit(" ", 1)[0].strip()
+                    chosen = (clipped or chosen[:max_chars]).strip().rstrip(".") + "…"
+                return chosen if chosen.endswith((".", "!", "?", "…")) else chosen + "."
 
-    fallback_pool = [
-        f"This article is categorized under {sector} in the Venezuela brief.",
-        f"The item was published on {pub} and sourced from {domain}.",
-        "It is included due to relevance signals tied to Venezuela and sector-specific terms.",
-    ]
+    flag_text = ""
+    if "🔴 Risk" in flags and "🟢 Opportunity" in flags:
+        flag_text = " with both commercial upside and material policy risk signals"
+    elif "🔴 Risk" in flags:
+        flag_text = " with elevated policy or operational risk signals"
+    elif "🟢 Opportunity" in flags:
+        flag_text = " with potential near-term commercial openings"
 
-    selected: list[str] = []
-    seen: set[str] = set()
-    for sentence in candidates + fallback_pool:
-        normalized = sentence.lower().strip()
-        if not normalized or normalized in seen:
-            continue
-        seen.add(normalized)
-        selected.append(sentence if sentence.endswith((".", "!", "?")) else sentence + ".")
-        if len(selected) == 3:
-            break
-
-    final_sentences = []
-    for sentence in selected:
-        trimmed = sentence.strip()
-        if len(trimmed) > max_chars:
-            clipped = trimmed[:max_chars].rsplit(" ", 1)[0].strip()
-            trimmed = (clipped or trimmed[:max_chars]).strip().rstrip(".") + "…"
-        final_sentences.append(trimmed)
-
-    while len(final_sentences) < 3:
-        final_sentences.append("This article remains relevant to the current Venezuela monitoring scope.")
-
-    return final_sentences[:3]
-
+    topic = _title_topic(entry)
+    fallback = (
+        f"In {sector}, reporting from {domain} ({pub}) highlights {topic.lower()}"
+        f"{flag_text}, with potential implications for near-term policy, operations, or investment decisions."
+    )
+    if len(fallback) > max_chars:
+        clipped = fallback[:max_chars].rsplit(" ", 1)[0].strip()
+        fallback = (clipped or fallback[:max_chars]).strip().rstrip(".") + "…"
+    return fallback
 
 def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     section_order = cfg.get("brief_sections", [])
@@ -741,10 +800,9 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             if flag_str:
                 meta_parts.append(flag_str)
             lines.append(f"  {' | '.join(meta_parts)}")
-            summary_sentences = _three_sentence_summary(e, cfg, summary_max_chars)
+            summary_sentence = _descriptive_summary(e, cfg, summary_max_chars)
             lines.append("  Summary:")
-            for sentence in summary_sentences:
-                lines.append(f"  - {sentence}")
+            lines.append(f"  - {summary_sentence}")
             lines.append("")
 
     return "\n".join(lines) + "\n"

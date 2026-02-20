@@ -422,7 +422,7 @@ class TestBuildMarkdown:
         assert "Score:" not in md
         assert "Source:" not in md
 
-    def test_three_sentence_summary_prefers_article_text(self):
+    def test_descriptive_summary_prefers_article_text(self):
         cfg = minimal_cfg()
         entry = {
             **make_entry(
@@ -435,9 +435,8 @@ class TestBuildMarkdown:
                 "Private distributors said inventory planning is improving across Caracas."
             ),
         }
-        sentences = cr._three_sentence_summary(entry, cfg, max_chars=220)
-        assert len(sentences) == 3
-        assert any("logistics corridor" in s.lower() for s in sentences)
+        sentence = cr._descriptive_summary(entry, cfg, max_chars=220)
+        assert "logistics corridor" in sentence.lower()
 
 
 # ---------------------------------------------------------------------------
