@@ -173,6 +173,7 @@ def filter_entries(
     now: datetime,
 ) -> list[dict]:
     max_age = cfg.get("max_age_days", 7)
+    sector_max_age = cfg.get("sector_max_age_days", {})
     country_terms = [t.lower() for t in cfg.get("country_terms", [])]
     geo_terms = [t.lower() for t in cfg.get("geo_context_terms", [])]
     exclude_terms = [t.lower() for t in cfg.get("exclude_terms", [])]
@@ -180,7 +181,15 @@ def filter_entries(
 
     filtered = []
     for e in entries:
-        if not passes_age_filter(e, max_age, now):
+        entry_max_age = max_age
+        section_label = detect_sector_label(e, cfg)
+        if section_label in sector_max_age:
+            try:
+                entry_max_age = int(sector_max_age[section_label])
+            except (TypeError, ValueError):
+                entry_max_age = max_age
+
+        if not passes_age_filter(e, entry_max_age, now):
             continue
         if not passes_exclude_filter(e, exclude_terms):
             continue

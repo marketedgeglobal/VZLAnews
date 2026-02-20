@@ -13,6 +13,12 @@ country:
 max_age_days: 14
 prefer_published_date: true
 
+sector_max_age_days:
+  "Food & Agriculture": 45
+  "Education & Workforce": 45
+  "Health & Water": 30
+  "Finance & Investment": 30
+
 # --- Output Control ---
 max_results: 35
 
