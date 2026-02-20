@@ -635,7 +635,6 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
                 candidates.append(p)
 
     title = (entry.get("title", "") or "").strip().rstrip(".")
-    domain = entry.get("source_domain", "") or "the source"
     pub = _fmt_date(entry.get("published"))
     flags = detect_flags(entry, cfg)
 
@@ -659,7 +658,7 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
 
     topic = _title_topic(entry)
     fallback = (
-        f"Reporting from {domain} ({pub}) highlights {topic.lower()}"
+        f"Recent reporting ({pub}) highlights {topic.lower()}"
         f"{flag_text}, with potential implications for near-term policy, operations, or investment decisions."
     )
     if len(fallback) > max_chars:
@@ -738,7 +737,7 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
             f"with activity concentrated in {top_sector_text}. "
             f"The near-term strategic storyline is a policy-led reopening dynamic—especially around energy and capital channels—while thematic pressure remains centered on {themes_text}. "
             f"Commercial upside is present but selective ({opportunity_count} opportunity-flagged items), and execution risk remains material ({risk_count} risk-flagged items tied to sanctions, regulatory uncertainty, or operating friction). "
-            f"Coverage from {domain_text} with publication timing {date_span} indicates rising momentum, but not yet a structurally de-risked environment. "
+            f"Cross-source coverage with publication timing {date_span} indicates rising momentum, but not yet a structurally de-risked environment. "
             "For strategy teams, the practical posture is scenario-based planning: prioritize partner diligence, compliance-ready operating models, and trigger-based monitoring before committing irreversible capital."
         )
     ]
