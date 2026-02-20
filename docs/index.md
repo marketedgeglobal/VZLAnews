@@ -2,12 +2,7 @@
 
 ## Latest News Synthesis
 
-- This brief synthesizes 35 ranked Venezuela-focused items spanning 6 sectors: Extractives & Mining, Food & Agriculture, Health & Water, Education & Workforce, Finance & Investment, Cross-cutting / Policy / Risk.
-- The strongest concentration is in Extractives & Mining (10), Finance & Investment (10), Education & Workforce (5).
-- Across headlines and summaries, the dominant themes are energy and extractives, finance and macro policy, food systems.
-- Opportunity signals appear in 1 items, indicating active commercial or partnership openings.
-- Risk signals appear in 4 items, highlighting policy, sanctions, or operational uncertainty to monitor.
-- Coverage is sourced primarily from news.google.com, bing.com, en.mercopress.com, with publication timing from 2026-01-09 to 2026-02-20.
+- This cycle surfaces 35 ranked Venezuela-linked developments across 6 sectors (Extractives & Mining, Food & Agriculture, Health & Water, Education & Workforce, Finance & Investment, Cross-cutting / Policy / Risk), with activity concentrated in Extractives & Mining (10), Finance & Investment (10), Food & Agriculture (5). The near-term strategic storyline is a policy-led reopening dynamic—especially around energy and capital channels—while thematic pressure remains centered on energy and extractives, finance and macro policy, public services and health. Commercial upside is present but selective (1 opportunity-flagged items), and execution risk remains material (4 risk-flagged items tied to sanctions, regulatory uncertainty, or operating friction). Coverage from news.google.com, bing.com, en.mercopress.com with publication timing from 2026-01-09 to 2026-02-20 indicates rising momentum, but not yet a structurally de-risked environment. For strategy teams, the practical posture is scenario-based planning: prioritize partner diligence, compliance-ready operating models, and trigger-based monitoring before committing irreversible capital.
 
 ---
 
@@ -82,17 +77,22 @@
   Summary:
   - dollars for Venezuelan bolivars at a street market in Caracas, Venezuela, Thursday, Jan.
 
+- **[Food Security, could Digital Insurance help Venezuela? - Irish Tech News](https://news.google.com/rss/articles/CBMifEFVX3lxTE1NUWppeWlnVGRubVZJajB4WlRsNERHVld6c3ZaNXZ0ZVByTXhONGFxXzB3T0VrQ0psanJJR3JhS1dxdHg3bDJCczRCU25xTDVYTXVTUnFJZ2RPV3FzOUMxcDkxMlhqaVgwRmJyNEo4NUJ4cFE4aTdLbENBMEfSAXxBVV95cUxNTVFqaXlpZ1Rkbm1WSWoweFpUbDRER1ZXenN2WjV2dGVQck14TjRhcV8wd09Fa0NKbGpySUdyYUtXcXR4N2wyQnM0QlNucUw1WE11U1JxSWdkT1dxczlDMXA5MTJYamlYMEZicjRKODVCeHBROGk3S2xDQTBH?oc=5)**  
+  Date: 2026-02-06
+  Summary:
+  - Reporting from news.google.com (2026-02-06) highlights food security, could digital insurance help venezuela?, with potential implications for near-term policy, operations, or investment decisions.
+
+- **[Venezuelan Embassy in Belize hosts vigil calling for return of Nicolas Maduro - Belize News and Opinion on www.breakingbelizenews.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY2RVeFVNa1V1OU1wVmE1YUtucHFjTGxWWmZKUFc2Rmhzdl9SMmVFckZPby1nNkN5dkNFN2VibURVeVM5VkhndjNpX3FrMDlSdXphbXpmcXR4bUJEa3FWRXFCMFUxckcxUWpsVnFELVBaRy11ZUpYT3AtQ0NsSVp3dXRYTGZkT09DZW1iVDZJMkxyU1ZsNEVzM2lJUUZtRG14R1A2c3NlSnR0SzJsd0RTcHdzU3IxR3N3S1JCMlU3bTNHZw?oc=5)**  
+  Date: 2026-01-22
+  Summary:
+  - Reporting from news.google.com (2026-01-22) highlights venezuelan embassy in belize hosts vigil calling for return of nicolas maduro - belize news and opinion on www.breakingbelizenews.com, with potential implications for near-term policy, operations, or investment decisions.
+
 ### Health & Water
 
 - **[U.S. Oil Giants Are Wary of Inheriting Venezuela’s Massive Ecological Debt](https://oilprice.com/Energy/Crude-Oil/US-Oil-Giants-Are-Wary-of-Inheriting-Venezuelas-Massive-Ecological-Debt.html)**  
   Date: 2026-02-10 | 🔴 Risk
   Summary:
   - Reporting from bing.com (2026-02-10) highlights u.s. oil giants are wary of inheriting venezuela’s massive ecological debt with elevated policy or operational risk signals, with potential implications for near-term policy, operations, or investment decisions.
-
-- **[China in the U.S.-Venezuela Dispute: Beijing Complicates Washington’s Policy Towards Caracas - The SAIS Review of International Affairs](https://news.google.com/rss/articles/CBMixAFBVV95cUxOT1gzRnZOZUJqc3dWYVowa1RWbEZXc2pHVXhLT3VmY2o2cVFFOUpaRHdrMmNxa2VHU1Jma1huRnhFaS1TWUZTVXI4dGJjMDhGeVA4TEJiLWQzY0NaOWZVX2VJZE9hd19NWjR4dEgtdXg5dWZ3b1RYVlhDVEkzcThzQnJtS3VtYW5URnpJQmwwWkFBOF9tTTVtWGJDaXRCb05WOW5tOWs4NjFYZVpwX18wOVN2ckJST2hHSzgtYmNGci1nY1dH?oc=5)**  
-  Date: 2026-02-10
-  Summary:
-  - Reporting from news.google.com (2026-02-10) highlights china in the u.s.-venezuela dispute: beijing complicates washington’s policy towards caracas, with potential implications for near-term policy, operations, or investment decisions.
 
 - **[Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean](https://www.paho.org/en/news/29-1-2026-three-months-after-hurricane-melissa-paho-continues-supporting-health-system)**  
   Date: 2026-01-29
@@ -116,22 +116,12 @@
   Summary:
   - Reporting from news.google.com (2026-02-15) highlights venezuelans celebrate first taste of reform, with potential implications for near-term policy, operations, or investment decisions.
 
-- **[Venezuelan Bishops: May schools be places of peace and justice - Herald Malaysia Online](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa1FnRGp5SHJEenhYekZhX1plUFNRd2I4QmdiMnNzZEk2YVRvdjRxMUFObHpzZzV4b2RXVzlXUFVqM01qbVVCTXg2WE9jQ2RQMFJiMFNPNENLczUzUHlzQ0ozU0o0QWJBVlpNOVBPQlVZdEJfZUtQTkpJQjdOeEc4OGwwbGZVOWdmaGY1YUpkMHZjV1gxZ1prdUNqNGd4Ni1kck5zaHl4Yk8?oc=5)**  
-  Date: 2026-01-13
-  Summary:
-  - Reporting from news.google.com (2026-01-13) highlights venezuelan bishops: may schools be places of peace and justice, with potential implications for near-term policy, operations, or investment decisions.
-
 - **[Venezuelans test limits of new freedoms - NPR](https://news.google.com/rss/articles/CBMikwFBVV95cUxNUTBudGRKZmdsaFByYnlJQ3Y1am0yVXRKYXlJQ1ZTNGVnV1R5blZtT1ZjcUNiZXhkb3Y0V3U4SzY4ZnhLT0hESkdwOTZHMlQ2WXNfSHRfaEpwZkh2Ui1ObmdJVS16MUtPTlZ0Nl9QWUJwRG5iQjh1RXh6MHM5TzZPQ2dnU0pfQlhrVzJ2a3NKSlYxX1k?oc=5)**  
   Date: 2026-02-10
   Summary:
   - Reporting from news.google.com (2026-02-10) highlights venezuelans test limits of new freedoms, with potential implications for near-term policy, operations, or investment decisions.
 
 ### Finance & Investment
-
-- **[Texas refineries see opportunity in Venezuelan oil amid Mexico export declines - Houston Public Media](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNVdaV2ktZ20yNkFoR1Jma2FfQ0Z4NlpJc0oxTVpzejlPeFlVMXFWZ3UtTmZRTU8zRURtaXMwaE1haTNWU0paOGdnNS1pNEFRWDhKTWlNTEtQVy1kR09LOTZMTTh5QWc4ODJTbDVSbWNtQnVaN2VDaFRTVWYtM1BwUW9NQWVPUkcyZHFRQmo4bWZZZW5nWnJlamZ5R1daY2Rma2o1b2FwLVZLSW5lWjhQTlpFMnViQkZobExHSWxzcFJpdzFxQXFXbFZWOEZycVJjTnUtY1d0SlhSTEHSAeMBQVVfeXFMTTViTE81Y2ZBcHZhN28wOElreWxxRDdvNmQ2dkJMdmtuOEV2Z0hkNVVnY1dhZFJtbHEtVURmWmVsVzVTT2Jha21mbDM1a3lEU0FYTXRWWnJ5M09WUFVNMTM3TklwRjk3Zzl3Q1BJYks0R2tFN1JQbWZMZHRlOTkyQklaWUo3T1VwOWxBZkw3b3EwWTZqaHZxWllVZWhyRTl5YWI5UkYwdW9DTXFNaTZlZkFsUUdtaGtBR0l3NWZ0SkZUZ2JBbjlMMDc1WXZpVGtJdktuQTlCOENiVkZycGhaa1NUU0k?oc=5)**  
-  Date: 2026-02-20
-  Summary:
-  - Reporting from news.google.com (2026-02-20) highlights texas refineries see opportunity in venezuelan oil amid mexico export declines, with potential implications for near-term policy, operations, or investment decisions.
 
 - **[Venezuela: Acting President Rodríguez Secures US $300 Million in Oil Revenue to Shield Workers From Inflation (+Exchange Rate) - Orinoco Tribune](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTjN1NEdCQzIyT1NiQU5zbjd5c1JobTNHbENhWmR4blh5LUs1OUFzOUxYTm9udzlicW9raXJ0TmVnV19aSzg4SEcwWDlUX05MdEI1aGpYemNqSk5ZS3JmX2lVZi1PUXRZS1JCbnNVamlrOFgwOVhjLWdOLWdGazQ3Q3NkakRJSHNYem1HYTNqWkZTRV9xWlFyVHlhWnVlX2ZnaWxoalJEUGJEZ01ETFNrb2lRX0lhRmstbzBxZm4xcTJMNDBVOVRaNHcwUEdQb0I4T1RYMjhMS2JFYUhDMW1CZmdLWQ?oc=5)**  
   Date: 2026-01-21
@@ -153,11 +143,6 @@
   Summary:
   - Cancel or change your plan anytime during your trial.
 
-- **[Oil, Economics, and Geopolitics in Venezuela, with Luisa Palacios - Resources Magazine](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHppUEo0U01CN2pJbzZEbE1Nb2NIcjZVR1ctdnJYanU5UVp1SURDUnZLdGpVbnRmdm5tcU12R19oQnBpa0JpQTlBMjBTb1hCakN2eHBzc2dSNTZKY2JPV2tpNHFGX0VUMDZhSG9UU3JURm9vR09XS0JZNlZMVUNqVXNMeTdmT1d1UzJSeHZUU2xEMWg4Smx6NTBmeHc0Z0NDSHRaRnlqbXg?oc=5)**  
-  Date: 2026-02-17
-  Summary:
-  - Reporting from news.google.com (2026-02-17) highlights oil, economics, and geopolitics in venezuela, with luisa palacios, with potential implications for near-term policy, operations, or investment decisions.
-
 - **[Trump eyes Venezuela visit – but obstacles to his oil plan remain](https://www.bbc.com/news/articles/c4gjx1j1nkjo)**  
   Date: 2026-02-16
   Summary:
@@ -173,10 +158,20 @@
   Summary:
   - Reporting from news.google.com (2026-01-23) highlights us control of venezuela oil risks debt restructuring showdown with china, with potential implications for near-term policy, operations, or investment decisions.
 
+- **[Venezuela Oil Sector Reform: Investment & Policy Changes - Discovery Alert](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbWJPRTlrXzl5X3V0RFF4TzNXYTh3VmRPd0pUbEZQdnNLN2cxcWJMaFJsTWFPc0NSaG90bWVERjliQUM2UTB4a3R6cS1Ia1lqc0d6d1B4UnkyLW9YdE80TWVPaU9RMzBuajRDQTczVmRaTk1lby1LLXlSajl0QlBCVS1TZE1qaktx?oc=5)**  
+  Date: 2026-01-29
+  Summary:
+  - Reporting from news.google.com (2026-01-29) highlights venezuela oil sector reform: investment & policy changes, with potential implications for near-term policy, operations, or investment decisions.
+
 - **[Political risk and the cost of capital: Venezuela, Ecuador and Uruguay](https://www.msn.com/en-us/money/markets/political-risk-and-the-cost-of-capital-venezuela-ecuador-and-uruguay/ar-AA1WFz7C)**  
   Date: 2026-02-19
   Summary:
   - Reporting from bing.com (2026-02-19) highlights political risk and the cost of capital: venezuela, ecuador and uruguay, with potential implications for near-term policy, operations, or investment decisions.
+
+- **[The US Attack on Venezuela - Climate Change Performance Index (CCPI)](https://news.google.com/rss/articles/CBMiQEFVX3lxTE1RUGVvSEQydFpocjlnaUk2cUZPZzQ4RVRWcEhMRlNNVEh5b292LUdRVVRaQzVyOWk3ckZ0dDFYNHk?oc=5)**  
+  Date: 2026-02-19
+  Summary:
+  - Reporting from news.google.com (2026-02-19) highlights the us attack on venezuela, with potential implications for near-term policy, operations, or investment decisions.
 
 ### Cross-cutting / Policy / Risk
 
@@ -188,7 +183,7 @@
 - **[Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas](https://en.mercopress.com/2026/02/20/uruguay-foreign-minister-lubetkin-grilled-over-venezuela-china-taiwan-wording-and-us-visas?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss)**  
   Date: 2026-02-20
   Summary:
-  - South Atlantic News Agency MercoPress, en Español Montevideo, February 20th 2026 - 21:51 UTC Mercosur–EU deal: Uruguay’s PIT-CNT urges sector impact studies for an “informed” Senate debate Senate commission to review Cardama contract after Uruguay cancels ocean patrol vessel deal Argentina–Uruguay river commission faces tensions over funding and infrastructure disputes Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas Friday, February 20th 2026 - 12:13 UTC Full article 0…
+  - South Atlantic News Agency MercoPress, en Español Montevideo, February 20th 2026 - 21:54 UTC Mercosur–EU deal: Uruguay’s PIT-CNT urges sector impact studies for an “informed” Senate debate Senate commission to review Cardama contract after Uruguay cancels ocean patrol vessel deal Argentina–Uruguay river commission faces tensions over funding and infrastructure disputes Uruguay foreign minister Lubetkin grilled over Venezuela, China–Taiwan wording and US visas Friday, February 20th 2026 - 12:13 UTC Full article 0…
 
 - **[Venezuela passes unanimous amnesty law, excluding armed actions and serious crimes](https://en.mercopress.com/2026/02/20/venezuela-passes-unanimous-amnesty-law-excluding-armed-actions-and-serious-crimes?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss)**  
   Date: 2026-02-20

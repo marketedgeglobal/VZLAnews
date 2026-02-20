@@ -671,12 +671,11 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     section_order = cfg.get("brief_sections", [])
     if not entries:
         return [
-            "This run did not identify qualifying Venezuela news items across the configured sectors.",
-            "No validated sector signals were strong enough to populate the ranked shortlist.",
-            "Opportunity-linked terms were not present in qualifying entries for this cycle.",
-            "Risk-linked terms were not present in qualifying entries for this cycle.",
-            "Source activity was observed, but filtering and relevance controls removed all candidates.",
-            "The next scheduled run will refresh this summary as new sector-relevant items are published.",
+            (
+                "This cycle produced no qualifying Venezuela-focused items after filtering and relevance controls, "
+                "which suggests either a temporary lull in material developments or weak signal quality in current feed output. "
+                "From a strategy perspective, maintain baseline monitoring and use the next run to validate whether this is noise or a genuine deceleration in actionable market and policy movement."
+            ),
         ]
 
     sector_counts: dict[str, int] = {}
@@ -731,13 +730,17 @@ def _latest_news_synthesis(entries: list[dict], cfg: dict) -> list[str]:
     else:
         date_span = "with undated entries"
 
+    represented_text = ", ".join(represented) if represented else "cross-cutting policy coverage"
+
     return [
-        f"This brief synthesizes {len(entries)} ranked Venezuela-focused items spanning {len(represented)} sectors: {', '.join(represented)}.",
-        f"The strongest concentration is in {top_sector_text}.",
-        f"Across headlines and summaries, the dominant themes are {themes_text}.",
-        f"Opportunity signals appear in {opportunity_count} items, indicating active commercial or partnership openings.",
-        f"Risk signals appear in {risk_count} items, highlighting policy, sanctions, or operational uncertainty to monitor.",
-        f"Coverage is sourced primarily from {domain_text}, with publication timing {date_span}.",
+        (
+            f"This cycle surfaces {len(entries)} ranked Venezuela-linked developments across {len(represented)} sectors ({represented_text}), "
+            f"with activity concentrated in {top_sector_text}. "
+            f"The near-term strategic storyline is a policy-led reopening dynamic—especially around energy and capital channels—while thematic pressure remains centered on {themes_text}. "
+            f"Commercial upside is present but selective ({opportunity_count} opportunity-flagged items), and execution risk remains material ({risk_count} risk-flagged items tied to sanctions, regulatory uncertainty, or operating friction). "
+            f"Coverage from {domain_text} with publication timing {date_span} indicates rising momentum, but not yet a structurally de-risked environment. "
+            "For strategy teams, the practical posture is scenario-based planning: prioritize partner diligence, compliance-ready operating models, and trigger-based monitoring before committing irreversible capital."
+        )
     ]
 
 
