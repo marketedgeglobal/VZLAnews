@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-22 05:14 UTC**
+> Last updated: **2026-02-22 07:54 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,19 +8,19 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [La administración de la bonanza y la estatización de la industria](https://bitlysdowssl-aws.com/2026/02/la-administracion-de-la-bonanza-y-la-estatizacion-de-la-industria/) — Sun, 22 Feb 2026 04:04:00 +0000
-- [Petróleo: De la nacionalización a la privatización](https://bitlysdowssl-aws.com/2026/02/petroleo-de-la-nacionalizacion-a-la-privatizacion/) — Sun, 22 Feb 2026 04:03:00 +0000
-- [Medio siglo de nacionalización: Un balance ecuánime](https://bitlysdowssl-aws.com/2026/02/medio-siglo-de-nacionalizacion-un-balance-ecuanime/) — Sun, 22 Feb 2026 04:02:00 +0000
-- [El discurso del diputado David Morales Bello](https://bitlysdowssl-aws.com/2026/02/el-discurso-del-diputado-david-morales-bello/) — Sun, 22 Feb 2026 04:01:00 +0000
-- [Jorge Rodríguez asoma posibles "medidas de gracia o de indulto" para los excluidos de la amnistía](https://bitlysdowssl-aws.com/2026/02/jorge-rodriguez-asoma-posibles-indultos-para-excluidos-de-la-amnistia/) — Sun, 22 Feb 2026 00:41:58 +0000
+- [El patético derrumbe de la política anti-Estados Unidos de la narcodictadura](https://bitlysdowssl-aws.com/2026/02/el-patetico-derrumbe-de-la-politica-anti-estados-unidos-de-la-narcodictadura/) — Sun, 22 Feb 2026 05:24:00 +0000
+- [El narciso ignorante y brutal](https://bitlysdowssl-aws.com/2026/02/el-narciso-ignorante-y-brutal/) — Sun, 22 Feb 2026 05:23:00 +0000
+- [Libres… por ahora: el riesgo oculto de la amnistía venezolana y cómo desactivarlo](https://bitlysdowssl-aws.com/2026/02/libres-por-ahora-el-riesgo-oculto-de-la-amnistia-venezolana-y-como-desactivarlo/) — Sun, 22 Feb 2026 05:22:00 +0000
+- [Desestatizar, desmilitarizar, nuevo liderazgo, Estado de derecho y País de Propietarios](https://bitlysdowssl-aws.com/2026/02/desestatizar-desmilitarizar-nuevo-liderazgo-estado-de-derecho-y-pais-de-propietarios/) — Sun, 22 Feb 2026 05:21:00 +0000
+- [Trotar en el Parque del Este](https://bitlysdowssl-aws.com/2026/02/trotar-en-el-parque-del-este/) — Sun, 22 Feb 2026 05:21:00 +0000
 
 ## Efecto Cocuyo
 
+- [¿Por qué la Operación Gedeón, el atentado con drones y otras rebeliones no entran en la Ley de Amnistía?](https://efectococuyo.com/politica/por-que-la-operacion-gedeon-el-atentado-con-drones-y-otras-rebeliones-no-entran-en-la-ley-de-amnistia/) — Sun, 22 Feb 2026 06:50:00 +0000
+- [Cuadros de Vente Venezuela excarcelados: entre los llamados a luchar y el silencio impuesto](https://efectococuyo.com/politica/cuadros-vente-venezuela-excarcelados-llamados-luchar-silencio-impuesto/) — Sun, 22 Feb 2026 06:25:00 +0000
+- [¿El chavismo se autodesmantela?: Lo que hay detrás de la eliminación de siete entes públicos](https://efectococuyo.com/politica/chavismo-desmantela-eliminacion-siete-entes-publicos-delcy-rodriguez/) — Sun, 22 Feb 2026 06:15:00 +0000
 - [Evalúan «medidas de gracia» para los excluidos de la Ley de Amnistía](https://efectococuyo.com/politica/evaluan-medidas-de-gracia-para-los-excluidos-de-ley-amnistia/) — Sun, 22 Feb 2026 00:51:33 +0000
 - [Jorge Rodríguez afirma que atenderán a más de 11 mil personas con medidas sustitutivas de libertad](https://efectococuyo.com/politica/jorge-rodriguez-afirma-atenderan-mas-de-11-mi-pesonas-con-medidas-sustitutivas/) — Sat, 21 Feb 2026 22:37:58 +0000
-- [¿Rodríguez Torres ministro de la Defensa? Militares retirados  apuntan a pronto relevo de Padrino López](https://efectococuyo.com/politica/rodriguez-torres-ministro-defensa-militares-retirados-probable-padrino-lopez/) — Sat, 21 Feb 2026 21:00:00 +0000
-- [Muere Willie Colón y nos deja toda la alegría de su música](https://efectococuyo.com/solaz/muere-willie-colon-y-nos-deja-toda-la-alegria-de-su-musica/) — Sat, 21 Feb 2026 18:54:16 +0000
-- [Anuncian las primeras 379 excarcelaciones tras aprobación de la Ley de Amnistía](https://efectococuyo.com/politica/anuncian-las-primeras-379-excarcelaciones-tras-aprobacion-de-la-ley-de-amnistia/) — Sat, 21 Feb 2026 18:36:42 +0000
 
 ## El Pitazo
 
@@ -32,11 +32,11 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## Google News – Venezuela
 
-- [Los límites de la ley de amnistía en Venezuela: qué personas quedarían excluidas y cómo afecta a María Corina Machado - CNN en Español](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb01McDJIX1c5LVd6MGQtaTlDZ0R6ZTFPaWQ5dWZJdF94aEFkMDg5WGprR2JRYmNkbWdpUmw2aGFncFNjWjN5RDN3ZVU5bDJsQld6RjBFOEVSUTdSdnU2b1FfWlBTOFpZUjBZUTFleWhHcV9naXFGRmlrTl96Ri1mbTFTd1NDNDZTa01OcXBlVHVyU3ZDRXpfWkMyN2RNQlFJbzhkN1R4VW82cGIwaFNuNnZkZF9ZWUE1MGRNMW96dXd2eTQ?oc=5) — Sat, 21 Feb 2026 19:33:00 GMT
-- [Venezuela hizo ajustes en su roster del Clásico Mundial - lvbp.com](https://news.google.com/rss/articles/CBMigwFBVV95cUxOU2NlMkJlRjNpSjE3b0RXUjNEYmRaOGVtRVZIYUpYNWY2bC1DU1gyRk1hVDdSRU1lN0IwUVprVnlpcWxTWDM4V0EyUlNORzQtTGkwMjNFd3lqVWJDYjROOTEtSUpURHhjQnBmSTZCcnJjbVRWVllqUXRDRjNidHoyUmJkUQ?oc=5) — Sat, 21 Feb 2026 16:36:50 GMT
-- [Un equipo venezolano repleto de talento irá en busca de su primera final - MLB.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxNT0RvRk9SWGlLMFBkVmEyOGFoZi1vYVpCMGwtcFpQODZQN0Q3V3dWb090NHZibWJiQlJfMGkyQWpQNDN0VnE4VHFjTTRFUU5CTl9ldHJSVm5ZNDN0RWprRENDVXNOajN6U2RLeWlyb2tJNmN4a1p4SEpQSUtNMFB3V2cxVUl5bU1BUVZWNTBnSHfSAZwBQVVfeXFMUE9GdFRPMEw5LUxxcHNyOHBqSWVJTGJNaTJzaUhZdmdXX0pTQzA2amFXLTFXT0JCbGdwQk1VVnV5dE4tV1pKMTN2RVFDcGNncS02M2VTRGVIdDBBUUlzZjk2dVJJNjZJQWo4TGFHbHhmdDZ3UHI4UGNoSFIyOTMxR1I2WURqa1hKd3M4N3Y4SmVrdDdKa2tyZnhnQkxI?oc=5) — Sat, 21 Feb 2026 16:30:34 GMT
-- [Venezuela sigue sumando bajas para el CMB - ultimasnoticias.com.ve](https://news.google.com/rss/articles/CBMiigFBVV95cUxOMWktN2JHMWE3ZGM1MGdJaGVFelQ0ZG5lOEJqY19yNVRQRW1fbXZpZ1B2UXdkQnU3V1dRSFZIMGRXakprVDJZZEFQRXFsZmhoOEM1eHRYU2h5VHRGcDBGZ19DN0U2dzhhWGw5bllrMmE4ZnFXbnR5S0RWblpJNDBkZFpkUkhxc3BPZnc?oc=5) — Sat, 21 Feb 2026 19:04:36 GMT
+- [Hasta dónde llega la ley de amnistía aprobada en Venezuela: estas son las claves - CNN en Español](https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ3NQTnd0WGpuaTRaMUVSQVJzd05LbGZ4OVE3VGRLYWtkc1loNkZMWGZkLVZ5eWJtby1LbzVEdVQ1NV9VWFJITFFueDlydlptX0lnYUpUVFU5V1NncGNPVzh0dnVLdzItclhJU280VnhrVzR3Y3BUY2dZX3I1ZkhEYUFJWTM5UXZmS1E?oc=5) — Fri, 20 Feb 2026 02:48:00 GMT
+- [Venezuela otorga libertad plena al opositor venezolano Juan Pablo Guanipa - EL PAÍS](https://news.google.com/rss/articles/CBMitwFBVV95cUxOVXZtVkcxczRTVkJ0Wk85ZDFSUFUzZFNyWnNUX2tlVnEwZWlDMWlZeXJWWVJ1RFZwc0dCZXRzV0tTcEV0YzVDaG1FX2xmbk4zdzhRaEs2YUxVQzlfNjFIRjliOUNwV3BDc0hHNHNCbGNLNkxEOEVPSEVJajVNOEZHRTdwRTBMZi1UTDhJU0g3Y0pobEc5TlVoVkk4algtWkRPUE84ZjlaUUwta0RpdndpQzlSakRVb2PSAcsBQVVfeXFMUDU2YnJfUzJreWJZb3g2ZmNCd2JzOVBuRUpUQ1lfVlJsUkRxcUF4azFzeWozTVBSdlE1dEtzdFk2SmpnMFROR3pqMXQxUXZlS1RCTHVPcXNxbFNPVGcyTzFVTlJaLVVTbWdwcEw5YU1xMnpfeGFaWERtcEgzcEE3TUtLV183TTdMbDFkME5MMzlaTFlYQmxuY3pfb2hMTFBWaDQtLVEzaGVSYi1kdzJJV3gzS29XWFNBcjVwMUxJcjBfNEtXVFkyR1FpUW8?oc=5) — Fri, 20 Feb 2026 13:08:24 GMT
 - [Venezuela recibe nuevo cargamento de EE UU con 65.000 kilos de suministros médicos - El Nacional](https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGhQZlJzWkVzUkFIbHEzU0xvVUU1X1BmdnNuUG43OXdzcFRXMmp6VUwxNEhsc0g3SU8xOTNsRFg0YTNFSzhKaXdKMTVGNDlDUjA0dXJNbGFxQTBTNHFEbUdlODVDR3MyZlhTdGNnd2l5WjZqbDJGQUlDUDBtTUhfdFphSXl6OFdPakVqZWVGbHkyejVpaktXRUtn?oc=5) — Sat, 21 Feb 2026 21:55:34 GMT
+- [Arribaron a Venezuela más de 65 toneladas de insumos médicos enviados por Estados Unidos - Infobae](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSExVdjFNR1lmRElCWGNWUk1xbUZ3OV9xU2VVdDdleVBYSUdOQ18xMjhyZXJ2bXRQUE5McS12U29CZXRkS0oyVUU5LU5KdFJoOGxYWDBpTkhuRG8tRHRTcTB2U1Q2OHRqanJ0dktpR2RkN09wZ1k4ZS0zRm5Ga2NGM21taHczYzktYzdtbmlKNm5DWUc0MEtRLW9HbUpfSWlRQkFZY1FKN2MtRTQ5X196Ul9sSWdKOGhOdVpIR3ZWVkIwYk9VZHhrZGV1WWlxY2FLTG5mVHpn0gHwAUFVX3lxTE9mRnduZk82MmhVN3ZPTzZ6eUpiODhxbHhNUkpZWG12R2dQT3lOX1M5TXZvMHcxV2w4ckVrMDRJVi1TTUlFbTBfUHJnNjQzbXVwVDZGQ2FURUN5M29BNGFnNFlPcnZVZ3gzN1NObDlZYlltT2xkUzRjc2NlelNjb2UwQzZVZ2RPaF9qeEw5dk9lM3dTUC1NZWN2OVRBeG9aNVVlbm04eEt3T0YzeTV4M3VJZnM3V09ydk9uUk9XR002eDFxRUR0Y2F0SGRnT0JhZ3hKRTBEUktRejVqUzE4OEVSYUlfRWRmRkNlS0hYSTdDMw?oc=5) — Sat, 21 Feb 2026 22:43:00 GMT
+- [Llega a Venezuela nuevo cargamento con 65 mil kilos de medicinas desde EEUU - Globovisión](https://news.google.com/rss/articles/CBMiugFBVV95cUxOdUpoQkdPRVd1TldJeDk1Um9ZS1ZneWVleUN6RS04UlV6YW8wZ2cyYjV3VndWN2hSam8ydjRDOVhYWFJkQlNzRVJEemFKazdsWTdEdG5ONnhYRkgtVDNyMUJwdFVxSTRuN1ZLTUFSY1h3cG9IT1FreC14VTNjZDc2WHVSdkNNVWk5aXZRd1FDWUkzLWY3bzk3M3JtY3IxYlozX0hCWkhmZGpUcHVXMm8zb3ItU0tSMFp5SGc?oc=5) — Sat, 21 Feb 2026 20:31:33 GMT
 
 ---
 
