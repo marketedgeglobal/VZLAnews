@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-02-20T21:57:00.884568+00:00",
-  "fetched": 1638,
-  "filtered": 138,
-  "deduplicated": 130,
+  "run_at": "2026-02-23T11:27:32.078167+00:00",
+  "fetched": 1610,
+  "filtered": 112,
+  "deduplicated": 104,
   "selected": 35,
-  "output_file": "/workspaces/VZLAnews/docs/index.md",
-  "metadata_file": "/workspaces/VZLAnews/data/last_run.json"
+  "output_file": "/home/runner/work/VZLAnews/VZLAnews/docs/index.md",
+  "metadata_file": "/home/runner/work/VZLAnews/VZLAnews/data/last_run.json"
 }
