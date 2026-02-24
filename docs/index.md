@@ -144,10 +144,10 @@
 </article>
 <article class="story-card">
 <h4 class="story-title">
-<a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWW5uRmpzWWhxdUs0WDY2bTZrdU0zTno2QTE1OWFoMmRRZ0RLY1hKaS01VU9TN3hpZjZYTDZ3OWMyUGFYazF3dUNWMXM3QW1TY2xBVU5NWWN0MG9HOEFnMXcyWkk3eklpQzBUUWtoeUtuR0VzSFR4bmhuLS1pUkFQajc0WnRIcWJ6M3EyM0FheGRGbTJsNUJTZWUtQkc4RjJmTmE5ZWNpVElraUx2Z1pJTExGakIzWUlXR2FDekNlTmZGcGJhUU9VdDljU05BQlV2SVpTQ0VzbnVvMXBZVTJzUHdKSQ?oc=5">U.S.–India Interim Trade Deal Cuts Tariffs to 18%, with Venezuelan Oil Sales as Part of Broader Trade and Sanctions Realignment - Tekedia</a>
+<a href="https://www.msn.com/en-us/money/general/global-energy-giant-joins-chevron-in-major-venezuela-oil-push/ar-AA1WOUQP">Global energy giant joins Chevron in major Venezuela oil push</a>
 </h4>
-<p class="story-summary">Recent reporting (2026-02-21) highlights u.s.–india interim trade deal cuts tariffs to 18%, with venezuelan oil sales as part of broader trade and sanctions realignment with elevated policy or operational risk signals, with potential implications for near-term policy,…</p>
-<p class="story-meta">news.google.com · 2026-02-21</p>
+<p class="story-summary">Recent reporting (2026-02-21) highlights global energy giant joins chevron in major venezuela oil push, with potential implications for near-term policy, operations, or investment decisions.</p>
+<p class="story-meta">bing.com · 2026-02-21</p>
 </article>
 </div>
 </section>
@@ -202,7 +202,7 @@
 <h4 class="story-title">
 <a href="https://oilprice.com/Energy/Crude-Oil/US-Oil-Giants-Are-Wary-of-Inheriting-Venezuelas-Massive-Ecological-Debt.html">U.S. Oil Giants Are Wary of Inheriting Venezuela’s Massive Ecological Debt</a>
 </h4>
-<p class="story-summary">Blends WTI Crude • 11 mins 66.91 +0.60 +0.90% Brent Crude • 11 mins 72.03 +0.54 +0.76% Murban Crude • 16 mins 71.60 +0.09 +0.13% Natural Gas • 10 mins 2.952 -0.033 -1.11% Gasoline • 12 mins 1.992 +0.003 +0.16% Louisiana Light • 4 days 68.99 +0.03 +0.04% Click Here for 150+…</p>
+<p class="story-summary">shale producers are expanding… US Oil Drilling Activity Still Going Nowhere The total number of active… Guyana Emerges as the Clear Winner in Venezuela’s Oil Reset Guyana is set to become… Home Energy Crude Oil Matthew Smith Matthew Smith is Oilprice.com's Latin-America…</p>
 <p class="story-meta">bing.com · 2026-02-10</p>
 </article>
 <article class="story-card">
@@ -216,7 +216,7 @@
 <h4 class="story-title">
 <a href="https://www.paho.org/en/news/29-1-2026-three-months-after-hurricane-melissa-paho-continues-supporting-health-system">Three months after Hurricane Melissa: PAHO continues supporting health system recovery across the Caribbean</a>
 </h4>
-<p class="story-summary">The Category 5 storm made landfall first in Jamaica on 28 October 2025, causing widespread damage in several Caribbean nations, mainly across Jamaica, Cuba and Haiti, and placing sustained pressure on national health systems.</p>
+<p class="story-summary">PAHO supported rapid assessments of damaged health facilities to inform priorities for structural safety and service restoration, while coordinating humanitarian health actors.</p>
 <p class="story-meta">paho.org · 2026-01-29</p>
 </article>
 </div>
@@ -337,17 +337,17 @@
 <div class="sector-cards">
 <article class="story-card featured">
 <h4 class="story-title">
+<a href="https://www.investopedia.com/the-mystery-of-venezuela-s-oil-why-the-world-s-largest-reserves-are-barely-being-pumped-11910395">The Mystery of Venezuela's Oil: Why the World's Largest Reserves Are Barely Being Pumped</a>
+</h4>
+<p class="story-summary">President Barack Obama imposed further sanctions in 2015, targeting officials said to be involved in human rights abuses, corruption, and undermining democratic institutions.</p>
+<p class="story-meta">bing.com · 2026-02-22</p>
+</article>
+<article class="story-card">
+<h4 class="story-title">
 <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPMU1WN1pmTnhhejVQcEkxZlJUUF9ZVVJEZnhYdENDTEIzMUZSNDlUS0htRXZfVlFWLWI3bm8tT2R6MVZyQnRBYnZWZ25ydHdqMUJrZDlHZ0JmZUJZNTI3aFgzZlIyNTZDelA2bUNReHpIS3IwTGZONm1nNTBQbEtrMzFlMkd3aDdyQXVaaXFXazUyQWwtYUdMRFpOYVI?oc=5">Venezuela’s acting president signs oil industry overhaul, easing state control to lure investors - AP News</a>
 </h4>
 <p class="story-summary">Recent reporting (2026-01-30) highlights venezuela’s acting president signs oil industry overhaul, easing state control to lure investors, with potential implications for near-term policy, operations, or investment decisions.</p>
 <p class="story-meta">news.google.com · 2026-01-30</p>
-</article>
-<article class="story-card">
-<h4 class="story-title">
-<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pclJiYVprOU43T3RKa18yc0xUY1Npa2xRZzBabGc3eXJVdWd1bEtZMUtzOU5rTGo1eE1UZ05MTF9xZXJlNkZIblF2V3dmdTNBUENsSlJtNEstZw?oc=5">Venezuelan MPs approve bill to open up oil sector to private firms - BBC</a>
-</h4>
-<p class="story-summary">Recent reporting (2026-01-29) highlights venezuelan mps approve bill to open up oil sector to private firms, with potential implications for near-term policy, operations, or investment decisions.</p>
-<p class="story-meta">news.google.com · 2026-01-29</p>
 </article>
 <article class="story-card">
 <h4 class="story-title">
