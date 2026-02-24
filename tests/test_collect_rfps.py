@@ -478,6 +478,49 @@ class TestBuildMarkdown:
             or "inventory planning" in lower
         )
 
+    def test_descriptive_summary_prefers_feed_snippet(self):
+        cfg = minimal_cfg()
+        entry = {
+            **make_entry(
+                title="Venezuela logistics update",
+                summary=(
+                    "Authorities announced a phased customs reform for major ports, "
+                    "with revised inspection windows and updated compliance procedures "
+                    "to speed cargo processing for essential imports."
+                ),
+            ),
+        }
+        sentence = cr._descriptive_summary(entry, cfg, max_chars=220)
+        lower = sentence.lower()
+        assert "customs reform" in lower
+        assert "recent reporting" not in lower
+
+    def test_descriptive_summary_fallback_varies(self):
+        cfg = minimal_cfg()
+        entry = {
+            **make_entry(
+                title="Venezuela policy update",
+                summary="",
+            ),
+        }
+        first = cr._descriptive_summary_for_story(
+            entry,
+            cfg,
+            max_chars=220,
+            section_label="Cross-cutting / Policy / Risk",
+            story_index=0,
+        )
+        second = cr._descriptive_summary_for_story(
+            entry,
+            cfg,
+            max_chars=220,
+            section_label="Cross-cutting / Policy / Risk",
+            story_index=1,
+        )
+        assert first != second
+        assert "recent reporting" not in first.lower()
+        assert "recent reporting" not in second.lower()
+
 
 # ---------------------------------------------------------------------------
 # Integration: run() with mocked feed fetching

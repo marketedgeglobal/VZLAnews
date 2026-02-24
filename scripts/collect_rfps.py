@@ -92,12 +92,20 @@ def fetch_feed(url: str) -> list[dict]:
             link = e.get("link", "").strip()
             link = _resolve_entry_link(link)
             summary = e.get("summary", "") or e.get("description", "") or ""
+            content_items = e.get("content", []) or []
+            content_value = ""
+            if isinstance(content_items, list) and content_items:
+                first_content = content_items[0] or {}
+                if isinstance(first_content, dict):
+                    content_value = first_content.get("value", "") or ""
             published = _parse_date(e)
             entries.append(
                 {
                     "title": title,
                     "link": link,
                     "summary": summary,
+                    "content": content_value,
+                    "snippet": "",
                     "published": published,
                     "source_url": url,
                     "source_domain": _domain(url),
@@ -157,6 +165,56 @@ def fetch_article_text(url: str, timeout_seconds: int = 6, max_chars: int = 6000
         return ""
 
 
+def _fetch_article_html(url: str, timeout_seconds: int = 6) -> tuple[str, str]:
+    if not url:
+        return "", ""
+
+    try:
+        response = requests.get(
+            url,
+            timeout=timeout_seconds,
+            headers={"User-Agent": "VZLAnews/1.0"},
+            allow_redirects=True,
+        )
+        final_url = (response.url or url).strip()
+        if response.status_code != 200 or not response.text:
+            return final_url, ""
+        return final_url, response.text
+    except requests.RequestException:
+        return url, ""
+
+
+def _extract_meta_description(html: str) -> str:
+    if not html:
+        return ""
+
+    patterns = [
+        r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']twitter:description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html, flags=re.IGNORECASE)
+        if match:
+            return match.group(1).strip()
+    return ""
+
+
+def _extract_first_meaningful_paragraph(html: str) -> str:
+    if not html:
+        return ""
+
+    paragraphs = re.findall(r"(?is)<p[^>]*>(.*?)</p>", html)
+    for paragraph in paragraphs:
+        text = _normalize_text_block(paragraph)
+        if len(text) < 120:
+            continue
+        if _sentence_is_noise(text):
+            continue
+        return text
+    return ""
+
+
 def _is_blocked_extraction_domain(entry: dict, blocked_domains: set[str]) -> bool:
     if not blocked_domains:
         return False
@@ -193,6 +251,7 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
     fetched_count = 0
     enriched_count = 0
     skipped_count = 0
+    html_cache: dict[str, tuple[str, str]] = {}
 
     prioritized_entries = sorted(
         entries,
@@ -200,16 +259,52 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
     )
 
     for entry in prioritized_entries:
+        if not entry.get("snippet"):
+            entry["snippet"] = _entry_feed_snippet(entry, max_chars=280)
+
         if fetched_count >= max_items:
             break
         link = entry.get("link", "")
         if not link:
             continue
+        if entry.get("snippet"):
+            continue
         if _is_blocked_extraction_domain(entry, blocked_domains):
             skipped_count += 1
             continue
+
         fetched_count += 1
-        article_text = fetch_article_text(link, timeout_seconds=timeout_seconds, max_chars=max_chars)
+
+        if link in html_cache:
+            resolved_link, html = html_cache[link]
+        else:
+            resolved_link, html = _fetch_article_html(link, timeout_seconds=timeout_seconds)
+            html_cache[link] = (resolved_link, html)
+
+        if resolved_link and resolved_link != link:
+            entry["link"] = resolved_link
+            entry["source_domain"] = _domain(resolved_link) or entry.get("source_domain", "")
+
+        meta_desc = _extract_meta_description(html)
+        cleaned_meta = _clean_snippet(meta_desc, entry.get("title", ""), max_chars=280, min_chars=80)
+        if cleaned_meta:
+            entry["meta_description"] = cleaned_meta
+            entry["snippet"] = cleaned_meta
+
+        if not entry.get("snippet"):
+            first_paragraph = _extract_first_meaningful_paragraph(html)
+            cleaned_paragraph = _clean_snippet(
+                first_paragraph,
+                entry.get("title", ""),
+                max_chars=280,
+                min_chars=80,
+            )
+            if cleaned_paragraph:
+                entry["first_paragraph"] = cleaned_paragraph
+                entry["snippet"] = cleaned_paragraph
+
+        article_url = entry.get("link") or resolved_link or link
+        article_text = fetch_article_text(article_url, timeout_seconds=timeout_seconds, max_chars=max_chars)
         if len(article_text) >= min_chars:
             entry["article_text"] = article_text
             enriched_count += 1
@@ -594,6 +689,42 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
     return (clipped or clean[:max_chars]).strip() + "…"
 
 
+def _clean_snippet(
+    text: str,
+    title: str,
+    max_chars: int = 280,
+    min_chars: int = 80,
+) -> str:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return ""
+
+    clean = re.sub(
+        r"\b(Read more|Click here|Continue reading|Learn more|Subscribe to read)\b.*$",
+        "",
+        clean,
+        flags=re.IGNORECASE,
+    ).strip(" -–—|·")
+
+    title_clean = _normalize_text_block(title)
+    if title_clean and clean.lower().startswith(title_clean.lower()):
+        clean = clean[len(title_clean):].lstrip(" :.-–—|,")
+
+    if title_clean and _title_similarity(clean, title_clean) >= 0.92:
+        return ""
+
+    if len(clean) < min_chars:
+        return ""
+
+    if len(clean) > max_chars:
+        clipped = clean[:max_chars].rsplit(" ", 1)[0].strip()
+        clean = (clipped or clean[:max_chars]).rstrip(" .") + "…"
+
+    if clean and clean[-1] not in ".!?…":
+        clean += "."
+    return clean
+
+
 def _normalize_text_block(text: str) -> str:
     clean = re.sub(r"<[^>]+>", " ", text or "")
     clean = unescape(clean)
@@ -705,13 +836,76 @@ def _title_topic(entry: dict) -> str:
     return topic or title
 
 
-def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
-    base_text = (entry.get("article_text", "") or "").strip()
-    has_article_text = bool(base_text)
-    if not has_article_text:
-        base_text = ""
-    clean = _normalize_text_block(base_text)
+def _entry_feed_snippet(entry: dict, max_chars: int = 280) -> str:
+    title = entry.get("title", "") or ""
+    snippet = entry.get("snippet", "") or ""
+    summary = entry.get("summary", "") or ""
+    content = entry.get("content", "") or ""
 
+    if snippet:
+        cleaned = _clean_snippet(snippet, title, max_chars=max_chars, min_chars=80)
+        if cleaned:
+            return cleaned
+
+    for candidate in (summary, content):
+        cleaned = _clean_snippet(candidate, title, max_chars=max_chars, min_chars=80)
+        if cleaned:
+            return cleaned
+    return ""
+
+
+def _fallback_summary(entry: dict, section_label: str, story_index: int, max_chars: int) -> str:
+    topic = _title_topic(entry)
+    topic_lower = topic[:1].lower() + topic[1:] if topic else "the topic"
+    section_text = section_label if section_label else "policy and risk"
+
+    templates = [
+        f"Key update on {topic_lower}.",
+        f"Coverage focuses on developments linked to {topic_lower}.",
+        f"Developments related to {section_text.lower()} in Venezuela remain active.",
+    ]
+    fallback = templates[story_index % len(templates)]
+    if len(fallback) > max_chars:
+        clipped = fallback[:max_chars].rsplit(" ", 1)[0].strip()
+        fallback = (clipped or fallback[:max_chars]).rstrip(".") + "…"
+    return fallback
+
+
+def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
+    return _descriptive_summary_for_story(
+        entry,
+        cfg,
+        max_chars=max_chars,
+        section_label=detect_sector_label(entry, cfg),
+        story_index=0,
+    )
+
+
+def _descriptive_summary_for_story(
+    entry: dict,
+    cfg: dict,
+    max_chars: int,
+    section_label: str,
+    story_index: int,
+) -> str:
+    title = (entry.get("title", "") or "").strip().rstrip(".")
+
+    feed_snippet = _entry_feed_snippet(entry, max_chars=max_chars)
+    if feed_snippet:
+        return feed_snippet
+
+    for key in ("meta_description", "first_paragraph"):
+        cleaned = _clean_snippet(
+            entry.get(key, "") or "",
+            title,
+            max_chars=max_chars,
+            min_chars=80,
+        )
+        if cleaned:
+            return cleaned
+
+    base_text = (entry.get("article_text", "") or "").strip()
+    clean = _normalize_text_block(base_text)
     candidates = []
     if clean:
         parts = re.split(r"(?<=[.!?])\s+", clean)
@@ -720,46 +914,34 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
             if len(p) >= 35 and not _sentence_is_noise(p) and not _is_fragment(p):
                 candidates.append(p)
 
-    title = (entry.get("title", "") or "").strip().rstrip(".")
-    pub = _fmt_date(entry.get("published"))
-    flags = detect_flags(entry, cfg)
-
-    # Prefer substantive extracted article text when available.
-    if has_article_text:
-        ranked_candidates = sorted(
-            candidates,
-            key=lambda s: (_sentence_quality_score(s), -abs(len(s) - 180)),
-            reverse=True,
-        )
-        for sentence in ranked_candidates:
-            if _title_similarity(title, sentence) < 0.84 and not _sentence_is_noise(sentence):
-                chosen = sentence
-                if len(chosen) > max_chars:
-                    clipped = chosen[:max_chars].rsplit(" ", 1)[0].strip()
-                    chosen = (clipped or chosen[:max_chars]).strip().rstrip(".") + "…"
-                return chosen if chosen.endswith((".", "!", "?", "…")) else chosen + "."
-
-    flag_text = ""
-    if "🔴 Risk" in flags and "🟢 Opportunity" in flags:
-        flag_text = " with both commercial upside and material policy risk signals"
-    elif "🔴 Risk" in flags:
-        flag_text = " with elevated policy or operational risk signals"
-    elif "🟢 Opportunity" in flags:
-        flag_text = " with potential near-term commercial openings"
-
-    topic = _title_topic(entry)
-    fallback = (
-        f"Recent reporting ({pub}) highlights {topic.lower()}"
-        f"{flag_text}, with potential implications for near-term policy, operations, or investment decisions."
+    ranked_candidates = sorted(
+        candidates,
+        key=lambda s: (_sentence_quality_score(s), -abs(len(s) - 180)),
+        reverse=True,
     )
-    if len(fallback) > max_chars:
-        clipped = fallback[:max_chars].rsplit(" ", 1)[0].strip()
-        fallback = (clipped or fallback[:max_chars]).strip().rstrip(".") + "…"
-    return fallback
+    for sentence in ranked_candidates:
+        if _title_similarity(title, sentence) < 0.88 and not _sentence_is_noise(sentence):
+            chosen = _clean_snippet(sentence, title, max_chars=max_chars, min_chars=60)
+            if chosen:
+                return chosen
+
+    return _fallback_summary(entry, section_label, story_index, max_chars)
 
 
-def _compact_summary(entry: dict, cfg: dict, max_chars: int = 280) -> str:
-    text = _descriptive_summary(entry, cfg, max_chars=max_chars)
+def _compact_summary(
+    entry: dict,
+    cfg: dict,
+    max_chars: int = 280,
+    section_label: str = "",
+    story_index: int = 0,
+) -> str:
+    text = _descriptive_summary_for_story(
+        entry,
+        cfg,
+        max_chars=max_chars,
+        section_label=section_label,
+        story_index=story_index,
+    )
     sentences = re.split(r"(?<=[.!?])\s+", text)
     compact = " ".join(s.strip() for s in sentences if s.strip()[:1]).strip()
     if not compact:
@@ -985,7 +1167,13 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
             link = e.get("link", "")
             pub = _fmt_date(e.get("published"))
             source = _fmt_source(e)
-            summary_sentence = _compact_summary(e, cfg, summary_max_chars)
+            summary_sentence = _compact_summary(
+                e,
+                cfg,
+                summary_max_chars,
+                section_label=section,
+                story_index=idx,
+            )
             feature_class = " featured" if idx == 0 else ""
 
             lines.append(f'<article class="story-card{feature_class}">')
