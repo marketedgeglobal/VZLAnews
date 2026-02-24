@@ -598,8 +598,54 @@ def _sentence_is_noise(sentence: str) -> bool:
         "create an account",
         "news today's news",
         "complete digital access to quality ft journalism",
+        "wti crude",
+        "brent crude",
+        "natural gas",
+        "gasoline",
+        "click here for",
+        "market data",
+        "stock quote",
+        "live updates",
+        "open menu",
+        "share this article",
+        "advertisement",
     ]
-    return any(marker in lower for marker in noisy_markers)
+    if any(marker in lower for marker in noisy_markers):
+        return True
+
+    # Filter out ticker-like fragments with repeated +/- percentage patterns.
+    pct_hits = len(re.findall(r"[+-]?\d+(?:\.\d+)?%", sentence))
+    price_hits = len(re.findall(r"\b\d+(?:\.\d+)?\b", sentence))
+    if pct_hits >= 2 and price_hits >= 4:
+        return True
+
+    # Reject sentences that are mostly symbols/numbers (common in scraped nav/ticker text).
+    alnum = re.findall(r"[A-Za-z0-9]", sentence)
+    letters = re.findall(r"[A-Za-z]", sentence)
+    if alnum:
+        letter_ratio = len(letters) / len(alnum)
+        if letter_ratio < 0.55:
+            return True
+
+    return False
+
+
+def _sentence_quality_score(sentence: str) -> int:
+    score = 0
+    words = sentence.split()
+
+    if len(words) >= 10:
+        score += 2
+    if len(words) >= 16:
+        score += 1
+    if re.search(r"\b(venezuela|venezuelan|caracas|pdvsa|government|policy|sanctions|investment|oil|gas)\b", sentence, flags=re.IGNORECASE):
+        score += 2
+    if sentence.endswith((".", "!", "?")):
+        score += 1
+    if re.search(r"\b(read more|click|subscribe|sign in)\b", sentence, flags=re.IGNORECASE):
+        score -= 3
+
+    return score
 
 
 def _title_similarity(a: str, b: str) -> float:
@@ -651,8 +697,13 @@ def _descriptive_summary(entry: dict, cfg: dict, max_chars: int) -> str:
 
     # Prefer substantive extracted article text when available.
     if has_article_text:
-        for sentence in candidates:
-            if _title_similarity(title, sentence) < 0.78:
+        ranked_candidates = sorted(
+            candidates,
+            key=lambda s: (_sentence_quality_score(s), -abs(len(s) - 180)),
+            reverse=True,
+        )
+        for sentence in ranked_candidates:
+            if _title_similarity(title, sentence) < 0.84 and not _sentence_is_noise(sentence):
                 chosen = sentence
                 if len(chosen) > max_chars:
                     clipped = chosen[:max_chars].rsplit(" ", 1)[0].strip()
