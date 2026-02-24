@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "data/articles.json"
+  schedule:
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
