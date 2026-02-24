@@ -309,6 +309,42 @@ class TestDetectFlags:
 
 
 # ---------------------------------------------------------------------------
+# enrich_entries_with_article_text
+# ---------------------------------------------------------------------------
+
+class TestArticleTextEnrichment:
+    def test_skips_blocked_domains(self):
+        cfg = minimal_cfg()
+        cfg["article_extraction"] = {
+            "enabled": True,
+            "max_items": 10,
+            "timeout_seconds": 1,
+            "min_chars": 20,
+            "max_chars": 200,
+            "blocked_domains": ["msn.com"],
+        }
+
+        blocked = make_entry(
+            title="Blocked source",
+            link="https://www.msn.com/en-us/news/article",
+            source_domain="bing.com",
+        )
+        allowed = make_entry(
+            title="Allowed source",
+            link="https://example.com/news/article",
+            source_domain="example.com",
+        )
+        entries = [blocked, allowed]
+
+        with patch.object(cr, "fetch_article_text", return_value="A" * 80) as mocked_fetch:
+            cr.enrich_entries_with_article_text(entries, cfg)
+
+        assert mocked_fetch.call_count == 1
+        assert "article_text" not in blocked
+        assert "article_text" in allowed
+
+
+# ---------------------------------------------------------------------------
 # detect_sector_label
 # ---------------------------------------------------------------------------
 
