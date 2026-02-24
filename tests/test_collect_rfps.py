@@ -336,7 +336,7 @@ class TestArticleTextEnrichment:
         )
         entries = [blocked, allowed]
 
-        with patch.object(cr, "fetch_article_text", return_value="A" * 80) as mocked_fetch:
+        with patch.object(cr, "fetch_article_text", return_value="A" * 140) as mocked_fetch:
             cr.enrich_entries_with_article_text(entries, cfg)
 
         assert mocked_fetch.call_count == 1
