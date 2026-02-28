@@ -144,12 +144,8 @@
         const evidenceHtml = evidence.length
             ? `<div class="item-evidence">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
             : '';
-        const s1 = item.insight2 && item.insight2.s1 ? item.insight2.s1 : '';
-        const s2 = item.insight2 && item.insight2.s2 ? item.insight2.s2 : '';
-        const s3 = item.insight2 && item.insight2.s3 ? item.insight2.s3 : '';
-        const insightText = (s1 && s2)
-            ? `${esc(s1)} ${esc(s2)} ${esc(s3 || 'Why this matters: this development should be monitored for downstream operational effects.')}`
-            : 'Open the source for details; summary extraction failed for this item.';
+        const preview = (item.preview || '').trim();
+        const description = preview.length >= 80 ? preview : 'Open the source for details.';
 
         return `
             <article class="item-card">
@@ -158,7 +154,7 @@
                     <div class="item-icons">${icons}</div>
                 </div>
                 <p class="item-meta">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
-                <p class="item-insight">${insightText}</p>
+                <p class="item-desc">${esc(description)}</p>
                 ${evidenceHtml}
             </article>
         `;

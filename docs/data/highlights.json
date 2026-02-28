@@ -1,18 +1,26 @@
 {
   "executiveBriefBullets": [
-    "Government and institutional moves show Venezuelanalysis and CiberCuba converging on February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process\u2026 with figures\u2026",
-    "Operational evidence across sources indicates CiberCuba and bing.com converging on CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal\u2026 with figures\u2026",
-    "Multiple reports converge on bing.com and Reuters converging on Title: Petr\u00f3leos de Venezuela S.A with figures including 59.",
-    "The current cycle confirms Reuters and Reuters converging on US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says is the central development flagged in the\u2026.",
-    "Cross-sector tracking now shows Reuters and Reuters converging on Exclusive: Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say is the central\u2026 with figures including 19."
+    "Government and institutional moves show Venezuelanalysis and bing.com converging on February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process\u2026 with figures\u2026",
+    "Operational evidence across sources indicates bing.com and CiberCuba converging on US says it will allow resale of Venezuelan oil to Cuba is the central development flagged in the publication.",
+    "Multiple reports converge on CiberCuba and bing.com converging on CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal\u2026 with figures including 7.",
+    "The current cycle confirms bing.com and Reuters converging on Title: Petr\u00f3leos de Venezuela S.A with figures including 59.",
+    "Cross-sector tracking now shows Reuters and Reuters converging on US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says is the central development flagged in the\u2026."
   ],
   "keyDevelopments": [
     {
       "text": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026\u2026",
       "itemIds": [
         "ad8359b9d80a",
-        "da671b4f3852",
-        "b28de1e086d4"
+        "53843da51f92",
+        "da671b4f3852"
+      ]
+    },
+    {
+      "text": "US says it will allow resale of Venezuelan oil to Cuba is the central development flagged in the publication.",
+      "itemIds": [
+        "53843da51f92",
+        "ad8359b9d80a",
+        "da671b4f3852"
       ]
     },
     {
@@ -20,35 +28,33 @@
       "itemIds": [
         "da671b4f3852",
         "ad8359b9d80a",
-        "22266cca15b9"
+        "53843da51f92"
       ]
     },
     {
       "text": "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment became a\u2026",
       "itemIds": [
         "22266cca15b9",
-        "da671b4f3852",
-        "a982a976d7bc"
+        "53843da51f92",
+        "da671b4f3852"
       ]
     },
     {
       "text": "US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says is the central development flagged in the publication.",
       "itemIds": [
         "a982a976d7bc",
-        "da671b4f3852",
-        "22266cca15b9"
-      ]
-    },
-    {
-      "text": "Exclusive: Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say is the central development flagged in the publication.",
-      "itemIds": [
-        "cf00b18c1d58",
-        "da671b4f3852",
-        "22266cca15b9"
+        "53843da51f92",
+        "da671b4f3852"
       ]
     }
   ],
   "byTheNumbers": [
+    {
+      "label": "Oil and production",
+      "value": "60%",
+      "context": "surplus for Argentina January 21, 2026 News West Africa Production Vaalco takes 60% stake\u2026",
+      "itemId": "163e0d51e24d"
+    },
     {
       "label": "Oil and production",
       "value": "$100",
@@ -60,12 +66,6 @@
       "value": "5",
       "context": "12, 2026 US Imperialism and the Venezuelan Oligarchy February 5, 2026 February 5, 2026\u2026",
       "itemId": "ad8359b9d80a"
-    },
-    {
-      "label": "Oil and production",
-      "value": "$1.5",
-      "context": "$100-million onshore oil search February 10, 2026 News Haynesville Shale JERA closes\u2026",
-      "itemId": "163e0d51e24d"
     },
     {
       "label": "Detentions and releases",
@@ -120,10 +120,11 @@
     "Health & Water": {
       "bullets": [
         "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
-        "Field updates show Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+        "Field updates show Venezuela - European Civil Protection and Humanitarian Aid Operations is the central development flagged in the publication.",
         "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
       ],
       "drivers": [
+        "Humanitarian crisis",
         "Political transition",
         "Security"
       ],
@@ -136,7 +137,7 @@
     "Education & Workforce": {
       "bullets": [
         "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
-        "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump to NBC News on reports of Ayatollah's death: \"We feel\u2026",
+        "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News \"a large amount of leadership\" in Iran\u2026",
         "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
       ],
       "drivers": [

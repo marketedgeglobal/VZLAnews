@@ -1,24 +1,24 @@
 {
-  "run_at": "2026-02-28T20:30:09.192039+00:00",
+  "run_at": "2026-02-28T20:46:12.588041+00:00",
   "trend_summary": {
     "freq_7d": 35.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
-  "sanctions_index": 45,
+  "sanctions_index": 54,
   "sector_briefs": {
     "Extractives": {
       "health": 7,
-      "summary": "This week in extractives, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 33/100. Positive momentum appears in 2 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 34/100. Positive momentum appears in 2 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "US to allow resale of Venezuelan oil to Cuba's private sector, Treasury says - Reuters"
+        "US says it will allow resale of Venezuelan oil to Cuba",
+        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
       ],
       "opportunities": [
         "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers",
         "U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Unders",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
+        "US says it will allow resale of Venezuelan oil to Cuba"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -66,16 +66,16 @@
     },
     "Health": {
       "health": 7,
-      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in health, signal flow is concentrated around Humanitarian crisis, Political transition, Security. Risk pressure is mixed with an average score of 28/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
         "The road to self-sufficiency for Venezuelan communities - nrc.no",
+        "Venezuela - European Civil Protection and Humanitarian Aid Operations",
         "Venezuela's health system: when force meets fragility"
       ],
       "opportunities": [
         "The road to self-sufficiency for Venezuelan communities - nrc.no",
         "Venezuela's health system: when force meets fragility",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
+        "Venezuela - European Civil Protection and Humanitarian Aid Operations"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",

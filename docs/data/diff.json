@@ -1,11 +1,12 @@
 {
-  "runAt": "2026-02-28T20:30:09.192039+00:00",
+  "runAt": "2026-02-28T20:46:12.588041+00:00",
   "counts": {
     "new": 15,
     "updated": 3,
     "dropped": 0
   },
   "new": [
+    "url::https://www.yahoo.com/news/articles/us-allow-resale-venezuelan-oil-183146811.html",
     "url::https://apnews.com/",
     "url::https://www.zawya.com/en/press-release/africa-press-releases/petroleos-de-venezuela-sa-pdvsa-venezuelas-hydrocarbon-ministry-african-energy-chamber-aec-sign-memorandum-of-m3qxof1h",
     "url::https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
@@ -19,8 +20,7 @@
     "url::https://www.guardian.co.tt/",
     "url::https://www.reuters.com/",
     "url::https://www.bairdmaritime.com/",
-    "url::https://worldoil.com/",
-    "url::https://www.reuters.com/"
+    "url::https://worldoil.com/"
   ],
   "updated": [
     "url::https://venezuelanalysis.com/",

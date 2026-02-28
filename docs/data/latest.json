@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-02-28T20:30:09.192039+00:00",
+  "runAt": "2026-02-28T20:46:12.588041+00:00",
   "totalItems": 35,
   "sectors": [
     {
@@ -100,6 +100,8 @@
               }
             ]
           },
+          "preview": "U.S. Eyes 'Favorable Licensing Policy' to Make Cuba More Reliant on American Fuel: Report",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics Immigration Business Entertainment Sports Culture Lifestyle Video\u2026",
             "s2": "Attacks, Offers 'Off Ramps' To The Regime By Demian Bio Ruben Gallego Takes Aim At Donald Trump Over Attack Against Iranian Regime: 'Draft Dodger Is Willing To Sacrifice Working Class Kids' By Demian Bio Marjorie Taylor\u2026",
@@ -194,6 +196,8 @@
               }
             ]
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Check your inbox or spam folder to confirm your subscription",
             "s2": "OPINION: MOST POPULAR Categories Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627) International (11,147) Africa (441) Asia (2,521) Europe (1,051)\u2026",
@@ -258,13 +262,13 @@
               {
                 "label": "Policy or market figure",
                 "value": "40",
-                "context": "hrs ago West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 16 hrs ago Former national\u2026",
+                "context": "hrs ago West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 17 hrs ago Former national\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "16",
-                "context": "West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 16 hrs ago Former national and top\u2026",
+                "value": "17",
+                "context": "West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 17 hrs ago Former national and top\u2026",
                 "score": 0
               },
               {
@@ -281,18 +285,20 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "48",
-                "context": "Headlines Missiles across Middle East: T&T Nationals urged to shelter in place 48 mins ago The Government, through the\u2026",
+                "value": "7",
+                "context": "Defence Force suffered a humiliating loss in the United States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "7",
-                "context": "Defence Force suffered a humiliating loss in the United States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC\u2026",
+                "value": "30",
+                "context": "States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC stay perfect in 30-overs Queen\u2019s Park Cricket Club and\u2026",
                 "score": 0
               }
             ]
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura Holdings Ltd, Rahim Mohammed has been placed on paid\u2026",
             "s2": "News Extra Small signs of hope for shot Ocelot Susan Mohammed Keep Papaoutai in your prayers, urged veterinarian Dr Kriyaan Singh, who has been providing medical care to the ocelot that suffered injuries from a gunshot\u2026",
@@ -413,6 +419,8 @@
               }
             ]
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) *\u2026",
             "s2": "EUSPA CASSINI Challenge could help, Jana Kominek Vecerkova](https://irishtechnews.ie/euspa-cassini-challenge-jana-kominek/)\u2026",
@@ -508,6 +516,8 @@
               }
             ]
           },
+          "preview": "Venezuelan Trade Unions Stage Nationwide Demonstrations, Demand Wage Hikes Working-class organizations have likewise opposed reforms to the labor law that favor the private sector. Be the first to know what is happening in Venezuela! Facts and figures about US-led sanctions, their deadly consequences and grassroots resistance.",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What Is Really\u2026",
             "s2": "Leave this field empty if you\u2019re human: NEWS Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration Mandates Venezuelan Oil\u2026",
@@ -532,7 +542,7 @@
           "publishedAt": "2026-01-26",
           "sourceTier": "Tier 3",
           "sector": "Food & Agriculture",
-          "snippet": "CiberCuba is an independent Cuban digital media outlet that reports on current events in Cuba and among Cubans, covering Cuba, Miami, Europe, and the rest of the world. News, Exclusives, Interviews, Analysis, Opinion, and Entertainment.",
+          "snippet": "CiberCuba is an independent Cuban digital media outlet that reports on current affairs in Cuba and for Cubans, with coverage that includes Cuba, Miami, Europe, and the rest of the world. News, Exclusives, Interviews, Analysis, Opinion, and Entertainment.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [
@@ -556,62 +566,64 @@
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "11",
-                "context": "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
+                "value": "7",
+                "context": "will begin a \"friendly and controlled takeover\" of Cuba February 27, 2026, 7:01 PM A video of members of the group that\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "07",
-                "context": "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
+                "value": "10",
+                "context": "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "14",
-                "context": "bombing against Iran amid the energy crisis in Cuba February 28, 2026, 4:14 PM Medicare administrator accuses Cubans of\u2026",
+                "value": "35",
+                "context": "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "change in Cuba and responds to Marco Rubio's call February 28, 2026, 5:32 PM The price of the dollar rises in the black\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "32",
+                "context": "change in Cuba and responds to Marco Rubio's call February 28, 2026, 5:32 PM The price of the dollar rises in the black\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "28",
-                "context": "in Donald Trump\u00e2\u0080\u00a6\u00e2\u0080\u009d: Havana wakes up with posters challenging the regime February 28, 2026, 7:14 PM See more news \u00e2\u0086\u0092\u2026",
+                "context": "in Donald Trump\u00e2\u0080\u00a6\u00e2\u0080\u009d: Havana wakes up with banners defying the regime February 28, 2026, 7:14 PM Iranians celebrate in\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "30 days",
-                "context": "to Trump claims that Washington will take economic control of Cuba in 30 days February 28, 2026, 03:31 Vatican media on\u2026",
+                "value": "28",
+                "context": "palace: \"I love Trump,\" they shout while dancing amid the explosions February 28, 2026, 6:23 PM See more news \u00e2\u0086\u0092 Marco\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "9",
-                "context": "fulfilling her dreams as a car sales advisor in Florida 27/02/2026 - 9:17am Do you need money this tax season? Get your\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "refund advance in 24 hours with Servicios y Taxes Pro 27/02/2026 - 9:11am OGBESA Multiservices is positioning itself as\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "of the group that arrived in Cuba by boat handling firearms February 26, 2026, 10:35 PM Wife of one of the deceased in\u2026",
+                "value": "6",
+                "context": "love Trump,\" they shout while dancing amid the explosions February 28, 2026, 6:23 PM See more news \u00e2\u0086\u0092 Marco Rubio Amid\u2026",
                 "score": 0
               }
             ]
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba Interviews Opinion Cuisine United States Florida Spain\u2026",
-            "s2": "Cuba News United States Donald Trump Marco Rubio Guardafronteras Ships Changes in Cuba Cubans in the United States MININT Cuban government The White House Coast Guard Shooting Iran Venezuela Fuel crisis in Cuba Villa\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 11 as a measurable reference point for scenario tracking.",
+            "s2": "United States Cuba News Donald Trump Marco Rubio Border Guard Ships Changes in Cuba Cubans in the United States MININT The White House Cuban government Shooting Coast Guard Iran Fuel crisis in Cuba Villa Clara Miami\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 7 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
-              "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026"
+              "will begin a \"friendly and controlled takeover\" of Cuba February 27, 2026, 7:01 PM A video of members of the group that\u2026",
+              "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026"
             ]
           },
           "icons": []
@@ -623,10 +635,11 @@
       "synth": {
         "bullets": [
           "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
-          "Field updates show Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+          "Field updates show Venezuela - European Civil Protection and Humanitarian Aid Operations is the central development flagged in the publication.",
           "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
         ],
         "drivers": [
+          "Humanitarian crisis",
           "Political transition",
           "Security"
         ],
@@ -676,6 +689,8 @@
               }
             ]
           },
+          "preview": "EducationDisplacement has a devastating impact on learning, and often leads to education being interrupted or denied. NRC works to ensure that children and youth forced to flee can access high-quality, safe, inclusive and relevant learning opportunities.",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "We have redirected you to a site for your country, if this was not correct, please use the link to go back",
             "s2": "Go back Hide About us The Norwegian Refugee Council (NRC) is a global humanitarian organisation helping people forced to flee",
@@ -689,24 +704,24 @@
           "icons": []
         },
         {
-          "id": "691860c09d6b",
-          "title": "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
-          "url": "https://www.cdc.gov/",
-          "publisher": "cdc.gov",
+          "id": "0c71c866c188",
+          "title": "Venezuela - European Civil Protection and Humanitarian Aid Operations",
+          "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/select-language?destination=/node/1",
+          "publisher": "civil-protection-humanitarian-aid.ec.europa.eu",
           "publishedAt": "2026-02-06",
           "sourceTier": "Tier 3",
           "sector": "Health & Water",
-          "snippet": "A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.",
+          "snippet": "DG ECHO Whenever there is a disaster or humanitarian emergency, the EU provides assistance for the affected countries and populations.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Negative",
-          "materiality": 1,
-          "risk_score": 35,
-          "entities": [],
-          "tags": [
-            "Health"
+          "event_types": [
+            "Humanitarian crisis"
           ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [],
           "flags": {
             "risk": false,
             "opportunity": false,
@@ -714,66 +729,16 @@
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Health signal",
-                "value": "19",
-                "context": "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "19",
-                "context": "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "24",
-                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "7",
-                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "800",
-                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "232",
-                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "1 Million",
-                "context": "Cancer is Now the Largest in the Nation \u00e2\u0080\u008e\u00e2\u0080\u008eJAN \u00e2\u0080\u008e\u00e2\u0080\u008e30 CDC Surpasses 1 Million Voluntary Air Travel Participants in\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "19",
-                "context": "About CDC About CDC Close Search Search Featured Topics How Flu Spreads COVID-19 Treatment Cancer Screening Substance\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
-            "s1": "Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States",
-            "s2": "Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in health & water, with 19 as a measurable reference point for scenario tracking.",
+            "s1": "Venezuela - European Civil Protection and Humanitarian Aid Operations is the central development flagged in the publication.",
+            "s2": "The report frames this as an active shift with potential effects on operating conditions and counterpart behavior.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
             "confidence": "HIGH",
-            "evidence": [
-              "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
-              "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026"
-            ]
+            "evidence": []
           },
           "icons": [
             "HUMAN"
@@ -861,6 +826,8 @@
               }
             ]
           },
+          "preview": "Copyright: \u00a9 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+          "preview_source": "jina",
           "insight2": {
             "s1": "E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required field",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
@@ -882,7 +849,7 @@
       "synth": {
         "bullets": [
           "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
-          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump to NBC News on reports of Ayatollah's death: \"We feel\u2026",
+          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News \"a large amount of leadership\" in Iran\u2026",
           "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
         ],
         "drivers": [
@@ -970,6 +937,8 @@
               }
             ]
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201 Killed, US Military Reports No\u2026",
             "s2": "And Israel War Against Iran](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilMDDfXjLJQc/v0/715x477.jpg) Morteza Nikoubazl/NurPhoto/Getty\u2026",
@@ -1057,6 +1026,8 @@
               }
             ]
           },
+          "preview": "Meta har f\u00e5tt innvilget et patent for kunstig intelligens som kan simulere en persons aktivitet p\u00e5 sosiale medier, skriver 730. Med Metas nye KI-teknologi kan du dele bilder fra livet ditt, selv etter at du d\u00f8r.",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser Utenriks Anmeldelser Debatt Magasinet Baksiden Kontakt oss Annonsere?",
             "s2": "Om Universitas Universitas \u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo",
@@ -1102,20 +1073,20 @@
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "4m",
-                "context": "Ayatollah's death: 'We feel that that is a correct story' Just now 4m ago In an interview with NBC News, the president\u2026",
+                "value": "8m",
+                "context": "'A large number' of Iranian leaders were killed in strikes Just now 8m ago In a phone call with NBC News, Trump said \"a\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "18m",
-                "context": "story.\" Top pro-Israel lobbying group AIPAC applauds strikes on Iran Just now 18m ago The largest pro-Israel lobbying\u2026",
+                "value": "15",
+                "context": "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "11",
-                "context": "of Ayatollah's death: \"We feel that that is a correct story\" IE 11 is not supported. For an optimal experience visit\u2026",
+                "context": "\"a large amount of leadership\" in Iran was killed in strikes IE 11 is not supported. For an optimal experience visit\u2026",
                 "score": 0
               },
               {
@@ -1127,13 +1098,7 @@
               {
                 "label": "Policy or market figure",
                 "value": "50",
-                "context": "01:32 FOR SUBSCRIBERS Israel targeted Iranian leaders while U.S. hit missile sites 01:50 FOR SUBSCRIBERS U.S. begins\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "59",
-                "context": "missile sites 01:50 FOR SUBSCRIBERS U.S. begins \u2018major combat operations\u2019 in Iran 01:59 OpenAI strikes deal with\u2026",
+                "context": "01:32 FOR SUBSCRIBERS Israel targeted Iranian leaders while U.S. hit missile sites 01:50 OpenAI strikes deal with\u2026",
                 "score": 0
               },
               {
@@ -1141,17 +1106,25 @@
                 "value": "38",
                 "context": "FOR SUBSCRIBERS Senior Iranian figures killed in strikes, Israeli military official says 01:38 FOR SUBSCRIBERS\u2026",
                 "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "10m",
+                "context": "strikes. Trump says military action in Iran was a 'success' Just now 10m ago In an interview with NBC News, the\u2026",
+                "score": -3
               }
             ]
           },
+          "preview": "OpenAI strikes deal with Pentagon, hours after Trump cut off talks with Anthropic CEO Sam Altman announced the agreement, which comes after Pete Hegseth said he would label rival Anthropic a national security risk. In a phone call with NBC News, Trump confirmed that \"a large amount of leadership\" had been killed in Iran in today's strikes. In an interview with NBC News, the president said today's military strikes in Iran are \"already a success.\"",
+          "preview_source": "trafilatura",
           "insight2": {
-            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump to NBC News on reports of Ayatollah's death: \"We feel that that is a correct story\" IE 11 is not supported",
+            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News \"a large amount of leadership\" in Iran was killed in strikes IE 11 is not supported",
             "s2": "For an optimal experience visit our site on another browser",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 4m as a measurable reference point for scenario tracking.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 8m as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "Ayatollah's death: 'We feel that that is a correct story' Just now 4m ago In an interview with NBC News, the president\u2026",
-              "story.\" Top pro-Israel lobbying group AIPAC applauds strikes on Iran Just now 18m ago The largest pro-Israel lobbying\u2026"
+              "'A large number' of Iranian leaders were killed in strikes Just now 8m ago In a phone call with NBC News, Trump said \"a\u2026",
+              "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026"
             ]
           },
           "icons": [
@@ -1212,6 +1185,8 @@
           "metrics": {
             "numbers": []
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining & Energy News\u2026",
             "s2": "Email Get Free Alerts No spam policy, unsubscribe any time",
@@ -1296,6 +1271,8 @@
               }
             ]
           },
+          "preview": "Discussions around central bank digital currencies typically begin with the intended use case. If the ...",
+          "preview_source": "jina",
           "insight2": {
             "s1": "Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation --------------------------------------------\u2026",
             "s2": "[Register >](https://www.omfif.org/meetings/march-fomc-meeting-assessment-and-outlook-for-us-monetary-policy/) [![Image 2: European sovereign, supranational and agency forum\u2026",
@@ -1381,6 +1358,8 @@
               }
             ]
           },
+          "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan goods while facilitating reciprocal African investment in Venezuela. The visit emphasized creating a comprehensive framework for trade that extends beyond oil and gas, promoting manufactured goods, services and skills exchange.",
+          "preview_source": "jina",
           "insight2": {
             "s1": "They were placed on your computer when you launched this website",
             "s2": "You can change your cookie settings through your browser",
@@ -1495,6 +1474,8 @@
               }
             ]
           },
+          "preview": "According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though concerns remain around the cost of a healthy diet and steep obesity. February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025 Regional Overview of Food Security and Nutrition: Statistics and Trends, released today. The report states that undernourishment affected 5.1% of the population in 2024, down from a peak of 6.1% in 2020.",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025 Regional Overview of Food Security and Nutrition: Statistics and\u2026",
             "s2": "This means 6.2 million fewer people are experiencing hunger in the region",
@@ -1551,6 +1532,8 @@
               }
             ]
           },
+          "preview": "Foreign Affairs Magazine Stay informed. Subscribe for full site access, audio, and exclusive downloads. SubscribeBook Reviews The Hour of the Predator: Encounters With the Autocrats and Tech Billionaires Taking Over the World By Giuliano da Empoli.",
+          "preview_source": "trafilatura",
           "insight2": {
             "s1": "Politics Since its founding in 1922, Foreign Affairs has been the leading forum for serious discussion of American foreign policy and global affairs",
             "s2": "The magazine has featured contributions from many leading international affairs experts",
@@ -1591,6 +1574,8 @@
           "metrics": {
             "numbers": []
           },
+          "preview": "",
+          "preview_source": "none",
           "insight2": {
             "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining & Energy News\u2026",
             "s2": "Email Get Free Alerts No spam policy, unsubscribe any time",

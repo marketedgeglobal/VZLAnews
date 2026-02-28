@@ -29,6 +29,15 @@ import requests
 import yaml
 from dateutil import parser as dateutil_parser
 
+try:
+    from extract_preview import extract_preview as _extract_preview
+except Exception:  # noqa: BLE001
+    try:
+        from scripts.extract_preview import extract_preview as _extract_preview
+    except Exception:  # noqa: BLE001
+        def _extract_preview(url: str) -> dict:
+            return {"preview": "", "preview_source": "none"}
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -735,11 +744,110 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
 
 
 GOOGLE_NEWS_BOILERPLATE = "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News"
+PREVIEW_DATELINE_PAT = r"^[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ\s\.\-]{2,40}\s+\([^\)]+\)\s+[-—]\s+"
 
 
 def _is_google_news_boilerplate(text: str) -> bool:
     clean = _normalize_text_block(text).strip().lower().rstrip(".")
     return clean == GOOGLE_NEWS_BOILERPLATE.lower().rstrip(".")
+
+
+def _preview_sentence_split(text: str) -> list[str]:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return []
+    return [
+        part.strip()
+        for part in re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ])", clean)
+        if part.strip()
+    ]
+
+
+def _preview_has_byline_or_dateline(text: str) -> bool:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return False
+    if re.match(r"^\s*(By|Por)\s+", clean, flags=re.IGNORECASE):
+        return True
+    if re.search(PREVIEW_DATELINE_PAT, clean):
+        return True
+    return False
+
+
+def _validate_preview_text(text: str) -> str:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return ""
+    if _is_google_news_boilerplate(clean):
+        return ""
+    low = clean.lower()
+    if any(marker in low for marker in [
+        "title:",
+        "url source:",
+        "markdown content:",
+        "just a moment",
+        "performing security verification",
+        "skip to content",
+        "this website uses a security service",
+        "latest news stories from around the world",
+        "privacy statement",
+        "cookie policy",
+        "reset password",
+        "wrong login information",
+        "iniciar sesión",
+    ]):
+        return ""
+    if "](http" in clean.lower() or clean.count("[") >= 3:
+        return ""
+    if len(clean) < 80:
+        return ""
+    if _preview_has_byline_or_dateline(clean):
+        return ""
+    sentences = _preview_sentence_split(clean)
+    if len(sentences) < 2:
+        return ""
+    if len(sentences) > 3:
+        clean = " ".join(sentences[:3])
+    else:
+        clean = " ".join(sentences)
+    if len(clean) > 680:
+        return ""
+    if _is_google_news_boilerplate(clean):
+        return ""
+    if _preview_has_byline_or_dateline(clean):
+        return ""
+    return clean.strip()
+
+
+def _load_preview_cache(latest_payload_path: str) -> dict[str, dict]:
+    cache: dict[str, dict] = {}
+    allowed_sources = {"trafilatura", "readability", "jina", "cache"}
+    if not os.path.exists(latest_payload_path):
+        return cache
+    try:
+        with open(latest_payload_path, "r", encoding="utf-8") as fh:
+            payload = json.load(fh)
+    except (json.JSONDecodeError, OSError):
+        return cache
+
+    sectors = payload.get("sectors", []) if isinstance(payload, dict) else []
+    for sector in sectors:
+        if not isinstance(sector, dict):
+            continue
+        for item in sector.get("items", []) or []:
+            if not isinstance(item, dict):
+                continue
+            url = str(item.get("url", "") or "").strip()
+            if not url:
+                continue
+            preview = _validate_preview_text(str(item.get("preview", "") or ""))
+            if not preview:
+                continue
+            source = str(item.get("preview_source", "cache") or "cache").strip() or "cache"
+            if source not in allowed_sources:
+                continue
+            cache[url] = {"preview": preview, "preview_source": source}
+    return cache
 
 
 def _clean_snippet(
@@ -2472,6 +2580,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     os.makedirs(docs_assets_dir, exist_ok=True)
 
     latest_snapshot_path = os.path.join(DATA_DIR, "latest_stories.json")
+    previous_docs_latest_path = os.path.join(docs_data_dir, "latest.json")
     latest_csv_path = os.path.join(DATA_DIR, "latest_stories.csv")
     signal_history_path = os.path.join(DATA_DIR, "signal_history.json")
     alerts_path = os.path.join(DATA_DIR, "alerts.json")
@@ -2493,6 +2602,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         for item in previous_snapshot
         if isinstance(item, dict) and item.get("id")
     }
+    preview_cache = _load_preview_cache(previous_docs_latest_path)
     current_ids = {_entry_id(entry) for entry in top}
     diff_new_ids: list[str] = []
     diff_updated_ids: list[str] = []
@@ -2590,6 +2700,23 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 )
             },
         }
+        entry_url = str(entry.get("link", "") or "").strip()
+        preview_payload = preview_cache.get(entry_url)
+        if not preview_payload:
+            extracted = _extract_preview(entry_url)
+            extracted_preview = _validate_preview_text(str(extracted.get("preview", "") or ""))
+            extracted_source = str(extracted.get("preview_source", "none") or "none").strip() or "none"
+            if extracted_preview:
+                preview_payload = {
+                    "preview": extracted_preview,
+                    "preview_source": extracted_source,
+                }
+                preview_cache[entry_url] = preview_payload
+            else:
+                preview_payload = {"preview": "", "preview_source": "none"}
+
+        item["preview"] = preview_payload.get("preview", "")
+        item["preview_source"] = preview_payload.get("preview_source", "none")
         source_parts = [
             str(entry.get("article_text", "") or "").strip(),
             str(entry.get("meta_description", "") or "").strip(),
