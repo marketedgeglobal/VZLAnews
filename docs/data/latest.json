@@ -1,23 +1,158 @@
 {
-  "runAt": "2026-02-28T21:42:22.400193+00:00",
-  "totalItems": 7,
+  "runAt": "2026-02-28T21:58:56.605557+00:00",
+  "totalItems": 21,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
-          "Coverage was limited in this sector during the current cycle.",
-          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
-          "Watch the next run for confirmed operational or policy updates tied to this sector."
+          "Officials reported Title: Petr\u00f3leos de Venezuela S.A.",
+          "Field updates show Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios\u2026",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
-        "drivers": [],
+        "drivers": [
+          "Oil production/export"
+        ],
         "watch": [
-          "Regulatory updates",
-          "Partner statements",
-          "Execution constraints"
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
         ]
       },
-      "items": []
+      "items": [
+        {
+          "id": "0968b16f031c",
+          "title": "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
+          "url": "https://www.elnacional.com/2026/02/una-vision-de-futuro-que-convoque-a-todos-los-venezolanos/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Venezuela es un gigante en pleno despertar. Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro, entramos ahora en la fase decisiva: ejecutar y construir una\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Energy",
+            "Infrastructure"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "de futuro que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "17",
+                "context": "todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un gigante en pleno\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "15",
+                "context": "que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Venezuela es un gigante en pleno despertar. Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro, entramos ahora en la fase decisiva: ejecutar y construir una arquitectura productiva, institucional y humana para un pa\u00eds de Clase Mundial.",
+          "preview_source": "trafilatura",
+          "language": "es",
+          "insight2": {
+            "s1": "Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n\u2026",
+            "s2": "Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro , entramos ahora en la fase decisiva: ejecutar y\u2026",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 28 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "de futuro que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela\u2026",
+              "todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un gigante en pleno\u2026"
+            ]
+          },
+          "icons": [
+            "ENERGY",
+            "TRADE",
+            "NEW"
+          ]
+        },
+        {
+          "id": "22266cca15b9",
+          "title": "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment ...",
+          "url": "https://www.zawya.com/en/press-release/africa-press-releases/petroleos-de-venezuela-sa-pdvsa-venezuelas-hydrocarbon-ministry-african-energy-chamber-aec-sign-memorandum-of-m3qxof1h",
+          "publisher": "zawya.com",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 45,
+          "entities": [
+            "PDVSA"
+          ],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "59",
+                "context": "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
+                "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "18",
+                "context": "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
+                "score": 3
+              }
+            ]
+          },
+          "preview": "Request blocked. We can't connect to the server for this app or website at this time.",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "Title: Petr\u00f3leos de Venezuela S.A",
+            "s2": "(PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 59 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
+              "Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026"
+            ]
+          },
+          "icons": [
+            "ENERGY",
+            "NEW"
+          ]
+        }
+      ]
     },
     {
       "name": "Food & Agriculture",
@@ -40,12 +175,11 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
-          "Field updates show The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already\u2026",
+          "Officials reported El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
-          "Political transition",
           "Security"
         ],
         "watch": [
@@ -82,119 +216,19 @@
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "12",
-                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10.42",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "07",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "12",
-                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 2: El\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "43",
-                "context": "ordenados por Trump en su segundo mandato URL Source:\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
           "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source: http://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/\u2026",
-            "s2": "Los ataques estadounidenses del \u00faltimo a\u00f1o, que han evitado el despliegue de soldados sobre el terreno, han sido **justificados por la Casa Blanca** en nombre de la seguridad nacional o la lucha antiterrorista, pero han\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security, with 28 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
-              "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "df80c6cf8104",
-          "title": "Venezuela's health system: when force meets fragility",
-          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext",
-          "publisher": "bing.com",
-          "publishedAt": "2026-02-04",
-          "sourcePublishedAt": "2026-02-04",
-          "sourceTier": "Tier 3",
-          "sector": "Health & Water",
-          "snippet": "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already in collapse. With US President Donald ...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Political transition",
-            "Security"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 25,
-          "entities": [
-            "Maduro"
-          ],
-          "tags": [
-            "Health"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "Copyright: \u00a9 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
-          "preview_source": "jina",
-          "language": "en",
-          "insight2": {
-            "s1": "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already in collapse",
+            "s1": "El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense,\u2026",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
             "confidence": "HIGH",
             "evidence": []
           },
-          "icons": [
-            "HUMAN"
-          ]
+          "icons": []
         }
       ]
     },
@@ -219,12 +253,13 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported They were placed on your computer when you launched this website.",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Officials reported Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's\u2026",
+          "Field updates show They were placed on your computer when you launched this website.",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
-          "FX / Inflation"
+          "FX / Inflation",
+          "Humanitarian crisis"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -237,7 +272,7 @@
           "id": "0845d51e0693",
           "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
           "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
-          "publisher": "bing.com",
+          "publisher": "zawya.com",
           "publishedAt": "2026-02-26",
           "sourcePublishedAt": "2026-02-26",
           "sourceTier": "Tier 3",
@@ -321,6 +356,70 @@
           "icons": [
             "FX"
           ]
+        },
+        {
+          "id": "74906f6c497b",
+          "title": "THE ECONOMIST: Venezuela",
+          "url": "https://finance.yahoo.com/news/economist-venezuela-010100904.html",
+          "publisher": "finance.yahoo.com",
+          "publishedAt": "2026-02-14",
+          "sourcePublishedAt": "2026-02-15",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "Despite a wealth of natural resources, Venezuela has been facing prolonged upheaval, punctuated by hyperinflation, corruption, and a resultant humanitarian crisis. Recent developments, including the U.S.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Humanitarian crisis",
+            "FX / Inflation"
+          ],
+          "sentiment": "Negative",
+          "materiality": 3,
+          "risk_score": 65,
+          "entities": [],
+          "tags": [
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "0%",
+                "context": "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+                "score": 2
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "27",
+                "context": "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Despite a wealth of natural resources, Venezuela has been facing prolonged upheaval, punctuated by hyperinflation, corruption, and a resultant humanitarian crisis. Recent developments, including the U.S. removal of Nicolas Maduro, offer hope for meaningful improvement, though the situation is still evolving.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning\u2026",
+            "s2": "Recent developments, including the U.S. removal of Nicolas Maduro, offer hope for meaningful improvement, though\u2026",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 0% as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+              "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026"
+            ]
+          },
+          "icons": [
+            "FX",
+            "HUMAN",
+            "NEW"
+          ]
         }
       ]
     },
@@ -328,8 +427,8 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026",
-          "Field updates show Title: Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026.",
+          "Officials reported Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza,\u2026",
+          "Field updates show Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [],
@@ -371,13 +470,7 @@
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026",
+                "context": "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
                 "score": 0
               },
               {
@@ -394,26 +487,20 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "Andes](https://elpitazo.net/category/regiones/los-andes/) * [Guayana](https://elpitazo.net/category/regiones/guayana/)\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/)\u2026",
+                "value": "48",
+                "context": "Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026 Un\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "la mayor de 10 a\u00f1os, **muriendo mientras intentaba socorrer a la de 8 a\u00f1os**. Ambos fueron hallados sin vida entre los\u2026",
+                "context": "public\u00f3 primero en El Pitazo . Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "28",
-                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "value": "8",
+                "context": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en",
                 "score": 0
               }
             ]
@@ -422,27 +509,27 @@
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
-            "s2": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 28 de febrero de 2026 ![Image\u2026",
+            "s1": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia",
+            "s2": "El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
             "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
-              "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026"
+              "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
+              "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026"
             ]
           },
           "icons": []
         },
         {
-          "id": "3a89dd46f7a3",
-          "title": "Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda",
-          "url": "https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
-          "sourceTier": "Tier 2",
+          "id": "6e897fd9e737",
+          "title": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo por supuesta financiaci\u00f3n de Venezuela",
+          "url": "https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 3",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda, lo que oblig\u00f3 a suspender temporalmente los aterrizajes hasta retirar el avi\u00f3n de\u2026",
+          "snippet": "La Fiscal\u00eda General del Estado y la Polic\u00eda Nacional de Ecuador allanaron este s\u00e1bado la sede del movimiento Revoluci\u00f3n Ciudadana.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
@@ -456,75 +543,77 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "27",
-                "context": "a Caracas, esperando que la pista quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de\u2026",
+                "value": "28",
+                "context": "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "28",
-                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "context": "de suspensi\u00f3n de vuelos a Oriente Medio tras ataque a Ir\u00e1n febrero 28, 2026 Ministro de Exteriores iran\u00ed: \"El l\u00edder Ali\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "24",
-                "context": "una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el\u2026",
+                "value": "15",
+                "context": "(2007-2017) asegur\u00f3 en X que \"en lugar de combatir el crimen organizado, 15 polic\u00edas est\u00e1n allanando la sede de la RC5\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "7",
-                "context": "quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de febrero de 2026 ![Image\u2026",
+                "value": "11",
+                "context": "lo se\u00f1alaba como presunto autor de la violaci\u00f3n de una ni\u00f1a. El 11 de febrero, el Ministerio de Salud revel\u00f3 que abri\u00f3\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "12",
-                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "value": "20",
+                "context": "febrero 28, 2026 Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Oleada de suspensi\u00f3n de\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "5",
-                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "value": "28",
+                "context": "Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Oleada de suspensi\u00f3n de vuelos a Oriente\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "12",
-                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "value": "28",
+                "context": "Rubio notific\u00f3 con antelaci\u00f3n el ataque a Ir\u00e1n a algunos congresistas febrero 28, 2026 Accidente de un avi\u00f3n de carga\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "12",
-                "context": "los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026",
+                "value": "28",
+                "context": "con los hechos que se investigan. pic.twitter.com/ayW28nErWP \u2014 Fiscal\u00eda Ecuador (@FiscaliaEcuador) February 28, 2026\u2026",
                 "score": 0
               }
             ]
           },
-          "preview": "El incidente \u2014 que no dej\u00f3 lesionados \u2014 fue protagonizado por la aeronave de carga privada Beech A100 King Air (matr\u00edcula YV1306), que tuvo que hacer un **aterrizaje fue de emergencia**. Seg\u00fan report\u00f3 la cuenta de X **AeroNoticiasV**E, especializada en temas aeron\u00e1uticos.",
-          "preview_source": "jina",
+          "preview": "\"Yo he venido a dar la versi\u00f3n sobre el caso 'Caja Chica' porque el pa\u00eds necesita un ba\u00f1o de verdad. Yo traslad\u00e9 por disposici\u00f3n del presidente Correa dinero desde Venezuela a Ecuador.",
+          "preview_source": "trafilatura",
           "language": "es",
           "insight2": {
-            "s1": "Title: Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026",
-            "s2": "Foto: cortes\u00eda _Caracas_.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el **aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda**, lo\u2026",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 27 as a measurable reference point for scenario tracking.",
+            "s1": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n Econom\u00eda Finanzas\u2026",
+            "s2": "En su cuenta de la red social X, la Fiscal\u00eda confirm\u00f3 que el allanamiento tuvo lugar en la capital de Ecuador, Quito, y se realiz\u00f3 \"con el fin de recabar indicios\" en el marco del caso denominado 'Caja Chica '",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk, with 28 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "a Caracas, esperando que la pista quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de\u2026",
-              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026"
+              "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
+              "de suspensi\u00f3n de vuelos a Oriente Medio tras ataque a Ir\u00e1n febrero 28, 2026 Ministro de Exteriores iran\u00ed: \"El l\u00edder Ali\u2026"
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         }
       ]
     }

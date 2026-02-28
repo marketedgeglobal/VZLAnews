@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-02-28T21:42:22.400193+00:00",
+  "run_at": "2026-02-28T21:58:56.605557+00:00",
   "alerts": [
     {
       "type": "New sanctions",
@@ -14,17 +14,17 @@
     {
       "type": "Inflation spike news",
       "triggered": true,
-      "detail": "10 inflation/FX items surfaced."
+      "detail": "5 inflation/FX items surfaced."
     },
     {
       "type": "Executive decree",
       "triggered": true,
-      "detail": "6 governance/decree-related signals detected."
+      "detail": "5 governance/decree-related signals detected."
     },
     {
       "type": "Protest escalation",
       "triggered": true,
-      "detail": "7 security/protest indicators detected."
+      "detail": "1 security/protest indicators detected."
     }
   ]
 }

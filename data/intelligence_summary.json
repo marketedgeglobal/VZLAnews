@@ -1,24 +1,24 @@
 {
-  "run_at": "2026-02-28T21:42:22.400193+00:00",
+  "run_at": "2026-02-28T21:58:56.605557+00:00",
   "trend_summary": {
-    "freq_7d": 35.0,
+    "freq_7d": 33.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
-  "sanctions_index": 45,
+  "sanctions_index": 41,
   "sector_briefs": {
     "Extractives": {
       "health": 7,
-      "summary": "This week in extractives, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 27/100. Positive momentum appears in 3 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 32/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
         "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers"
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
       ],
       "opportunities": [
-        "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers",
-        "U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Unders",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
+        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -27,17 +27,16 @@
       ]
     },
     "Finance": {
-      "health": 8,
-      "summary": "This week in finance, signal flow is concentrated around Debt restructuring, FX / Inflation, Oil production/export. Risk pressure is mixed with an average score of 24/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 5,
+      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Humanitarian crisis. Risk pressure is mixed with an average score of 48/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
-        "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Venezuela\u2019s acting president signs oil industry overhaul, easing state control to lure investor"
+        "THE ECONOMIST: Venezuela",
+        "Africa, Venezuela Advance Practical Trade and Investment Cooperation"
       ],
       "opportunities": [
-        "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Venezuela\u2019s acting president signs oil industry overhaul, easing state control to lure investor"
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -46,16 +45,14 @@
       ]
     },
     "Agriculture": {
-      "health": 4,
-      "summary": "This week in agriculture, signal flow is concentrated around FX / Inflation, Humanitarian crisis, Oil production/export. Risk pressure is elevated with an average score of 62/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 2,
+      "summary": "This week in agriculture, signal flow is concentrated around FX / Inflation, Humanitarian crisis, Sanctions. Risk pressure is elevated with an average score of 80/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenge",
-        "The end of Venezuelan oil hits food security in Cuba hard - CiberCuba",
-        "Food Security, could Digital Insurance help Venezuela? - Irish Tech News"
+        "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenge"
       ],
       "opportunities": [
-        "The end of Venezuelan oil hits food security in Cuba hard - CiberCuba",
-        "Food Security, could Digital Insurance help Venezuela? - Irish Tech News",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
@@ -65,16 +62,14 @@
       ]
     },
     "Health": {
-      "health": 7,
-      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 28/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 6,
+      "summary": "This week in health, signal flow is concentrated around Security. Risk pressure is mixed with an average score of 45/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
-        "Venezuela's health system: when force meets fragility",
-        "The road to self-sufficiency for Venezuelan communities - nrc.no"
+        "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato"
       ],
       "opportunities": [
-        "The road to self-sufficiency for Venezuelan communities - nrc.no",
-        "Venezuela's health system: when force meets fragility",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
+        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
       "watch": [
@@ -85,16 +80,16 @@
     },
     "Governance": {
       "health": 8,
-      "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Humanitarian crisis, Security. Risk pressure is mixed with an average score of 21/100. Positive momentum appears in 1 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 16/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "El Caracazo: estallido social que ocurri\u00f3 hace 37 a\u00f1os en Venezuela",
-        "UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consec",
+        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
+        "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
         "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio"
       ],
       "opportunities": [
+        "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
         "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
-        "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb",
-        "Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda"
+        "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -103,16 +98,17 @@
       ]
     },
     "Infrastructure": {
-      "health": 6,
-      "summary": "This week in infrastructure, signal flow is concentrated around Humanitarian crisis, Security. Risk pressure is mixed with an average score of 38/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 8,
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 21/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "El Caracazo: estallido social que ocurri\u00f3 hace 37 a\u00f1os en Venezuela",
-        "UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consec"
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
+        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
+        "Una visi\u00f3n de futuro que convoque a todos los venezolanos"
       ],
       "opportunities": [
-        "UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consec",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
+        "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
+        "Las adversidades de un preso pol\u00edtico"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
