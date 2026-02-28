@@ -41,7 +41,7 @@
     }
 
     function renderNumbers(items) {
-        return `<ul>${(items || []).slice(0, 5).map((n) => {
+        return `<ul>${(items || []).slice(0, 3).map((n) => {
             const label = esc(n && n.label ? n.label : 'Quantitative signal');
             const value = esc(n && n.value ? n.value : 'N/A');
             const context = n && n.context ? ` (${esc(n.context)})` : '';
@@ -61,6 +61,79 @@
                     <h3>By the Numbers</h3>
                     ${renderNumbers(highlights.byTheNumbers)}
                 </article>
+            </section>
+        `;
+    }
+
+    async function loadIMF() {
+        try {
+            return await loadJson('data/imf_ven.json');
+        } catch {
+            return null;
+        }
+    }
+
+    function fmt(value, unit) {
+        if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
+        const numeric = Number(value);
+        const absValue = Math.abs(numeric);
+        const decimals = absValue >= 100 ? 0 : absValue >= 10 ? 1 : 2;
+        const rendered = numeric.toFixed(decimals);
+        const normalizedUnit = String(unit || '').toLowerCase();
+        return normalizedUnit.includes('percent') || normalizedUnit.includes('%') ? `${rendered}%` : rendered;
+    }
+
+    function spark(series) {
+        if (!Array.isArray(series) || series.length < 2) return '';
+        const last = series.slice(-10);
+        const values = last.map((d) => Number(d.value)).filter((v) => Number.isFinite(v));
+        if (values.length < 2) return '';
+        const min = Math.min(...values);
+        const max = Math.max(...values);
+        const w = 90;
+        const h = 22;
+        const p = 2;
+        const x = (index) => p + (index * (w - (2 * p)) / (last.length - 1));
+        const y = (value) => (max === min ? h / 2 : p + ((h - (2 * p)) * (1 - ((value - min) / (max - min)))));
+        const points = last.map((point, idx) => `${x(idx)},${y(Number(point.value))}`).join(' ');
+        return `<svg class="spark" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline fill="none" points="${points}" /></svg>`;
+    }
+
+    function renderIMFCard(data) {
+        if (!data || !Array.isArray(data.metrics) || !data.metrics.length) return '';
+        const tiles = data.metrics.map((metric) => {
+            const year = metric && metric.latest && metric.latest.year ? metric.latest.year : '';
+            const value = fmt(metric && metric.latest ? metric.latest.value : null, metric && metric.unit ? metric.unit : '');
+            const deltaValue = metric ? metric.delta : null;
+            const delta = deltaValue === null || deltaValue === undefined || Number.isNaN(Number(deltaValue))
+                ? '—'
+                : (Number(deltaValue) >= 0 ? `+${fmt(deltaValue, metric.unit || '')}` : fmt(deltaValue, metric.unit || ''));
+            return `
+                <div class="metric-tile">
+                    <div class="metric-top">
+                        <div class="metric-label">${esc(metric.label || metric.code || 'Indicator')}</div>
+                        <div class="metric-year">${esc(year)}</div>
+                    </div>
+                    <div class="metric-value">${esc(value)}</div>
+                    <div class="metric-bottom">
+                        <div class="metric-delta">YoY: ${esc(delta)}</div>
+                        ${spark(metric.series || [])}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        const asOf = typeof data.asOf === 'string' && data.asOf.length >= 10 ? data.asOf.slice(0, 10) : '—';
+        return `
+            <section class="panel imf-card">
+                <div class="card-head">
+                    <div>
+                        <h3>IMF Macro Snapshot</h3>
+                        <div class="meta">Updated: ${esc(asOf)}</div>
+                    </div>
+                    <a class="small-link" href="https://www.imf.org/external/datamapper/profile/VEN" target="_blank" rel="noopener">Open IMF Profile</a>
+                </div>
+                <div class="metric-grid">${tiles}</div>
             </section>
         `;
     }
@@ -126,10 +199,11 @@
         const root = document.getElementById('app-root');
         if (!root) return;
         try {
-            const [latest, highlights, macros] = await Promise.all([
+            const [latest, highlights, macros, imf] = await Promise.all([
                 loadJson('data/latest.json'),
                 loadJson('data/highlights.json'),
-                loadJson('data/macros.json')
+                loadJson('data/macros.json'),
+                loadIMF()
             ]);
 
             root.innerHTML = `
@@ -138,6 +212,7 @@
                     ${list((highlights.executiveBriefBullets || []).slice(0, 5))}
                 </section>
                 ${renderTop(highlights)}
+                ${renderIMFCard(imf)}
                 ${renderSectors(latest)}
                 ${renderMacros(macros)}
             `;

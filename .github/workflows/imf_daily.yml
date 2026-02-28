@@ -1,0 +1,25 @@
+name: Update IMF Venezuela Indicators
+
+on:
+  schedule:
+    - cron: "20 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-imf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch_imf_ven.js
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add docs/data/imf_ven.json
+          git commit -m "chore: update IMF macro indicators" || exit 0
+          git push
