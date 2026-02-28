@@ -26,13 +26,6 @@
         return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
     }
 
-    function isBoilerplate(s) {
-        if (!s) return false;
-        const t = s.trim().toLowerCase();
-        return t === 'comprehensive up-to-date news coverage, aggregated from sources all over the world by google news'
-            || t === 'comprehensive up-to-date news coverage, aggregated from sources all over the world by google news.';
-    }
-
     function renderDevelopment(item, idx) {
         if (typeof item === 'string') {
             return `<li>${esc(item)}</li>`;
@@ -79,11 +72,11 @@
             ? `<div class="item-evidence">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
             : '';
         const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : '';
-        const snippet = (!isBoilerplate(item.snippet) && (item.snippet || '').trim().length >= 10) ? esc(item.snippet) : '';
         const s1 = item.insight2 && item.insight2.s1 ? item.insight2.s1 : '';
         const s2 = item.insight2 && item.insight2.s2 ? item.insight2.s2 : '';
+        const s3 = item.insight2 && item.insight2.s3 ? item.insight2.s3 : '';
         const insightText = (s1 && s2)
-            ? `${esc(s1)} ${esc(s2)}`
+            ? `${esc(s1)} ${esc(s2)} ${esc(s3 || 'Why this matters: this development should be monitored for downstream operational effects.')}`
             : 'Open the source for details; summary extraction failed for this item.';
 
         return `
@@ -93,7 +86,6 @@
                     <div class="item-icons">${icons}</div>
                 </div>
                 <p class="item-meta">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
-                ${snippet ? `<p class="item-snippet">${snippet}</p>` : ''}
                 <p class="item-insight">${insightText}</p>
                 ${evidenceHtml}
                 ${confidence ? `<p class="item-confidence">Confidence: ${esc(confidence)}</p>` : ''}

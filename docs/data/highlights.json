@@ -1,54 +1,66 @@
 {
   "executiveBriefBullets": [
-    "Government and institutional moves show Venezuelanalysis and CiberCuba converging on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in\u2026.",
-    "Operational evidence across sources indicates CiberCuba and bing.com converging on The end of Venezuelan oil hits food security in Cuba hard.",
-    "Multiple reports converge on bing.com and Orinoco Tribune converging on Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy\u2026.",
-    "The current cycle confirms Orinoco Tribune and Irish Tech News converging on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
-    "Cross-sector tracking now shows Irish Tech News and Trinidad Express Newspapers converging on Food Security, could Digital Insurance help Venezuela?."
+    "Government and institutional moves show Venezuelanalysis and bing.com converging on Reporting describes an actionable development in sanctions with concrete implications in Venezuela.",
+    "Operational evidence across sources indicates bing.com and CiberCuba converging on The source describes a concrete development around US says it will allow resale of Venezuelan oil to Cuba in Venezuela.",
+    "Multiple reports converge on CiberCuba and bing.com converging on Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
+    "The current cycle confirms bing.com and Orinoco Tribune converging on (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive\u2026 with figures including 59.",
+    "Cross-sector tracking now shows Orinoco Tribune and Irish Tech News converging on Reporting describes an actionable development in political transition with concrete implications in Venezuela."
   ],
   "keyDevelopments": [
     {
-      "text": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a\u2026",
+      "text": "Reporting describes an actionable development in sanctions with concrete implications in Venezuela.",
       "itemIds": [
         "33d7a1d3e17b",
-        "c06f100c59ad",
-        "f02d504a5300"
+        "53843da51f92",
+        "c06f100c59ad"
       ]
     },
     {
-      "text": "The end of Venezuelan oil hits food security in Cuba hard.",
+      "text": "The source describes a concrete development around US says it will allow resale of Venezuelan oil to Cuba in Venezuela.",
       "itemIds": [
-        "c06f100c59ad",
+        "53843da51f92",
         "33d7a1d3e17b",
-        "22266cca15b9"
+        "c06f100c59ad"
       ]
     },
     {
-      "text": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration.",
+      "text": "Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
+      "itemIds": [
+        "c06f100c59ad",
+        "33d7a1d3e17b",
+        "53843da51f92"
+      ]
+    },
+    {
+      "text": "(PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration URL Source:\u2026",
       "itemIds": [
         "22266cca15b9",
-        "c06f100c59ad",
-        "f02d504a5300"
+        "53843da51f92",
+        "c06f100c59ad"
       ]
     },
     {
-      "text": "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+      "text": "Reporting describes an actionable development in political transition with concrete implications in Venezuela.",
       "itemIds": [
         "f02d504a5300",
         "33d7a1d3e17b",
-        "22266cca15b9"
-      ]
-    },
-    {
-      "text": "Food Security, could Digital Insurance help Venezuela?",
-      "itemIds": [
-        "d08af0c3e907",
-        "33d7a1d3e17b",
-        "c06f100c59ad"
+        "53843da51f92"
       ]
     }
   ],
   "byTheNumbers": [
+    {
+      "label": "Sanctions and state revenue",
+      "value": "591",
+      "context": "sector including those prohibited by US Venezuela Sanctions Regulations, 31 CFR part 591-\u2026",
+      "itemId": "075e71117dd1"
+    },
+    {
+      "label": "Sanctions and state revenue",
+      "value": "3.2",
+      "context": "in Venezuelan waters near the maritime border, is estimated to hold between 3.2 trillion\u2026",
+      "itemId": "075e71117dd1"
+    },
     {
       "label": "Health signal",
       "value": "27.4%",
@@ -62,30 +74,18 @@
       "itemId": "722639242266"
     },
     {
-      "label": "Oil and production",
-      "value": "19",
-      "context": "Venezuela\u2019s oil ministry has suspended 19 oil production-sharing contracts with private\u2026",
-      "itemId": "b1f553be0657"
-    },
-    {
-      "label": "Items tracked this cycle",
-      "value": "35",
-      "context": "High-materiality items selected from source reporting",
-      "itemId": ""
-    },
-    {
-      "label": "Sanctions-linked developments",
-      "value": "2",
-      "context": "Items tagged with sanctions-related event signals",
-      "itemId": ""
+      "label": "Detentions and releases",
+      "value": "05",
+      "context": "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
+      "itemId": "0845d51e0693"
     }
   ],
   "sectorSynth": {
     "Extractives & Mining": {
       "bullets": [
-        "Officials reported Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+        "Officials reported Reporting describes an actionable development in political transition with concrete implications in Venezuela.",
         "Field updates show Venezuela meets with Shell execs on oil/gas projects.",
-        "Separate sources indicate U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' advanced as a concrete sector\u2026"
+        "Separate sources indicate Reporting describes an actionable development in security with concrete implications in Venezuela."
       ],
       "drivers": [
         "FX / Inflation",
@@ -101,8 +101,8 @@
     },
     "Food & Agriculture": {
       "bullets": [
-        "Officials reported Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a\u2026.",
-        "Field updates show The end of Venezuelan oil hits food security in Cuba hard advanced as a concrete sector development.",
+        "Officials reported Reporting describes an actionable development in sanctions with concrete implications in Venezuela.",
+        "Field updates show Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
         "Separate sources indicate Food Security, could Digital Insurance help Venezuela?."
       ],
       "drivers": [
@@ -119,9 +119,9 @@
     },
     "Health & Water": {
       "bullets": [
-        "Officials reported Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov) advanced as a concrete sector development.",
-        "Field updates show The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already\u2026",
-        "Separate sources indicate The road to self-sufficiency for Venezuelan communities advanced as a concrete sector development."
+        "Officials reported Reporting describes an actionable development in health & water with concrete implications in Venezuela.",
+        "Field updates show E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required field.",
+        "Separate sources indicate Reporting describes an actionable development in health & water with concrete implications in Venezuela."
       ],
       "drivers": [
         "Political transition",
@@ -135,9 +135,9 @@
     },
     "Education & Workforce": {
       "bullets": [
-        "Officials reported Venezuelans See Brighter Economic Outlook After US Intervention.",
+        "Officials reported Reporting describes an actionable development in education & workforce with concrete implications in Venezuela.",
         "Field updates show The voice of students in Venezuela.",
-        "Separate sources indicate Venezuelans rally more openly as they navigate changing political landscape advanced as a concrete sector development."
+        "Separate sources indicate Reporting describes an actionable development in fx / inflation with concrete implications in Venezuela."
       ],
       "drivers": [
         "FX / Inflation"
@@ -150,9 +150,9 @@
     },
     "Finance & Investment": {
       "bullets": [
-        "Officials reported Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.",
-        "Field updates show Bondholders should be less excited about Venezuelan debt restructuring advanced as a concrete sector development.",
-        "Separate sources indicate Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored\u2026"
+        "Officials reported Reporting describes an actionable development in regulatory reform with concrete implications in Venezuela.",
+        "Field updates show Reporting describes an actionable development in debt restructuring with concrete implications in Venezuela.",
+        "Separate sources indicate They were placed on your computer when you launched this website."
       ],
       "drivers": [
         "Debt restructuring",

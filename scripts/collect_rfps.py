@@ -167,6 +167,27 @@ def fetch_article_text(url: str, timeout_seconds: int = 6, max_chars: int = 6000
         return ""
 
 
+def _fetch_article_text_via_jina(url: str, timeout_seconds: int = 8, max_chars: int = 7000) -> str:
+    if not url:
+        return ""
+    try:
+        proxy_url = f"https://r.jina.ai/http://{url.replace('https://', '').replace('http://', '')}"
+        response = requests.get(
+            proxy_url,
+            timeout=timeout_seconds,
+            headers={"User-Agent": "VZLAnews/1.0"},
+            allow_redirects=True,
+        )
+        if response.status_code != 200 or not response.text:
+            return ""
+        text = _normalize_text_block(response.text)
+        if len(text) > max_chars:
+            return text[:max_chars]
+        return text
+    except requests.RequestException:
+        return ""
+
+
 def _fetch_article_html(url: str, timeout_seconds: int = 6) -> tuple[str, str]:
     if not url:
         return "", ""
@@ -241,6 +262,7 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
         return
 
     max_items = max(0, int(extraction_cfg.get("max_items", 12)))
+    max_items = max(max_items, min(len(entries), 40))
     timeout_seconds = max(1, int(extraction_cfg.get("timeout_seconds", 6)))
     min_chars = max(100, int(extraction_cfg.get("min_chars", 240)))
     max_chars = max(1000, int(extraction_cfg.get("max_chars", 6000)))
@@ -276,8 +298,6 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
             break
         link = entry.get("link", "")
         if not link:
-            continue
-        if entry.get("snippet"):
             continue
         if _is_blocked_extraction_domain(entry, blocked_domains):
             skipped_count += 1
@@ -315,6 +335,8 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
 
         article_url = entry.get("link") or resolved_link or link
         article_text = fetch_article_text(article_url, timeout_seconds=timeout_seconds, max_chars=max_chars)
+        if len(article_text) < min_chars:
+            article_text = _fetch_article_text_via_jina(article_url, timeout_seconds=max(timeout_seconds, 8), max_chars=max_chars)
         if len(article_text) >= min_chars:
             entry["article_text"] = article_text
             enriched_count += 1
@@ -1525,12 +1547,18 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
     first_fact = facts[0]["value"] if facts else ""
     sector = item.get("sector", "this sector")
 
-    candidate_text = source_text or snippet
-    sentence_parts = [
-        s.strip()
-        for s in re.split(r"(?<=[.!?])\s+", candidate_text)
-        if s.strip() and len(s.strip()) >= 35 and not _sentence_is_noise(s.strip())
-    ]
+    candidate_text = source_text
+    raw_parts = [s.strip() for s in re.split(r"(?<=[.!?])\s+", candidate_text) if s.strip()]
+    sentence_parts: list[str] = []
+    idx = 0
+    while idx < len(raw_parts):
+        current = raw_parts[idx]
+        if idx + 1 < len(raw_parts) and re.search(r"\b(?:U\.S|U\.K|Mr|Mrs|Ms|Dr|St)\.$", current):
+            current = f"{current} {raw_parts[idx + 1]}".strip()
+            idx += 1
+        if len(current) >= 35 and not _sentence_is_noise(current):
+            sentence_parts.append(current)
+        idx += 1
 
     title_norm = _normalize_text_block(item.get("title", ""))
     filtered = [
@@ -1540,32 +1568,66 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
     ]
 
     if filtered:
-        s1 = clamp_text_py(filtered[0], 180)
+        s1 = clamp_text_py(filtered[0], 210)
+        if len(s1.split()) < 8 and len(filtered) > 1:
+            s1 = clamp_text_py(filtered[1], 210)
     else:
         event_hint = _deterministic_pick(seed + "-evt", item.get("event_types", []) or [sector])
-        s1 = f"Officials and counterpart institutions advanced {event_hint.lower()} actions in Venezuela"
+        title_topic = _title_topic({"title": item.get("title", "")})
+        s1 = f"The source describes a concrete development around {title_topic} in Venezuela"
         if first_fact:
             s1 += f", with figures such as {first_fact} reported"
         s1 += "."
 
     if len(filtered) > 1:
-        s2 = clamp_text_py(filtered[1], 180)
+        s2 = clamp_text_py(filtered[1], 210)
     else:
-        mechanism = "execution constraints and financing channels"
+        mechanism = "implementation constraints and counterpart response"
         if item.get("flags", {}).get("risk"):
-            mechanism = "compliance requirements and delivery timelines"
+            mechanism = "compliance requirements, delivery timelines, and execution risk"
         elif item.get("flags", {}).get("opportunity"):
-            mechanism = "implementation windows and partner sequencing"
-        s2 = f"This matters because it changes {mechanism} for {sector.lower()} operations over the next reporting cycle."
+            mechanism = "implementation windows, counterpart sequencing, and timing"
+        s2 = f"Follow-on details indicate shifts in {mechanism} for {sector.lower()} operations."
 
-    for banned in ("this article discusses", "the report highlights", "according to reports"):
+    why_openers = [
+        "Why this matters:",
+        "Operational implication:",
+        "Decision relevance:",
+        "Practical takeaway:",
+    ]
+    why_prefix = _deterministic_pick(seed + "-why", why_openers)
+    why_clause = "this changes near-term execution assumptions for institutions monitoring this sector"
+    if item.get("flags", {}).get("risk"):
+        why_clause = "this raises downside exposure and tightens execution requirements for near-term planning"
+    elif item.get("flags", {}).get("opportunity"):
+        why_clause = "this creates a narrower but actionable window for structured engagement"
+    if first_fact:
+        why_clause += f", with {first_fact} serving as a measurable reference point"
+    s3 = f"{why_prefix} {why_clause}."
+
+    for banned in (
+        "this article discusses",
+        "the report highlights",
+        "according to reports",
+        "this cycle brought a concrete update on",
+        "this cycle brought a concrete update",
+        "sources indicate implementation movement tied to",
+    ):
         s1 = re.sub(re.escape(banned), "", s1, flags=re.IGNORECASE).strip()
         s2 = re.sub(re.escape(banned), "", s2, flags=re.IGNORECASE).strip()
+        s3 = re.sub(re.escape(banned), "", s3, flags=re.IGNORECASE).strip()
+
+    s1 = re.sub(r"^on\s+", "", s1, flags=re.IGNORECASE).strip()
+    if re.fullmatch(r"[A-Za-z](?:\.[A-Za-z])+\.?", s1):
+        title_topic = _title_topic({"title": item.get("title", "")})
+        s1 = f"The source outlines a concrete development tied to {title_topic} in Venezuela."
+    if s1 and s1[0].islower():
+        s1 = s1[0].upper() + s1[1:]
 
     headline_norm = title_norm.lower()
     if headline_norm and _title_similarity(headline_norm, s1.lower()) > 0.88:
         event_hint = _deterministic_pick(seed + "-evt2", item.get("event_types", []) or [sector])
-        s1 = f"Authorities and counterpart actors advanced {event_hint.lower()} actions in Venezuela."
+        s1 = f"Reporting describes an actionable development in {event_hint.lower()} with concrete implications in Venezuela."
 
     confidence = "HIGH" if item.get("summary_confidence", "").startswith("High") else "MED"
     if item.get("summary_confidence", "").startswith("Low"):
@@ -1580,7 +1642,19 @@ def _generate_insight2(item: dict, source_text: str = "") -> dict:
             evidence.append(clamp_text_py(context, 120))
     evidence = evidence[:3]
 
-    return {"s1": clamp_text_py(s1, 180), "s2": clamp_text_py(s2, 180), "confidence": confidence, "evidence": evidence}
+    text_depth = len(source_text)
+    if text_depth >= 1200:
+        confidence = "HIGH"
+    elif text_depth >= 600 and confidence == "LOW":
+        confidence = "MED"
+
+    return {
+        "s1": clamp_text_py(s1, 220),
+        "s2": clamp_text_py(s2, 220),
+        "s3": clamp_text_py(s3, 220),
+        "confidence": confidence,
+        "evidence": evidence,
+    }
 
 
 def clamp_text_py(text: str, limit: int) -> str:
@@ -2490,14 +2564,16 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 )
             },
         }
-        source_text_for_insight = " ".join(
-            [
-                str(entry.get("article_text", "") or ""),
-                str(entry.get("meta_description", "") or ""),
-                str(entry.get("first_paragraph", "") or ""),
-                summary_text,
-            ]
-        ).strip()
+        source_parts = [
+            str(entry.get("article_text", "") or "").strip(),
+            str(entry.get("meta_description", "") or "").strip(),
+            str(entry.get("first_paragraph", "") or "").strip(),
+        ]
+        source_text_for_insight = " ".join([part for part in source_parts if part]).strip()
+        if not source_text_for_insight:
+            fallback_summary = summary_text.strip()
+            if fallback_summary and not _is_google_news_boilerplate(fallback_summary):
+                source_text_for_insight = fallback_summary
         item["insight2"] = _generate_insight2(item, source_text_for_insight)
         item["icons"] = _icons_for_item(item)
         normalized_items.append(item)
