@@ -194,6 +194,79 @@ class TestFilterEntries:
         result = cr.filter_entries([geo], cfg, NOW)
         assert len(result) == 1
 
+    def test_global_feed_requires_venezuela_relevance(self):
+        cfg = minimal_cfg()
+        global_irrelevant = make_entry(
+            title="Global inflation report",
+            summary="Macroeconomic outlook for Asia and Europe.",
+            source_url="https://www.imf.org/en/News/RSS",
+            published=NOW - timedelta(days=1),
+        )
+        result = cr.filter_entries([global_irrelevant], cfg, NOW)
+        assert result == []
+
+    def test_global_feed_keeps_venezuela_relevant(self):
+        cfg = minimal_cfg()
+        global_relevant = make_entry(
+            title="IMF mission reviews Venezuela reforms",
+            summary="The Caracas delegation discussed stabilization measures.",
+            source_url="https://www.imf.org/en/News/RSS",
+            published=NOW - timedelta(days=1),
+        )
+        result = cr.filter_entries([global_relevant], cfg, NOW)
+        assert len(result) == 1
+
+
+class TestResourceUrlGate:
+    def test_accepts_article_like_news_path(self):
+        assert cr._is_valid_resource_url("https://example.org/news/2026/02/20/venezuela-oil-output-rises")
+
+    def test_accepts_report_prefix(self):
+        assert cr._is_valid_resource_url("https://example.org/reports/venezuela-energy-market-outlook-2026")
+
+    def test_rejects_homepage_and_feed_paths(self):
+        assert not cr._is_valid_resource_url("https://example.org/")
+        assert not cr._is_valid_resource_url("https://example.org/feed")
+        assert not cr._is_valid_resource_url("https://example.org/topic/venezuela")
+
+    def test_rejects_paywalled_domains(self):
+        assert not cr._is_valid_resource_url("https://www.wsj.com/articles/venezuela-oil-123456789")
+
+
+class TestApplyLinkQualityGate:
+    def test_rejects_non_article_urls_after_redirect_resolution(self, monkeypatch):
+        cfg = minimal_cfg()
+        entries = [
+            make_entry(
+                title="Venezuela homepage link",
+                link="https://example.org/redirect",
+                source_url="https://example.org/rss",
+            )
+        ]
+
+        monkeypatch.setattr(cr, "_resolve_redirects", lambda url, timeout_seconds=6: "https://example.org/news")
+        result = cr.apply_link_quality_gate(entries, cfg)
+        assert result == []
+
+    def test_accepts_article_urls_after_redirect_resolution(self, monkeypatch):
+        cfg = minimal_cfg()
+        entries = [
+            make_entry(
+                title="Venezuela refinery upgrade",
+                link="https://example.org/redirect",
+                source_url="https://example.org/rss",
+            )
+        ]
+
+        monkeypatch.setattr(
+            cr,
+            "_resolve_redirects",
+            lambda url, timeout_seconds=6: "https://example.org/news/2026/02/20/venezuela-refinery-upgrade-project",
+        )
+        result = cr.apply_link_quality_gate(entries, cfg)
+        assert len(result) == 1
+        assert result[0]["link"].endswith("venezuela-refinery-upgrade-project")
+
 
 # ---------------------------------------------------------------------------
 # deduplicate

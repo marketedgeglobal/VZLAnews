@@ -53,6 +53,180 @@ DOCS_DATA_DIR = os.path.join(DOCS_DIR, "data")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 OUTPUT_PATH = os.path.join(DOCS_DIR, "index.md")
 METADATA_PATH = os.path.join(DATA_DIR, "last_run.json")
+REDIRECT_CACHE_PATH = os.path.join(DATA_DIR, "redirect_cache.json")
+
+_REDIRECT_CACHE: dict[str, dict] = {}
+_REJECTED_LINKS: list[dict] = []
+
+
+def _log_rejection(
+    feed_name: str,
+    item_title: str,
+    reason: str,
+    candidate_url: str = "",
+    final_url: str = "",
+    published_at: str = "",
+) -> None:
+    _REJECTED_LINKS.append(
+        {
+            "feed": str(feed_name or ""),
+            "title": str(item_title or ""),
+            "reason": str(reason or "unknown"),
+            "candidateUrl": str(candidate_url or ""),
+            "finalUrl": str(final_url or ""),
+            "publishedAt": str(published_at or ""),
+        }
+    )
+
+
+def _load_redirect_cache(path: str = REDIRECT_CACHE_PATH) -> None:
+    global _REDIRECT_CACHE
+    _REDIRECT_CACHE = {}
+    if not os.path.exists(path):
+        return
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            loaded = json.load(fh)
+        if isinstance(loaded, dict):
+            _REDIRECT_CACHE = loaded
+    except (json.JSONDecodeError, OSError):
+        _REDIRECT_CACHE = {}
+
+
+def _save_redirect_cache(path: str = REDIRECT_CACHE_PATH) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    try:
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(_REDIRECT_CACHE, fh, indent=2)
+    except OSError:
+        pass
+
+
+def _resolve_redirects(url: str, timeout_seconds: int = 6) -> str:
+    if not url:
+        return ""
+
+    now_ts = int(datetime.now(timezone.utc).timestamp())
+    cached = _REDIRECT_CACHE.get(url)
+    if isinstance(cached, dict):
+        ts = int(cached.get("ts", 0) or 0)
+        if now_ts - ts <= 604800 and cached.get("final_url"):
+            return str(cached.get("final_url", ""))
+
+    final_url = url
+    try:
+        response = requests.head(
+            url,
+            timeout=timeout_seconds,
+            headers={"User-Agent": "VZLAnews/1.0"},
+            allow_redirects=True,
+        )
+        if response.url:
+            final_url = str(response.url)
+    except requests.RequestException:
+        try:
+            response = requests.get(
+                url,
+                timeout=timeout_seconds,
+                headers={"User-Agent": "VZLAnews/1.0"},
+                allow_redirects=True,
+                stream=True,
+            )
+            if response.url:
+                final_url = str(response.url)
+        except requests.RequestException:
+            final_url = url
+
+    _REDIRECT_CACHE[url] = {"final_url": final_url, "ts": now_ts}
+    return final_url
+
+
+def _is_global_feed_source(source_url: str) -> bool:
+    source = (source_url or "").lower()
+    global_markers = [
+        "imf.org",
+        "worldbank.org",
+        "iadb.org",
+        "caf.com",
+        "unocha.org",
+        "opec.org",
+        "mining.com",
+        "oilprice.com",
+        "spglobal.com",
+        "fao.org",
+        "wfp.org",
+        "fas.usda.gov",
+        "iica.int",
+        "paho.org",
+        "who.int",
+        "unicef.org",
+        "unesco.org",
+        "ilo.org",
+        "unctad.org",
+        "wto.org",
+        "latinfinance.com",
+        "bnamericas.com",
+        "reutersagency.com",
+    ]
+    return any(marker in source for marker in global_markers)
+
+
+def _is_venezuela_relevant_entry(entry: dict) -> bool:
+    categories = entry.get("categories", []) or []
+    if not isinstance(categories, list):
+        categories = []
+    fields = [
+        entry.get("title", ""),
+        entry.get("summary", ""),
+        entry.get("content", ""),
+        entry.get("snippet", ""),
+        " ".join([str(c) for c in categories]),
+        entry.get("publisher", ""),
+        entry.get("author", ""),
+    ]
+    text = _normalize_text_block(" ".join([str(f or "") for f in fields])).lower()
+    if not text:
+        return False
+
+    keywords = [
+        "venezuela", "venezuelan", "caracas", "pdvsa", "miraflores", "bolívar", "bolivar",
+        "guaidó", "guaido", "maduro", "cabello", "zulia", "miranda", "anzoátegui", "anzoategui",
+        "bolivariana", "república bolivariana", "republica bolivariana", "orinoco", "guayana", "maracaibo",
+    ]
+    return any(keyword in text for keyword in keywords)
+
+
+def _get_best_link_from_entry(entry: dict) -> str:
+    candidates: list[str] = []
+
+    raw_link = str(entry.get("link", "") or "").strip()
+    if raw_link:
+        candidates.append(raw_link)
+
+    for key in ("origLink", "origlink", "feedburner:origLink", "feedburner_origlink", "feedburner_origLink"):
+        val = str(entry.get(key, "") or "").strip()
+        if val:
+            candidates.insert(0, val)
+
+    links = entry.get("links", []) or []
+    if isinstance(links, list):
+        for item in links:
+            if not isinstance(item, dict):
+                continue
+            rel = str(item.get("rel", "") or "").lower().strip()
+            href = str(item.get("href", "") or "").strip()
+            if rel == "alternate" and href:
+                candidates.insert(0, href)
+                break
+
+    guid = str(entry.get("id", "") or entry.get("guid", "") or "").strip()
+    if guid.startswith("http"):
+        candidates.append(guid)
+
+    for candidate in candidates:
+        if candidate:
+            return _resolve_entry_link(candidate)
+    return ""
 
 
 # ---------------------------------------------------------------------------
@@ -101,12 +275,17 @@ def fetch_feed(url: str) -> list[dict]:
         entries = []
         for e in feed.entries:
             title = e.get("title", "").strip()
-            link = e.get("link", "").strip()
-            link = _resolve_entry_link(link)
+            link = _get_best_link_from_entry(e)
+            if not link:
+                _log_rejection(url, title, "no_link_found")
+                continue
             source_obj = e.get("source") or {}
             publisher_url = ""
             if isinstance(source_obj, dict):
                 publisher_url = _resolve_entry_link((source_obj.get("href", "") or "").strip())
+            publisher_name = ""
+            if isinstance(source_obj, dict):
+                publisher_name = str(source_obj.get("title", "") or "").strip()
             summary = e.get("summary", "") or e.get("description", "") or ""
             content_items = e.get("content", []) or []
             content_value = ""
@@ -114,6 +293,14 @@ def fetch_feed(url: str) -> list[dict]:
                 first_content = content_items[0] or {}
                 if isinstance(first_content, dict):
                     content_value = first_content.get("value", "") or ""
+            categories = []
+            tags = e.get("tags", []) or []
+            if isinstance(tags, list):
+                for tag in tags:
+                    if isinstance(tag, dict):
+                        term = str(tag.get("term", "") or "").strip()
+                        if term:
+                            categories.append(term)
             published = _parse_date(e)
             entries.append(
                 {
@@ -123,6 +310,10 @@ def fetch_feed(url: str) -> list[dict]:
                     "content": content_value,
                     "snippet": "",
                     "publisher_url": publisher_url,
+                    "publisher": publisher_name,
+                    "author": str(e.get("author", "") or "").strip(),
+                    "guid": str(e.get("id", "") or e.get("guid", "") or "").strip(),
+                    "categories": categories,
                     "published": published,
                     "source_url": url,
                     "source_domain": _domain(url),
@@ -443,7 +634,10 @@ def _parse_date(entry) -> datetime | None:
 
 def _domain(url: str) -> str:
     try:
-        return urlparse(url).netloc.lstrip("www.")
+        host = (urlparse(url).netloc or "").lower()
+        if host.startswith("www."):
+            host = host[4:]
+        return host
     except Exception:  # noqa: BLE001
         return ""
 
@@ -493,6 +687,17 @@ def filter_entries(
 
     filtered = []
     for e in entries:
+        source_url = str(e.get("source_url", "") or "")
+        if _is_global_feed_source(source_url) and not _is_venezuela_relevant_entry(e):
+            _log_rejection(
+                source_url,
+                str(e.get("title", "") or ""),
+                "not_venezuela_relevant",
+                candidate_url=str(e.get("link", "") or ""),
+                published_at=_fmt_date(e.get("published")),
+            )
+            continue
+
         entry_max_age = max_age
         section_label = detect_sector_label(e, cfg)
         if section_label in sector_max_age:
@@ -502,13 +707,66 @@ def filter_entries(
                 entry_max_age = max_age
 
         if not passes_age_filter(e, entry_max_age, now):
+            _log_rejection(
+                source_url,
+                str(e.get("title", "") or ""),
+                "too_old",
+                candidate_url=str(e.get("link", "") or ""),
+                published_at=_fmt_date(e.get("published")),
+            )
             continue
         if not passes_exclude_filter(e, exclude_terms):
+            _log_rejection(
+                source_url,
+                str(e.get("title", "") or ""),
+                "excluded_term",
+                candidate_url=str(e.get("link", "") or ""),
+                published_at=_fmt_date(e.get("published")),
+            )
             continue
         if require_country and not passes_country_filter(e, country_terms, geo_terms):
+            _log_rejection(
+                source_url,
+                str(e.get("title", "") or ""),
+                "country_filter_fail",
+                candidate_url=str(e.get("link", "") or ""),
+                published_at=_fmt_date(e.get("published")),
+            )
             continue
         filtered.append(e)
     return filtered
+
+
+def apply_link_quality_gate(entries: list[dict], cfg: dict) -> list[dict]:
+    timeout_seconds = max(1, int(cfg.get("article_extraction", {}).get("timeout_seconds", 6)))
+    accepted: list[dict] = []
+    for entry in entries:
+        source_url = str(entry.get("source_url", "") or "")
+        title = str(entry.get("title", "") or "")
+        candidate_url = str(entry.get("link", "") or "").strip()
+        if not candidate_url:
+            _log_rejection(source_url, title, "no_link_found", "", "", _fmt_date(entry.get("published")))
+            continue
+
+        final_url = _resolve_redirects(candidate_url, timeout_seconds=timeout_seconds)
+        final_url = _resolve_entry_link(final_url)
+        if not final_url:
+            _log_rejection(source_url, title, "redirect_resolve_failed", candidate_url, "", _fmt_date(entry.get("published")))
+            continue
+
+        entry["link"] = final_url
+        entry["source_domain"] = _domain(final_url) or entry.get("source_domain", "")
+
+        if _is_paywalled_or_firewalled_domain(final_url):
+            _log_rejection(source_url, title, "paywall_or_firewall", candidate_url, final_url, _fmt_date(entry.get("published")))
+            continue
+
+        if not _is_valid_resource_url(final_url):
+            _log_rejection(source_url, title, "url_not_article", candidate_url, final_url, _fmt_date(entry.get("published")))
+            continue
+
+        accepted.append(entry)
+    return accepted
 
 
 # ---------------------------------------------------------------------------
@@ -918,6 +1176,17 @@ def _is_probable_homepage_url(url: str) -> bool:
     return False
 
 
+def _is_paywalled_or_firewalled_domain(url: str) -> bool:
+    host = _domain(url).lower().strip()
+    blocked = [
+        "wsj.com",
+        "bloomberg.com",
+        "ft.com",
+        "economist.com",
+    ]
+    return any(host == domain or host.endswith(f".{domain}") for domain in blocked)
+
+
 def _is_valid_resource_url(url: str) -> bool:
     if not url:
         return False
@@ -930,7 +1199,86 @@ def _is_valid_resource_url(url: str) -> bool:
         return False
     if "news.google.com" in host:
         return False
+    if _is_paywalled_or_firewalled_domain(url):
+        return False
+
+    path = (parsed.path or "").lower()
+    bad_exact = {
+        "",
+        "/",
+        "/en",
+        "/es",
+        "/news",
+        "/en/news",
+        "/en/news/",
+        "/en/press",
+        "/press",
+        "/currently",
+        "/en/currently",
+        "/rss",
+        "/rss.xml",
+        "/feed",
+        "/feeds",
+    }
+    if path in bad_exact:
+        return False
+
+    bad_starts = [
+        "/rss",
+        "/feed",
+        "/feeds",
+        "/tag/",
+        "/tags/",
+        "/topic/",
+        "/topics/",
+        "/category/",
+        "/categories/",
+        "/country/",
+        "/countries/",
+        "/press_room",
+        "/press-room",
+        "/about",
+        "/home",
+        "/search",
+        "/sitemap",
+    ]
+    if any(path.startswith(prefix) for prefix in bad_starts):
+        return False
+
     if _is_probable_homepage_url(url):
+        return False
+
+    segments = [segment for segment in path.split("/") if segment]
+    if len(segments) < 2:
+        return False
+
+    has_date = bool(
+        re.search(r"\b20\d{2}/(0?[1-9]|1[0-2])/(0?[1-9]|[12]\d|3[01])\b", path)
+        or re.search(r"\b20\d{2}-(0?[1-9]|1[0-2])-(0?[1-9]|[12]\d|3[01])\b", path)
+    )
+    last = segments[-1] if segments else ""
+    has_long_slug = len(last) >= 12 and not last.endswith(".xml")
+    good_prefixes = [
+        "/publication",
+        "/publications",
+        "/report",
+        "/reports",
+        "/document",
+        "/documents",
+        "/press-release",
+        "/press-releases",
+        "/news/press-release",
+        "/en/news/press-release",
+        "/news/feature",
+        "/en/news/feature",
+        "/news/story",
+        "/en/news/story",
+        "/library",
+        "/resources",
+    ]
+    has_good_prefix = any(path.startswith(prefix) for prefix in good_prefixes)
+
+    if not (has_date or has_long_slug or has_good_prefix):
         return False
     return True
 
@@ -2657,6 +3005,10 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
+    global _REJECTED_LINKS
+    _REJECTED_LINKS = []
+    _load_redirect_cache()
+
     cfg = load_config(config_path)
     feed_urls = load_feeds(feeds_path)
     now = datetime.now(timezone.utc)
@@ -2674,6 +3026,10 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     filtered = filter_entries(raw_entries, cfg, now)
     filtered_count = len(filtered)
     logger.info("After filtering: %d", filtered_count)
+
+    filtered = apply_link_quality_gate(filtered, cfg)
+    filtered_link_count = len(filtered)
+    logger.info("After link quality gate: %d", filtered_link_count)
 
     threshold = cfg.get("deduplication", {}).get("title_similarity_threshold", 0.90)
     deduped = deduplicate(filtered, threshold, cfg=cfg)
@@ -3057,6 +3413,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     docs_diff_path = os.path.join(docs_data_dir, "diff.json")
     docs_macros_path = os.path.join(docs_data_dir, "macros.json")
     docs_highlights_path = os.path.join(docs_data_dir, "highlights.json")
+    docs_rejected_path = os.path.join(docs_data_dir, "rejected_links.json")
 
     if _write_if_changed(docs_latest_path, json.dumps(latest_payload, indent=2)):
         logger.info("Wrote %s", docs_latest_path)
@@ -3066,6 +3423,8 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         logger.info("Wrote %s", docs_macros_path)
     if _write_if_changed(docs_highlights_path, json.dumps(highlights_payload, indent=2)):
         logger.info("Wrote %s", docs_highlights_path)
+    if _write_if_changed(docs_rejected_path, json.dumps(_REJECTED_LINKS, indent=2)):
+        logger.info("Wrote %s", docs_rejected_path)
 
     with open(latest_snapshot_path, "w", encoding="utf-8") as fh:
         json.dump(export_rows, fh, indent=2)
@@ -3132,6 +3491,8 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             indent=2,
         )
     logger.info("Wrote %s", intelligence_summary_path)
+
+    _save_redirect_cache()
 
 
 if __name__ == "__main__":

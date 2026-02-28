@@ -13,17 +13,7 @@
 
     function detectLanguage(item) {
         const declared = (item && item.language ? String(item.language) : '').toLowerCase();
-        if (declared === 'es' || declared === 'en') return declared;
-        const probe = `${(item && item.title) || ''} ${(item && item.preview) || ''}`.toLowerCase();
-        if (/[áéíóúñ¿¡]/.test(probe)) return 'es';
-        const esMarkers = [' de ', ' la ', ' el ', ' y ', ' para ', ' por ', ' con ', ' una ', ' del '];
-        const enMarkers = [' the ', ' and ', ' for ', ' with ', ' from ', ' this ', ' that '];
-        const esScore = esMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
-        const enScore = enMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
-        if (esScore === 0 && enScore === 0) return 'other';
-        if (esScore >= enScore + 1) return 'es';
-        if (enScore >= esScore + 1) return 'en';
-        return 'other';
+        return (declared === 'es' || declared === 'en') ? declared : 'other';
     }
 
     function normalizePreview(text) {
@@ -34,6 +24,30 @@
         const two = `${parts[0]} ${parts[1]}`.trim();
         if (two.length > 340) return '';
         return two;
+    }
+
+    function isArticleUrl(rawUrl) {
+        if (!rawUrl) return false;
+        let parsed;
+        try {
+            parsed = new URL(rawUrl);
+        } catch {
+            return false;
+        }
+        const path = (parsed.pathname || '').toLowerCase();
+        const badExact = new Set(['', '/', '/en', '/es', '/news', '/en/news', '/en/news/', '/rss', '/rss.xml', '/feed', '/feeds', '/home']);
+        if (badExact.has(path)) return false;
+        const badStarts = ['/rss', '/feed', '/feeds', '/topic/', '/topics/', '/category/', '/categories/', '/country/', '/countries/', '/about', '/search', '/sitemap'];
+        if (badStarts.some((prefix) => path.startsWith(prefix))) return false;
+        const segments = path.split('/').filter(Boolean);
+        if (segments.length < 2) return false;
+        const hasDate = /\b20\d{2}\/(0?[1-9]|1[0-2])\/(0?[1-9]|[12]\d|3[01])\b/.test(path)
+            || /\b20\d{2}-(0?[1-9]|1[0-2])-(0?[1-9]|[12]\d|3[01])\b/.test(path);
+        const last = segments[segments.length - 1] || '';
+        const hasLongSlug = last.length >= 12 && !last.endsWith('.xml');
+        const goodPrefixes = ['/publication', '/publications', '/report', '/reports', '/document', '/documents', '/press-release', '/press-releases', '/news/story', '/news/feature', '/resources', '/library'];
+        const hasGoodPrefix = goodPrefixes.some((prefix) => path.startsWith(prefix));
+        return hasDate || hasLongSlug || hasGoodPrefix;
     }
 
     function renderLanguageSwitcher(activeLanguage) {
@@ -124,23 +138,34 @@
         const preview = normalizePreview(item.preview || '');
         if (preview.length < 80) return '';
         const sourceDate = (item.sourcePublishedAt || '').trim();
+        const isVerified = sourceDate.length > 0;
 
         return `
             <article class="item-card">
                 <div class="item-head">
                     <h5><a id="item-${esc(item.id)}"></a><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
                 </div>
-                <p class="item-verified">Verified article URL</p>
+                ${isVerified ? '<p class="item-verified">Verified article URL</p>' : ''}
                 ${sourceDate ? `<p class="item-source-date">Source date: ${esc(sourceDate)}</p>` : ''}
                 <p class="item-desc">${esc(preview)}</p>
             </article>
         `;
     }
 
-    function renderSectors(latest, activeLanguage) {
+    function renderSectors(latest, activeLanguage, rejectedRuntime) {
         return (latest.sectors || []).map((sector) => {
             const renderedItems = (sector.items || [])
-                .filter((item) => detectLanguage(item) === activeLanguage)
+                .filter((item) => {
+                    if (detectLanguage(item) !== activeLanguage) {
+                        rejectedRuntime.push({ reason: 'wrong_language', title: item.title || '', finalUrl: item.url || '' });
+                        return false;
+                    }
+                    if (!isArticleUrl(item.url || '')) {
+                        rejectedRuntime.push({ reason: 'url_not_article_runtime', title: item.title || '', finalUrl: item.url || '' });
+                        return false;
+                    }
+                    return true;
+                })
                 .map(renderItem)
                 .filter(Boolean)
                 .join('');
@@ -152,6 +177,22 @@
                 </section>
             `;
         }).filter(Boolean).join('');
+    }
+
+    function renderRejectedDebug(rejectedRuntime, rejectedBuild) {
+        const merged = [...(rejectedRuntime || []), ...(rejectedBuild || [])];
+        if (!merged.length) return '';
+        const rows = merged.slice(0, 300).map((item) => `
+            <li><strong>${esc(item.reason || 'rejected')}</strong> — ${esc(item.title || '')}${item.finalUrl ? ` · <a href="${esc(item.finalUrl)}" target="_blank" rel="noopener">link</a>` : ''}</li>
+        `).join('');
+        return `
+            <section class="panel">
+                <details>
+                    <summary>Rejected items (debug)</summary>
+                    <ul>${rows}</ul>
+                </details>
+            </section>
+        `;
     }
 
     function renderMacros(macros) {
@@ -181,27 +222,46 @@
                 loadJson('data/macros.json'),
                 loadIMF()
             ]);
+            const debugMode = new URLSearchParams(window.location.search).get('debug') === '1';
+            let rejectedBuild = [];
+            if (debugMode) {
+                try {
+                    rejectedBuild = await loadJson('data/rejected_links.json');
+                } catch {
+                    rejectedBuild = [];
+                }
+            }
 
             let activeLanguage = 'en';
+            const languageCounts = (latest.sectors || []).flatMap((sector) => (sector.items || []))
+                .reduce((acc, item) => {
+                    const lang = detectLanguage(item);
+                    if (lang === 'en' || lang === 'es') acc[lang] += 1;
+                    return acc;
+                }, { en: 0, es: 0 });
+            if (languageCounts.en === 0 && languageCounts.es > 0) activeLanguage = 'es';
 
             const render = () => {
-                const sectorsHtml = renderSectors(latest, activeLanguage);
+                const rejectedRuntime = [];
+                const sectorsHtml = renderSectors(latest, activeLanguage, rejectedRuntime);
                 root.innerHTML = `
                     ${renderLanguageSwitcher(activeLanguage)}
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}
+                    ${debugMode ? renderRejectedDebug(rejectedRuntime, rejectedBuild) : ''}
                 `;
-
-                root.querySelectorAll('.lang-btn').forEach((button) => {
-                    button.addEventListener('click', () => {
-                        const selected = button.getAttribute('data-lang');
-                        if (!selected || selected === activeLanguage) return;
-                        activeLanguage = selected;
-                        render();
-                    });
-                });
             };
+
+            root.addEventListener('click', (event) => {
+                const target = event.target;
+                if (!(target instanceof HTMLElement)) return;
+                if (!target.classList.contains('lang-btn')) return;
+                const selected = target.getAttribute('data-lang');
+                if (!selected || (selected !== 'en' && selected !== 'es') || selected === activeLanguage) return;
+                activeLanguage = selected;
+                render();
+            });
 
             render();
         } catch (error) {
