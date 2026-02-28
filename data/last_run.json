@@ -1,18 +1,18 @@
 {
-  "run_at": "2026-02-28T21:58:56.605557+00:00",
-  "fetched": 2061,
-  "filtered": 137,
-  "deduplicated": 33,
-  "selected": 33,
-  "diff_new": 28,
+  "run_at": "2026-02-28T22:09:44.378697+00:00",
+  "fetched": 2068,
+  "filtered": 140,
+  "deduplicated": 34,
+  "selected": 34,
+  "diff_new": 24,
   "diff_updated": 0,
-  "diff_dropped": 13,
+  "diff_dropped": 0,
   "trend_summary": {
-    "freq_7d": 33.0,
+    "freq_7d": 34.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
-  "sanctions_index": 41,
+  "sanctions_index": 49,
   "macro_indicators": [
     {
       "name": "GDP growth estimate",
@@ -61,17 +61,17 @@
   ],
   "sector_briefs": {
     "Extractives": {
-      "health": 7,
-      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 32/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 6,
+      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 36/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
+        "US says it will allow resale of Venezuelan oil to Cuba",
+        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
+        "US says it will allow resale of Venezuelan oil to Cuba",
+        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -173,10 +173,10 @@
   "timeline_rows": [
     {
       "date": "2026-02-28",
-      "signals_count": 33,
-      "sanctions_count": 2,
-      "oil_count": 7,
-      "risk_avg": 23.48
+      "signals_count": 34,
+      "sanctions_count": 3,
+      "oil_count": 8,
+      "risk_avg": 24.56
     }
   ],
   "output_file": "/workspaces/VZLAnews/docs/index.md",

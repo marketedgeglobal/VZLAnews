@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-02-28T21:58:56.605557+00:00",
-  "totalItems": 21,
+  "runAt": "2026-02-28T22:09:44.378697+00:00",
+  "totalItems": 22,
   "sectors": [
     {
       "name": "Extractives & Mining",
@@ -44,7 +44,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -84,8 +84,7 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE",
-            "NEW"
+            "TRADE"
           ]
         },
         {
@@ -115,7 +114,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -148,8 +147,7 @@
             ]
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         }
       ]
@@ -175,7 +173,7 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
+          "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
@@ -216,17 +214,69 @@
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "10.42",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "07",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "score": 0
+              }
+            ]
           },
           "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense,\u2026",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
+            "s1": "Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source: http://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/\u2026",
+            "s2": "Los ataques estadounidenses del \u00faltimo a\u00f1o, que han evitado el despliegue de soldados sobre el terreno, han sido **justificados por la Casa Blanca** en nombre de la seguridad nacional o la lucha antiterrorista, pero han\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security, with 28 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+              "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026"
+            ]
           },
           "icons": []
         }
@@ -383,7 +433,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -417,8 +467,7 @@
           },
           "icons": [
             "FX",
-            "HUMAN",
-            "NEW"
+            "HUMAN"
           ]
         }
       ]
@@ -427,9 +476,9 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza,\u2026",
-          "Field updates show Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa\u2026",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
+          "Officials reported Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026",
+          "Field updates show Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026",
+          "Separate sources indicate Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa\u2026"
         ],
         "drivers": [],
         "watch": [
@@ -439,6 +488,99 @@
         ]
       },
       "items": [
+        {
+          "id": "afd9a3cb55d7",
+          "title": "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
+          "url": "https://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Leandro Palmar y Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras hac\u00edan una cobertura en una plaza de Maracaibo, estado Zulia. Al tiempo los llevaron a Tocor\u00f3n.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "visitas de sus familiares. Leandro estaba angustiado por su madre: Delia, de 84 a\u00f1os, viv\u00eda sola en una urbanizaci\u00f3n de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "111",
+                "context": "Solo se escuchaba el ruido constante del motor. Cuando llegaron al Destacamento 111 de la Guardia Nacional Bolivariana\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "100",
+                "context": "dejaron. Y el tiempo comenz\u00f3 a pasar. Dentro del destacamento hab\u00eda casi 100 personas detenidas que compart\u00edan un solo\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "m\u00e1s tiempo presos, med\u00eda apenas 5,6 metros cuadrados. Los custodios les entregaban 5 litros de agua al d\u00eda a cada uno,\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "11",
+                "context": "incitaci\u00f3n al odio, asociaci\u00f3n para delinquir y alteraci\u00f3n del orden p\u00fablico. El 11 de enero de 2025, cuando ya ten\u00edan\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "9",
+                "context": "Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Apenas sali\u00f3 de Tocor\u00f3n, la luz del d\u00eda le golpe\u00f3 la cara. Encandilado por la claridad, el periodista Leandro Palmar sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba.",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source: http://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/ Published Time:\u2026",
+            "s2": "Al tiempo los llevaron a Tocor\u00f3n",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 14 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
+              "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026"
+            ]
+          },
+          "icons": []
+        },
         {
           "id": "4ab668b0cfe5",
           "title": "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
@@ -470,7 +612,13 @@
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
+                "context": "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "8",
+                "context": "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026",
                 "score": 0
               },
               {
@@ -487,20 +635,26 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "48",
-                "context": "Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026 Un\u2026",
+                "value": "8",
+                "context": "Andes](https://elpitazo.net/category/regiones/los-andes/) * [Guayana](https://elpitazo.net/category/regiones/guayana/)\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/)\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "public\u00f3 primero en El Pitazo . Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de\u2026",
+                "context": "la mayor de 10 a\u00f1os, **muriendo mientras intentaba socorrer a la de 8 a\u00f1os**. Ambos fueron hallados sin vida entre los\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
                 "score": 0
               }
             ]
@@ -509,13 +663,13 @@
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia",
-            "s2": "El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
+            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
+            "s2": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 28 de febrero de 2026 ![Image\u2026",
             "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
-              "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026"
+              "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
+              "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026"
             ]
           },
           "icons": []
@@ -543,7 +697,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -611,9 +765,7 @@
               "de suspensi\u00f3n de vuelos a Oriente Medio tras ataque a Ir\u00e1n febrero 28, 2026 Ministro de Exteriores iran\u00ed: \"El l\u00edder Ali\u2026"
             ]
           },
-          "icons": [
-            "NEW"
-          ]
+          "icons": []
         }
       ]
     }

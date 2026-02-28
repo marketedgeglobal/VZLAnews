@@ -180,6 +180,9 @@ def _is_venezuela_relevant_entry(entry: dict) -> bool:
         entry.get("summary", ""),
         entry.get("content", ""),
         entry.get("snippet", ""),
+        entry.get("link", ""),
+        entry.get("publisher_url", ""),
+        entry.get("source_url", ""),
         " ".join([str(c) for c in categories]),
         entry.get("publisher", ""),
         entry.get("author", ""),
@@ -197,6 +200,11 @@ def _is_venezuela_relevant_entry(entry: dict) -> bool:
 
 
 def _get_best_link_from_entry(entry: dict) -> str:
+    # Priority order:
+    # 1) entry.link
+    # 2) origLink / feedburner original link variants
+    # 3) Atom alternate link
+    # 4) guid/id URL fallback
     candidates: list[str] = []
 
     raw_link = str(entry.get("link", "") or "").strip()
@@ -206,7 +214,7 @@ def _get_best_link_from_entry(entry: dict) -> str:
     for key in ("origLink", "origlink", "feedburner:origLink", "feedburner_origlink", "feedburner_origLink"):
         val = str(entry.get(key, "") or "").strip()
         if val:
-            candidates.insert(0, val)
+            candidates.append(val)
 
     links = entry.get("links", []) or []
     if isinstance(links, list):
@@ -216,16 +224,21 @@ def _get_best_link_from_entry(entry: dict) -> str:
             rel = str(item.get("rel", "") or "").lower().strip()
             href = str(item.get("href", "") or "").strip()
             if rel == "alternate" and href:
-                candidates.insert(0, href)
+                candidates.append(href)
                 break
 
     guid = str(entry.get("id", "") or entry.get("guid", "") or "").strip()
     if guid.startswith("http"):
         candidates.append(guid)
 
+    seen: set[str] = set()
     for candidate in candidates:
-        if candidate:
-            return _resolve_entry_link(candidate)
+        if not candidate or candidate in seen:
+            continue
+        seen.add(candidate)
+        resolved = _resolve_entry_link(candidate)
+        if resolved:
+            return resolved
     return ""
 
 
@@ -332,6 +345,12 @@ def _resolve_entry_link(link: str) -> str:
     try:
         parsed = urlparse(link)
         host = parsed.netloc.lower()
+        if "news.google.com" in host:
+            query = parse_qs(parsed.query)
+            for key in ("url", "u"):
+                target = query.get(key, [""])[0]
+                if target.startswith("http"):
+                    return unquote(target)
         if "bing.com" in host and "apiclick.aspx" in parsed.path:
             query = parse_qs(parsed.query)
             target = query.get("url", [""])[0]
@@ -756,6 +775,10 @@ def apply_link_quality_gate(entries: list[dict], cfg: dict) -> list[dict]:
 
         entry["link"] = final_url
         entry["source_domain"] = _domain(final_url) or entry.get("source_domain", "")
+
+        if _is_global_feed_source(source_url) and not _is_venezuela_relevant_entry(entry):
+            _log_rejection(source_url, title, "not_venezuela_relevant", candidate_url, final_url, _fmt_date(entry.get("published")))
+            continue
 
         if _is_paywalled_or_firewalled_domain(final_url):
             _log_rejection(source_url, title, "paywall_or_firewall", candidate_url, final_url, _fmt_date(entry.get("published")))

@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-02-28T21:58:56.605557+00:00",
+  "run_at": "2026-02-28T22:09:44.378697+00:00",
   "alerts": [
     {
       "type": "New sanctions",
       "triggered": true,
-      "detail": "2 sanctions-related signals in current cycle."
+      "detail": "3 sanctions-related signals in current cycle."
     },
     {
       "type": "Oil export change >10%",
