@@ -42,6 +42,31 @@ body {
     line-height: 1.55;
 }
 
+.language-panel {
+    padding: 10px 14px;
+}
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    border: 1px solid var(--me-border);
+    background: var(--me-surface);
+    color: var(--me-primary);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: var(--me-primary);
+    color: #fff;
+    border-color: var(--me-primary);
+}
+
 .top-row {
     display: grid;
     gap: 14px;
@@ -69,19 +94,13 @@ body {
 }
 
 .item-head {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     gap: 8px;
 }
 
 .item-head h5 {
     margin: 0;
     font-size: 15px;
-}
-
-.item-icons {
-    display: flex;
-    gap: 6px;
 }
 
 .item-meta,
@@ -95,6 +114,12 @@ body {
     margin: 4px 0;
     font-size: 12px;
     color: var(--me-text);
+}
+
+.item-desc {
+    margin-top: 8px;
+    color: var(--me-text);
+    font-size: 15px;
 }
 
 .macro-value {

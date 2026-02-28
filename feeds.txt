@@ -68,3 +68,17 @@ Google News – Venezuela debt bonds - https://news.google.com/rss/search?q=Vene
 Bing News – Venezuela finance investment - https://www.bing.com/news/search?q=venezuela+finance+investment&format=rss
 Bloomberg – Economics - https://feeds.bloomberg.com/economics/news.rss
 LatinFinance - https://www.latinfinance.com/rss
+
+
+# ============================
+# SPANISH-LANGUAGE SOURCES
+# ============================
+
+Google News – Venezuela economía política (es) - https://news.google.com/rss/search?q=Venezuela+econom%C3%ADa+pol%C3%ADtica&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela petróleo PDVSA (es) - https://news.google.com/rss/search?q=Venezuela+petr%C3%B3leo+PDVSA&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela inflación tipo de cambio (es) - https://news.google.com/rss/search?q=Venezuela+inflaci%C3%B3n+tipo+de+cambio&hl=es-419&gl=VE&ceid=VE:es-419
+Google News – Venezuela salud agua saneamiento (es) - https://news.google.com/rss/search?q=Venezuela+salud+agua+saneamiento&hl=es-419&gl=VE&ceid=VE:es-419
+El Nacional - https://www.elnacional.com/feed/
+Efecto Cocuyo - https://efectococuyo.com/feed/
+El Pitazo - https://elpitazo.net/feed/
+TalCual - https://talcualdigital.com/feed/

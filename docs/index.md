@@ -1,6 +1,6 @@
-# VZLAnews Intelligence Platform
+# PartnerAI: Venezuela Insights
 
-> Updated: **2026-02-28 20:50 UTC**
+> Updated: **2026-02-28 20:57 UTC**
 
 <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
 

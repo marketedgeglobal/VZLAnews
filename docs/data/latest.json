@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-02-28T20:50:21.415344+00:00",
+  "runAt": "2026-02-28T20:57:07.511383+00:00",
   "totalItems": 35,
   "sectors": [
     {
@@ -7,7 +7,7 @@
       "synth": {
         "bullets": [
           "Officials reported Check your inbox or spam folder to confirm your subscription.",
-          "Field updates show Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura\u2026",
+          "Field updates show News Extra Missiles across Middle East: T&T Nationals urged to shelter in place The Government, through the Ministry of Foreign and CARICOM Affairs, has issued\u2026",
           "Separate sources indicate News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics\u2026"
         ],
         "drivers": [
@@ -102,6 +102,7 @@
           },
           "preview": "U.S. Eyes 'Favorable Licensing Policy' to Make Cuba More Reliant on American Fuel: Report",
           "preview_source": "trafilatura",
+          "language": "en",
           "insight2": {
             "s1": "News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics Immigration Business Entertainment Sports Culture Lifestyle Video\u2026",
             "s2": "Attacks, Offers 'Off Ramps' To The Regime By Demian Bio Ruben Gallego Takes Aim At Donald Trump Over Attack Against Iranian Regime: 'Draft Dodger Is Willing To Sacrifice Working Class Kids' By Demian Bio Marjorie Taylor\u2026",
@@ -198,6 +199,7 @@
           },
           "preview": "",
           "preview_source": "none",
+          "language": "en",
           "insight2": {
             "s1": "Check your inbox or spam folder to confirm your subscription",
             "s2": "OPINION: MOST POPULAR Categories Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627) International (11,147) Africa (441) Asia (2,521) Europe (1,051)\u2026",
@@ -250,7 +252,7 @@
               {
                 "label": "Policy or market figure",
                 "value": "US$3 million",
-                "context": "More News Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
+                "context": "shot Ocelot Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
                 "score": 2
               },
               {
@@ -285,27 +287,28 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "7",
-                "context": "Defence Force suffered a humiliating loss in the United States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC\u2026",
+                "value": "15",
+                "context": "Headlines Latest Headlines T&T Govt backs US, as Middle East conflict escalates 15 mins ago The Government of Trinidad\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "30",
-                "context": "States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC stay perfect in 30-overs Queen\u2019s Park Cricket Club and\u2026",
+                "value": "17",
+                "context": "1 hr ago The Government, through the Ministry of Fo\u2026 T20 REBOOT 17 hrs ago West Indies women\u2019s captain Hayley Matthew\u2026\u2026",
                 "score": 0
               }
             ]
           },
           "preview": "",
           "preview_source": "none",
+          "language": "en",
           "insight2": {
-            "s1": "Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura Holdings Ltd, Rahim Mohammed has been placed on paid\u2026",
-            "s2": "News Extra Small signs of hope for shot Ocelot Susan Mohammed Keep Papaoutai in your prayers, urged veterinarian Dr Kriyaan Singh, who has been providing medical care to the ocelot that suffered injuries from a gunshot\u2026",
+            "s1": "News Extra Missiles across Middle East: T&T Nationals urged to shelter in place The Government, through the Ministry of Foreign and CARICOM Affairs, has issued an advisory to nationals following the rapid escalation of\u2026",
+            "s2": "Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura Holdings Ltd, Rahim Mohammed has been placed on paid\u2026",
             "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in extractives & mining, with US$3 million as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "More News Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
+              "shot Ocelot Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
               "pending Investigation Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar\u2026"
             ]
           },
@@ -421,6 +424,7 @@
           },
           "preview": "",
           "preview_source": "none",
+          "language": "en",
           "insight2": {
             "s1": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) *\u2026",
             "s2": "EUSPA CASSINI Challenge could help, Jana Kominek Vecerkova](https://irishtechnews.ie/euspa-cassini-challenge-jana-kominek/)\u2026",
@@ -462,7 +466,7 @@
             "risk": true,
             "opportunity": false,
             "new": false,
-            "updated": true
+            "updated": false
           },
           "metrics": {
             "numbers": [
@@ -518,6 +522,7 @@
           },
           "preview": "Venezuelan Trade Unions Stage Nationwide Demonstrations, Demand Wage Hikes Working-class organizations have likewise opposed reforms to the labor law that favor the private sector. Be the first to know what is happening in Venezuela! Facts and figures about US-led sanctions, their deadly consequences and grassroots resistance.",
           "preview_source": "trafilatura",
+          "language": "en",
           "insight2": {
             "s1": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What Is Really\u2026",
             "s2": "Leave this field empty if you\u2019re human: NEWS Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration Mandates Venezuelan Oil\u2026",
@@ -616,6 +621,7 @@
           },
           "preview": "",
           "preview_source": "none",
+          "language": "en",
           "insight2": {
             "s1": "CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba Interviews Opinion Cuisine United States Florida Spain\u2026",
             "s2": "United States Cuba News Donald Trump Marco Rubio Border Guard Ships Changes in Cuba Cubans in the United States MININT The White House Cuban government Shooting Coast Guard Iran Fuel crisis in Cuba Villa Clara Miami\u2026",
@@ -635,7 +641,7 @@
       "synth": {
         "bullets": [
           "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
-          "Field updates show Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+          "Field updates show El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
           "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
         ],
         "drivers": [
@@ -649,6 +655,48 @@
         ]
       },
       "items": [
+        {
+          "id": "ea3accf446da",
+          "title": "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
+          "url": "https://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-28",
+          "sourceTier": "Tier 2",
+          "sector": "Health & Water",
+          "snippet": "Washington. El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense, Donald Trump, quien regres\u00f3 al poder el a\u00f1o pasado\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Security"
+          ],
+          "sentiment": "Negative",
+          "materiality": 1,
+          "risk_score": 45,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense,\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
         {
           "id": "88f7a527864e",
           "title": "The road to self-sufficiency for Venezuelan communities - nrc.no",
@@ -690,6 +738,7 @@
           },
           "preview": "EducationDisplacement has a devastating impact on learning, and often leads to education being interrupted or denied. NRC works to ensure that children and youth forced to flee can access high-quality, safe, inclusive and relevant learning opportunities.",
           "preview_source": "trafilatura",
+          "language": "en",
           "insight2": {
             "s1": "We have redirected you to a site for your country, if this was not correct, please use the link to go back",
             "s2": "Go back Hide About us The Norwegian Refugee Council (NRC) is a global humanitarian organisation helping people forced to flee",
@@ -701,100 +750,6 @@
             ]
           },
           "icons": []
-        },
-        {
-          "id": "691860c09d6b",
-          "title": "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
-          "url": "https://www.cdc.gov/",
-          "publisher": "cdc.gov",
-          "publishedAt": "2026-02-06",
-          "sourceTier": "Tier 3",
-          "sector": "Health & Water",
-          "snippet": "A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Negative",
-          "materiality": 1,
-          "risk_score": 35,
-          "entities": [],
-          "tags": [
-            "Health"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Health signal",
-                "value": "19",
-                "context": "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "19",
-                "context": "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "24",
-                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "7",
-                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "800",
-                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "232",
-                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "1 Million",
-                "context": "Cancer is Now the Largest in the Nation \u00e2\u0080\u008e\u00e2\u0080\u008eJAN \u00e2\u0080\u008e\u00e2\u0080\u008e30 CDC Surpasses 1 Million Voluntary Air Travel Participants in\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "19",
-                "context": "About CDC About CDC Close Search Search Featured Topics How Flu Spreads COVID-19 Treatment Cancer Screening Substance\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "insight2": {
-            "s1": "Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States",
-            "s2": "Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in health & water, with 19 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
-              "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026"
-            ]
-          },
-          "icons": [
-            "HUMAN",
-            "NEW"
-          ]
         },
         {
           "id": "df80c6cf8104",
@@ -880,6 +835,7 @@
           },
           "preview": "Copyright: \u00a9 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
           "preview_source": "jina",
+          "language": "en",
           "insight2": {
             "s1": "E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required field",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
@@ -901,7 +857,7 @@
       "synth": {
         "bullets": [
           "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
-          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News 'a large amount of leadership' in Iran\u2026",
+          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News Trump to NBC News on reports of Ayatollah's death: 'We feel that that\u2026",
           "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
         ],
         "drivers": [
@@ -991,6 +947,7 @@
           },
           "preview": "",
           "preview_source": "none",
+          "language": "en",
           "insight2": {
             "s1": "Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201 Killed, US Military Reports No\u2026",
             "s2": "And Israel War Against Iran](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilMDDfXjLJQc/v0/715x477.jpg) Morteza Nikoubazl/NurPhoto/Getty\u2026",
@@ -1080,6 +1037,7 @@
           },
           "preview": "Meta har f\u00e5tt innvilget et patent for kunstig intelligens som kan simulere en persons aktivitet p\u00e5 sosiale medier, skriver 730. Med Metas nye KI-teknologi kan du dele bilder fra livet ditt, selv etter at du d\u00f8r.",
           "preview_source": "trafilatura",
+          "language": "en",
           "insight2": {
             "s1": "Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser Utenriks Anmeldelser Debatt Magasinet Baksiden Kontakt oss Annonsere?",
             "s2": "Om Universitas Universitas \u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo",
@@ -1131,14 +1089,14 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "12m",
-                "context": "'A large number' of Iranian leaders were killed in strikes Just now 12m ago In a phone call with NBC News, Trump said\u2026",
+                "value": "19m",
+                "context": "'A large number' of Iranian leaders were killed in strikes Just now 19m ago In a phone call with NBC News, Trump said\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "11",
-                "context": "'a large amount of leadership' in Iran was killed in strikes IE 11 is not supported. For an optimal experience visit\u2026",
+                "context": "of Ayatollah's death: 'We feel that that is a correct story' IE 11 is not supported. For an optimal experience visit\u2026",
                 "score": 0
               },
               {
@@ -1155,28 +1113,29 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "38",
-                "context": "FOR SUBSCRIBERS Senior Iranian figures killed in strikes, Israeli military official says 01:38 FOR SUBSCRIBERS\u2026",
+                "value": "7m",
+                "context": "gather at the 'March 4 Democracy' protest in Washington, D.C. Just now 7m ago Protesters unfurled a giant banner\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "14m",
-                "context": "strikes. Trump says military action in Iran was a 'success' Just now 14m ago In an interview with NBC News, the\u2026",
-                "score": -3
+                "value": "38",
+                "context": "FOR SUBSCRIBERS Senior Iranian figures killed in strikes, Israeli military official says 01:38 FOR SUBSCRIBERS\u2026",
+                "score": 0
               }
             ]
           },
           "preview": "OpenAI strikes deal with Pentagon, hours after Trump cut off talks with Anthropic CEO Sam Altman announced the agreement, which comes after Pete Hegseth said he would label rival Anthropic a national security risk. In a phone call with NBC News, Trump confirmed that \"a large amount of leadership\" had been killed in Iran in today's strikes. In an interview with NBC News, the president said today's military strikes in Iran are \"already a success.\"",
           "preview_source": "trafilatura",
+          "language": "en",
           "insight2": {
-            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News BREAKING: Trump tells NBC News 'a large amount of leadership' in Iran was killed in strikes IE 11 is not supported",
+            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News Trump to NBC News on reports of Ayatollah's death: 'We feel that that is a correct story' IE 11 is not supported",
             "s2": "For an optimal experience visit our site on another browser",
             "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 15 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
               "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
-              "'A large number' of Iranian leaders were killed in strikes Just now 12m ago In a phone call with NBC News, Trump said\u2026"
+              "'A large number' of Iranian leaders were killed in strikes Just now 19m ago In a phone call with NBC News, Trump said\u2026"
             ]
           },
           "icons": [
@@ -1189,15 +1148,14 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown\u2026",
+          "Officials reported Associated Press News: Breaking News, Latest Headlines and Videos Menu World SECTIONS Israel-Hamas War Russia-Ukraine War Espa\u00f1ol China Asia Pacific Latin\u2026",
           "Field updates show Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation\u2026",
           "Separate sources indicate They were placed on your computer when you launched this website."
         ],
         "drivers": [
           "Debt restructuring",
           "FX / Inflation",
-          "Oil production/export",
-          "Regulatory reform"
+          "Oil production/export"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1206,48 +1164,6 @@
         ]
       },
       "items": [
-        {
-          "id": "01405a9c1cf6",
-          "title": "Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert",
-          "url": "https://discoveryalert.com.au/",
-          "publisher": "Discovery Alert",
-          "publishedAt": "2026-02-27",
-          "sourceTier": "Tier 3",
-          "sector": "Finance & Investment",
-          "snippet": "![Image 2: Discovery Alert Winner Badges](https://discoveryalert.com.au/wp-content/uploads/2026/02/discovery-alert-winner-badges-white.png) [Top ASX News Today](http://discoveryalert.com.au/) Latest ASX Stock News --------------------- Breaking ASX stock news and analysis\u2026",
-          "snippet_status": "",
-          "summary_confidence": "Low (Page extraction)",
-          "event_types": [
-            "Oil production/export",
-            "Regulatory reform"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Energy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": true
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "",
-          "preview_source": "none",
-          "insight2": {
-            "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining & Energy News\u2026",
-            "s2": "Email Get Free Alerts No spam policy, unsubscribe any time",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around finance & investment decisions.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": []
-        },
         {
           "id": "9047dc697889",
           "title": "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
@@ -1325,6 +1241,7 @@
           },
           "preview": "Discussions around central bank digital currencies typically begin with the intended use case. If the ...",
           "preview_source": "jina",
+          "language": "en",
           "insight2": {
             "s1": "Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation --------------------------------------------\u2026",
             "s2": "[Register >](https://www.omfif.org/meetings/march-fomc-meeting-assessment-and-outlook-for-us-monetary-policy/) [![Image 2: European sovereign, supranational and agency forum\u2026",
@@ -1412,6 +1329,7 @@
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan goods while facilitating reciprocal African investment in Venezuela. The visit emphasized creating a comprehensive framework for trade that extends beyond oil and gas, promoting manufactured goods, services and skills exchange.",
           "preview_source": "jina",
+          "language": "es",
           "insight2": {
             "s1": "They were placed on your computer when you launched this website",
             "s2": "You can change your cookie settings through your browser",
@@ -1425,6 +1343,95 @@
           "icons": [
             "FX"
           ]
+        },
+        {
+          "id": "a0401771fd98",
+          "title": "Venezuela\u2019s acting president signs oil industry overhaul, easing state control to lure investors - AP News",
+          "url": "https://apnews.com/",
+          "publisher": "AP News",
+          "publishedAt": "2026-01-30",
+          "sourceTier": "Tier 1",
+          "sector": "Finance & Investment",
+          "snippet": "Read the latest headlines, breaking news, and videos at APNews.com, the definitive source for independent journalism from every corner of the globe.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export",
+            "FX / Inflation"
+          ],
+          "sentiment": "Positive",
+          "materiality": 3,
+          "risk_score": 27,
+          "entities": [
+            "FX controls"
+          ],
+          "tags": [
+            "Energy",
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "and Thunder as Dort is ejected after fouling Jokic Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "30",
+                "context": "Transportation Abortion LGBTQ+ Notable Deaths TOP STORIES Attorney general announces indictment against 30 more people\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "behind dozens of hits of the 1960s and '70s, dies at age 86 Actor Tessa Thompson, Sen. Adam Schiff and more sound off\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "",
+          "preview_source": "none",
+          "language": "en",
+          "insight2": {
+            "s1": "Associated Press News: Breaking News, Latest Headlines and Videos Menu World SECTIONS Israel-Hamas War Russia-Ukraine War Espa\u00f1ol China Asia Pacific Latin America Europe Africa TOP STORIES LIVE Israeli officials say\u2026",
+            "s2": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 25 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+            ]
+          },
+          "icons": [
+            "FX",
+            "NEW"
+          ]
         }
       ]
     },
@@ -1432,12 +1439,12 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025\u2026",
-          "Field updates show Politics Since its founding in 1922, Foreign Affairs has been the leading forum for serious discussion of American foreign policy and global affairs.",
-          "Separate sources indicate Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT\u2026"
+          "Officials reported Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza,\u2026",
+          "Field updates show El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero.",
+          "Separate sources indicate Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto\u2026"
         ],
         "drivers": [
-          "Humanitarian crisis"
+          "FX / Inflation"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1447,117 +1454,20 @@
       },
       "items": [
         {
-          "id": "722639242266",
-          "title": "UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consecutive year",
-          "url": "https://www.paho.org/en/news/27-2-2026-report-latin-america-and-caribbean-advances-eradicating-hunger-fourth-consecutive",
-          "publisher": "paho.org",
-          "publishedAt": "2026-02-27",
-          "sourceTier": "Tier 1",
+          "id": "4ab668b0cfe5",
+          "title": "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
+          "url": "https://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-28",
+          "sourceTier": "Tier 2",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though concerns remain around the cost of a healthy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment\u2026",
+          "snippet": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Humanitarian crisis"
-          ],
+          "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Infrastructure",
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Health signal",
-                "value": "3.8%",
-                "context": "and regional levels. In 2024, the cost of a healthy diet increased 3.8% in Latin America and the Caribbean, making it\u2026",
-                "score": 5
-              },
-              {
-                "label": "Health signal",
-                "value": "27.4%",
-                "context": "healthy diet compared to 2021, when unaffordability peaked at 197.3 million. Still, 27.4% of the population in LAC,\u2026",
-                "score": 5
-              },
-              {
-                "label": "Health signal",
-                "value": "167 million",
-                "context": "women than men. Despite improvements, over 33 million people still face hunger, 167 million experience food insecurity,\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "181.9 million",
-                "context": "over 33 million people still face hunger, 167 million experience food insecurity, 181.9 million cannot afford a healthy\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "197.3 million",
-                "context": "to afford a healthy diet compared to 2021, when unaffordability peaked at 197.3 million. Still, 27.4% of the population\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "15.4 million",
-                "context": "the rising cost of a healthy diet, affordability has improved. In 2024, 15.4 million more people were able to afford a\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "181.9 million",
-                "context": "unaffordability peaked at 197.3 million. Still, 27.4% of the population in LAC, 181.9 million people, could not afford\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "27",
-                "context": "remain around the cost of a healthy diet and steep obesity. February 27, 2026, Santiago, Chile --In Latin America and\u2026",
-                "score": 3
-              }
-            ]
-          },
-          "preview": "According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though concerns remain around the cost of a healthy diet and steep obesity. February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025 Regional Overview of Food Security and Nutrition: Statistics and Trends, released today. The report states that undernourishment affected 5.1% of the population in 2024, down from a peak of 6.1% in 2020.",
-          "preview_source": "trafilatura",
-          "insight2": {
-            "s1": "February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025 Regional Overview of Food Security and Nutrition: Statistics and\u2026",
-            "s2": "This means 6.2 million fewer people are experiencing hunger in the region",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 3.8% as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "and regional levels. In 2024, the cost of a healthy diet increased 3.8% in Latin America and the Caribbean, making it\u2026",
-              "healthy diet compared to 2021, when unaffordability peaked at 197.3 million. Still, 27.4% of the population in LAC,\u2026"
-            ]
-          },
-          "icons": [
-            "TRADE",
-            "HUMAN"
-          ]
-        },
-        {
-          "id": "1ae6d38f0c3b",
-          "title": "Venezuela\u2019s Long Road to Recovery - Foreign Affairs",
-          "url": "https://www.foreignaffairs.com/",
-          "publisher": "Foreign Affairs",
-          "publishedAt": "2026-02-23",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Foreign Affairs is the leading magazine for in-depth analysis and debate of foreign policy, geopolitics and international affairs.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Positive",
           "materiality": 1,
-          "risk_score": 5,
+          "risk_score": 15,
           "entities": [],
           "tags": [
             "Policy"
@@ -1565,77 +1475,164 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "12",
-                "context": "Sanam Vakil and Alex Vatanka Iran\u2019s Dangerous Desperation What Comes After the 12-Day War Suzanne Maloney What Kind of\u2026",
+                "value": "8",
+                "context": "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "57",
-                "context": "Stephen M. Walt Play audio of the episode Listen to the Episode 57 mins Follow the Podcast Ukraine and the New Way of\u2026",
+                "value": "8",
+                "context": "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga,\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "48",
+                "context": "Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026 Un\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "8",
+                "context": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en",
                 "score": 0
               }
             ]
-          },
-          "preview": "Foreign Affairs Magazine Stay informed. Subscribe for full site access, audio, and exclusive downloads. SubscribeBook Reviews The Hour of the Predator: Encounters With the Autocrats and Tech Billionaires Taking Over the World By Giuliano da Empoli.",
-          "preview_source": "trafilatura",
-          "insight2": {
-            "s1": "Politics Since its founding in 1922, Foreign Affairs has been the leading forum for serious discussion of American foreign policy and global affairs",
-            "s2": "The magazine has featured contributions from many leading international affairs experts",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around cross-cutting / policy / risk, with 12 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Sanam Vakil and Alex Vatanka Iran\u2019s Dangerous Desperation What Comes After the 12-Day War Suzanne Maloney What Kind of\u2026",
-              "Stephen M. Walt Play audio of the episode Listen to the Episode 57 mins Follow the Podcast Ukraine and the New Way of\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "036d9aa47583",
-          "title": "Africa Venezuela Energy Ties: Strategic Partnership Growth - Discovery Alert",
-          "url": "https://discoveryalert.com.au/",
-          "publisher": "Discovery Alert",
-          "publishedAt": "2026-02-22",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "![Image 2: Discovery Alert Winner Badges](https://discoveryalert.com.au/wp-content/uploads/2026/02/discovery-alert-winner-badges-white.png) [Top ASX News Today](http://discoveryalert.com.au/) Latest ASX Stock News --------------------- Breaking ASX stock news and analysis\u2026",
-          "snippet_status": "",
-          "summary_confidence": "Low (Page extraction)",
-          "event_types": [],
-          "sentiment": "Positive",
-          "materiality": 1,
-          "risk_score": 5,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": true
-          },
-          "metrics": {
-            "numbers": []
           },
           "preview": "",
           "preview_source": "none",
+          "language": "es",
           "insight2": {
-            "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining & Energy News\u2026",
-            "s2": "Email Get Free Alerts No spam policy, unsubscribe any time",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone.",
+            "s1": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia",
+            "s2": "El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
+              "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026"
+            ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "00a433b0fcae",
+          "title": "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb",
+          "url": "https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-28",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "27",
+                "context": "que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X,\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Roc\u00edo Fern\u00e1ndez, capitana del Ej\u00e9rcito Bolivariano y perteneciente al pueblo originario wayuu, y Jes\u00fas Sifontes, teniente de corbeta de la Armada, est\u00e1n entre los excarcelados. Para este s\u00e1bado, familiares, activistas y organizaciones no gubernamentales est\u00e1n convocando a una vigilia en las adyacencias de El Helicoide para exigir la liberaci\u00f3n de todos los presos pol\u00edticos",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero",
+            "s2": "En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around fx / inflation, with 27 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X,\u2026"
+            ]
+          },
+          "icons": [
+            "FX",
+            "NEW"
+          ]
+        },
+        {
+          "id": "3a89dd46f7a3",
+          "title": "Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda",
+          "url": "https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-27",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda, lo que oblig\u00f3 a suspender temporalmente los aterrizajes hasta retirar el avi\u00f3n de\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "El incidente \u2014 que no dej\u00f3 lesionados \u2014 fue protagonizado por la aeronave de carga privada Beech A100 King Air (matr\u00edcula YV1306), que tuvo que hacer un **aterrizaje fue de emergencia**. Seg\u00fan report\u00f3 la cuenta de X **AeroNoticiasV**E, especializada en temas aeron\u00e1uticos.",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda, lo que oblig\u00f3 a\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 24 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
         }
       ]
     }

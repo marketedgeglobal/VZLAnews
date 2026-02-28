@@ -825,6 +825,27 @@ def _validate_preview_text(text: str) -> str:
     return clean.strip()
 
 
+def _detect_content_language(*texts: str) -> str:
+    combined = " ".join([_normalize_text_block(text) for text in texts if text]).strip()
+    if not combined:
+        return "en"
+    low = combined.lower()
+    if re.search(r"[áéíóúñ¿¡]", low):
+        return "es"
+
+    spanish_markers = {
+        " de ", " la ", " el ", " y ", " en ", " para ", " por ", " con ", " una ", " del ",
+        "venezuela", "gobierno", "economía", "petróleo", "inflación", "mercado", "sancciones",
+    }
+    english_markers = {
+        " the ", " and ", " in ", " for ", " with ", " from ", " that ", " this ", "venezuela",
+        "government", "economy", "oil", "inflation", "market", "sanctions",
+    }
+    score_es = sum(1 for marker in spanish_markers if marker in f" {low} ")
+    score_en = sum(1 for marker in english_markers if marker in f" {low} ")
+    return "es" if score_es > score_en else "en"
+
+
 def _load_preview_cache(latest_payload_path: str) -> dict[str, dict]:
     cache: dict[str, dict] = {}
     allowed_sources = {"trafilatura", "readability", "jina", "cache"}
@@ -2049,7 +2070,7 @@ def _build_highlights(items: list[dict], sector_synth: dict[str, dict]) -> dict:
 
 def _build_docs_shell(run_at: str) -> str:
     return "\n".join([
-        "# VZLAnews Intelligence Platform",
+        "# PartnerAI: Venezuela Insights",
         "",
         f"> Updated: **{run_at}**",
         "",
@@ -2723,6 +2744,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
 
         item["preview"] = preview_payload.get("preview", "")
         item["preview_source"] = preview_payload.get("preview_source", "none")
+        item["language"] = _detect_content_language(item.get("preview", ""), item.get("title", ""))
         source_parts = [
             str(entry.get("article_text", "") or "").strip(),
             str(entry.get("meta_description", "") or "").strip(),

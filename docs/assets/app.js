@@ -5,62 +5,31 @@
         return response.json();
     }
 
-    const iconMap = {
-        RISK: '⚠️',
-        OPPORTUNITY: '✅',
-        POLICY: '🏛️',
-        ENERGY: '⛽',
-        FX: '💱',
-        TRADE: '🚢',
-        HUMAN: '🧭',
-        NEW: '🆕'
-    };
-
     function esc(value) {
         return String(value || '').replace(/[&<>"']/g, (char) => (
             { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char] || char
         ));
     }
 
-    function list(items) {
-        return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
+    function detectLanguage(item) {
+        const declared = (item && item.language ? String(item.language) : '').toLowerCase();
+        if (declared === 'es' || declared === 'en') return declared;
+        const probe = `${(item && item.title) || ''} ${(item && item.preview) || ''}`.toLowerCase();
+        if (/[áéíóúñ¿¡]/.test(probe)) return 'es';
+        const esMarkers = [' de ', ' la ', ' el ', ' y ', ' para ', ' por ', ' con ', ' una ', ' del '];
+        const enMarkers = [' the ', ' and ', ' for ', ' with ', ' from ', ' this ', ' that '];
+        const esScore = esMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
+        const enScore = enMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
+        return esScore > enScore ? 'es' : 'en';
     }
 
-    function renderDevelopment(item, idx) {
-        if (typeof item === 'string') {
-            return `<li>${esc(item)}</li>`;
-        }
-        if (!item || typeof item !== 'object') {
-            return '<li>Monitoring continues for concrete policy and operational developments.</li>';
-        }
-        const links = (item.itemIds || []).slice(0, 3)
-            .map((id, sourceIdx) => `<a href="#item-${esc(id)}">[${sourceIdx + 1}]</a>`)
-            .join(' ');
-        const sourceLine = links ? ` <span class="sources">Sources: ${links}</span>` : '';
-        return `<li>${esc(item.text || ('Development ' + (idx + 1)))}${sourceLine}</li>`;
-    }
-
-    function renderNumbers(items) {
-        return `<ul>${(items || []).slice(0, 3).map((n) => {
-            const label = esc(n && n.label ? n.label : 'Quantitative signal');
-            const value = esc(n && n.value ? n.value : 'N/A');
-            const context = n && n.context ? ` (${esc(n.context)})` : '';
-            const source = n && n.itemId ? ` <a href="#item-${esc(n.itemId)}">[source]</a>` : '';
-            return `<li><strong>${label}:</strong> ${value}${context}${source}</li>`;
-        }).join('')}</ul>`;
-    }
-
-    function renderTop(highlights) {
+    function renderLanguageSwitcher(activeLanguage) {
         return `
-            <section class="top-row">
-                <article class="panel">
-                    <h3>Key Developments</h3>
-                    <ul>${(highlights.keyDevelopments || []).slice(0, 5).map(renderDevelopment).join('')}</ul>
-                </article>
-                <article class="panel">
-                    <h3>By the Numbers</h3>
-                    ${renderNumbers(highlights.byTheNumbers)}
-                </article>
+            <section class="panel language-panel">
+                <div class="language-switch" role="group" aria-label="Language filter">
+                    <button class="lang-btn ${activeLanguage === 'en' ? 'active' : ''}" data-lang="en" type="button">English</button>
+                    <button class="lang-btn ${activeLanguage === 'es' ? 'active' : ''}" data-lang="es" type="button">Español</button>
+                </div>
             </section>
         `;
     }
@@ -139,38 +108,34 @@
     }
 
     function renderItem(item) {
-        const icons = (item.icons || []).map((icon) => `<span class="item-icon" title="${esc(icon)}">${iconMap[icon] || '•'}</span>`).join('');
-        const evidence = (item.insight2 && item.insight2.evidence ? item.insight2.evidence : []).slice(0, 2);
-        const evidenceHtml = evidence.length
-            ? `<div class="item-evidence">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
-            : '';
         const preview = (item.preview || '').trim();
-        const description = preview.length >= 80 ? preview : 'Open the source for details.';
+        if (preview.length < 80) return '';
 
         return `
             <article class="item-card">
                 <div class="item-head">
                     <h5><a id="item-${esc(item.id)}"></a><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
-                    <div class="item-icons">${icons}</div>
                 </div>
-                <p class="item-meta">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
-                <p class="item-desc">${esc(description)}</p>
-                ${evidenceHtml}
+                <p class="item-desc">${esc(preview)}</p>
             </article>
         `;
     }
 
-    function renderSectors(latest) {
+    function renderSectors(latest, activeLanguage) {
         return (latest.sectors || []).map((sector) => {
-            const bullets = sector.synth && sector.synth.bullets ? sector.synth.bullets.slice(0, 3) : [];
+            const renderedItems = (sector.items || [])
+                .filter((item) => detectLanguage(item) === activeLanguage)
+                .map(renderItem)
+                .filter(Boolean)
+                .join('');
+            if (!renderedItems) return '';
             return `
                 <section class="sector-block">
                     <h3>${esc(sector.name)}</h3>
-                    <div class="sector-synth">${list(bullets)}</div>
-                    <div class="items-grid">${(sector.items || []).map(renderItem).join('')}</div>
+                    <div class="items-grid">${renderedItems}</div>
                 </section>
             `;
-        }).join('');
+        }).filter(Boolean).join('');
     }
 
     function renderMacros(macros) {
@@ -195,23 +160,34 @@
         const root = document.getElementById('app-root');
         if (!root) return;
         try {
-            const [latest, highlights, macros, imf] = await Promise.all([
+            const [latest, macros, imf] = await Promise.all([
                 loadJson('data/latest.json'),
-                loadJson('data/highlights.json'),
                 loadJson('data/macros.json'),
                 loadIMF()
             ]);
 
-            root.innerHTML = `
-                <section class="exec-brief panel">
-                    <h2>Executive Brief</h2>
-                    ${list((highlights.executiveBriefBullets || []).slice(0, 5))}
-                </section>
-                ${renderTop(highlights)}
-                ${renderIMFCard(imf)}
-                ${renderSectors(latest)}
-                ${renderMacros(macros)}
-            `;
+            let activeLanguage = 'en';
+
+            const render = () => {
+                const sectorsHtml = renderSectors(latest, activeLanguage);
+                root.innerHTML = `
+                    ${renderLanguageSwitcher(activeLanguage)}
+                    ${renderIMFCard(imf)}
+                    ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
+                    ${renderMacros(macros)}
+                `;
+
+                root.querySelectorAll('.lang-btn').forEach((button) => {
+                    button.addEventListener('click', () => {
+                        const selected = button.getAttribute('data-lang');
+                        if (!selected || selected === activeLanguage) return;
+                        activeLanguage = selected;
+                        render();
+                    });
+                });
+            };
+
+            render();
         } catch (error) {
             root.innerHTML = `<p class="error">Unable to load dashboard data: ${esc(error.message)}</p>`;
         }

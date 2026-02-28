@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-02-28T20:50:21.415344+00:00",
+  "run_at": "2026-02-28T20:57:07.511383+00:00",
   "alerts": [
     {
       "type": "New sanctions",
       "triggered": true,
-      "detail": "3 sanctions-related signals in current cycle."
+      "detail": "2 sanctions-related signals in current cycle."
     },
     {
       "type": "Oil export change >10%",
@@ -14,17 +14,17 @@
     {
       "type": "Inflation spike news",
       "triggered": true,
-      "detail": "9 inflation/FX items surfaced."
+      "detail": "10 inflation/FX items surfaced."
     },
     {
       "type": "Executive decree",
       "triggered": true,
-      "detail": "6 governance/decree-related signals detected."
+      "detail": "7 governance/decree-related signals detected."
     },
     {
       "type": "Protest escalation",
       "triggered": true,
-      "detail": "5 security/protest indicators detected."
+      "detail": "7 security/protest indicators detected."
     }
   ]
 }
