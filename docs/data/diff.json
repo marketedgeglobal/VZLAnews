@@ -1,13 +1,12 @@
 {
-  "runAt": "2026-02-28T19:14:55.814406+00:00",
+  "runAt": "2026-02-28T19:18:25.209844+00:00",
   "counts": {
     "new": 18,
     "updated": 0,
     "dropped": 1
   },
   "new": [
-    "url::https://www.yahoo.com/news/articles/us-allow-resale-venezuelan-oil-183146811.html",
-    "url::https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVUtay16Q3p0dlZ5N3B5X01BQVJaTFdmZVdJWndWOXB5Zm55YnZ2aU51cTJqY0R6MFR6Y0VwODZReEdDcDZoUS1jME9aRXVERE1LbU1PYmstaWtpbGktd1lNUVlXdUdQSFFSdkR5clozRTRnOEgyWWpVNTZ0SXJUM05rb1JTbm9OUzJERVFhQWFtRW1rY2RkaFo2OGRZWHJNWVg4?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "url::https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yOVczRzlUU0ZyMEN0TmtQTDJybThuV1daaGs2ZTNGU1dIWG5qZWQzbEw0aHhVMVYtMTg4bHBUOTF3X0JzVGFuZTdfb3ZkQlJHSExIdU5zSFlCZWpLTlVvdVh4Zw?oc=5&hl=en-US&gl=US&ceid=US:en",
     "url::https://news.google.com/rss/articles/CBMinAFBVV95cUxPMU1WN1pmTnhhejVQcEkxZlJUUF9ZVVJEZnhYdENDTEIzMUZSNDlUS0htRXZfVlFWLWI3bm8tT2R6MVZyQnRBYnZWZ25ydHdqMUJrZDlHZ0JmZUJZNTI3aFgzZlIyNTZDelA2bUNReHpIS3IwTGZONm1nNTBQbEtrMzFlMkd3aDdyQXVaaXFXazUyQWwtYUdMRFpOYVI?oc=5&hl=en-US&gl=US&ceid=US:en",
     "url::https://www.zawya.com/en/press-release/africa-press-releases/petroleos-de-venezuela-sa-pdvsa-venezuelas-hydrocarbon-ministry-african-energy-chamber-aec-sign-memorandum-of-m3qxof1h",
     "url::https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
@@ -23,10 +22,11 @@
     "url::https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZGRqV2Vtakt1a1BzZmVBT1pYdmJ3eHVHS2t1bURoYWdYd2E3dUxNZkV3cFdYSHBwYWd5RE9GU1ZEUDRtYTRhSVdNa2JmamkxZDFRNTlhdXFQY2pESkd1cU9Ed3FXVktHYnFMaWtmc1FmQ09aVzZPdTJqM3FlTy01MzBVS1h2d3B6YlhtcXhINW1kamVuS0ZTdFRwSzZSZ0NsRGY0NGVHcWxVMkFUa3VfNXpwNHZSMGFSRi11QnJwY1V1QdIBzwFBVV95cUxNdmxqMlB3WXVhdzVVVnE0MDVqVWE3ajIwYUU2eDNwUmFNbWs0NWlmY21GN2hVWXBhSVJXWWh0aHllQUVyeXVIbjZOUGIzMDVhWGxBMTBGTExfdk1pcV94ZkMwMGZwSXZ6WEJRWGFBekhtTExWZTMweFlhSHdVODg4RlRZS0cteDBSak1wXzV4Zm9DeFd1TjZzWC02LTJSWHdkNTVXMFVhSGRLQkVmRmF1cElkR2FpaEtZZEVtRnBXekRJTUJHTElNeDd3dFIyMTQ?oc=5",
     "url::https://news.google.com/rss/articles/CBMipAFBVV95cUxNV0RveFY3dmdTNE1kNGpnaVI0emZrTW02NmpJVkE0SHdMdzNpaHVJaUgwdUFaQmUwNktGLTAwMzhFckdrS1RMMzIxaTBQQXBoZEN2WEVIUVBSbEdWQ2JubWkzNGhRc1B6UGF4eG44TnJVTFp6alV0dFFzaG8wa3pGSHJtc0E0bTFyd1B6X2tIM2MwLUZvUzJTd2E4QzR5UF9kRG52cA?oc=5",
     "url::https://news.google.com/rss/articles/CBMivwFBVV95cUxOYUVZdHlPVGRMLTRxWURKMlNUUlpEMHVGeG5KLUVtMUdRbk1nNE1vWjNPZmJaVEtwU1R3X3F4R2J0S0VTenJFV1J4UHd3SV9OOTQ1eE5TOVp5a3VlODhKZ2RQajkyN2VxdkZWRUthVUdCT1NlX2R4c0VOLW9uXzgycWkwck9aR1FFQmYwd2plSjViYTRWZGFpLUhWZ0lqMDVxUkZTeXNBdXVUTDNBOW9LWFBJczd6Vk1fRlYwNHpyWQ?oc=5",
-    "url::https://news.google.com/rss/articles/CBMinwFBVV95cUxPMnViOG9xR1NXeHpyX2djMy1nX1JXbjY3ODVCR1Q5dWhzdE5YVDhRMlpBX2JHRGw3ampTeF80bHFtN1RBVVlrUTRQaFZ2dWtYb3FxM3pPR1NIMnpOYV94Z2dPbG14VHF3SjRLd0dzektTUFRodjJjUVd2aE84bDlZYnVRLVFPdXZjWExaSmE5MEUxaEFLSTl5cUhBcGtJLVE?oc=5"
+    "url::https://news.google.com/rss/articles/CBMinwFBVV95cUxPMnViOG9xR1NXeHpyX2djMy1nX1JXbjY3ODVCR1Q5dWhzdE5YVDhRMlpBX2JHRGw3ampTeF80bHFtN1RBVVlrUTRQaFZ2dWtYb3FxM3pPR1NIMnpOYV94Z2dPbG14VHF3SjRLd0dzektTUFRodjJjUVd2aE84bDlZYnVRLVFPdXZjWExaSmE5MEUxaEFLSTl5cUhBcGtJLVE?oc=5",
+    "url::https://news.google.com/rss/articles/CBMiywFBVV95cUxNNVBUY0xPcTgySGs3cUEta29kNXlhYWNpWXlGRXJrYlAxTF9yRlBfcXFrRWVRN3RZQkx1aWRMWjlnZGt2WU5YWlpzNk9IdFlKRThFZFY3ZzhTU3lPbUJPMUlrRzNsSUZOWDBQaHlpSFZ1NExUaWlObEV3WkVVMWNibXY1clZFU2NYekg3WDhzQUVFU2dVOUNiUWtnMVhQaldoVXQwQXo1em5FZjRxVkxYQVdDTTBtWDlCUjBYQzNTdm1FN1pONVVDRjFJOA?oc=5"
   ],
   "updated": [],
   "dropped": [
-    "url::https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yOVczRzlUU0ZyMEN0TmtQTDJybThuV1daaGs2ZTNGU1dIWG5qZWQzbEw0aHhVMVYtMTg4bHBUOTF3X0JzVGFuZTdfb3ZkQlJHSExIdU5zSFlCZWpLTlVvdVh4Zw?oc=5&hl=en-US&gl=US&ceid=US:en"
+    "url::https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVUtay16Q3p0dlZ5N3B5X01BQVJaTFdmZVdJWndWOXB5Zm55YnZ2aU51cTJqY0R6MFR6Y0VwODZReEdDcDZoUS1jME9aRXVERE1LbU1PYmstaWtpbGktd1lNUVlXdUdQSFFSdkR5clozRTRnOEgyWWpVNTZ0SXJUM05rb1JTbm9OUzJERVFhQWFtRW1rY2RkaFo2OGRZWHJNWVg4?oc=5&hl=en-US&gl=US&ceid=US:en"
   ]
 }

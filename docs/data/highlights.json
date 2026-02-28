@@ -1,18 +1,18 @@
 {
-  "executiveBrief": "This week in extractives & mining, reporting clustered around FX / Inflation, Oil production/export, Political transition, Sanctions. This week in food & agriculture, reporting clustered around FX / Inflation, Humanitarian crisis, Oil production/export, Sanctions. This week in health & water, reporting clustered around Humanitarian crisis, Political transition, Security. This week in education & workforce, reporting clustered around FX / Inflation.",
+  "executiveBrief": "This week in extractives & mining, reporting clustered around FX / Inflation, Oil production/export, Political transition, Sanctions. This week in food & agriculture, reporting clustered around FX / Inflation, Humanitarian crisis, Oil production/export, Sanctions. This week in health & water, reporting clustered around Political transition, Security. This week in education & workforce, reporting clustered around FX / Inflation.",
   "keyDevelopments": [
     "Food & Agriculture: Coverage this cycle points to humanitarian crisis dynamics in Venezuela.",
-    "Extractives & Mining: A notable change appears in oil production/export dynamics in Venezuela with reference points such as 25.",
     "Food & Agriculture: A notable change appears in oil production/export dynamics in Venezuela.",
     "Extractives & Mining: Coverage this cycle points to oil production/export dynamics in Venezuela.",
-    "Extractives & Mining: Reporting indicates movement in sanctions dynamics in Venezuela."
+    "Extractives & Mining: Reporting indicates movement in sanctions dynamics in Venezuela.",
+    "Food & Agriculture: Reporting indicates movement in fx / inflation dynamics in Venezuela."
   ],
   "byTheNumbers": [
-    "Extractives & Mining: 25 \u2014 WASHINGTON, Feb 25 (Reuters) - The U.S. Treasury Depar",
-    "Extractives & Mining: 25 \u2014 e posted on the ... WASHINGTON, Feb 25 (Reuters) - The U.S. Treasury Depar",
     "Cross-cutting / Policy / Risk: 27 \u2014 thy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin A",
     "Cross-cutting / Policy / Risk: 2026 \u2014 diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America",
-    "Cross-cutting / Policy / Risk: 2018 \u2014 able Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updat"
+    "Cross-cutting / Policy / Risk: 2018 \u2014 able Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updat",
+    "Cross-cutting / Policy / Risk: 2030 \u2014 Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updates Do",
+    "Cross-cutting / Policy / Risk: 27 \u2014 onsecutive year Copied to clipboard 27 Feb 2026 According to the publicati"
   ],
   "sectorSynth": {
     "Extractives & Mining": {
@@ -57,14 +57,13 @@
     },
     "Health & Water": {
       "sentences": [
-        "This week in health & water, reporting clustered around Humanitarian crisis, Political transition, Security.",
+        "This week in health & water, reporting clustered around Political transition, Security.",
         "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
         "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
         "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
         "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
       ],
       "drivers": [
-        "Humanitarian crisis",
         "Political transition",
         "Security"
       ],

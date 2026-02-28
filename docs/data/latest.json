@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-02-28T19:14:55.814406+00:00",
+  "runAt": "2026-02-28T19:18:25.209844+00:00",
   "totalItems": 35,
   "sectors": [
     {
@@ -314,14 +314,13 @@
       "name": "Health & Water",
       "synth": {
         "sentences": [
-          "This week in health & water, reporting clustered around Humanitarian crisis, Political transition, Security.",
+          "This week in health & water, reporting clustered around Political transition, Security.",
           "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
           "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
           "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
           "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
         ],
         "drivers": [
-          "Humanitarian crisis",
           "Political transition",
           "Security"
         ],
@@ -368,23 +367,23 @@
           "icons": []
         },
         {
-          "id": "5feb0e802120",
-          "title": "Venezuela - European Civil Protection and Humanitarian Aid Operations",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVUtay16Q3p0dlZ5N3B5X01BQVJaTFdmZVdJWndWOXB5Zm55YnZ2aU51cTJqY0R6MFR6Y0VwODZReEdDcDZoUS1jME9aRXVERE1LbU1PYmstaWtpbGktd1lNUVlXdUdQSFFSdkR5clozRTRnOEgyWWpVNTZ0SXJUM05rb1JTbm9OUzJERVFhQWFtRW1rY2RkaFo2OGRZWHJNWVg4?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "id": "7bff66d7c1a3",
+          "title": "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yOVczRzlUU0ZyMEN0TmtQTDJybThuV1daaGs2ZTNGU1dIWG5qZWQzbEw0aHhVMVYtMTg4bHBUOTF3X0JzVGFuZTdfb3ZkQlJHSExIdU5zSFlCZWpLTlVvdVh4Zw?oc=5&hl=en-US&gl=US&ceid=US:en",
           "publisher": "news.google.com",
           "publishedAt": "2026-02-06",
           "sourceTier": "Tier 3",
           "sector": "Health & Water",
           "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Humanitarian crisis"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
+          "event_types": [],
+          "sentiment": "Negative",
+          "materiality": 1,
+          "risk_score": 35,
           "entities": [],
-          "tags": [],
+          "tags": [
+            "Health"
+          ],
           "flags": {
             "risk": false,
             "opportunity": false,
@@ -395,8 +394,8 @@
             "numbers": []
           },
           "insight2": {
-            "s1": "A notable change appears in humanitarian crisis dynamics in Venezuela.",
-            "s2": "The operating takeaway is a mixed but actionable signal set for health & water.",
+            "s1": "The latest shift centers on health & water dynamics in Venezuela.",
+            "s2": "For donors and investors, this implies a mixed but actionable signal set for health & water.",
             "confidence": "HIGH",
             "evidence": [
               "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
