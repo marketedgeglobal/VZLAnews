@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-02-28T20:21:13.945943+00:00",
+  "run_at": "2026-02-28T20:24:25.360171+00:00",
   "trend_summary": {
     "freq_7d": 35.0,
     "intensity_30d": "\u2192 Stable",
@@ -9,7 +9,7 @@
   "sector_briefs": {
     "Extractives": {
       "health": 7,
-      "summary": "This week in extractives, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 32/100. Positive momentum appears in 2 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 34/100. Positive momentum appears in 2 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
         "US says it will allow resale of Venezuelan oil to Cuba",
@@ -28,7 +28,7 @@
     },
     "Finance": {
       "health": 7,
-      "summary": "This week in finance, signal flow is concentrated around Debt restructuring, FX / Inflation, Oil production/export. Risk pressure is mixed with an average score of 26/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in finance, signal flow is concentrated around Debt restructuring, FX / Inflation, Oil production/export. Risk pressure is mixed with an average score of 29/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
@@ -65,12 +65,12 @@
       ]
     },
     "Health": {
-      "health": 8,
-      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 25/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "health": 7,
+      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
-        "Venezuela's health system: when force meets fragility",
-        "The road to self-sufficiency for Venezuelan communities - nrc.no"
+        "The road to self-sufficiency for Venezuelan communities - nrc.no",
+        "Venezuela's health system: when force meets fragility"
       ],
       "opportunities": [
         "The road to self-sufficiency for Venezuelan communities - nrc.no",

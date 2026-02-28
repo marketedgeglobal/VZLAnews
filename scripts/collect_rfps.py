@@ -93,6 +93,10 @@ def fetch_feed(url: str) -> list[dict]:
             title = e.get("title", "").strip()
             link = e.get("link", "").strip()
             link = _resolve_entry_link(link)
+            source_obj = e.get("source") or {}
+            publisher_url = ""
+            if isinstance(source_obj, dict):
+                publisher_url = _resolve_entry_link((source_obj.get("href", "") or "").strip())
             summary = e.get("summary", "") or e.get("description", "") or ""
             content_items = e.get("content", []) or []
             content_value = ""
@@ -108,6 +112,7 @@ def fetch_feed(url: str) -> list[dict]:
                     "summary": summary,
                     "content": content_value,
                     "snippet": "",
+                    "publisher_url": publisher_url,
                     "published": published,
                     "source_url": url,
                     "source_domain": _domain(url),
@@ -244,6 +249,7 @@ def _is_blocked_extraction_domain(entry: dict, blocked_domains: set[str]) -> boo
 
     source_domain = (entry.get("source_domain", "") or "").lower().strip()
     link_domain = _domain(entry.get("link", "") or "").lower().strip()
+    publisher_domain = _domain(entry.get("publisher_url", "") or "").lower().strip()
 
     for blocked in blocked_domains:
         blocked = blocked.lower().strip()
@@ -252,6 +258,8 @@ def _is_blocked_extraction_domain(entry: dict, blocked_domains: set[str]) -> boo
         if source_domain == blocked or source_domain.endswith(f".{blocked}"):
             return True
         if link_domain == blocked or link_domain.endswith(f".{blocked}"):
+            return True
+        if publisher_domain == blocked or publisher_domain.endswith(f".{blocked}"):
             return True
     return False
 
@@ -297,7 +305,9 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
         if fetched_count >= max_items:
             break
         link = entry.get("link", "")
-        if not link:
+        publisher_url = str(entry.get("publisher_url", "") or "").strip()
+        preferred_url = publisher_url or link
+        if not preferred_url:
             continue
         if _is_blocked_extraction_domain(entry, blocked_domains):
             skipped_count += 1
@@ -305,15 +315,18 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
 
         fetched_count += 1
 
-        if link in html_cache:
-            resolved_link, html = html_cache[link]
+        if preferred_url in html_cache:
+            resolved_link, html = html_cache[preferred_url]
         else:
-            resolved_link, html = _fetch_article_html(link, timeout_seconds=timeout_seconds)
-            html_cache[link] = (resolved_link, html)
+            resolved_link, html = _fetch_article_html(preferred_url, timeout_seconds=timeout_seconds)
+            html_cache[preferred_url] = (resolved_link, html)
 
-        if resolved_link and resolved_link != link:
+        if resolved_link and resolved_link != preferred_url:
             entry["link"] = resolved_link
             entry["source_domain"] = _domain(resolved_link) or entry.get("source_domain", "")
+        elif publisher_url:
+            entry["link"] = publisher_url
+            entry["source_domain"] = _domain(publisher_url) or entry.get("source_domain", "")
 
         meta_desc = _extract_meta_description(html)
         cleaned_meta = _clean_snippet(meta_desc, entry.get("title", ""), max_chars=280, min_chars=80)
@@ -333,7 +346,7 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
                 entry["first_paragraph"] = cleaned_paragraph
                 entry["snippet"] = cleaned_paragraph
 
-        article_url = entry.get("link") or resolved_link or link
+        article_url = entry.get("link") or resolved_link or preferred_url
         article_text = fetch_article_text(article_url, timeout_seconds=timeout_seconds, max_chars=max_chars)
         if len(article_text) < min_chars:
             article_text = _fetch_article_text_via_jina(article_url, timeout_seconds=max(timeout_seconds, 8), max_chars=max_chars)

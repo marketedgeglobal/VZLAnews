@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-02-28T20:21:13.945943+00:00",
+  "runAt": "2026-02-28T20:24:25.360171+00:00",
   "totalItems": 35,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
-          "Officials reported Reporting describes an actionable development in political transition with concrete implications in Venezuela.",
-          "Field updates show Venezuela meets with Shell execs on oil/gas projects.",
-          "Separate sources indicate Reporting describes an actionable development in security with concrete implications in Venezuela."
+          "Officials reported February 27, 2026 Central America and the Caribbean (+Mexico) Latin America and ALBA-TCP \u2018Worthy Children of Heroes and Martyrs\u2019: How Nicaragua Cultivates Peace\u2026",
+          "Field updates show Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura\u2026",
+          "Separate sources indicate News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics\u2026"
         ],
         "drivers": [
           "FX / Inflation",
@@ -24,16 +24,16 @@
       },
       "items": [
         {
-          "id": "f7ee14e7da85",
+          "id": "a81f871dce93",
           "title": "U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNlA1ZzRVNzhyM0FvYkYzcDlldEFYYmREQjU0aU9DMXRNYTh5UVFweTZGVmpSaHExSW1CM3VlVHZtQk10VDR4UFRET1dOMnU2d1JBQ09LQy1pRHc0Z1ZJODU0MmlxSkVmQnZFVzZoRzlzQnJUYlhKZXB1MlBuSlYxNlQtQThoM3FBRHc4Q3gyc0RKQ1dfUEF4dEYwWkFnZ0FCakhfMFFqMEdsa2JTUFhQZzBVRHNSNDdMTE51M0hiU0RBQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.latintimes.com/",
           "publisher": "Latin Times",
           "publishedAt": "2026-02-28",
           "sourceTier": "Tier 3",
           "sector": "Extractives & Mining",
-          "snippet": "This cycle brought a concrete update on U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future'.",
+          "snippet": "Top news from Latinos in New York, Texas, California, and Florida with breaking news, interviews, videos and analysis on US politics, immigration, soccer, telenovelas, movies, food, diet, beauty, fashion, and more.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "Security"
           ],
@@ -45,36 +45,88 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "10 Years",
+                "context": "U.S. Tags, Officials Say By Demian Bio In Focus Bruno Mars Took 10 Years To Release A New Album: The Result Is Food For\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "27",
+                "context": "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "26",
+                "context": "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Key Ports On The Canal Amid U.S.-China Dispute By Demian Bio | 02/24/26 10:40 AM EST Tony Gonzales Trailing GOP Primary\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "26",
+                "context": "Key Ports On The Canal Amid U.S.-China Dispute By Demian Bio | 02/24/26 10:40 AM EST Tony Gonzales Trailing GOP Primary\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "38",
+                "context": "El Mencho After Tracking His Lover, General Claims By Demian Bio Video 00:38 Marco Rubio Is the Most Popular Politician\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Killed In Airstrike On Tehran, Israeli Media Reports By Demian Bio | 02/28/26 15:01 PM EST Top News Trump Says It Will\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "26",
+                "context": "Killed In Airstrike On Tehran, Israeli Media Reports By Demian Bio | 02/28/26 15:01 PM EST Top News Trump Says It Will\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in security with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for extractives & mining operations.",
-            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics Immigration Business Entertainment Sports Culture\u2026",
+            "s2": "Attacks, Offers 'Off Ramps' To The Regime By Demian Bio Ruben Gallego Takes Aim At Donald Trump Over Attack Against Iranian Regime: 'Draft Dodger Is Willing To Sacrifice Working Class Kids' By Demian Bio\u2026",
+            "s3": "Operational implication: this changes near-term execution assumptions for institutions monitoring this sector, with 10 Years serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts\u2026"
+              "Top news from Latinos in New York, Texas, California, and Florida with breaking news, interviews, videos and analysis\u2026",
+              "U.S. Tags, Officials Say By Demian Bio In Focus Bruno Mars Took 10 Years To Release A New Album: The Result Is Food For\u2026",
+              "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026"
             ]
           },
           "icons": [
-            "ENERGY"
+            "ENERGY",
+            "NEW"
           ]
         },
         {
-          "id": "f02d504a5300",
+          "id": "b28de1e086d4",
           "title": "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2o0b0V1emRrSHR0Yy1memtndl94UGV0V1dFdVkxVGp2Uk9hWDc1NTgxSzhNSXBOdDdleGdjWDNBaTBxNGhPRUVnelo5VEd4V01CakR3ZkFmUndWdWZ3RW9ic2NxU1ZaY3h3R3FYTnQ4VmlFbDJ2SllsekxNMTNyd0Z2a1lKTnlFTDlWRWdkN2lWemdpWU1oNW5XTGY5aE0yVVNuUw?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://orinocotribune.com/",
           "publisher": "Orinoco Tribune",
           "publishedAt": "2026-02-27",
           "sourceTier": "Tier 3",
           "sector": "Extractives & Mining",
-          "snippet": "This cycle brought a concrete update on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+          "snippet": "{\"title\":\"\",\"limit\":\"7\",\"offset\":0,\"range\":\"daily\",\"time_quantity\":24,\"time_unit\":\"hour\",\"freshness\":false,\"order_by\":\"views\",\"post_type\":\"post\",\"pid\":\"\",\"exclude\":\"\",\"cat\":\"\",\"taxonomy\":\"category\",\"term_id\":\"-3\",\"author\":\"\",\"shorten_title\":{\"active\":true,\"length\":\"10\",\"words\":tr\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "Sanctions",
             "Political transition"
@@ -89,38 +141,90 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Health signal",
+                "value": "441",
+                "context": "Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627)\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "28",
+                "context": "Denounces US Violation of Right to Defense Amid Funding Blockade orinocotribune February 28, 2026 2 International News\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "27",
+                "context": "2026 News Politics Venezuela: Acting Attorney General and Ombudsperson Take Oath February 27, 2026 International News\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "28",
+                "context": "Rodr\u00edguez Requests That Trump End Sanctions and Blockade Against Venezuela orinocotribune February 28, 2026 3 Central\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "142",
+                "context": "22, 2026 7 International News Death Toll From US Extrajudicial Killings Reaches 142, Venezuela Condemns Renewal of US\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "27",
+                "context": "International News US Allows Limited Resale of Venezuelan Oil to Cuba February 27, 2026 Economy News Acting President\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "27",
+                "context": "International News US Allows Limited Resale of Venezuelan Oil to Cuba February 27, 2026 OT SPECIALS 1 International\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "627",
+                "context": "OPINION: MOST POPULAR Categories Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology\u2026",
+                "score": 3
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in political transition with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in compliance requirements, delivery timelines, and execution risk for extractives & mining operations.",
-            "s3": "Why this matters: this raises downside exposure and tightens execution requirements for near-term planning.",
-            "confidence": "LOW",
+            "s1": "February 27, 2026 Central America and the Caribbean (+Mexico) Latin America and ALBA-TCP \u2018Worthy Children of Heroes and Martyrs\u2019: How Nicaragua Cultivates Peace February 27, 2026 Asia International NED Leader\u2026",
+            "s2": "Check your inbox or spam folder to confirm your subscription.",
+            "s3": "Decision relevance: this raises downside exposure and tightens execution requirements for near-term planning, with 441 serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela."
+              "{\"title\":\"\",\"limit\":\"7\",\"offset\":0,\"range\":\"daily\",\"time_quantity\":24,\"time_unit\":\"hour\",\"freshness\":false,\"order_by\":\"v\u2026",
+              "Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627)\u2026",
+              "Denounces US Violation of Right to Defense Amid Funding Blockade orinocotribune February 28, 2026 2 International News\u2026"
             ]
           },
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY"
+            "ENERGY",
+            "NEW"
           ]
         },
         {
-          "id": "12b1b566194d",
+          "id": "486f5429ae5e",
           "title": "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORkRYaFVkUGZBMUF0LUdkUDFwR1o1WjVPaWlkTm40R0tKdW9qTzg0Q0VqZ1A4SEktT21qZ1BPX01WS3Z3VFlMQUxpcWlOQ2ctTXd5eEx4V1VsYUVyWWZzUjlEUFFuVkJkUHRFdU43RkJTWHlpMUdna0xVZF9aOVFuV01qWU9FVGdNdjlxTW1Vc1A2bUt2YUJzcHp6bnBVOVdmYzlTWUQwNzRhRTAteVJLc3pHbXZaNFBjclFMc3UycHhFTGV0SS1QRW5NQXNJVThtbnN3LUtVTdIB3AFBVV95cUxQTUZUeTJ0UkZmTVg5aUJzSmZGdU1fY2llb1dGVFpUNlo4X1lmbjdKV3BwNEYzWm13eFJWd3VBd1MwVzVnYWtzeGR1azBUSmI5eDNYaDB5LV9XaGo0c0paZHFNNlJKc3ZocnZWRU5OaWlmYjY5VDYxMHRxbU4yUkhfODRuM1hFY1phTTF5SW1Zc05JRzlzOWFXc3lvdFNZOFBvYWZTby12NWpHWVBIRnU2YWxpUzBXaGRCQTRWRjRKMWppYlBQdHV5ZjgtMFVZSEhmRjRSbVBaMHpuaWVW?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://trinidadexpress.com/",
           "publisher": "Trinidad Express Newspapers",
           "publishedAt": "2026-02-27",
           "sourceTier": "Tier 3",
           "sector": "Extractives & Mining",
-          "snippet": "This cycle brought a concrete update on Venezuela meets with Shell execs on oil/gas projects.",
+          "snippet": "Sunday, October 13th 2024, marked the International Day for Disaster Risk Reduction (IDDRR), a globally recognized event that was first observ\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "Oil production/export",
             "FX / Inflation"
@@ -138,24 +242,76 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "US$3 million",
+                "context": "More News Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
+                "score": 2
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "US$3 million",
+                "context": "pending Investigation Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar\u2026",
+                "score": 2
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "40",
+                "context": "hrs ago West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 16 hrs ago Former national\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "16",
+                "context": "West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 16 hrs ago Former national and top\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "a logical move\u2019 Berger Paints Barbados to close all sites on April 24 NCB leads volume Barbados unveils Bds$3.9 billion\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "3.9 billion",
+                "context": "to close all sites on April 24 NCB leads volume Barbados unveils Bds$3.9 billion budget New Federation aims to link T&T\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "42",
+                "context": "Headlines Missiles across Middle East: T&T Nationals urged to shelter in place 42 mins ago The Government, through the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Defence Force suffered a humiliating loss in the United States when hammered 7-0 i\u2026 PowerGen, Victoria, Patriots, QPCC\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Venezuela meets with Shell execs on oil/gas projects.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for extractives & mining operations.",
-            "s3": "Decision relevance: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura Holdings Ltd, Rahim Mohammed has been placed on\u2026",
+            "s2": "News Extra Small signs of hope for shot Ocelot Susan Mohammed Keep Papaoutai in your prayers, urged veterinarian Dr Kriyaan Singh, who has been providing medical care to the ocelot that suffered injuries from\u2026",
+            "s3": "Operational implication: this changes near-term execution assumptions for institutions monitoring this sector, with US$3 million serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Venezuela meets with Shell execs on oil/gas projects."
+              "Sunday, October 13th 2024, marked the International Day for Disaster Risk Reduction (IDDRR), a globally recognized\u2026",
+              "More News Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
+              "pending Investigation Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar\u2026"
             ]
           },
           "icons": [
             "ENERGY",
-            "FX"
+            "FX",
+            "NEW"
           ]
         }
       ]
@@ -164,9 +320,9 @@
       "name": "Food & Agriculture",
       "synth": {
         "bullets": [
-          "Officials reported Reporting describes an actionable development in sanctions with concrete implications in Venezuela.",
-          "Field updates show Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
-          "Separate sources indicate Food Security, could Digital Insurance help Venezuela?."
+          "Officials reported February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026\u2026",
+          "Field updates show CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba\u2026",
+          "Separate sources indicate Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News\u2026"
         ],
         "drivers": [
           "FX / Inflation",
@@ -182,16 +338,16 @@
       },
       "items": [
         {
-          "id": "d08af0c3e907",
+          "id": "33e18a5bf969",
           "title": "Food Security, could Digital Insurance help Venezuela? - Irish Tech News",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NUWppeWlnVGRubVZJajB4WlRsNERHVld6c3ZaNXZ0ZVByTXhONGFxXzB3T0VrQ0psanJJR3JhS1dxdHg3bDJCczRCU25xTDVYTXVTUnFJZ2RPV3FzOUMxcDkxMlhqaVgwRmJyNEo4NUJ4cFE4aTdLbENBMEfSAXxBVV95cUxNTVFqaXlpZ1Rkbm1WSWoweFpUbDRER1ZXenN2WjV2dGVQck14TjRhcV8wd09Fa0NKbGpySUdyYUtXcXR4N2wyQnM0QlNucUw1WE11U1JxSWdkT1dxczlDMXA5MTJYamlYMEZicjRKODVCeHBROGk3S2xDQTBH?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://irishtechnews.ie/",
           "publisher": "Irish Tech News",
           "publishedAt": "2026-02-06",
           "sourceTier": "Tier 3",
           "sector": "Food & Agriculture",
-          "snippet": "This cycle brought a concrete update on Food Security, could Digital Insurance help Venezuela?.",
+          "snippet": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) * [About](https://irishtechnews.ie/about-us/) *\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "Low (Page extraction)",
           "event_types": [
             "FX / Inflation",
             "Security"
@@ -208,36 +364,88 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "MyCelsius](https://irishtechnews-ie.exactdn.com/wp-content/uploads/2026/02/Headshot-Aonghus--360x240.jpeg?lossy=1&ssl=1)\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "9",
+                "context": "------------------------------------------------------------------------------------------------------------------------\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "08",
+                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "53",
+                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "05",
+                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "07",
+                "context": "[Podcast](https://irishtechnews.ie/category/podcast/) * [Best Deals](https://irishtechnews.ie/category/best-deals/) *\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "08",
+                "context": "*\u2026 Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "53",
+                "context": "*\u2026 Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Food Security, could Digital Insurance help Venezuela?.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for food & agriculture operations.",
-            "s3": "Decision relevance: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) *\u2026",
+            "s2": "EUSPA CASSINI Challenge could help, Jana Kominek Vecerkova](https://irishtechnews.ie/euspa-cassini-challenge-jana-kominek/)\u2026",
+            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector, with 24 serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Food Security, could Digital Insurance help Venezuela?."
+              "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
+              "MyCelsius](https://irishtechnews-ie.exactdn.com/wp-content/uploads/2026/02/Headshot-Aonghus--360x240.jpeg?lossy=1&ssl=1)\u2026",
+              "------------------------------------------------------------------------------------------------------------------------\u2026"
             ]
           },
           "icons": [
-            "FX"
+            "FX",
+            "NEW"
           ]
         },
         {
-          "id": "33d7a1d3e17b",
+          "id": "ad8359b9d80a",
           "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate - Venezuelanalysis",
-          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNMk1mQXdsb3dBbDRQaVZwQ244dU1XUERhaEhBU3B3WVpnQk9BcWRGUWpEXzh0THpSTGNxc2ltM2ZlODJFQTB2dnR0QW1TdVU4ZC1lVHBlMDZrWFNyNXdKdlk0b3hLQlJWMjB3VElKWVFqN1ZOS2hqaExpYVRldldEVGR4dGlwQm1sZXkwTmtaVUFDR3ZtempydHFrV21DRm5xT0ZhSl9EajJkX0pGS1pUX0Q0WEQ0RlZYYVlucnZCY0JLSC11S244cVRqUk1ET1RnS0dMZlNzMmJuQUlxNU5EV2pqMUlmYzJ5SEJXQVlPMjBYMVZKOHJrZ2VzaTVzWkczYnduVUxUbGJaY1B1YUZ2Q2JfQVpBZElWQ1J3?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://venezuelanalysis.com/",
           "publisher": "Venezuelanalysis",
           "publishedAt": "2026-01-31",
-          "sourceTier": "Tier 3",
+          "sourceTier": "Tier 2",
           "sector": "Food & Agriculture",
-          "snippet": "This cycle brought a concrete update on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate.",
+          "snippet": "Venezuelanalysis provides independent, on-the-ground news and analysis on Venezuela. It is 100% sustained by readers.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "Sanctions",
             "Humanitarian crisis",
@@ -253,38 +461,90 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "27",
+                "context": "Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "20",
+                "context": "Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026 Venezuela: Rodr\u00edguez Hosts SOUTHCOM\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "5",
+                "context": "12, 2026 US Imperialism and the Venezuelan Oligarchy February 5, 2026 February 5, 2026 #SanctionsKill Facts and figures\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "20",
+                "context": "Administration Mandates Venezuelan Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "5",
+                "context": "9, 2026 February 12, 2026 US Imperialism and the Venezuelan Oligarchy February 5, 2026 February 5, 2026 #SanctionsKill\u2026",
+                "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "27",
+                "context": "General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026\u2026",
+                "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "23",
+                "context": "Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23,\u2026",
+                "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "23",
+                "context": "Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration\u2026",
+                "score": 3
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in sanctions with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in compliance requirements, delivery timelines, and execution risk for food & agriculture operations.",
-            "s3": "Why this matters: this raises downside exposure and tightens execution requirements for near-term planning.",
-            "confidence": "LOW",
+            "s1": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What Is\u2026",
+            "s2": "Leave this field empty if you\u2019re human: NEWS Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration Mandates Venezuelan\u2026",
+            "s3": "Decision relevance: this raises downside exposure and tightens execution requirements for near-term planning, with 27 serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in\u2026"
+              "Venezuelanalysis provides independent, on-the-ground news and analysis on Venezuela. It is 100% sustained by readers.",
+              "Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What\u2026",
+              "Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026 Venezuela: Rodr\u00edguez Hosts SOUTHCOM\u2026"
             ]
           },
           "icons": [
             "RISK",
             "POLICY",
-            "HUMAN"
+            "HUMAN",
+            "NEW"
           ]
         },
         {
-          "id": "c06f100c59ad",
+          "id": "da671b4f3852",
           "title": "The end of Venezuelan oil hits food security in Cuba hard - CiberCuba",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWEFYWS1GOWpNa0ZEUXo0S19fQUFkT0lhbjlNMmJwQzdBNTQ3WXQ4QUw4TUgydDVVZkgyTUR2VmpVdHg4R2ZTT3lWcEhyRkdFN1ZNRDJTbkVONVZZSHFDRUVqWjhxbjdvZ0liWG9OZ2NNSUc2SXBGaVR4Vm5lLVdlWWRweVV4a1BNSEtwUDQtNHhLTDdXSWZSSGFZZWVMdWdXU0F0UHBWZnNEVS1mMnJONlpHWWxBRXRSd0xzag?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://en.cibercuba.com/",
           "publisher": "CiberCuba",
           "publishedAt": "2026-01-26",
           "sourceTier": "Tier 3",
           "sector": "Food & Agriculture",
-          "snippet": "This cycle brought a concrete update on The end of Venezuelan oil hits food security in Cuba hard.",
+          "snippet": "CiberCuba is an independent Cuban digital media outlet that reports on current events in Cuba and among Cubans, covering Cuba, Miami, Europe, and the rest of the world. News, Exclusives, Interviews, Analysis, Opinion, and Entertainment.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "Oil production/export",
             "Security"
@@ -299,22 +559,75 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
-          },
-          "insight2": {
-            "s1": "Reporting describes an actionable development in oil production/export with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for food & agriculture operations.",
-            "s3": "Operational implication: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
-            "evidence": [
-              "This cycle brought a concrete update on The end of Venezuelan oil hits food security in Cuba hard."
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "11",
+                "context": "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "07",
+                "context": "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "bombing against Iran amid the energy crisis in Cuba February 28, 2026, 4:14 PM Medicare administrator accuses Cubans of\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "in Donald Trump\u00e2\u0080\u00a6\u00e2\u0080\u009d: Havana wakes up with posters challenging the regime February 28, 2026, 7:14 PM See more news \u00e2\u0086\u0092\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "30 days",
+                "context": "to Trump claims that Washington will take economic control of Cuba in 30 days February 28, 2026, 03:31 Vatican media on\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "9",
+                "context": "fulfilling her dreams as a car sales advisor in Florida 27/02/2026 - 9:17am Do you need money this tax season? Get your\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "9",
+                "context": "refund advance in 24 hours with Servicios y Taxes Pro 27/02/2026 - 9:11am OGBESA Multiservices is positioning itself as\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "26",
+                "context": "of the group that arrived in Cuba by boat handling firearms February 26, 2026, 10:35 PM Wife of one of the deceased in\u2026",
+                "score": 0
+              }
             ]
           },
-          "icons": []
+          "insight2": {
+            "s1": "CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba Interviews Opinion Cuisine United States Florida\u2026",
+            "s2": "Cuba News United States Donald Trump Marco Rubio Guardafronteras Ships Changes in Cuba Cubans in the United States MININT Cuban government The White House Coast Guard Shooting Iran Venezuela Fuel crisis in\u2026",
+            "s3": "Operational implication: this changes near-term execution assumptions for institutions monitoring this sector, with 11 serving as a measurable reference point.",
+            "confidence": "HIGH",
+            "evidence": [
+              "CiberCuba is an independent Cuban digital media outlet that reports on current events in Cuba and among Cubans,\u2026",
+              "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026",
+              "and controlled takeover of Cuba\" announced by Trump mean? February 27, 2026, 11:07 PM The price of the dollar has risen\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
         }
       ]
     },
@@ -322,9 +635,9 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported Reporting describes an actionable development in health & water with concrete implications in Venezuela.",
-          "Field updates show E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required field.",
-          "Separate sources indicate Reporting describes an actionable development in health & water with concrete implications in Venezuela."
+          "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
+          "Field updates show Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+          "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
         ],
         "drivers": [
           "Political transition",
@@ -338,53 +651,70 @@
       },
       "items": [
         {
-          "id": "49bc39dceeec",
+          "id": "88f7a527864e",
           "title": "The road to self-sufficiency for Venezuelan communities - nrc.no",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMG1ZUnFzblc4cElzdnZMRDdES2huQkNaWDgyTGNsRnpIWEZqLTZJd3pTUS1lNmQwSkZ0MlkxSjk0WWNEZUtjcXFocXJNRGxpSE1SWnZtMzVSQnhDbTVVNlpEVnJnbGdNc0ZGekNxSHp4RW00QXMzdjVOVDRmT2c0Mmo2ajEwc0tQRE5SUUh2SV9ZNHR0bzNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.nrc.no/",
           "publisher": "nrc.no",
           "publishedAt": "2026-02-06",
-          "sourceTier": "Tier 3",
+          "sourceTier": "Tier 1",
           "sector": "Health & Water",
-          "snippet": "This cycle brought a concrete update on The road to self-sufficiency for Venezuelan communities.",
+          "snippet": "The Norwegian Refugee Council (NRC) is an independent humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr...",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [],
           "tags": [],
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
-          },
-          "insight2": {
-            "s1": "Reporting describes an actionable development in health & water with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for health & water operations.",
-            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
-            "evidence": [
-              "This cycle brought a concrete update on The road to self-sufficiency for Venezuelan communities."
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "40",
+                "context": "humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr... NRC Wrong site?\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "40",
+                "context": "War Two. Today, we work in both new and protracted crises across 40 countries, where we help save lives and rebuild\u2026",
+                "score": -3
+              }
             ]
           },
-          "icons": []
+          "insight2": {
+            "s1": "We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
+            "s2": "Go back Hide About us The Norwegian Refugee Council (NRC) is a global humanitarian organisation helping people forced to flee.",
+            "s3": "Decision relevance: this changes near-term execution assumptions for institutions monitoring this sector, with 40 serving as a measurable reference point.",
+            "confidence": "HIGH",
+            "evidence": [
+              "The Norwegian Refugee Council (NRC) is an independent humanitarian organisation helping people forced to flee. We work\u2026",
+              "humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr... NRC Wrong site?\u2026",
+              "War Two. Today, we work in both new and protracted crises across 40 countries, where we help save lives and rebuild\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "7bff66d7c1a3",
+          "id": "691860c09d6b",
           "title": "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yOVczRzlUU0ZyMEN0TmtQTDJybThuV1daaGs2ZTNGU1dIWG5qZWQzbEw0aHhVMVYtMTg4bHBUOTF3X0JzVGFuZTdfb3ZkQlJHSExIdU5zSFlCZWpLTlVvdVh4Zw?oc=5&hl=en-US&gl=US&ceid=US:en",
-          "publisher": "news.google.com",
+          "url": "https://www.cdc.gov/",
+          "publisher": "cdc.gov",
           "publishedAt": "2026-02-06",
           "sourceTier": "Tier 3",
           "sector": "Health & Water",
-          "snippet": "This cycle brought a concrete update on Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov).",
+          "snippet": "A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Negative",
           "materiality": 1,
@@ -396,23 +726,75 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Health signal",
+                "value": "19",
+                "context": "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "19",
+                "context": "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "24",
+                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "7",
+                "context": "leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "800",
+                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
+                "score": 3
+              },
+              {
+                "label": "Health signal",
+                "value": "232",
+                "context": "English Archive CDC Archive Public Health Publications Contact Us Contact Us Call 800-232-4636 Contact CDC About CDC\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "1 Million",
+                "context": "Cancer is Now the Largest in the Nation \u00e2\u0080\u008e\u00e2\u0080\u008eJAN \u00e2\u0080\u008e\u00e2\u0080\u008e30 CDC Surpasses 1 Million Voluntary Air Travel Participants in\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "19",
+                "context": "About CDC About CDC Close Search Search Featured Topics How Flu Spreads COVID-19 Treatment Cancer Screening Substance\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in health & water with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for health & water operations.",
-            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Here's how you know Espa\u00c3\u00b1ol Official websites use .gov A .gov website belongs to an official government organization in the United States.",
+            "s2": "Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website.",
+            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector, with 19 serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC\u2026"
+              "A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official,\u2026",
+              "Slide --> Pause carousel Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu H5\u2026",
+              "Topics Outbreaks About CDC Health Topics Health Topics Adult Vaccinations Alzheimer\u00e2\u0080\u0099s Disease COVID-19 Diabetes Flu\u2026"
             ]
           },
           "icons": [
-            "HUMAN"
+            "HUMAN",
+            "NEW"
           ]
         },
         {
@@ -519,8 +901,8 @@
       "synth": {
         "bullets": [
           "Officials reported Reporting describes an actionable development in education & workforce with concrete implications in Venezuela.",
-          "Field updates show The voice of students in Venezuela.",
-          "Separate sources indicate Reporting describes an actionable development in fx / inflation with concrete implications in Venezuela."
+          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News IE 11 is not supported.",
+          "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
         ],
         "drivers": [
           "FX / Inflation"
@@ -533,26 +915,26 @@
       },
       "items": [
         {
-          "id": "68a98518bcb4",
+          "id": "fcd783804ddd",
           "title": "Venezuelans See Brighter Economic Outlook After US Intervention - Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2hlSUswRWlwT09fbjgzblU0VlVIV3hyQ2k2dnFSWTdEQ0xicXM1X0dkcFg1Z3BhdHhHWng4dS1XWkp6VFNwU3FtN2Z6WklUTEduUHpVUERadk5Ub05WUkVtSFFlOEI5Nl9QOTdiRVRCOGJCbHoyNVhVRTQtS1lDYjdka1JUbGQ5TWJrR0pxUkQtdVV4UnFRRDVMbHQyQ18zSkxwZUNaeFYzUUZsMjZQOE4tbWk?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.bloomberg.com/",
           "publisher": "Bloomberg.com",
           "publishedAt": "2026-02-26",
-          "sourceTier": "Tier 3",
+          "sourceTier": "Tier 1",
           "sector": "Education & Workforce",
           "snippet": "This cycle brought a concrete update on Venezuelans See Brighter Economic Outlook After US Intervention.",
           "snippet_status": "",
           "summary_confidence": "Low (Template fallback)",
           "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [],
           "tags": [],
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -561,25 +943,27 @@
           "insight2": {
             "s1": "Reporting describes an actionable development in education & workforce with concrete implications in Venezuela.",
             "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for education & workforce operations.",
-            "s3": "Decision relevance: this changes near-term execution assumptions for institutions monitoring this sector.",
+            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
             "confidence": "LOW",
             "evidence": [
               "This cycle brought a concrete update on Venezuelans See Brighter Economic Outlook After US Intervention."
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "abe65176979c",
+          "id": "682e563dbf8a",
           "title": "The voice of students in Venezuela - universitas.no",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zTXhvYld2THBDYnNQMlhHNHE1SExfTkNlZWhrV3BydXp1eVhlSzVhRTFtcTgzT0YybGhfUjdMNVVOb1lURGNWVlNWXzhzUm01RmdlLTh2ckh5ZDVoSWJOXzlsQUZfV2F1RHQwQmtTSzhZNUFNVVNN?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.universitas.no/",
           "publisher": "universitas.no",
           "publishedAt": "2026-02-23",
           "sourceTier": "Tier 3",
           "sector": "Education & Workforce",
-          "snippet": "This cycle brought a concrete update on The voice of students in Venezuela.",
+          "snippet": "\u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo. Her spiser studenter billig Reagerer etter avbrytelsen: \u2013 Kunne v\u00e6rt en samtale Sentralbanksjefen m\u00e5tte avbryte studenttale Quiz uke 9 Universitas' store quiz!",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Neutral",
           "materiality": 1,
@@ -589,40 +973,93 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
-          },
-          "insight2": {
-            "s1": "The voice of students in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for education & workforce operations.",
-            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
-            "evidence": [
-              "This cycle brought a concrete update on The voice of students in Venezuela."
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "25.000",
+                "context": "med mandag denne uka. Utvalget foresl\u00e5r at studenter som f\u00e5r barn f\u00e5r 25.000 kroner ekstra. Det er NSO-lederen positiv\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "16",
+                "context": "styresmaktene,\u00bb forteller professor ved universitetet, Steven Witzmann. Barth Eides s\u00f8nn ble praktikant 16 dager siden\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "15",
+                "context": "Kanskje befolkningsproblemet l\u00f8ser seg om studiest\u00f8tta knyttes til G? Krever j\u00f8diske lister 15 dager siden Ada Louise\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "9",
+                "context": "avbrytelsen: \u2013 Kunne v\u00e6rt en samtale Sentralbanksjefen m\u00e5tte avbryte studenttale Quiz uke 9 Universitas' store quiz!\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "uke 9 Universitas' store quiz! Med fasit! Planla fredelig demonstrasjon: Lazar Dini\u0107 (24) risikerer fem \u00e5r i fengsel\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "Bank Reagerer etter avbrutt tale Notiser D\u00f8de personer lever videre p\u00e5 SoMe 5 timer siden Ada Louise Andreassen Meta\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "730",
+                "context": "kunstig intelligens som kan simulere en persons aktivitet p\u00e5 sosiale medier, skriver 730. Med Metas nye KI-teknologi\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "13",
+                "context": "og f\u00e6rre vil utdanne seg til l\u00e6rere? \u00abStudent\u00f8konomi skal ikke v\u00e6re prevensjon\u00bb 13 dager siden Ada Louise Andreassen\u2026",
+                "score": 0
+              }
             ]
           },
-          "icons": []
+          "insight2": {
+            "s1": "Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser Utenriks Anmeldelser Debatt Magasinet Baksiden Kontakt oss\u2026",
+            "s2": "Om Universitas Universitas \u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo.",
+            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector, with 25.000 serving as a measurable reference point.",
+            "confidence": "HIGH",
+            "evidence": [
+              "\u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo. Her spiser\u2026",
+              "med mandag denne uka. Utvalget foresl\u00e5r at studenter som f\u00e5r barn f\u00e5r 25.000 kroner ekstra. Det er NSO-lederen positiv\u2026",
+              "styresmaktene,\u00bb forteller professor ved universitetet, Steven Witzmann. Barth Eides s\u00f8nn ble praktikant 16 dager siden\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "e2053225b11b",
+          "id": "f2a997f00994",
           "title": "Venezuelans rally more openly as they navigate changing political landscape - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWhFNjVnZUtHU0tKanhSUjBqTUdwZG0wbEpkT3UwYVVZdlpDQVNiUTVrWjF5X3FpTkNET1hJbnltWGJ3bGtqbGZYSnprLUx1VHJPUUNqLXJBa1p5MWEwUmVqdlR3M3AxSlJKTVRpVUJYZlYtRHJtMVVPZWZTOUdjU2NGWDFXd0hza0gyY18yZWluaFlyM2owUjMwbWhhQmVJSnNmVXBOZDlWVWs?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.nbcnews.com/",
           "publisher": "NBC News",
           "publishedAt": "2026-02-11",
-          "sourceTier": "Tier 3",
+          "sourceTier": "Tier 1",
           "sector": "Education & Workforce",
-          "snippet": "This cycle brought a concrete update on Venezuelans rally more openly as they navigate changing political landscape.",
+          "snippet": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [
             "FX / Inflation"
           ],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [
             "FX controls"
           ],
@@ -632,23 +1069,69 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "25m",
+                "context": "has been telegraphing possible strikes on Iran for several weeks Just now 25m ago Trump has been telegraphing possible\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "11",
+                "context": "Video Reports on World, U.S. and Local Angles | NBC News IE 11 is not supported. For an optimal experience visit our\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "32",
+                "context": "FOR SUBSCRIBERS How U.S. military efforts in Iran differ from other operations 01:32 FOR SUBSCRIBERS Israel targeted\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "50",
+                "context": "01:32 FOR SUBSCRIBERS Israel targeted Iranian leaders while U.S. hit missile sites 01:50 FOR SUBSCRIBERS U.S. begins\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12m",
+                "context": "says Top pro-Israel lobbying group AIPAC applauds strikes on Iran Just now 12m ago The largest pro-Israel lobbying\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "59",
+                "context": "missile sites 01:50 FOR SUBSCRIBERS U.S. begins \u2018major combat operations\u2019 in Iran 01:59 OpenAI strikes deal with\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "38",
+                "context": "FOR SUBSCRIBERS Senior Iranian figures killed in strikes, Israeli military official says 01:38 FOR SUBSCRIBERS\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in fx / inflation with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for education & workforce operations.",
-            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News IE 11 is not supported.",
+            "s2": "For an optimal experience visit our site on another browser.",
+            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector, with 25m serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Venezuelans rally more openly as they navigate changing political landscape."
+              "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and\u2026",
+              "has been telegraphing possible strikes on Iran for several weeks Just now 25m ago Trump has been telegraphing possible\u2026",
+              "Video Reports on World, U.S. and Local Angles | NBC News IE 11 is not supported. For an optimal experience visit our\u2026"
             ]
           },
           "icons": [
-            "FX"
+            "FX",
+            "NEW"
           ]
         }
       ]
@@ -657,8 +1140,8 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported Reporting describes an actionable development in regulatory reform with concrete implications in Venezuela.",
-          "Field updates show Reporting describes an actionable development in debt restructuring with concrete implications in Venezuela.",
+          "Officials reported Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown\u2026",
+          "Field updates show Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation\u2026",
           "Separate sources indicate They were placed on your computer when you launched this website."
         ],
         "drivers": [
@@ -675,16 +1158,16 @@
       },
       "items": [
         {
-          "id": "22b179c9a13b",
+          "id": "01405a9c1cf6",
           "title": "Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kcG1URi00Mlc1WUtPN3dtRV8ybGk0OXhyc1hDRVNSVzduYlV2SGFoMGhvd05YM2VsV1M2bmFSeHNWRG9RWlgwM2xFdUFRM3EyME9FbmIxV0ZMZk5XZmdBWmU3Z1FzQU5NbktsMC15Ymw1WUxDVC1XbA?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://discoveryalert.com.au/",
           "publisher": "Discovery Alert",
           "publishedAt": "2026-02-27",
           "sourceTier": "Tier 3",
           "sector": "Finance & Investment",
-          "snippet": "This cycle brought a concrete update on Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.",
+          "snippet": "![Image 2: Discovery Alert Winner Badges](https://discoveryalert.com.au/wp-content/uploads/2026/02/discovery-alert-winner-badges-white.png) [Top ASX News Today](http://discoveryalert.com.au/) Latest ASX Stock News --------------------- Breaking ASX stock news and analysis\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "Low (Page extraction)",
           "event_types": [
             "Oil production/export",
             "Regulatory reform"
@@ -699,34 +1182,36 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": []
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in regulatory reform with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for finance & investment operations.",
-            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining &\u2026",
+            "s2": "Email Get Free Alerts No spam policy, unsubscribe any time.",
+            "s3": "Why this matters: this changes near-term execution assumptions for institutions monitoring this sector.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes."
+              "![Image 2: Discovery Alert Winner\u2026"
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "3841bc40123c",
+          "id": "9047dc697889",
           "title": "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNW82VFZqcTR2bUZWeC1fNTNBSlNtUGF5cDE5Nmc4WVBuYTlCa0R1em45VXBYU3VLeFNuejhiT2d3Q1ZrRmtmNVctLWhUVnpfbmh4c05KT0JCc0M5eDNrRi1NV3h4Y1V3UUcwX3h4WVltRGpsVTB1MkJfZllYYTFZR2FBZ2hSWXNNVS1rbl8xQ2R1U0V4X1FwMjZKZ0ZYSDhpSzJZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.omfif.org/",
           "publisher": "OMFIF",
           "publishedAt": "2026-02-26",
           "sourceTier": "Tier 3",
           "sector": "Finance & Investment",
-          "snippet": "This cycle brought a concrete update on Bondholders should be less excited about Venezuelan debt restructuring.",
+          "snippet": "[Register >](https://www.omfif.org/meetings/china-uk-investor-forum-2026-navigating-new-horizons-uk-china-co-operation-in-a-globalised-world/) ### [Commentaries >](https://www.omfif.org/news/ \"Commentaries >\") [![Image 4: Japan\u2019s missing balance\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "Low (Page extraction)",
           "event_types": [
             "Debt restructuring"
           ],
@@ -742,23 +1227,69 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Macro and finance",
+                "value": "6",
+                "context": "a blind spot for the financial sector ... [Read more\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "in this one-sided view of state finances ... [Read more >](https://www.omfif.org/2026/02/japans-missing-balance-sheet/)\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "19",
+                "context": "[Forum](https://www.omfif.org/meeting-category/forum/ \"Forum\"), [Paris](https://www.omfif.org/meeting-location/paris/\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "19",
+                "context": "broadcast\") #### [March FOMC meeting: assessment and outlook for US monetary\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "since 2010 and investor ... [Register\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "11",
+                "context": "Statistics ... [Register\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "investor forum\u2026",
+                "score": 0
+              }
+            ]
           },
           "insight2": {
-            "s1": "Reporting describes an actionable development in debt restructuring with concrete implications in Venezuela.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for finance & investment operations.",
-            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation --------------------------------------------\u2026",
+            "s2": "[Register >](https://www.omfif.org/meetings/march-fomc-meeting-assessment-and-outlook-for-us-monetary-policy/) [![Image 2: European sovereign, supranational and agency forum\u2026",
+            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector, with 6 serving as a measurable reference point.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Bondholders should be less excited about Venezuelan debt restructuring."
+              "[Register\u2026",
+              "a blind spot for the financial sector ... [Read more\u2026",
+              "in this one-sided view of state finances ... [Read more >](https://www.omfif.org/2026/02/japans-missing-balance-sheet/)\u2026"
             ]
           },
           "icons": [
-            "FX"
+            "FX",
+            "NEW"
           ]
         },
         {
@@ -854,8 +1385,8 @@
       "synth": {
         "bullets": [
           "Officials reported February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025\u2026",
-          "Field updates show Venezuela\u2019s Long Road to Recovery.",
-          "Separate sources indicate Africa Venezuela Energy Ties: Strategic Partnership Growth."
+          "Field updates show Politics Since its founding in 1922, Foreign Affairs has been the leading forum for serious discussion of American foreign policy and global affairs.",
+          "Separate sources indicate Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT\u2026"
         ],
         "drivers": [
           "Humanitarian crisis"
@@ -964,16 +1495,16 @@
           ]
         },
         {
-          "id": "adefa41790a9",
+          "id": "1ae6d38f0c3b",
           "title": "Venezuela\u2019s Long Road to Recovery - Foreign Affairs",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0THBHVWs5MElSMEUyQldfY1JsYTE3MEpNdGQxbVVSZkpoeTNUR0J2N3JXWkhqN1pwTklaNlZGZ01MNkhJcllGV0tYaXprQ2szb09SMjlTY1lmN2lnMDBqZnV4aGlUZmVPM1pFZzhDQTI4dkw3N1hzNV9R?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://www.foreignaffairs.com/",
           "publisher": "Foreign Affairs",
           "publishedAt": "2026-02-23",
           "sourceTier": "Tier 3",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "This cycle brought a concrete update on Venezuela\u2019s Long Road to Recovery.",
+          "snippet": "Foreign Affairs is the leading magazine for in-depth analysis and debate of foreign policy, geopolitics and international affairs.",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Positive",
           "materiality": 1,
@@ -985,34 +1516,51 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": []
-          },
-          "insight2": {
-            "s1": "Venezuela\u2019s Long Road to Recovery.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for cross-cutting / policy / risk operations.",
-            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
-            "evidence": [
-              "This cycle brought a concrete update on Venezuela\u2019s Long Road to Recovery."
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Sanam Vakil and Alex Vatanka Iran\u2019s Dangerous Desperation What Comes After the 12-Day War Suzanne Maloney What Kind of\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "57",
+                "context": "Stephen M. Walt Play audio of the episode Listen to the Episode 57 mins Follow the Podcast Ukraine and the New Way of\u2026",
+                "score": 0
+              }
             ]
           },
-          "icons": []
+          "insight2": {
+            "s1": "Politics Since its founding in 1922, Foreign Affairs has been the leading forum for serious discussion of American foreign policy and global affairs.",
+            "s2": "The magazine has featured contributions from many leading international affairs experts.",
+            "s3": "Decision relevance: this changes near-term execution assumptions for institutions monitoring this sector, with 12 serving as a measurable reference point.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Foreign Affairs is the leading magazine for in-depth analysis and debate of foreign policy, geopolitics and\u2026",
+              "Sanam Vakil and Alex Vatanka Iran\u2019s Dangerous Desperation What Comes After the 12-Day War Suzanne Maloney What Kind of\u2026",
+              "Stephen M. Walt Play audio of the episode Listen to the Episode 57 mins Follow the Podcast Ukraine and the New Way of\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "ee05c47562ea",
+          "id": "036d9aa47583",
           "title": "Africa Venezuela Energy Ties: Strategic Partnership Growth - Discovery Alert",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXdlZHlRYlVyN2U2OVhjeTU1b0dWM1FuT1hfZk13RWJabERsRERhdmluV2NPanIzRlVYOHRzalVtejJ1d0ZqMHM4VERtSWRFTkhETG1leFZRX1BrX2RyT1hRaldxZG5PS2t6THBMQmhobmdXRVVLNEdjTTNpanN3T2RfVDBxM2g3OVRnS2l4SE1HSHM?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "url": "https://discoveryalert.com.au/",
           "publisher": "Discovery Alert",
           "publishedAt": "2026-02-22",
           "sourceTier": "Tier 3",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "This cycle brought a concrete update on Africa Venezuela Energy Ties: Strategic Partnership Growth.",
+          "snippet": "![Image 2: Discovery Alert Winner Badges](https://discoveryalert.com.au/wp-content/uploads/2026/02/discovery-alert-winner-badges-white.png) [Top ASX News Today](http://discoveryalert.com.au/) Latest ASX Stock News --------------------- Breaking ASX stock news and analysis\u2026",
           "snippet_status": "",
-          "summary_confidence": "Low (Template fallback)",
+          "summary_confidence": "Low (Page extraction)",
           "event_types": [],
           "sentiment": "Positive",
           "materiality": 1,
@@ -1024,22 +1572,24 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": []
           },
           "insight2": {
-            "s1": "Africa Venezuela Energy Ties: Strategic Partnership Growth.",
-            "s2": "Follow-on details indicate shifts in implementation constraints and counterpart response for cross-cutting / policy / risk operations.",
-            "s3": "Practical takeaway: this changes near-term execution assumptions for institutions monitoring this sector.",
-            "confidence": "LOW",
+            "s1": "Title: Discovery Alert | Fast ASX Mining & Energy News Alerts URL Source: http://discoveryalert.com.au/ Published Time: Sat, 28 Feb 2026 20:25:07 GMT Markdown Content: Discovery Alert | Fast ASX Mining &\u2026",
+            "s2": "Email Get Free Alerts No spam policy, unsubscribe any time.",
+            "s3": "Operational implication: this changes near-term execution assumptions for institutions monitoring this sector.",
+            "confidence": "HIGH",
             "evidence": [
-              "This cycle brought a concrete update on Africa Venezuela Energy Ties: Strategic Partnership Growth."
+              "![Image 2: Discovery Alert Winner\u2026"
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         }
       ]
     }
