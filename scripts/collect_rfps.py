@@ -1180,11 +1180,29 @@ def _detect_content_language(*texts: str) -> str:
     }
     score_es = sum(1 for marker in spanish_markers if marker in f" {low} ")
     score_en = sum(1 for marker in english_markers if marker in f" {low} ")
+
+    words = re.findall(r"[a-záéíóúñ]+", low)
+    if words:
+        spanish_stopwords = {
+            "de", "la", "el", "y", "en", "para", "por", "con", "una", "del", "los", "las", "que", "se", "es", "al",
+        }
+        english_stopwords = {
+            "the", "and", "in", "for", "with", "from", "that", "this", "to", "of", "on", "as", "is", "are", "by",
+        }
+        es_hits = sum(1 for word in words if word in spanish_stopwords)
+        en_hits = sum(1 for word in words if word in english_stopwords)
+        score_es += es_hits // 2
+        score_en += en_hits // 2
     if score_es == 0 and score_en == 0:
+        if re.search(r"[a-z]", low):
+            return "en"
         return "other"
     if score_es >= score_en + 1:
         return "es"
     if score_en >= score_es + 1:
+        return "en"
+    # Tie-breaker: default to English for ASCII-latin text when Spanish signal is not stronger.
+    if re.search(r"[a-z]", low) and not re.search(r"[áéíóúñ¿¡]", low):
         return "en"
     return "other"
 
@@ -2828,6 +2846,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     ]
 
     section_order = cfg.get("brief_sections", [])
+    section_item_limit = max(1, int(cfg.get("section_item_limit", 5)))
     grouped: dict[str, list[dict]] = {s: [] for s in section_order}
     grouped["Cross-cutting / Policy / Risk"] = grouped.get(
         "Cross-cutting / Policy / Risk", []
@@ -3396,6 +3415,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     logger.info("Wrote %s", METADATA_PATH)
 
     section_order = cfg.get("brief_sections", [])
+    section_item_limit = max(1, int(cfg.get("section_item_limit", 5)))
     grouped: dict[str, list[dict]] = {s: [] for s in section_order}
     grouped["Cross-cutting / Policy / Risk"] = grouped.get("Cross-cutting / Policy / Risk", [])
     for entry in top:
@@ -3404,8 +3424,8 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
 
     export_rows: list[dict] = []
     for section in section_order:
-        top_three = _sort_entries_for_sector(grouped.get(section, []))[:3]
-        for idx, entry in enumerate(top_three):
+        top_items = _sort_entries_for_sector(grouped.get(section, []))[:section_item_limit]
+        for idx, entry in enumerate(top_items):
             summary_text = _compact_summary(
                 entry,
                 cfg,
@@ -3422,9 +3442,9 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     sector_synth: dict[str, dict] = {}
     sectors_payload: list[dict] = []
     for section in section_order:
-        top_three = _sort_entries_for_sector(grouped.get(section, []))[:3]
+        top_items = _sort_entries_for_sector(grouped.get(section, []))[:section_item_limit]
         items_for_section = []
-        for entry in top_three:
+        for entry in top_items:
             published_at = ""
             if entry.get("published") is not None and hasattr(entry.get("published"), "strftime"):
                 published_at = entry["published"].strftime("%Y-%m-%d")

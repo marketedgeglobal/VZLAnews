@@ -3,8 +3,8 @@
     "Government and institutional moves show venezuelanalysis.com and finance.yahoo.com converging on Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed\u2026 with\u2026",
     "Operational evidence across sources indicates finance.yahoo.com and jpost.com converging on Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How\u2026 with\u2026",
     "Multiple reports converge on jpost.com and zawya.com converging on An illustration of oil rigs over a background of a Venezuelan flag with figures including $2 billion.",
-    "The current cycle confirms zawya.com and trinidadexpress.com converging on Title: Petr\u00f3leos de Venezuela S.A with figures including 59.",
-    "Cross-sector tracking now shows trinidadexpress.com and zawya.com converging on Edit Article Add New Article Close You have permission to edit this article with figures including 3.2."
+    "The current cycle confirms zawya.com and indianexpress.com converging on Title: Petr\u00f3leos de Venezuela S.A with figures including 59.",
+    "Cross-sector tracking now shows indianexpress.com and zawya.com converging on By: Reuters 2 min read Feb 27, 2026 06:02 AM IST First published on: Feb 27, 2026 at 06:02 AM IST Make us preferred\u2026 with figures including\u2026"
   ],
   "keyDevelopments": [
     {
@@ -36,13 +36,13 @@
       "itemIds": [
         "22266cca15b9",
         "1b51d4fe2a5d",
-        "075e71117dd1"
+        "b1f553be0657"
       ]
     },
     {
-      "text": "Edit Article Add New Article Close You have permission to edit this article.",
+      "text": "By: Reuters 2 min read Feb 27, 2026 06:02 AM IST First published on: Feb 27, 2026 at 06:02 AM IST Make us preferred source on Google Share Comments Bookmark Bookmark Print Share\u2026",
       "itemIds": [
-        "075e71117dd1",
+        "b1f553be0657",
         "1b51d4fe2a5d",
         "22266cca15b9"
       ]
@@ -83,12 +83,14 @@
   "sectorSynth": {
     "Extractives & Mining": {
       "bullets": [
-        "Officials reported Title: Petr\u00f3leos de Venezuela S.A.",
-        "Field updates show Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026",
-        "Separate sources indicate Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026"
+        "Officials reported An illustration of oil rigs over a background of a Venezuelan flag.",
+        "Field updates show Title: Petr\u00f3leos de Venezuela S.A.",
+        "Separate sources indicate Edit Article Add New Article Close You have permission to edit this article."
       ],
       "drivers": [
-        "Oil production/export"
+        "Oil production/export",
+        "Political transition",
+        "Sanctions"
       ],
       "watch": [
         "Regulatory deadlines",
@@ -115,7 +117,7 @@
     },
     "Health & Water": {
       "bullets": [
-        "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
+        "Officials reported El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
         "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
         "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
       ],
@@ -159,9 +161,9 @@
     },
     "Cross-cutting / Policy / Risk": {
       "bullets": [
-        "Officials reported Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
-        "Field updates show Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026",
-        "Separate sources indicate Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026"
+        "Officials reported The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
+        "Field updates show Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
+        "Separate sources indicate Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026"
       ],
       "drivers": [
         "FX / Inflation"

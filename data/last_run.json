@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-02-28T22:18:19.282542+00:00",
-  "fetched": 2086,
-  "filtered": 137,
-  "deduplicated": 32,
-  "selected": 32,
-  "diff_new": 22,
+  "run_at": "2026-02-28T22:59:46.925037+00:00",
+  "fetched": 2047,
+  "filtered": 135,
+  "deduplicated": 33,
+  "selected": 33,
+  "diff_new": 23,
   "diff_updated": 0,
   "diff_dropped": 0,
   "trend_summary": {
-    "freq_7d": 32.0,
+    "freq_7d": 33.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
@@ -62,16 +62,16 @@
   "sector_briefs": {
     "Extractives": {
       "health": 7,
-      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 33/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 32/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
         "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "Venezuela meets with Shell execs on oil/gas projects"
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
         "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (",
-        "Venezuela meets with Shell execs on oil/gas projects"
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -152,16 +152,16 @@
     },
     "Infrastructure": {
       "health": 8,
-      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 19/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 21/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
         "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
-        "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
-        "Las adversidades de un preso pol\u00edtico"
+        "Una visi\u00f3n de futuro que convoque a todos los venezolanos"
       ],
       "opportunities": [
+        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
         "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
-        "Las adversidades de un preso pol\u00edtico",
-        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo"
+        "Las adversidades de un preso pol\u00edtico"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -173,10 +173,10 @@
   "timeline_rows": [
     {
       "date": "2026-02-28",
-      "signals_count": 32,
+      "signals_count": 33,
       "sanctions_count": 2,
-      "oil_count": 6,
-      "risk_avg": 23.28
+      "oil_count": 7,
+      "risk_avg": 23.48
     }
   ],
   "output_file": "/workspaces/VZLAnews/docs/index.md",

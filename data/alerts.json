@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-02-28T22:18:19.282542+00:00",
+  "run_at": "2026-02-28T22:59:46.925037+00:00",
   "alerts": [
     {
       "type": "New sanctions",
@@ -19,7 +19,7 @@
     {
       "type": "Executive decree",
       "triggered": true,
-      "detail": "4 governance/decree-related signals detected."
+      "detail": "5 governance/decree-related signals detected."
     },
     {
       "type": "Protest escalation",

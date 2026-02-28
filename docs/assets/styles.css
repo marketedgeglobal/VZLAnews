@@ -1,21 +1,25 @@
 :root {
-    color-scheme: light;
-    --me-primary: #116dff;
-    --me-primary-strong: #0a4eb8;
-    --me-accent: #7fccf7;
-    --me-accent-2: #3899ec;
-    --me-bg: #eaf3ff;
-    --me-surface: #ffffff;
-    --me-border: #cfe0f4;
-    --me-text: #14304d;
-    --me-muted: #4a6686;
-    --me-radius: 10px;
+    color-scheme: dark;
+    --me-primary: #1fa6a3;
+    --me-primary-strong: #167c88;
+    --me-accent: #8fd3f4;
+    --me-accent-2: #3ba6a3;
+    --me-bg: #0f2233;
+    --me-bg-2: #0b1e2d;
+    --me-surface-top: #17354d;
+    --me-surface-bottom: #122f45;
+    --me-surface-solid: #112b40;
+    --me-border: rgba(124, 200, 220, 0.2);
+    --me-text: #f2f6f8;
+    --me-muted: #9fb3c2;
+    --me-radius: 14px;
+    --me-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
 }
 
 body {
-    background: var(--me-bg);
+    background: linear-gradient(180deg, var(--me-bg) 0%, var(--me-bg-2) 100%);
     color: var(--me-text);
-    font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
+    font-family: Inter, "Segoe UI", Calibri, Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -37,8 +41,9 @@ textarea {
 .macro-block {
     border: 1px solid var(--me-border);
     border-radius: var(--me-radius);
-    padding: 14px;
-    background: var(--me-surface);
+    padding: 16px;
+    background: linear-gradient(180deg, var(--me-surface-top) 0%, var(--me-surface-bottom) 100%);
+    box-shadow: var(--me-shadow);
 }
 
 .exec-brief p,
@@ -61,18 +66,24 @@ textarea {
 
 .lang-btn {
     border: 1px solid var(--me-border);
-    background: var(--me-surface);
-    color: var(--me-primary);
+    background: rgba(46, 125, 175, 0.18);
+    color: var(--me-accent);
     border-radius: 8px;
-    padding: 8px 12px;
+    padding: 8px 14px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.18s ease;
 }
 
 .lang-btn.active {
-    background: var(--me-primary);
+    background: linear-gradient(180deg, var(--me-primary) 0%, var(--me-primary-strong) 100%);
     color: #fff;
     border-color: var(--me-primary);
+}
+
+.lang-btn:hover {
+    border-color: rgba(124, 200, 220, 0.45);
+    background: rgba(46, 125, 175, 0.28);
 }
 
 .top-row {
@@ -96,9 +107,10 @@ textarea {
 .item-card,
 .macro-card {
     border: 1px solid var(--me-border);
-    border-radius: 8px;
-    padding: 10px;
-    background: var(--me-surface);
+    border-radius: 12px;
+    padding: 12px;
+    background: linear-gradient(180deg, rgba(23, 53, 77, 0.96) 0%, rgba(18, 47, 69, 0.96) 100%);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
 }
 
 .item-head {
@@ -144,8 +156,8 @@ textarea {
     padding: 2px 8px;
     border-radius: 999px;
     border: 1px solid var(--me-border);
-    background: #eef5ff;
-    color: var(--me-primary-strong);
+    background: rgba(46, 125, 175, 0.22);
+    color: var(--me-accent);
     font-size: 11px;
     font-weight: 600;
 }
@@ -157,15 +169,15 @@ textarea {
 }
 
 .error {
-    color: #ff4040;
+    color: #fb7185;
 }
 
 a {
-    color: var(--me-primary);
+    color: var(--me-accent);
 }
 
 a:hover {
-    color: var(--me-primary-strong);
+    color: #c8ebff;
 }
 
 .metric-grid {
@@ -209,7 +221,7 @@ a:hover {
 }
 
 .metric-tile {
-    background: var(--me-surface, #fff);
+    background: linear-gradient(180deg, rgba(25, 57, 83, 0.95) 0%, rgba(17, 43, 64, 0.95) 100%);
     border: 1px solid var(--me-border, #e5e7eb);
     border-radius: var(--me-radius, 10px);
     padding: 12px;
@@ -256,9 +268,13 @@ a:hover {
 }
 
 .spark polyline {
-    stroke: var(--me-primary);
+    stroke: var(--me-accent);
     stroke-width: 2;
     stroke-linecap: round;
+}
+
+#app-root {
+    padding: 10px 0 22px;
 }
 
 #app-root ul { margin-top: 0.25rem; margin-bottom: 0.75rem; }

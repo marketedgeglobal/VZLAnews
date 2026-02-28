@@ -1,17 +1,19 @@
 {
-  "runAt": "2026-02-28T22:18:19.282542+00:00",
+  "runAt": "2026-02-28T22:59:46.925037+00:00",
   "totalItems": 29,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
-          "Officials reported Title: Petr\u00f3leos de Venezuela S.A.",
-          "Field updates show Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026",
-          "Separate sources indicate Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026"
+          "Officials reported An illustration of oil rigs over a background of a Venezuelan flag.",
+          "Field updates show Title: Petr\u00f3leos de Venezuela S.A.",
+          "Separate sources indicate Edit Article Add New Article Close You have permission to edit this article."
         ],
         "drivers": [
-          "Oil production/export"
+          "Oil production/export",
+          "Political transition",
+          "Sanctions"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -242,6 +244,191 @@
           "icons": [
             "ENERGY"
           ]
+        },
+        {
+          "id": "075e71117dd1",
+          "title": "Venezuela meets with Shell execs on oil/gas projects",
+          "url": "https://trinidadexpress.com/newsextra/venezuela-meets-with-shell-execs-on-oil-gas-projects/article_ce815659-a7f3-4544-9e9c-7085ef8a191b.html",
+          "publisher": "trinidadexpress.com",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Days after US Secretary of State Marco Rubio met with Prime minister Kamla Persad-Bissessar at Caricom\u2019s 50th Regular Meeting of the Conference of Heads of Government, representatives of energy giant,.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Sanctions and state revenue",
+                "value": "3.2",
+                "context": "in Venezuelan waters near the maritime border, is estimated to hold between 3.2 trillion and 4.2 trillion cubic feet of\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "50",
+                "context": "Chevron, BP, Eni (ENI.MI), and Repsol were also named in license number 50 issued by the United States, weeks after US\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "31",
+                "context": "oil and gas sector including those prohibited by US Venezuela Sanctions Regulations, 31 CFR part 591- the official US\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "591",
+                "context": "sector including those prohibited by US Venezuela Sanctions Regulations, 31 CFR part 591- the official US rules that\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "4.2",
+                "context": "near the maritime border, is estimated to hold between 3.2 trillion and 4.2 trillion cubic feet of natural gas. That\u2026",
+                "score": 3
+              }
+            ]
+          },
+          "preview": "Days after US Secretary of State Marco Rubio met with Prime minister Kamla Persad-Bissessar at Caricom\u2019s 50th Regular Meeting of the Conference of Heads of Government, representatives of energy giant,.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Edit Article Add New Article Close You have permission to edit this article",
+            "s2": "Your notification has been saved",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 3.2 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "in Venezuelan waters near the maritime border, is estimated to hold between 3.2 trillion and 4.2 trillion cubic feet of\u2026",
+              "Chevron, BP, Eni (ENI.MI), and Repsol were also named in license number 50 issued by the United States, weeks after US\u2026"
+            ]
+          },
+          "icons": [
+            "ENERGY",
+            "NEW"
+          ]
+        },
+        {
+          "id": "1b51d4fe2a5d",
+          "title": "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
+          "url": "https://www.jpost.com/international/article-888190",
+          "publisher": "jpost.com",
+          "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Venezuela's oil ministry suspends 19 production-sharing contracts, including projects in Lake Maracaibo and the Orinoco Belt, as part of a broader review of deals linked to US sanctions.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Oil production/export",
+            "Political transition"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 60,
+          "entities": [
+            "Maduro"
+          ],
+          "tags": [
+            "Sanctions",
+            "Energy"
+          ],
+          "flags": {
+            "risk": true,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Oil and production",
+                "value": "$2 billion",
+                "context": "crude and gas output. Oil sales under US-Venezuela deal expected to reach $2 billion by end of February, US says Sales\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "$5 billion",
+                "context": "in February, Wright projected that oil sales from the country would reach $5 billion within a few months. The export\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "$2 billion",
+                "context": "oil supply agreement between Venezuela and the US are expected to reach $2 billion by the end of this month, US\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "19",
+                "context": "Venezuela's oil ministry suspends 19 production-sharing contracts, including projects in Lake Maracaibo and the Orinoco\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "05",
+                "context": "flag. ( photo credit : Comdas/Shutterstock ) By REUTERS FEBRUARY 27, 2026 05:18 Venezuela's oil ministry has suspended\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "18",
+                "context": "flag. ( photo credit : Comdas/Shutterstock ) By REUTERS FEBRUARY 27, 2026 05:18 Venezuela's oil ministry has suspended\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "19",
+                "context": "Venezuelan government from paying his legal fees. M Venezuela's oil ministry suspends 19 production-sharing contracts,\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "27",
+                "context": "a Venezuelan flag. ( photo credit : Comdas/Shutterstock ) By REUTERS FEBRUARY 27, 2026 05:18 Venezuela's oil ministry\u2026",
+                "score": 3
+              }
+            ]
+          },
+          "preview": "The suspension has had no impact on the country's oil and gas output so far, the sources said. State oil giant PDVSA is selling the crude produced under the contracts while they are suspended, they added.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "An illustration of oil rigs over a background of a Venezuelan flag",
+            "s2": "( photo credit : Comdas/Shutterstock ) By REUTERS FEBRUARY 27, 2026 05:18 Venezuela's oil ministry has suspended 19 oil production-sharing contracts with private companies signed under the administration of president\u2026",
+            "s3": "Implication: risk management assumptions should tighten because implementation conditions are deteriorating around sanctions, with $2 billion as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "crude and gas output. Oil sales under US-Venezuela deal expected to reach $2 billion by end of February, US says Sales\u2026",
+              "in February, Wright projected that oil sales from the country would reach $5 billion within a few months. The export\u2026"
+            ]
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "ENERGY",
+            "NEW"
+          ]
         }
       ]
     },
@@ -349,7 +536,7 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
+          "Officials reported El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
@@ -390,69 +577,17 @@
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "12",
-                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "7",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10.42",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "07",
-                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
           "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source: http://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/\u2026",
-            "s2": "Los ataques estadounidenses del \u00faltimo a\u00f1o, que han evitado el despliegue de soldados sobre el terreno, han sido **justificados por la Casa Blanca** en nombre de la seguridad nacional o la lucha antiterrorista, pero han\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security, with 28 as a measurable reference point for scenario tracking.",
+            "s1": "El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense,\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
             "confidence": "HIGH",
-            "evidence": [
-              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
-              "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026"
-            ]
+            "evidence": []
           },
           "icons": []
         }
@@ -652,9 +787,9 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
-          "Field updates show Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026",
-          "Separate sources indicate Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026"
+          "Officials reported The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
+          "Field updates show Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
+          "Separate sources indicate Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026"
         ],
         "drivers": [
           "FX / Inflation"
@@ -666,6 +801,99 @@
         ]
       },
       "items": [
+        {
+          "id": "986869b8d230",
+          "title": "Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de Amnist\u00eda",
+          "url": "https://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 2",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda para la Convivencia Democr\u00e1tica en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado que 31 militares fueron excarcelados con \u00abmedidas alternativas\u00bb con el objetivo de contribuir a la paz\u2026",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "http://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amn\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "de contribuir a la paz\u2026 Title: Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "Andes](https://elpitazo.net/category/regiones/los-andes/) * [Guayana](https://elpitazo.net/category/regiones/guayana/)\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "militares que, dijo, \u00abya se encuentran en libertad\u00bb Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "Convivencia Democr\u00e1tica en Venezuela, el diputado **Jorge Arreaza**, inform\u00f3 este s\u00e1bado que 31 militares fueron\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "en X, el [\u2026] La entrada Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Este s\u00e1bado la oposici\u00f3n mayoritaria de Venezuela, agrupada en la Plataforma Unitaria Democr\u00e1tica (PUD), tambi\u00e9n se pronunci\u00f3 para exigir exigi\u00f3 liberaciones masivas y transparentes de presos pol\u00edticos. La PUD indic\u00f3 que desde enero hasta la fecha ha verificado la excarcelaci\u00f3n de 618 de estos detenidos.",
+          "preview_source": "jina",
+          "language": "es",
+          "insight2": {
+            "s1": "The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
+            "s2": "A trav\u00e9s de un mensaje en X, el diputado indic\u00f3 que el Sistema de Justicia Militar de la Fuerza Armada Nacional Bolivariana (FANB) acord\u00f3 otorgar estas medidas el viernes a los militares que, dijo, \u00ab**ya se encuentran\u2026",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions, with 31 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "http://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amn\u2026",
+              "de contribuir a la paz\u2026 Title: Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de\u2026"
+            ]
+          },
+          "icons": []
+        },
         {
           "id": "0c9024462a1b",
           "title": "Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda",
@@ -786,7 +1014,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -854,12 +1082,14 @@
               "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026"
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "4ab668b0cfe5",
+          "id": "4c605597945a",
           "title": "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
-          "url": "https://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
+          "url": "https://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
           "publisher": "elpitazo.net",
           "publishedAt": "2026-02-28",
           "sourcePublishedAt": "2026-02-28",
@@ -879,7 +1109,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -892,8 +1122,8 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026",
+                "value": "22.7",
+                "context": "* [Entretenimiento](http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/) *\u2026",
                 "score": 0
               },
               {
@@ -928,8 +1158,8 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "28",
-                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "value": "8",
+                "context": "\u201cSe adelantan las investigaciones por pa Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28\u2026",
                 "score": 0
               }
             ]
@@ -938,16 +1168,18 @@
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
+            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
             "s2": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 28 de febrero de 2026 ![Image\u2026",
             "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
               "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
-              "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026"
+              "* [Entretenimiento](http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/) *\u2026"
             ]
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         }
       ]
     }

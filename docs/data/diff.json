@@ -1,15 +1,17 @@
 {
-  "runAt": "2026-02-28T22:18:19.282542+00:00",
+  "runAt": "2026-02-28T22:59:46.925037+00:00",
   "counts": {
-    "new": 22,
+    "new": 23,
     "updated": 0,
     "dropped": 0
   },
   "new": [
     "url::https://www.jpost.com/international/article-888190",
-    "url::https://trinidadexpress.com/newsextra/venezuela-meets-with-shell-execs-on-oil-gas-projects/article_ce815659-a7f3-4544-9e9c-7085ef8a191b.html",
+    "url::https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
+    "url::https://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/",
+    "url::https://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
     "url::https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/",
-    "url::https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/",
+    "url::https://trinidadexpress.com/newsextra/venezuela-meets-with-shell-execs-on-oil-gas-projects/article_ce815659-a7f3-4544-9e9c-7085ef8a191b.html",
     "url::https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
     "url::https://www.elnacional.com/2026/02/el-dinero-para-el-magnicidio-de-miguel-uribe-provino-de-venezuela/",
     "url::https://www.elnacional.com/2026/02/foro-penal-contabiliza-al-menos-ocho-presos-politicos-militares-excarcelados/",
@@ -22,7 +24,6 @@
     "url::https://www.elnacional.com/2026/02/miradas-al-continente-el-canastillo-de-costura/",
     "url::https://www.elnacional.com/2026/02/trump-destaca-relacion-energetica-con-venezuela-y-plan-conjunto-para-refinar-crudo/",
     "url::https://elpitazo.net/politica/asamblea-nacional-recibira-postulaciones-para-fiscal-general-y-defensor-del-pueblo-del-2-al-9-de-marzo/",
-    "url::https://elpitazo.net/politica/abogados-denuncian-que-un-juez-nego-la-amnistia-a-los-acusados-por-el-caso-paramacay/",
     "url::https://www.elnacional.com/2026/02/revelan-lo-que-pensaba-nicolas-maduro-de-delcy-rodriguez-dias-antes-de-ser-capturado-por-ee-uu/",
     "url::https://www.elnacional.com/2026/02/nicaragua-nombra-nuevo-embajador-en-venezuela-por-segunda-vez-en-un-mes/",
     "url::https://efectococuyo.com/salud/el-gobierno-reconoce-un-brote-de-fiebre-amarilla-en-venezuela-y-lanza-vacunacion-urgente-en-cuatro-estados/",
