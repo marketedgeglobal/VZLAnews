@@ -1,26 +1,18 @@
 {
   "executiveBriefBullets": [
-    "Government and institutional moves show Venezuelanalysis and bing.com converging on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in\u2026.",
-    "Operational evidence across sources indicates bing.com and CiberCuba converging on WASHINGTON, Feb 25 (Reuters) - The U.S.",
-    "Multiple reports converge on CiberCuba and bing.com converging on The end of Venezuelan oil hits food security in Cuba hard.",
-    "The current cycle confirms bing.com and Orinoco Tribune converging on Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy\u2026.",
-    "Cross-sector tracking now shows Orinoco Tribune and Irish Tech News converging on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela."
+    "Government and institutional moves show Venezuelanalysis and CiberCuba converging on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in\u2026.",
+    "Operational evidence across sources indicates CiberCuba and bing.com converging on The end of Venezuelan oil hits food security in Cuba hard.",
+    "Multiple reports converge on bing.com and Orinoco Tribune converging on Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy\u2026.",
+    "The current cycle confirms Orinoco Tribune and Irish Tech News converging on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+    "Cross-sector tracking now shows Irish Tech News and Trinidad Express Newspapers converging on Food Security, could Digital Insurance help Venezuela?."
   ],
   "keyDevelopments": [
     {
       "text": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a\u2026",
       "itemIds": [
         "33d7a1d3e17b",
-        "53843da51f92",
-        "c06f100c59ad"
-      ]
-    },
-    {
-      "text": "WASHINGTON, Feb 25 (Reuters) - The U.S.",
-      "itemIds": [
-        "53843da51f92",
-        "33d7a1d3e17b",
-        "c06f100c59ad"
+        "c06f100c59ad",
+        "f02d504a5300"
       ]
     },
     {
@@ -28,15 +20,15 @@
       "itemIds": [
         "c06f100c59ad",
         "33d7a1d3e17b",
-        "53843da51f92"
+        "22266cca15b9"
       ]
     },
     {
       "text": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration.",
       "itemIds": [
         "22266cca15b9",
-        "53843da51f92",
-        "c06f100c59ad"
+        "c06f100c59ad",
+        "f02d504a5300"
       ]
     },
     {
@@ -44,7 +36,15 @@
       "itemIds": [
         "f02d504a5300",
         "33d7a1d3e17b",
-        "53843da51f92"
+        "22266cca15b9"
+      ]
+    },
+    {
+      "text": "Food Security, could Digital Insurance help Venezuela?",
+      "itemIds": [
+        "d08af0c3e907",
+        "33d7a1d3e17b",
+        "c06f100c59ad"
       ]
     }
   ],
@@ -75,7 +75,7 @@
     },
     {
       "label": "Sanctions-linked developments",
-      "value": "3",
+      "value": "2",
       "context": "Items tagged with sanctions-related event signals",
       "itemId": ""
     }
@@ -85,7 +85,7 @@
       "bullets": [
         "Officials reported Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
         "Field updates show Venezuela meets with Shell execs on oil/gas projects.",
-        "Separate sources indicate U.S."
+        "Separate sources indicate U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' advanced as a concrete sector\u2026"
       ],
       "drivers": [
         "FX / Inflation",

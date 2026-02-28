@@ -1613,6 +1613,19 @@ def _sentence_case_start(text: str) -> str:
     return clean[0].upper() + clean[1:]
 
 
+def _is_low_quality_phrase(text: str) -> bool:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return True
+    if len(clean) < 28:
+        return True
+    if len(clean.split()) < 5:
+        return True
+    if re.fullmatch(r"[A-Za-z]{1,3}\.?", clean):
+        return True
+    return False
+
+
 def _build_sector_synth(section: str, items: list[dict]) -> dict:
     if not items:
         return {
@@ -1647,6 +1660,9 @@ def _build_sector_synth(section: str, items: list[dict]) -> dict:
         if not base:
             continue
         base = _sentence_case_start(base.rstrip(". "))
+        if _is_low_quality_phrase(base):
+            topic = _title_topic({"title": item.get("title", "")})
+            base = f"{topic} advanced as a concrete sector development"
         if _title_similarity(base, item.get("title", "")) > 0.90:
             base = f"{_title_topic({ 'title': item.get('title', '') })} advanced as a concrete sector development"
         bullets.append(clamp_text_py(f"{bullet_openers[idx % len(bullet_openers)]} {base}.", 180))
@@ -1681,6 +1697,8 @@ def _build_highlights(items: list[dict], sector_synth: dict[str, dict]) -> dict:
         primary = ranked[idx]
         secondary = ranked[(idx + 1) % len(ranked)] if len(ranked) > 1 else ranked[idx]
         p_text = _sentence_case_start(_strip_summary_leadin(clamp_text_py(primary.get("insight2", {}).get("s1", primary.get("title", "")), 120)))
+        if _is_low_quality_phrase(p_text):
+            p_text = _title_topic({"title": primary.get("title", "")})
         p_actor = primary.get("publisher") or primary.get("sector", "primary source")
         s_actor = secondary.get("publisher") or secondary.get("sector", "secondary source")
         first_num = ""
@@ -1706,6 +1724,8 @@ def _build_highlights(items: list[dict], sector_synth: dict[str, dict]) -> dict:
             if len(supporting) == 3:
                 break
         sentence = _sentence_case_start(_strip_summary_leadin(clamp_text_py(item.get("insight2", {}).get("s1", item.get("title", "")), 180)))
+        if _is_low_quality_phrase(sentence):
+            sentence = f"{_title_topic({'title': item.get('title', '')})} became a material development in this cycle."
         if sentence and sentence[-1] not in ".!?…":
             sentence += "."
         if len(sentence.split()) < 7:

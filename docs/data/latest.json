@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-02-28T20:07:20.287571+00:00",
+  "runAt": "2026-02-28T20:09:23.908642+00:00",
   "totalItems": 35,
   "sectors": [
     {
@@ -8,7 +8,7 @@
         "bullets": [
           "Officials reported Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
           "Field updates show Venezuela meets with Shell execs on oil/gas projects.",
-          "Separate sources indicate U.S."
+          "Separate sources indicate U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' advanced as a concrete sector\u2026"
         ],
         "drivers": [
           "FX / Inflation",
@@ -389,7 +389,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -404,8 +404,7 @@
             ]
           },
           "icons": [
-            "HUMAN",
-            "NEW"
+            "HUMAN"
           ]
         },
         {
