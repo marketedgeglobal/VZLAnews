@@ -1138,13 +1138,15 @@ def _validate_preview_text(text: str) -> str:
         return ""
     if "](http" in clean.lower() or clean.count("[") >= 3:
         return ""
-    if len(clean) < 80:
+    if len(clean) < 60:
         return ""
     if _preview_has_byline_or_dateline(clean):
         return ""
     sentences = _preview_sentence_split(clean)
     if len(sentences) < 2:
-        return ""
+        if len(clean) < 90 or _is_fragment(clean):
+            return ""
+        return clean.strip()
     if len(sentences) > 2:
         clean = " ".join(sentences[:2])
     else:
@@ -1314,7 +1316,7 @@ def _is_valid_resource_url(url: str) -> bool:
 
 def _load_preview_cache(latest_payload_path: str) -> dict[str, dict]:
     cache: dict[str, dict] = {}
-    allowed_sources = {"trafilatura", "readability", "jina", "cache"}
+    allowed_sources = {"trafilatura", "readability", "jina", "cache", "fallback_summary"}
     if not os.path.exists(latest_payload_path):
         return cache
     try:
@@ -3227,7 +3229,24 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 }
                 preview_cache[entry_url] = preview_payload
             else:
-                preview_payload = {"preview": "", "preview_source": "none"}
+                fallback_preview = ""
+                for candidate in [
+                    str(entry.get("snippet", "") or ""),
+                    str(entry.get("meta_description", "") or ""),
+                    str(summary_text or ""),
+                ]:
+                    validated = _validate_preview_text(candidate)
+                    if validated:
+                        fallback_preview = validated
+                        break
+                if fallback_preview:
+                    preview_payload = {
+                        "preview": fallback_preview,
+                        "preview_source": "fallback_summary",
+                    }
+                    preview_cache[entry_url] = preview_payload
+                else:
+                    preview_payload = {"preview": "", "preview_source": "none"}
 
         item["preview"] = preview_payload.get("preview", "")
         item["preview_source"] = preview_payload.get("preview_source", "none")

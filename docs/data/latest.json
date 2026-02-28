@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-02-28T22:09:44.378697+00:00",
-  "totalItems": 22,
+  "runAt": "2026-02-28T22:18:19.282542+00:00",
+  "totalItems": 29,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
           "Officials reported Title: Petr\u00f3leos de Venezuela S.A.",
-          "Field updates show Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios\u2026",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
+          "Field updates show Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026",
+          "Separate sources indicate Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas\u2026"
         ],
         "drivers": [
           "Oil production/export"
@@ -20,6 +20,99 @@
         ]
       },
       "items": [
+        {
+          "id": "2538a1acf901",
+          "title": "Petrolero Skipper y dos millones de barriles vinculados a Ir\u00e1n\u00a0pasan a proceso legal",
+          "url": "https://www.elnacional.com/2026/02/petrolero-skipper-y-dos-millones-de-barriles-vinculados-a-iran-pasan-a-proceso-legal/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Rubio notific\u00f3 con antelaci\u00f3n el ataque a Ir\u00e1n a algunos congresistas febrero 28, 2026 Accidente de un avi\u00f3n de carga\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Fiscal\u00eda de Ecuador allana la sede del\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Ecuador allana la sede del corre\u00edsmo por supuesta financiaci\u00f3n de Venezuela febrero 28, 2026 Oleada de suspensi\u00f3n de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "crudo il\u00edcito en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper,\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "10",
+                "context": "en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper, recientemente\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "05",
+                "context": "en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper, recientemente\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Petro dijo que Trump se equivoc\u00f3 con el ataque a Ir\u00e1n febrero 28, 2026 \u00bfQu\u00e9 hay detr\u00e1s de la \"guerra abierta\" entre\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "20",
+                "context": "febrero 28, 2026 Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Fiscal\u00eda de Ecuador\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento.",
+          "preview_source": "fallback_summary",
+          "language": "es",
+          "insight2": {
+            "s1": "Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a\u2026",
+            "s2": "(\u00a92025 Vantor v\u00eda AP) El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento de aproximadamente dos millones de barriles de\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around extractives & mining, with 28 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Rubio notific\u00f3 con antelaci\u00f3n el ataque a Ir\u00e1n a algunos congresistas febrero 28, 2026 Accidente de un avi\u00f3n de carga\u2026",
+              "Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Fiscal\u00eda de Ecuador allana la sede del\u2026"
+            ]
+          },
+          "icons": [
+            "ENERGY"
+          ]
+        },
         {
           "id": "0968b16f031c",
           "title": "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
@@ -133,8 +226,8 @@
               }
             ]
           },
-          "preview": "Request blocked. We can't connect to the server for this app or website at this time.",
-          "preview_source": "jina",
+          "preview": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
+          "preview_source": "fallback_summary",
           "language": "es",
           "insight2": {
             "s1": "Title: Petr\u00f3leos de Venezuela S.A",
@@ -156,18 +249,101 @@
       "name": "Food & Agriculture",
       "synth": {
         "bullets": [
-          "Coverage was limited in this sector during the current cycle.",
-          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
-          "Watch the next run for confirmed operational or policy updates tied to this sector."
+          "Officials reported Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed creative solutions to advance food\u2026",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
-        "drivers": [],
+        "drivers": [
+          "FX / Inflation",
+          "Humanitarian crisis",
+          "Sanctions"
+        ],
         "watch": [
-          "Regulatory updates",
-          "Partner statements",
-          "Execution constraints"
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
         ]
       },
-      "items": []
+      "items": [
+        {
+          "id": "f22a8e7c62c2",
+          "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
+          "url": "https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate/",
+          "publisher": "venezuelanalysis.com",
+          "publishedAt": "2026-02-18",
+          "sourcePublishedAt": "2026-02-01",
+          "sourceTier": "Tier 2",
+          "sector": "Food & Agriculture",
+          "snippet": "Natalia Burdynska Schuurman researched Venezuela's construction of food sovereignty under the Bolivarian Revolution and amid US sanctions.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Humanitarian crisis",
+            "FX / Inflation"
+          ],
+          "sentiment": "Negative",
+          "materiality": 3,
+          "risk_score": 80,
+          "entities": [],
+          "tags": [
+            "Sanctions"
+          ],
+          "flags": {
+            "risk": true,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Sanctions and state revenue",
+                "value": "100%",
+                "context": "consequences? Download Post Tags: # Food Sovereignty # Sanctions DONATE Venezuelanalysis is 100% sustained by readers.\u2026",
+                "score": 5
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "31",
+                "context": "under the Bolivarian Revolution and amid US sanctions. Natalia Burdynska Schuurman January 31, 2026 February 26, 2026\u2026",
+                "score": 3
+              },
+              {
+                "label": "Sanctions and state revenue",
+                "value": "26",
+                "context": "Revolution and amid US sanctions. Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "1,000",
+                "context": "to achieve food security in Venezuela, a state currently targeted by over 1,000 unilateral coercive measures, since its\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Natalia Burdynska Schuurman researched Venezuela's construction of food sovereignty under the Bolivarian Revolution and amid US sanctions.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed creative solutions to advance food sovereignty while under the US blockade",
+            "s2": "(FAO) Natalia Burdynska Schuurman defended her MsC thesis at the University of Edinburgh on Venezuela\u2019s struggle for food security and food sovereignty amid wide-reaching US-led unilateral sanctions",
+            "s3": "Implication: downside exposure is rising as policy uncertainty and compliance friction compound in food & agriculture, with 100% as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "consequences? Download Post Tags: # Food Sovereignty # Sanctions DONATE Venezuelanalysis is 100% sustained by readers.\u2026",
+              "under the Bolivarian Revolution and amid US sanctions. Natalia Burdynska Schuurman January 31, 2026 February 26, 2026\u2026"
+            ]
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "FX",
+            "HUMAN"
+          ]
+        }
+      ]
     },
     {
       "name": "Health & Water",
@@ -390,9 +566,9 @@
               }
             ]
           },
-          "preview": "Request blocked. We can't connect to the server for this app or website at this time.",
-          "preview_source": "jina",
-          "language": "en",
+          "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
+          "preview_source": "fallback_summary",
+          "language": "es",
           "insight2": {
             "s1": "They were placed on your computer when you launched this website",
             "s2": "You can change your cookie settings through your browser",
@@ -476,11 +652,13 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026",
-          "Field updates show Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026",
-          "Separate sources indicate Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa\u2026"
+          "Officials reported Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n\u2026",
+          "Field updates show Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026",
+          "Separate sources indicate Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026"
         ],
-        "drivers": [],
+        "drivers": [
+          "FX / Inflation"
+        ],
         "watch": [
           "Regulatory deadlines",
           "Executive decrees",
@@ -488,6 +666,103 @@
         ]
       },
       "items": [
+        {
+          "id": "0c9024462a1b",
+          "title": "Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda",
+          "url": "https://www.elnacional.com/2026/02/jorge-arreaza-anuncio-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 3",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda, Jorge Arreaza, inform\u00f3 de la excarcelaci\u00f3n de 31 militares.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "Sistema de Justicia Militar de la FANB, acord\u00f3 otorgar medidas alternativas a 31 efectivos militares procesados, que ya\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "Viajes y Turismo Hor\u00f3scopo Venezuela \u00bb Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "31",
+                "context": "marco de la ley de amnist\u00eda Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda A\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "13",
+                "context": "desde 1999 hasta 2026. Sin embargo, se aplicar\u00e1 de forma espec\u00edfica a 13 \"hechos\" ocurridos en 13 a\u00f1os distintos. Esto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "2026 Barinas recibe con caravana a Freddy Superlano tras su excarcelaci\u00f3n febrero 28, 2026 Freddy Superlano: \"El Rodeo\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "m\u00e1s parecido a un campo de concentraci\u00f3n que a una c\u00e1rcel\" febrero 28, 2026 Departamento de Justicia de EE UU se\u00f1ala a\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "2026 Foro Penal contabiliza al menos ocho presos pol\u00edticos militares excarcelados febrero 28, 2026 En Venezuela se han\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "otorgar estas medidas el viernes a los militares Por El Nacional febrero 28, 2026 6:11 pm Foto referencial / Cortes\u00eda\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado de la excarcelaci\u00f3n de 31 militares con \"medidas alternativas\". Esto tiene como objetivo contribuir a la paz y al encuentro nacional.",
+          "preview_source": "trafilatura",
+          "language": "es",
+          "insight2": {
+            "s1": "Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica\u2026",
+            "s2": "Esto tiene como objetivo contribuir a la paz y al encuentro nacional",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around fx / inflation, with 31 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Sistema de Justicia Militar de la FANB, acord\u00f3 otorgar medidas alternativas a 31 efectivos militares procesados, que ya\u2026",
+              "Viajes y Turismo Hor\u00f3scopo Venezuela \u00bb Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de\u2026"
+            ]
+          },
+          "icons": [
+            "FX"
+          ]
+        },
         {
           "id": "afd9a3cb55d7",
           "title": "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
@@ -670,99 +945,6 @@
             "evidence": [
               "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
               "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "6e897fd9e737",
-          "title": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo por supuesta financiaci\u00f3n de Venezuela",
-          "url": "https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "La Fiscal\u00eda General del Estado y la Polic\u00eda Nacional de Ecuador allanaron este s\u00e1bado la sede del movimiento Revoluci\u00f3n Ciudadana.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "de suspensi\u00f3n de vuelos a Oriente Medio tras ataque a Ir\u00e1n febrero 28, 2026 Ministro de Exteriores iran\u00ed: \"El l\u00edder Ali\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "(2007-2017) asegur\u00f3 en X que \"en lugar de combatir el crimen organizado, 15 polic\u00edas est\u00e1n allanando la sede de la RC5\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "lo se\u00f1alaba como presunto autor de la violaci\u00f3n de una ni\u00f1a. El 11 de febrero, el Ministerio de Salud revel\u00f3 que abri\u00f3\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "20",
-                "context": "febrero 28, 2026 Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Oleada de suspensi\u00f3n de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Accidente de un avi\u00f3n de carga en Bolivia deja 20 fallecidos febrero 28, 2026 Oleada de suspensi\u00f3n de vuelos a Oriente\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Rubio notific\u00f3 con antelaci\u00f3n el ataque a Ir\u00e1n a algunos congresistas febrero 28, 2026 Accidente de un avi\u00f3n de carga\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "con los hechos que se investigan. pic.twitter.com/ayW28nErWP \u2014 Fiscal\u00eda Ecuador (@FiscaliaEcuador) February 28, 2026\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "\"Yo he venido a dar la versi\u00f3n sobre el caso 'Caja Chica' porque el pa\u00eds necesita un ba\u00f1o de verdad. Yo traslad\u00e9 por disposici\u00f3n del presidente Correa dinero desde Venezuela a Ecuador.",
-          "preview_source": "trafilatura",
-          "language": "es",
-          "insight2": {
-            "s1": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n Econom\u00eda Finanzas\u2026",
-            "s2": "En su cuenta de la red social X, la Fiscal\u00eda confirm\u00f3 que el allanamiento tuvo lugar en la capital de Ecuador, Quito, y se realiz\u00f3 \"con el fin de recabar indicios\" en el marco del caso denominado 'Caja Chica '",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk, with 28 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
-              "de suspensi\u00f3n de vuelos a Oriente Medio tras ataque a Ir\u00e1n febrero 28, 2026 Ministro de Exteriores iran\u00ed: \"El l\u00edder Ali\u2026"
             ]
           },
           "icons": []

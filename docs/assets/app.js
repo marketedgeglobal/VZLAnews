@@ -18,12 +18,17 @@
 
     function normalizePreview(text) {
         const clean = String(text || '').replace(/\s+/g, ' ').trim();
-        if (!clean || clean.includes('…') || clean.includes('...')) return '';
+        if (!clean) return '';
         const parts = clean.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ])/).map((s) => s.trim()).filter(Boolean);
-        if (parts.length < 2) return '';
-        const two = `${parts[0]} ${parts[1]}`.trim();
-        if (two.length > 340) return '';
-        return two;
+        if (parts.length >= 2) {
+            const two = `${parts[0]} ${parts[1]}`.trim();
+            if (two.length > 360) return '';
+            return two;
+        }
+        if (clean.length >= 90 && clean.length <= 360) {
+            return clean;
+        }
+        return '';
     }
 
     function isArticleUrl(rawUrl) {
@@ -239,6 +244,7 @@
                     if (lang === 'en' || lang === 'es') acc[lang] += 1;
                     return acc;
                 }, { en: 0, es: 0 });
+            if (languageCounts.es > languageCounts.en) activeLanguage = 'es';
             if (languageCounts.en === 0 && languageCounts.es > 0) activeLanguage = 'es';
 
             const render = () => {
