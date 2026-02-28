@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-02-28 13:49 UTC**
+> Last updated: **2026-02-28 18:59 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,27 +8,27 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [Trump: "Hay una operación a gran escala en marcha para aniquilar al régimen iraní"](https://bitlysdowssl-aws.com/2026/02/trump-hay-una-operacion-a-gran-escala-en-marcha-para-aniquilar-al-regimen-irani/) — Sat, 28 Feb 2026 12:51:40 +0000
-- [EE UU bautiza la operación militar contra Irán como "Furia Épica"](https://bitlysdowssl-aws.com/2026/02/ee-uu-bautiza-la-operacion-militar-contra-iran-como-furia-epica/) — Sat, 28 Feb 2026 12:28:41 +0000
-- [Expríncipe Reza Pahlaví llama a los iraníes a "regresar a las calles para la acción final" tras ataque conjunto de EE UU e Israel](https://bitlysdowssl-aws.com/2026/02/reza-pahlavi-llama-a-iranies-a-regresar-a-las-calles-para-la-accion-final/) — Sat, 28 Feb 2026 12:26:06 +0000
-- [El futuro de la contratación en la era de la inteligencia artificial: ¿oportunidad o amenaza?](https://bitlysdowssl-aws.com/2026/02/el-futuro-de-la-contratacion-en-la-era-de-la-inteligencia-artificial-oportunidad-o-amenaza/) — Sat, 28 Feb 2026 12:18:00 +0000
-- [¿Qué hay detrás de la violencia de los cárteles en México tras el asesinato del Mencho?](https://bitlysdowssl-aws.com/2026/02/que-hay-detras-de-la-violencia-de-los-carteles-en-mexico-tras-el-asesinato-del-mencho/) — Sat, 28 Feb 2026 12:01:00 +0000
+- [El Barcelona torpedeó al Villarreal con una exhibición de Yamal](https://bitlysdowssl-aws.com/2026/02/el-barcelona-torpedeo-al-villarreal-con-una-exhibicion-de-yamal/) — Sat, 28 Feb 2026 18:31:36 +0000
+- [¿Qué hay detrás de la "guerra abierta" entre Afganistán y Pakistán?](https://bitlysdowssl-aws.com/2026/02/que-hay-detras-de-la-guerra-abierta-entre-afganistan-y-pakistan/) — Sat, 28 Feb 2026 18:29:00 +0000
+- [Marco Rubio notificó con antelación el ataque a Irán a algunos congresistas](https://bitlysdowssl-aws.com/2026/02/marco-rubio-notifico-con-antelacion-el-ataque-a-iran-a-algunos-congresistas/) — Sat, 28 Feb 2026 18:12:00 +0000
+- [Un estudio internacional detecta sustancias tóxicas en todos los auriculares analizados](https://bitlysdowssl-aws.com/2026/02/un-estudio-internacional-detecta-sustancias-toxicas-en-todos-los-auriculares-analizados/) — Sat, 28 Feb 2026 18:08:00 +0000
+- [El Inter Miami de Messi visitará la Casa Blanca como campeón de la MLS](https://bitlysdowssl-aws.com/2026/02/el-inter-miami-de-messi-visitara-la-casa-blanca-como-campeon-de-la-mls/) — Sat, 28 Feb 2026 18:04:00 +0000
 
 ## Efecto Cocuyo
 
+- [“No vengo a reclamar venganzas, vengo a reclamar el futuro”: claves del discurso de Enrique Márquez](https://efectococuyo.com/politica/no-vengo-a-reclamar-venganzas-vengo-a-reclamar-el-futuro-claves-del-discurso-de-enrique-marquez/) — Sat, 28 Feb 2026 15:55:00 +0000
+- [ONU condena ataques de EEUU e Israel y represalias de Irán: «Los civiles pagan el precio»](https://efectococuyo.com/internacionales/onu-condena-ataques-eeuu-israel-represalias-iran-civiles-pagan-precio/) — Sat, 28 Feb 2026 14:24:12 +0000
 - [La primera semana de la Ley de Amnistía en cifras](https://efectococuyo.com/la-humanidad/la-primera-semana-de-la-ley-de-amnistia-en-cifras-al-cierre-de-las-5-p-m-del-27-de-febrero/) — Sat, 28 Feb 2026 12:00:00 +0000
 - [Trump anuncia «grandes operaciones de combate» contra el régimen iraní](https://efectococuyo.com/internacionales/trump-anuncia-grandes-operaciones-combate-contra-regimen-irani/) — Sat, 28 Feb 2026 11:25:05 +0000
 - [Excarcelan al menos a ocho  presos políticos militares](https://efectococuyo.com/politica/excarcelan-al-menos-a-ocho-presos-politicos-militares/) — Sat, 28 Feb 2026 03:09:23 +0000
-- [Comisión de Postulaciones del Poder Ciudadano inicia proceso para escoger nuevos Fiscal General y Defensor del Pueblo](https://efectococuyo.com/politica/comision-de-postulaciones-del-poder-ciudadano-inicia-proceso-para-escoger-nuevos-fiscal-general-y-defensor-del-pueblo/) — Fri, 27 Feb 2026 22:16:19 +0000
-- [El gobierno reconoce un brote de fiebre amarilla en Venezuela y lanza vacunación urgente en cuatro estados](https://efectococuyo.com/salud/el-gobierno-reconoce-un-brote-de-fiebre-amarilla-en-venezuela-y-lanza-vacunacion-urgente-en-cuatro-estados/) — Fri, 27 Feb 2026 22:00:34 +0000
 
 ## El Pitazo
 
-- [Asamblea Nacional recibirá postulaciones para fiscal general y defensor del pueblo del 2 al 9 de marzo](https://elpitazo.net/politica/asamblea-nacional-recibira-postulaciones-para-fiscal-general-y-defensor-del-pueblo-del-2-al-9-de-marzo/) — Fri, 27 Feb 2026 23:27:34 +0000
-- [Abogados denuncian que un juez negó la amnistía a los acusados por el caso Paramacay](https://elpitazo.net/politica/abogados-denuncian-que-un-juez-nego-la-amnistia-a-los-acusados-por-el-caso-paramacay/) — Fri, 27 Feb 2026 23:19:00 +0000
-- [Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquetía](https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/) — Fri, 27 Feb 2026 23:12:38 +0000
-- [El Caracazo: estallido social que ocurrió hace 37 años en Venezuela](https://elpitazo.net/caracas/el-caracazo-estallido-social-que-ocurrio-hace-37-anos-en-venezuela/) — Fri, 27 Feb 2026 22:17:54 +0000
-- [Ganancias por venta de petróleo se depositan en cuentas administradas por el Tesoro de EE. UU.](https://elpitazo.net/economia/ganancias-por-venta-de-petroleo-se-depositan-en-cuentas-administradas-por-el-tesoro-de-ee-uu-ya-no-pasaran-por-qatar/) — Fri, 27 Feb 2026 21:36:24 +0000
+- [Zulia l Pastor evangélico y su hija de 8 años mueren en un incendio](https://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/) — Sat, 28 Feb 2026 18:51:35 +0000
+- [Fiscalía de Ecuador allana la sede del correísmo por supuesta financiación de Venezuela](https://elpitazo.net/internacionales/fiscalia-de-ecuador-allana-la-sede-del-correismo-por-supuesta-financiacion-de-venezuela/) — Sat, 28 Feb 2026 18:45:36 +0000
+- [Foro Penal: Excarcelados al menos ocho presos políticos militares en Venezuela este #27Feb](https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/) — Sat, 28 Feb 2026 15:37:36 +0000
+- [Trump anuncia una operación de combate en Irán: “Vamos a destruir sus misiles y aniquilar su armada”](https://elpitazo.net/internacionales/trump-anuncia-una-operacion-de-combate-en-iran-vamos-a-destruir-sus-misiles-y-aniquilar-su-armada/) — Sat, 28 Feb 2026 14:55:34 +0000
+- [De Venezuela a Irán, los bombardeos ordenados por Trump en su segundo mandato](https://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/) — Sat, 28 Feb 2026 14:43:44 +0000
 
 ## Google News – Venezuela
 
