@@ -39,6 +39,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT_DIR, "config.yml")
 FEEDS_PATH = os.path.join(ROOT_DIR, "feeds.txt")
 DOCS_DIR = os.path.join(ROOT_DIR, "docs")
+DOCS_DATA_DIR = os.path.join(DOCS_DIR, "data")
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 OUTPUT_PATH = os.path.join(DOCS_DIR, "index.md")
 METADATA_PATH = os.path.join(DATA_DIR, "last_run.json")
@@ -1356,6 +1357,455 @@ def _serialize_entry(entry: dict, section_label: str) -> dict:
     }
 
 
+def _stable_item_id(url: str, title: str, published_iso: str) -> str:
+    raw = f"{url}|{title}|{published_iso}"
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12]
+
+
+def _deterministic_pick(seed: str, options: list[str]) -> str:
+    if not options:
+        return ""
+    h = hashlib.sha1(seed.encode("utf-8")).hexdigest()
+    idx = int(h[:8], 16) % len(options)
+    return options[idx]
+
+
+def _extract_numbers(text: str) -> list[dict]:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return []
+    pattern = r"\b(?:\$)?\d+(?:[\.,]\d+)?(?:%|\s?(?:bpd|million|billion|bn|m|days|months|years))?\b"
+    numbers = []
+    for match in re.finditer(pattern, clean, flags=re.IGNORECASE):
+        value = match.group(0)
+        start = max(0, match.start() - 36)
+        end = min(len(clean), match.end() + 36)
+        context = clean[start:end].strip()
+        numbers.append({"label": "Observed figure", "value": value, "context": context})
+        if len(numbers) >= 6:
+            break
+    return numbers
+
+
+def _derive_publisher(entry: dict) -> str:
+    title = (entry.get("title", "") or "").strip()
+    title_match = re.search(r"\s[-–—]\s([^\-–—]{2,50})$", title)
+    if title_match:
+        candidate = title_match.group(1).strip()
+        if candidate and len(candidate.split()) <= 6:
+            return candidate
+    return _fmt_source(entry)
+
+
+def _icons_for_item(item: dict) -> list[str]:
+    icons = []
+    tags = set(item.get("tags", []))
+    events = set(item.get("event_types", []))
+    if item.get("flags", {}).get("risk"):
+        icons.append("RISK")
+    if item.get("flags", {}).get("opportunity"):
+        icons.append("OPPORTUNITY")
+    if "Sanctions" in events:
+        icons.extend(["RISK", "POLICY"])
+    if item.get("sector") == "Extractives & Mining":
+        icons.append("ENERGY")
+    if "FX / Inflation" in events or "Debt/FX" in tags:
+        icons.append("FX")
+    if "Infrastructure" in tags:
+        icons.append("TRADE")
+    if "Health" in tags or "Humanitarian crisis" in events:
+        icons.append("HUMAN")
+    if item.get("flags", {}).get("new"):
+        icons.append("NEW")
+    try:
+        pub = dateutil_parser.parse(item.get("publishedAt", ""))
+        if (datetime.now(timezone.utc) - pub).total_seconds() <= 172800:
+            icons.append("NEW")
+    except Exception:  # noqa: BLE001
+        pass
+    deduped = []
+    for icon in icons:
+        if icon not in deduped:
+            deduped.append(icon)
+    return deduped
+
+
+def _generate_insight2(item: dict) -> dict:
+    seed = item["id"]
+    snippet = _normalize_text_block(item.get("snippet", ""))
+    facts = item.get("metrics", {}).get("numbers", [])
+    first_fact = facts[0]["value"] if facts else ""
+    sector = item.get("sector", "this sector")
+
+    change_openers = [
+        "Coverage this cycle points to",
+        "The latest shift centers on",
+        "A notable change appears in",
+        "Reporting indicates movement in",
+    ]
+    impact_openers = [
+        "For donors and investors, this implies",
+        "The practical implication is",
+        "Near-term, this means",
+        "The operating takeaway is",
+    ]
+
+    s1 = _deterministic_pick(seed + "-a", change_openers)
+    focus = _deterministic_pick(seed + "-b", item.get("event_types", []) or [sector])
+    s1 = f"{s1} {focus.lower()} dynamics in Venezuela."
+    if first_fact:
+        s1 = f"{s1[:-1]} with reference points such as {first_fact}."
+
+    if item.get("flags", {}).get("risk"):
+        posture = "heightened compliance and execution risk"
+    elif item.get("flags", {}).get("opportunity"):
+        posture = "potential openings for controlled engagement"
+    else:
+        posture = "a mixed but actionable signal set"
+    s2 = f"{_deterministic_pick(seed + '-c', impact_openers)} {posture} for {sector.lower()}."
+
+    headline_norm = _normalize_text_block(item.get("title", "")).lower()
+    if headline_norm and _title_similarity(headline_norm, s1.lower()) > 0.88:
+        s1 = "The reporting adds context beyond the headline by clarifying how operating conditions are changing."
+
+    confidence = "HIGH" if item.get("summary_confidence", "").startswith("High") else "MED"
+    if item.get("summary_confidence", "").startswith("Low"):
+        confidence = "LOW"
+
+    evidence = []
+    if snippet:
+        evidence.append(clamp_text_py(snippet, 120))
+    for fact in facts[:2]:
+        context = fact.get("context", "")
+        if context:
+            evidence.append(clamp_text_py(context, 120))
+    evidence = evidence[:3]
+
+    return {"s1": clamp_text_py(s1, 180), "s2": clamp_text_py(s2, 180), "confidence": confidence, "evidence": evidence}
+
+
+def clamp_text_py(text: str, limit: int) -> str:
+    clean = _normalize_text_block(text)
+    if len(clean) <= limit:
+        return clean
+    return clean[:limit].rsplit(" ", 1)[0].strip() + "…"
+
+
+def _build_sector_synth(section: str, items: list[dict]) -> dict:
+    if not items:
+        return {"sentences": ["Coverage is limited this cycle; maintain monitoring for confirmation in the next run."], "drivers": [], "watch": ["Regulatory updates", "Partner statements", "Execution constraints"]}
+
+    events = []
+    for item in items:
+        events.extend(item.get("event_types", []))
+    drivers = sorted(set(events))[:4]
+    risk_count = sum(1 for item in items if item.get("flags", {}).get("risk"))
+    opp_count = sum(1 for item in items if item.get("flags", {}).get("opportunity"))
+
+    s1 = f"This week in {section.lower()}, reporting clustered around {', '.join(drivers) if drivers else 'cross-sector signals'}."
+    s2 = f"Risk posture is {'elevated' if risk_count > opp_count else 'mixed'}, with {risk_count} risk flags versus {opp_count} opportunity flags."
+    s3 = "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments."
+    s4 = "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified."
+    s5 = "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+    return {
+        "sentences": [s1, s2, s3, s4, s5],
+        "drivers": drivers,
+        "watch": ["Regulatory deadlines", "Executive decrees", "Sanctions and licensing language"],
+    }
+
+
+def _build_highlights(items: list[dict], sector_synth: dict[str, dict]) -> dict:
+    ranked = sorted(items, key=lambda i: (int(i.get("materiality", 1)), int(i.get("risk_score", 0))), reverse=True)
+    key_developments = []
+    for item in ranked[:8]:
+        bullet = f"{item.get('sector', 'Sector')}: {clamp_text_py(item.get('insight2', {}).get('s1', item.get('title', '')), 130)}"
+        if bullet not in key_developments:
+            key_developments.append(bullet)
+        if len(key_developments) == 5:
+            break
+    while len(key_developments) < 5:
+        key_developments.append("Monitoring continues for policy and market execution signals across sectors.")
+
+    by_numbers = []
+    for item in ranked:
+        for metric in item.get("metrics", {}).get("numbers", []):
+            line = f"{item.get('sector')}: {metric.get('value')} — {clamp_text_py(metric.get('context', ''), 90)}"
+            if line not in by_numbers:
+                by_numbers.append(line)
+            if len(by_numbers) == 5:
+                break
+        if len(by_numbers) == 5:
+            break
+    if len(by_numbers) < 5:
+        by_numbers.insert(0, f"{len(items)} sector-priority items in the current cycle.")
+    while len(by_numbers) < 5:
+        by_numbers.append("Quantitative signal extraction was limited in available source text for this run.")
+
+    exec_sentences = []
+    for sector, synth in sector_synth.items():
+        if synth.get("sentences"):
+            exec_sentences.append(synth["sentences"][0])
+    executive = " ".join(exec_sentences[:4])
+    executive = clamp_text_py(executive, 720)
+
+    return {
+        "executiveBrief": executive,
+        "keyDevelopments": key_developments[:5],
+        "byTheNumbers": by_numbers[:5],
+        "sectorSynth": sector_synth,
+    }
+
+
+def _build_docs_shell(run_at: str) -> str:
+    return "\n".join([
+        "# VZLAnews Intelligence Platform",
+        "",
+        f"> Updated: **{run_at}**",
+        "",
+        '<link rel="stylesheet" href="{{ \'/assets/styles.css\' | relative_url }}">',
+        "",
+        '<div id="app-root" class="vzla-app">Loading intelligence dashboard…</div>',
+        "",
+        '<script src="{{ \'/assets/nlg.js\' | relative_url }}"></script>',
+        '<script src="{{ \'/assets/app.js\' | relative_url }}"></script>',
+        "",
+    ])
+
+
+def _default_app_js() -> str:
+        return """(function () {
+    async function loadJson(path) {
+        const response = await fetch(path, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Failed to load ' + path);
+        return response.json();
+    }
+
+    const iconMap = {
+        RISK: '⚠️',
+        OPPORTUNITY: '✅',
+        POLICY: '🏛️',
+        ENERGY: '⛽',
+        FX: '💱',
+        TRADE: '🚢',
+        HUMAN: '🧭',
+        NEW: '🆕'
+    };
+
+    function esc(value) {
+        return String(value || '').replace(/[&<>\"']/g, (char) => (
+            { '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' }[char] || char
+        ));
+    }
+
+    function list(items) {
+        return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
+    }
+
+    function renderTop(highlights) {
+        return `
+            <section class=\"top-row\">
+                <article class=\"panel\">
+                    <h3>Key Developments</h3>
+                    ${list((highlights.keyDevelopments || []).slice(0, 5))}
+                </article>
+                <article class=\"panel\">
+                    <h3>By the Numbers</h3>
+                    ${list((highlights.byTheNumbers || []).slice(0, 5))}
+                </article>
+            </section>
+        `;
+    }
+
+    function renderItem(item) {
+        const icons = (item.icons || []).map((icon) => `<span class=\"item-icon\" title=\"${esc(icon)}\">${iconMap[icon] || '•'}</span>`).join('');
+        const evidence = (item.insight2 && item.insight2.evidence ? item.insight2.evidence : []).slice(0, 2);
+        const evidenceHtml = evidence.length
+            ? `<div class=\"item-evidence\">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
+            : '';
+        const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : 'MED';
+
+        return `
+            <article class=\"item-card\">
+                <div class=\"item-head\">
+                    <h5><a href=\"${esc(item.url)}\" target=\"_blank\" rel=\"noopener\">${esc(item.title)}</a></h5>
+                    <div class=\"item-icons\">${icons}</div>
+                </div>
+                <p class=\"item-meta\">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
+                <p class=\"item-snippet\">${esc(item.snippet)}</p>
+                <p class=\"item-insight\">${esc(item.insight2.s1)} ${esc(item.insight2.s2)}</p>
+                ${evidenceHtml}
+                <p class=\"item-confidence\">Confidence: ${esc(confidence)}</p>
+            </article>
+        `;
+    }
+
+    function renderSectors(latest) {
+        return (latest.sectors || []).map((sector) => {
+            const sentences = sector.synth && sector.synth.sentences ? sector.synth.sentences.slice(0, 5) : [];
+            return `
+                <section class=\"sector-block\">
+                    <h3>${esc(sector.name)}</h3>
+                    <div class=\"sector-synth\">${sentences.map((s) => `<p>${esc(s)}</p>`).join('')}</div>
+                    <div class=\"items-grid\">${(sector.items || []).map(renderItem).join('')}</div>
+                </section>
+            `;
+        }).join('');
+    }
+
+    function renderMacros(macros) {
+        return `
+            <section class=\"macro-block\">
+                <h3>Macro Indicators</h3>
+                <p class=\"macro-note\">Daily refresh at end-of-report for context and trend checks.</p>
+                <div class=\"macro-grid\">
+                    ${(macros.indicators || []).map((m) => `
+                        <article class=\"macro-card\">
+                            <h4>${esc(m.name)}</h4>
+                            <p class=\"macro-value\">${esc(m.value)}</p>
+                            <p class=\"macro-trend\">${esc(m.trend)}</p>
+                        </article>
+                    `).join('')}
+                </div>
+            </section>
+        `;
+    }
+
+    async function init() {
+        const root = document.getElementById('app-root');
+        if (!root) return;
+        try {
+            const [latest, highlights, macros] = await Promise.all([
+                loadJson('data/latest.json'),
+                loadJson('data/highlights.json'),
+                loadJson('data/macros.json')
+            ]);
+
+            root.innerHTML = `
+                <section class=\"exec-brief panel\">
+                    <h2>Executive Brief</h2>
+                    <p>${esc(highlights.executiveBrief || '')}</p>
+                </section>
+                ${renderTop(highlights)}
+                ${renderSectors(latest)}
+                ${renderMacros(macros)}
+            `;
+        } catch (error) {
+            root.innerHTML = `<p class=\"error\">Unable to load dashboard data: ${esc(error.message)}</p>`;
+        }
+    }
+
+    init();
+})();
+"""
+
+
+def _default_styles_css() -> str:
+        return """:root {
+    color-scheme: light;
+}
+
+.vzla-app {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.panel,
+.sector-block,
+.macro-block {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    background: #fff;
+}
+
+.exec-brief p,
+.sector-synth p,
+.item-snippet,
+.item-insight,
+.macro-note {
+    line-height: 1.55;
+}
+
+.top-row {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.top-row ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.items-grid,
+.macro-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.item-card,
+.macro-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.item-head h5 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.item-icons {
+    display: flex;
+    gap: 6px;
+}
+
+.item-meta,
+.item-confidence,
+.macro-trend {
+    font-size: 12px;
+    color: #4b5563;
+}
+
+.item-evidence p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #374151;
+}
+
+.macro-value {
+    font-size: 18px;
+    margin: 2px 0;
+    font-weight: 700;
+}
+
+.error {
+    color: #b91c1c;
+}
+"""
+
+
+def _write_if_changed(path: str, content: str) -> bool:
+        existing = ""
+        if os.path.exists(path):
+                with open(path, "r", encoding="utf-8") as fh:
+                        existing = fh.read()
+        if existing == content:
+                return False
+        with open(path, "w", encoding="utf-8") as fh:
+                fh.write(content)
+        return True
+
+
 def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
     country_name = cfg.get("country", {}).get("name", "Venezuela")
     summary_max_chars = min(280, int(cfg.get("summary_max_chars", 280)))
@@ -1720,7 +2170,7 @@ def build_markdown(entries: list[dict], cfg: dict, run_meta: dict) -> str:
         '</section>',
         '<footer class="transparency-note">This page aggregates publicly available reporting from Venezuelan and international sources. Summaries are descriptive and non-partisan. Updated regularly.</footer>',
         "</div>",
-        '<script src="{{ \'/docs/assets/nlg.js\' | relative_url }}"></script>',
+        '<script src="{{ \'/assets/nlg.js\' | relative_url }}"></script>',
         "<script>",
         "(function () {",
         "  const cards = Array.from(document.querySelectorAll('.story-card'));",
@@ -1845,6 +2295,10 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
 
     os.makedirs(DOCS_DIR, exist_ok=True)
     os.makedirs(DATA_DIR, exist_ok=True)
+    docs_data_dir = os.path.join(DOCS_DIR, "data")
+    docs_assets_dir = os.path.join(DOCS_DIR, "assets")
+    os.makedirs(docs_data_dir, exist_ok=True)
+    os.makedirs(docs_assets_dir, exist_ok=True)
 
     latest_snapshot_path = os.path.join(DATA_DIR, "latest_stories.json")
     latest_csv_path = os.path.join(DATA_DIR, "latest_stories.csv")
@@ -1869,6 +2323,9 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         if isinstance(item, dict) and item.get("id")
     }
     current_ids = {_entry_id(entry) for entry in top}
+    diff_new_ids: list[str] = []
+    diff_updated_ids: list[str] = []
+    diff_dropped_ids: list[str] = []
     if not previous_map:
         diff_new = 0
         diff_updated = 0
@@ -1881,9 +2338,12 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             prev = previous_map.get(entry_id)
             if prev is None:
                 diff_new += 1
+                diff_new_ids.append(entry_id)
             elif str(prev.get("title", "")) != str(entry.get("title", "")):
                 diff_updated += 1
-        diff_dropped = len([entry_id for entry_id in previous_map if entry_id not in current_ids])
+                diff_updated_ids.append(entry_id)
+        diff_dropped_ids = [entry_id for entry_id in previous_map if entry_id not in current_ids]
+        diff_dropped = len(diff_dropped_ids)
 
     section_alias = {
         "Extractives & Mining": "Extractives",
@@ -1894,17 +2354,73 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
     }
 
     intelligence_rows: list[dict] = []
+    normalized_items: list[dict] = []
     for entry in top:
         section = detect_sector_label(entry, cfg)
         aliased_section = section_alias.get(section, section)
-        entry["_summary_text"] = _compact_summary(
+        summary_text = _compact_summary(
             entry,
             cfg,
             max_chars=min(280, int(cfg.get("summary_max_chars", 280))),
             section_label=section,
             story_index=0,
         )
+        entry["_summary_text"] = summary_text
         intelligence_rows.append(_serialize_entry(entry, aliased_section))
+
+        published_at = ""
+        if entry.get("published") is not None and hasattr(entry.get("published"), "strftime"):
+            published_at = entry["published"].strftime("%Y-%m-%d")
+
+        item_id = _stable_item_id(
+            str(entry.get("link", "")),
+            str(entry.get("title", "")),
+            published_at,
+        )
+        entry_key = _entry_id(entry)
+        previous_item = previous_map.get(entry_key, {})
+        flags = {
+            "risk": "🔴 Risk" in detect_flags(entry, cfg),
+            "opportunity": "🟢 Opportunity" in detect_flags(entry, cfg),
+            "new": entry_key in diff_new_ids,
+            "updated": entry_key in diff_updated_ids,
+        }
+        if not previous_map:
+            flags["new"] = True
+
+        item = {
+            "id": item_id,
+            "title": str(entry.get("title", "")),
+            "url": str(entry.get("link", "")),
+            "publisher": _derive_publisher(entry),
+            "publishedAt": published_at,
+            "sourceTier": _source_quality_tier(str(entry.get("source_domain", ""))),
+            "sector": section,
+            "snippet": summary_text,
+            "summary_confidence": _summary_confidence_label(entry),
+            "event_types": list(entry.get("event_types", []) or []),
+            "sentiment": str(entry.get("sentiment", "Neutral")),
+            "materiality": int(entry.get("materiality", 1) or 1),
+            "risk_score": int(entry.get("risk_score", 0) or 0),
+            "entities": list(entry.get("entities", []) or []),
+            "tags": _research_tags(entry, section),
+            "flags": flags,
+            "metrics": {
+                "numbers": _extract_numbers(
+                    " ".join(
+                        [
+                            summary_text,
+                            str(entry.get("article_text", "") or ""),
+                            str(entry.get("summary", "") or ""),
+                            str(previous_item.get("summary", "") or ""),
+                        ]
+                    )
+                )
+            },
+        }
+        item["insight2"] = _generate_insight2(item)
+        item["icons"] = _icons_for_item(item)
+        normalized_items.append(item)
 
     infra_rows = [row for row in intelligence_rows if "Infrastructure" in row.get("tags", [])]
 
@@ -2012,22 +2528,21 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
         "timeline_rows": timeline_rows,
         "output_file": OUTPUT_PATH,
         "metadata_file": METADATA_PATH,
+        "docs_data_dir": docs_data_dir,
     }
 
-    markdown = build_markdown(top, cfg, run_meta)
-
-    # Idempotency: only write if content changed
-    existing_md = ""
-    if os.path.exists(OUTPUT_PATH):
-        with open(OUTPUT_PATH, "r", encoding="utf-8") as fh:
-            existing_md = fh.read()
-
-    if markdown != existing_md:
-        with open(OUTPUT_PATH, "w", encoding="utf-8") as fh:
-            fh.write(markdown)
+    markdown = _build_docs_shell(now.strftime("%Y-%m-%d %H:%M UTC"))
+    if _write_if_changed(OUTPUT_PATH, markdown):
         logger.info("Wrote %s", OUTPUT_PATH)
     else:
         logger.info("No changes to %s", OUTPUT_PATH)
+
+    app_js_path = os.path.join(docs_assets_dir, "app.js")
+    styles_css_path = os.path.join(docs_assets_dir, "styles.css")
+    if _write_if_changed(app_js_path, _default_app_js()):
+        logger.info("Wrote %s", app_js_path)
+    if _write_if_changed(styles_css_path, _default_styles_css()):
+        logger.info("Wrote %s", styles_css_path)
 
     with open(METADATA_PATH, "w", encoding="utf-8") as fh:
         json.dump(run_meta, fh, indent=2, default=str)
@@ -2055,6 +2570,65 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             row = _serialize_entry(entry, section)
             row["retrieved"] = now.strftime("%Y-%m-%d %H:%M UTC")
             export_rows.append(row)
+
+    normalized_by_id = {str(item.get("id", "")): item for item in normalized_items}
+    sector_synth: dict[str, dict] = {}
+    sectors_payload: list[dict] = []
+    for section in section_order:
+        top_three = _sort_entries_for_sector(grouped.get(section, []))[:3]
+        items_for_section = []
+        for entry in top_three:
+            published_at = ""
+            if entry.get("published") is not None and hasattr(entry.get("published"), "strftime"):
+                published_at = entry["published"].strftime("%Y-%m-%d")
+            item = normalized_by_id.get(
+                _stable_item_id(
+                    str(entry.get("link", "")),
+                    str(entry.get("title", "")),
+                    published_at,
+                )
+            )
+            if item:
+                items_for_section.append(item)
+        synth = _build_sector_synth(section, items_for_section)
+        sector_synth[section] = synth
+        sectors_payload.append({"name": section, "synth": synth, "items": items_for_section})
+
+    highlights_payload = _build_highlights(normalized_items, sector_synth)
+    latest_payload = {
+        "runAt": now.isoformat(),
+        "totalItems": len(normalized_items),
+        "sectors": sectors_payload,
+    }
+    diff_payload = {
+        "runAt": now.isoformat(),
+        "counts": {
+            "new": diff_new,
+            "updated": diff_updated,
+            "dropped": diff_dropped,
+        },
+        "new": diff_new_ids,
+        "updated": diff_updated_ids,
+        "dropped": diff_dropped_ids,
+    }
+    macros_payload = {
+        "runAt": now.isoformat(),
+        "indicators": macro_indicators,
+    }
+
+    docs_latest_path = os.path.join(docs_data_dir, "latest.json")
+    docs_diff_path = os.path.join(docs_data_dir, "diff.json")
+    docs_macros_path = os.path.join(docs_data_dir, "macros.json")
+    docs_highlights_path = os.path.join(docs_data_dir, "highlights.json")
+
+    if _write_if_changed(docs_latest_path, json.dumps(latest_payload, indent=2)):
+        logger.info("Wrote %s", docs_latest_path)
+    if _write_if_changed(docs_diff_path, json.dumps(diff_payload, indent=2)):
+        logger.info("Wrote %s", docs_diff_path)
+    if _write_if_changed(docs_macros_path, json.dumps(macros_payload, indent=2)):
+        logger.info("Wrote %s", docs_macros_path)
+    if _write_if_changed(docs_highlights_path, json.dumps(highlights_payload, indent=2)):
+        logger.info("Wrote %s", docs_highlights_path)
 
     with open(latest_snapshot_path, "w", encoding="utf-8") as fh:
         json.dump(export_rows, fh, indent=2)

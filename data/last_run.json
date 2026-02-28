@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-02-28T18:47:42.968117+00:00",
-  "fetched": 1605,
-  "filtered": 93,
-  "deduplicated": 84,
+  "run_at": "2026-02-28T19:14:55.814406+00:00",
+  "fetched": 1614,
+  "filtered": 96,
+  "deduplicated": 87,
   "selected": 35,
   "diff_new": 18,
   "diff_updated": 0,
@@ -119,16 +119,16 @@
     },
     "Health": {
       "health": 8,
-      "summary": "This week in health, signal flow is concentrated around Political transition, Security. Risk pressure is mixed with an average score of 25/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in health, signal flow is concentrated around Humanitarian crisis, Political transition, Security. Risk pressure is mixed with an average score of 23/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov)",
+        "Venezuela - European Civil Protection and Humanitarian Aid Operations",
         "Venezuela's health system: when force meets fragility",
         "The road to self-sufficiency for Venezuelan communities - nrc.no"
       ],
       "opportunities": [
         "The road to self-sufficiency for Venezuelan communities - nrc.no",
         "Venezuela's health system: when force meets fragility",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
+        "Venezuela - European Civil Protection and Humanitarian Aid Operations"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -181,9 +181,10 @@
       "signals_count": 35,
       "sanctions_count": 3,
       "oil_count": 19,
-      "risk_avg": 29.97
+      "risk_avg": 29.83
     }
   ],
   "output_file": "/workspaces/VZLAnews/docs/index.md",
-  "metadata_file": "/workspaces/VZLAnews/data/last_run.json"
+  "metadata_file": "/workspaces/VZLAnews/data/last_run.json",
+  "docs_data_dir": "/workspaces/VZLAnews/docs/data"
 }

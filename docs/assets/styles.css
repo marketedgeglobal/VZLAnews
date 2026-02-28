@@ -1,0 +1,91 @@
+:root {
+    color-scheme: light;
+}
+
+.vzla-app {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.panel,
+.sector-block,
+.macro-block {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    background: #fff;
+}
+
+.exec-brief p,
+.sector-synth p,
+.item-snippet,
+.item-insight,
+.macro-note {
+    line-height: 1.55;
+}
+
+.top-row {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.top-row ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.items-grid,
+.macro-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.item-card,
+.macro-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.item-head h5 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.item-icons {
+    display: flex;
+    gap: 6px;
+}
+
+.item-meta,
+.item-confidence,
+.macro-trend {
+    font-size: 12px;
+    color: #4b5563;
+}
+
+.item-evidence p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #374151;
+}
+
+.macro-value {
+    font-size: 18px;
+    margin: 2px 0;
+    font-weight: 700;
+}
+
+.error {
+    color: #b91c1c;
+}

@@ -1,0 +1,49 @@
+{
+  "runAt": "2026-02-28T19:14:55.814406+00:00",
+  "indicators": [
+    {
+      "name": "GDP growth estimate",
+      "value": "N/A",
+      "trend": "Weekly refresh pending",
+      "risk_flag": "Yellow",
+      "series": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Inflation rate",
+      "value": "N/A",
+      "trend": "Weekly refresh pending",
+      "risk_flag": "Yellow",
+      "series": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Oil production (bpd)",
+      "value": "N/A",
+      "trend": "Weekly refresh pending",
+      "risk_flag": "Yellow",
+      "series": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX official vs parallel",
+      "value": "N/A",
+      "trend": "Weekly refresh pending",
+      "risk_flag": "Yellow",
+      "series": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+  "runAt": "2026-02-28T19:14:55.814406+00:00",
+  "totalItems": 35,
+  "sectors": [
+    {
+      "name": "Extractives & Mining",
+      "synth": {
+        "sentences": [
+          "This week in extractives & mining, reporting clustered around FX / Inflation, Oil production/export, Political transition, Sanctions.",
+          "Risk posture is elevated, with 1 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "FX / Inflation",
+          "Oil production/export",
+          "Political transition",
+          "Sanctions"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "f7ee14e7da85",
+          "title": "U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' - Latin Times",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNlA1ZzRVNzhyM0FvYkYzcDlldEFYYmREQjU0aU9DMXRNYTh5UVFweTZGVmpSaHExSW1CM3VlVHZtQk10VDR4UFRET1dOMnU2d1JBQ09LQy1pRHc0Z1ZJODU0MmlxSkVmQnZFVzZoRzlzQnJUYlhKZXB1MlBuSlYxNlQtQThoM3FBRHc4Q3gyc0RKQ1dfUEF4dEYwWkFnZ0FCakhfMFFqMEdsa2JTUFhQZzBVRHNSNDdMTE51M0hiU0RBQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Latin Times",
+          "publishedAt": "2026-02-28",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 25,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "A notable change appears in security dynamics in Venezuela.",
+            "s2": "Near-term, this means a mixed but actionable signal set for extractives & mining.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "ENERGY"
+          ]
+        },
+        {
+          "id": "f02d504a5300",
+          "title": "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2o0b0V1emRrSHR0Yy1memtndl94UGV0V1dFdVkxVGp2Uk9hWDc1NTgxSzhNSXBOdDdleGdjWDNBaTBxNGhPRUVnelo5VEd4V01CakR3ZkFmUndWdWZ3RW9ic2NxU1ZaY3h3R3FYTnQ4VmlFbDJ2SllsekxNMTNyd0Z2a1lKTnlFTDlWRWdkN2lWemdpWU1oNW5XTGY5aE0yVVNuUw?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Orinoco Tribune",
+          "publishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Political transition"
+          ],
+          "sentiment": "Negative",
+          "materiality": 2,
+          "risk_score": 65,
+          "entities": [],
+          "tags": [
+            "Sanctions"
+          ],
+          "flags": {
+            "risk": true,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in sanctions dynamics in Venezuela.",
+            "s2": "The practical implication is heightened compliance and execution risk for extractives & mining.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "ENERGY"
+          ]
+        },
+        {
+          "id": "12b1b566194d",
+          "title": "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORkRYaFVkUGZBMUF0LUdkUDFwR1o1WjVPaWlkTm40R0tKdW9qTzg0Q0VqZ1A4SEktT21qZ1BPX01WS3Z3VFlMQUxpcWlOQ2ctTXd5eEx4V1VsYUVyWWZzUjlEUFFuVkJkUHRFdU43RkJTWHlpMUdna0xVZF9aOVFuV01qWU9FVGdNdjlxTW1Vc1A2bUt2YUJzcHp6bnBVOVdmYzlTWUQwNzRhRTAteVJLc3pHbXZaNFBjclFMc3UycHhFTGV0SS1QRW5NQXNJVThtbnN3LUtVTdIB3AFBVV95cUxQTUZUeTJ0UkZmTVg5aUJzSmZGdU1fY2llb1dGVFpUNlo4X1lmbjdKV3BwNEYzWm13eFJWd3VBd1MwVzVnYWtzeGR1azBUSmI5eDNYaDB5LV9XaGo0c0paZHFNNlJKc3ZocnZWRU5OaWlmYjY5VDYxMHRxbU4yUkhfODRuM1hFY1phTTF5SW1Zc05JRzlzOWFXc3lvdFNZOFBvYWZTby12NWpHWVBIRnU2YWxpUzBXaGRCQTRWRjRKMWppYlBQdHV5ZjgtMFVZSEhmRjRSbVBaMHpuaWVW?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Trinidad Express Newspapers",
+          "publishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export",
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [
+            "FX controls"
+          ],
+          "tags": [
+            "Energy",
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "The latest shift centers on fx / inflation dynamics in Venezuela.",
+            "s2": "For donors and investors, this implies a mixed but actionable signal set for extractives & mining.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "ENERGY",
+            "FX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Food & Agriculture",
+      "synth": {
+        "sentences": [
+          "This week in food & agriculture, reporting clustered around FX / Inflation, Humanitarian crisis, Oil production/export, Sanctions.",
+          "Risk posture is elevated, with 1 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "FX / Inflation",
+          "Humanitarian crisis",
+          "Oil production/export",
+          "Sanctions"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "d08af0c3e907",
+          "title": "Food Security, could Digital Insurance help Venezuela? - Irish Tech News",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NUWppeWlnVGRubVZJajB4WlRsNERHVld6c3ZaNXZ0ZVByTXhONGFxXzB3T0VrQ0psanJJR3JhS1dxdHg3bDJCczRCU25xTDVYTXVTUnFJZ2RPV3FzOUMxcDkxMlhqaVgwRmJyNEo4NUJ4cFE4aTdLbENBMEfSAXxBVV95cUxNTVFqaXlpZ1Rkbm1WSWoweFpUbDRER1ZXenN2WjV2dGVQck14TjRhcV8wd09Fa0NKbGpySUdyYUtXcXR4N2wyQnM0QlNucUw1WE11U1JxSWdkT1dxczlDMXA5MTJYamlYMEZicjRKODVCeHBROGk3S2xDQTBH?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Irish Tech News",
+          "publishedAt": "2026-02-06",
+          "sourceTier": "Tier 3",
+          "sector": "Food & Agriculture",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "FX / Inflation",
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 40,
+          "entities": [
+            "FX controls"
+          ],
+          "tags": [
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in fx / inflation dynamics in Venezuela.",
+            "s2": "Near-term, this means a mixed but actionable signal set for food & agriculture.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "FX"
+          ]
+        },
+        {
+          "id": "33d7a1d3e17b",
+          "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate - Venezuelanalysis",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNMk1mQXdsb3dBbDRQaVZwQ244dU1XUERhaEhBU3B3WVpnQk9BcWRGUWpEXzh0THpSTGNxc2ltM2ZlODJFQTB2dnR0QW1TdVU4ZC1lVHBlMDZrWFNyNXdKdlk0b3hLQlJWMjB3VElKWVFqN1ZOS2hqaExpYVRldldEVGR4dGlwQm1sZXkwTmtaVUFDR3ZtempydHFrV21DRm5xT0ZhSl9EajJkX0pGS1pUX0Q0WEQ0RlZYYVlucnZCY0JLSC11S244cVRqUk1ET1RnS0dMZlNzMmJuQUlxNU5EV2pqMUlmYzJ5SEJXQVlPMjBYMVZKOHJrZ2VzaTVzWkczYnduVUxUbGJaY1B1YUZ2Q2JfQVpBZElWQ1J3?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Venezuelanalysis",
+          "publishedAt": "2026-01-31",
+          "sourceTier": "Tier 3",
+          "sector": "Food & Agriculture",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Humanitarian crisis",
+            "Security"
+          ],
+          "sentiment": "Negative",
+          "materiality": 3,
+          "risk_score": 90,
+          "entities": [],
+          "tags": [
+            "Sanctions"
+          ],
+          "flags": {
+            "risk": true,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Coverage this cycle points to humanitarian crisis dynamics in Venezuela.",
+            "s2": "The operating takeaway is heightened compliance and execution risk for food & agriculture.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "HUMAN"
+          ]
+        },
+        {
+          "id": "c06f100c59ad",
+          "title": "The end of Venezuelan oil hits food security in Cuba hard - CiberCuba",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWEFYWS1GOWpNa0ZEUXo0S19fQUFkT0lhbjlNMmJwQzdBNTQ3WXQ4QUw4TUgydDVVZkgyTUR2VmpVdHg4R2ZTT3lWcEhyRkdFN1ZNRDJTbkVONVZZSHFDRUVqWjhxbjdvZ0liWG9OZ2NNSUc2SXBGaVR4Vm5lLVdlWWRweVV4a1BNSEtwUDQtNHhLTDdXSWZSSGFZZWVMdWdXU0F0UHBWZnNEVS1mMnJONlpHWWxBRXRSd0xzag?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "CiberCuba",
+          "publishedAt": "2026-01-26",
+          "sourceTier": "Tier 3",
+          "sector": "Food & Agriculture",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export",
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 55,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "A notable change appears in oil production/export dynamics in Venezuela.",
+            "s2": "The practical implication is a mixed but actionable signal set for food & agriculture.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        }
+      ]
+    },
+    {
+      "name": "Health & Water",
+      "synth": {
+        "sentences": [
+          "This week in health & water, reporting clustered around Humanitarian crisis, Political transition, Security.",
+          "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "Humanitarian crisis",
+          "Political transition",
+          "Security"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "49bc39dceeec",
+          "title": "The road to self-sufficiency for Venezuelan communities - nrc.no",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMG1ZUnFzblc4cElzdnZMRDdES2huQkNaWDgyTGNsRnpIWEZqLTZJd3pTUS1lNmQwSkZ0MlkxSjk0WWNEZUtjcXFocXJNRGxpSE1SWnZtMzVSQnhDbTVVNlpEVnJnbGdNc0ZGekNxSHp4RW00QXMzdjVOVDRmT2c0Mmo2ajEwc0tQRE5SUUh2SV9ZNHR0bzNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "nrc.no",
+          "publishedAt": "2026-02-06",
+          "sourceTier": "Tier 3",
+          "sector": "Health & Water",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in health & water dynamics in Venezuela.",
+            "s2": "The operating takeaway is a mixed but actionable signal set for health & water.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "5feb0e802120",
+          "title": "Venezuela - European Civil Protection and Humanitarian Aid Operations",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbVUtay16Q3p0dlZ5N3B5X01BQVJaTFdmZVdJWndWOXB5Zm55YnZ2aU51cTJqY0R6MFR6Y0VwODZReEdDcDZoUS1jME9aRXVERE1LbU1PYmstaWtpbGktd1lNUVlXdUdQSFFSdkR5clozRTRnOEgyWWpVNTZ0SXJUM05rb1JTbm9OUzJERVFhQWFtRW1rY2RkaFo2OGRZWHJNWVg4?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "news.google.com",
+          "publishedAt": "2026-02-06",
+          "sourceTier": "Tier 3",
+          "sector": "Health & Water",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Humanitarian crisis"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "A notable change appears in humanitarian crisis dynamics in Venezuela.",
+            "s2": "The operating takeaway is a mixed but actionable signal set for health & water.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "HUMAN",
+            "NEW"
+          ]
+        },
+        {
+          "id": "df80c6cf8104",
+          "title": "Venezuela's health system: when force meets fragility",
+          "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext",
+          "publisher": "bing.com",
+          "publishedAt": "2026-02-04",
+          "sourceTier": "Tier 3",
+          "sector": "Health & Water",
+          "snippet": "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already in collapse. With US President Donald ...",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Political transition",
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 25,
+          "entities": [
+            "Maduro"
+          ],
+          "tags": [
+            "Health"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Observed figure",
+                "value": "3",
+                "context": "ilitary strikes on Venezuela on Jan 3, 2026 and seizure of the country's"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "tary strikes on Venezuela on Jan 3, 2026 and seizure of the country's Presid"
+              },
+              {
+                "label": "Observed figure",
+                "value": "3",
+                "context": "ilitary strikes on Venezuela on Jan 3, 2026 and seizure of the country's"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "tary strikes on Venezuela on Jan 3, 2026 and seizure of the country's Presid"
+              },
+              {
+                "label": "Observed figure",
+                "value": "3",
+                "context": "ilitary strikes on Venezuela on Jan 3, 2026 and seizure of the country's"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "tary strikes on Venezuela on Jan 3, 2026 and seizure of the country's Presid"
+              }
+            ]
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in security dynamics in Venezuela with reference points such as 3.",
+            "s2": "The operating takeaway is a mixed but actionable signal set for health & water.",
+            "confidence": "HIGH",
+            "evidence": [
+              "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a\u2026",
+              "ilitary strikes on Venezuela on Jan 3, 2026 and seizure of the country's",
+              "tary strikes on Venezuela on Jan 3, 2026 and seizure of the country's Presid"
+            ]
+          },
+          "icons": [
+            "HUMAN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Education & Workforce",
+      "synth": {
+        "sentences": [
+          "This week in education & workforce, reporting clustered around FX / Inflation.",
+          "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "FX / Inflation"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "68a98518bcb4",
+          "title": "Venezuelans See Brighter Economic Outlook After US Intervention - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR2hlSUswRWlwT09fbjgzblU0VlVIV3hyQ2k2dnFSWTdEQ0xicXM1X0dkcFg1Z3BhdHhHWng4dS1XWkp6VFNwU3FtN2Z6WklUTEduUHpVUERadk5Ub05WUkVtSFFlOEI5Nl9QOTdiRVRCOGJCbHoyNVhVRTQtS1lDYjdka1JUbGQ5TWJrR0pxUkQtdVV4UnFRRDVMbHQyQ18zSkxwZUNaeFYzUUZsMjZQOE4tbWk?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Bloomberg.com",
+          "publishedAt": "2026-02-26",
+          "sourceTier": "Tier 3",
+          "sector": "Education & Workforce",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "The latest shift centers on education & workforce dynamics in Venezuela.",
+            "s2": "Near-term, this means a mixed but actionable signal set for education & workforce.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "abe65176979c",
+          "title": "The voice of students in Venezuela - universitas.no",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1zTXhvYld2THBDYnNQMlhHNHE1SExfTkNlZWhrV3BydXp1eVhlSzVhRTFtcTgzT0YybGhfUjdMNVVOb1lURGNWVlNWXzhzUm01RmdlLTh2ckh5ZDVoSWJOXzlsQUZfV2F1RHQwQmtTSzhZNUFNVVNN?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "universitas.no",
+          "publishedAt": "2026-02-23",
+          "sourceTier": "Tier 3",
+          "sector": "Education & Workforce",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "A notable change appears in education & workforce dynamics in Venezuela.",
+            "s2": "The operating takeaway is a mixed but actionable signal set for education & workforce.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "e2053225b11b",
+          "title": "Venezuelans rally more openly as they navigate changing political landscape - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOWhFNjVnZUtHU0tKanhSUjBqTUdwZG0wbEpkT3UwYVVZdlpDQVNiUTVrWjF5X3FpTkNET1hJbnltWGJ3bGtqbGZYSnprLUx1VHJPUUNqLXJBa1p5MWEwUmVqdlR3M3AxSlJKTVRpVUJYZlYtRHJtMVVPZWZTOUdjU2NGWDFXd0hza0gyY18yZWluaFlyM2owUjMwbWhhQmVJSnNmVXBOZDlWVWs?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "NBC News",
+          "publishedAt": "2026-02-11",
+          "sourceTier": "Tier 3",
+          "sector": "Education & Workforce",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
+          "entities": [
+            "FX controls"
+          ],
+          "tags": [
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "A notable change appears in fx / inflation dynamics in Venezuela.",
+            "s2": "The practical implication is a mixed but actionable signal set for education & workforce.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "FX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Finance & Investment",
+      "synth": {
+        "sentences": [
+          "This week in finance & investment, reporting clustered around Debt restructuring, FX / Inflation, Oil production/export, Regulatory reform.",
+          "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "Debt restructuring",
+          "FX / Inflation",
+          "Oil production/export",
+          "Regulatory reform"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "a2e5037ca1bd",
+          "title": "Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes - Discovery Alert",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kcG1URi00Mlc1WUtPN3dtRV8ybGk0OXhyc1hDRVNSVzduYlV2SGFoMGhvd05YM2VsV1M2bmFSeHNWRG9RWlgwM2xFdUFRM3EyME9FbmIxV0ZMZk5XZmdBWmU3Z1FzQU5NbktsMC15Ymw1WUxDVC1XbA?oc=5",
+          "publisher": "Discovery Alert",
+          "publishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "Key update on venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.",
+          "summary_confidence": "Low (Template fallback)",
+          "event_types": [
+            "Oil production/export",
+            "Regulatory reform"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "ela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes. Venezuela"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "ela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes Discovery A"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "ela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes."
+              }
+            ]
+          },
+          "insight2": {
+            "s1": "A notable change appears in regulatory reform dynamics in Venezuela with reference points such as 2026.",
+            "s2": "The practical implication is a mixed but actionable signal set for finance & investment.",
+            "confidence": "LOW",
+            "evidence": [
+              "Key update on venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.",
+              "ela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes. Venezuela",
+              "ela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes Discovery A"
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "3841bc40123c",
+          "title": "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNW82VFZqcTR2bUZWeC1fNTNBSlNtUGF5cDE5Nmc4WVBuYTlCa0R1em45VXBYU3VLeFNuejhiT2d3Q1ZrRmtmNVctLWhUVnpfbmh4c05KT0JCc0M5eDNrRi1NV3h4Y1V3UUcwX3h4WVltRGpsVTB1MkJfZllYYTFZR2FBZ2hSWXNNVS1rbl8xQ2R1U0V4X1FwMjZKZ0ZYSDhpSzJZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "OMFIF",
+          "publishedAt": "2026-02-26",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Debt restructuring"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [
+            "Bond restructuring"
+          ],
+          "tags": [
+            "Debt/FX"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in debt restructuring dynamics in Venezuela.",
+            "s2": "For donors and investors, this implies a mixed but actionable signal set for finance & investment.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": [
+            "FX"
+          ]
+        },
+        {
+          "id": "0845d51e0693",
+          "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
+          "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
+          "publisher": "bing.com",
+          "publishedAt": "2026-02-26",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "FX / Inflation"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "Reporting indicates movement in fx / inflation dynamics in Venezuela.",
+            "s2": "The practical implication is a mixed but actionable signal set for finance & investment.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela,\u2026"
+            ]
+          },
+          "icons": [
+            "FX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cross-cutting / Policy / Risk",
+      "synth": {
+        "sentences": [
+          "This week in cross-cutting / policy / risk, reporting clustered around Humanitarian crisis.",
+          "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
+          "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
+          "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
+          "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+        ],
+        "drivers": [
+          "Humanitarian crisis"
+        ],
+        "watch": [
+          "Regulatory deadlines",
+          "Executive decrees",
+          "Sanctions and licensing language"
+        ]
+      },
+      "items": [
+        {
+          "id": "722639242266",
+          "title": "UN report: Latin America and the Caribbean advances in eradicating hunger for the fourth consecutive year",
+          "url": "https://www.paho.org/en/news/27-2-2026-report-latin-america-and-caribbean-advances-eradicating-hunger-fourth-consecutive",
+          "publisher": "paho.org",
+          "publishedAt": "2026-02-27",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though concerns remain around the cost of a healthy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment\u2026",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Humanitarian crisis"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Infrastructure",
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Observed figure",
+                "value": "27",
+                "context": "thy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin A"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2018",
+                "context": "able Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updat"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2030",
+                "context": "Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updates Do"
+              },
+              {
+                "label": "Observed figure",
+                "value": "27",
+                "context": "onsecutive year Copied to clipboard 27 Feb 2026 According to the publicati"
+              },
+              {
+                "label": "Observed figure",
+                "value": "2026",
+                "context": "ive year Copied to clipboard 27 Feb 2026 According to the publication of FAO"
+              }
+            ]
+          },
+          "insight2": {
+            "s1": "Coverage this cycle points to humanitarian crisis dynamics in Venezuela with reference points such as 27.",
+            "s2": "For donors and investors, this implies a mixed but actionable signal set for cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": [
+              "According to the publication of FAO, IFAD, PAHO, UNICEF and WFP, undernourishment and food insecurity dropped, though\u2026",
+              "thy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin A",
+              "diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America"
+            ]
+          },
+          "icons": [
+            "TRADE",
+            "HUMAN"
+          ]
+        },
+        {
+          "id": "adefa41790a9",
+          "title": "Venezuela\u2019s Long Road to Recovery - Foreign Affairs",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0THBHVWs5MElSMEUyQldfY1JsYTE3MEpNdGQxbVVSZkpoeTNUR0J2N3JXWkhqN1pwTklaNlZGZ01MNkhJcllGV0tYaXprQ2szb09SMjlTY1lmN2lnMDBqZnV4aGlUZmVPM1pFZzhDQTI4dkw3N1hzNV9R?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Foreign Affairs",
+          "publishedAt": "2026-02-23",
+          "sourceTier": "Tier 3",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Positive",
+          "materiality": 1,
+          "risk_score": 5,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "The latest shift centers on cross-cutting / policy / risk dynamics in Venezuela.",
+            "s2": "For donors and investors, this implies a mixed but actionable signal set for cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        },
+        {
+          "id": "ee05c47562ea",
+          "title": "Africa Venezuela Energy Ties: Strategic Partnership Growth - Discovery Alert",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTXdlZHlRYlVyN2U2OVhjeTU1b0dWM1FuT1hfZk13RWJabERsRERhdmluV2NPanIzRlVYOHRzalVtejJ1d0ZqMHM4VERtSWRFTkhETG1leFZRX1BrX2RyT1hRaldxZG5PS2t6THBMQmhobmdXRVVLNEdjTTNpanN3T2RfVDBxM2g3OVRnS2l4SE1HSHM?oc=5&hl=en-US&gl=US&ceid=US:en",
+          "publisher": "Discovery Alert",
+          "publishedAt": "2026-02-22",
+          "sourceTier": "Tier 3",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Positive",
+          "materiality": 1,
+          "risk_score": 5,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": false,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "insight2": {
+            "s1": "The latest shift centers on cross-cutting / policy / risk dynamics in Venezuela.",
+            "s2": "Near-term, this means a mixed but actionable signal set for cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+            ]
+          },
+          "icons": []
+        }
+      ]
+    }
+  ]
+}
