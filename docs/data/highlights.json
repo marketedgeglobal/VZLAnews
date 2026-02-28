@@ -1,27 +1,91 @@
 {
-  "executiveBrief": "This week in extractives & mining, reporting clustered around FX / Inflation, Oil production/export, Political transition, Sanctions. This week in food & agriculture, reporting clustered around FX / Inflation, Humanitarian crisis, Oil production/export, Sanctions. This week in health & water, reporting clustered around Political transition, Security. This week in education & workforce, reporting clustered around FX / Inflation.",
+  "executiveBriefBullets": [
+    "Government and institutional moves show Venezuelanalysis and bing.com converging on Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in\u2026.",
+    "Operational evidence across sources indicates bing.com and CiberCuba converging on WASHINGTON, Feb 25 (Reuters) - The U.S.",
+    "Multiple reports converge on CiberCuba and bing.com converging on The end of Venezuelan oil hits food security in Cuba hard.",
+    "The current cycle confirms bing.com and Orinoco Tribune converging on Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy\u2026.",
+    "Cross-sector tracking now shows Orinoco Tribune and Irish Tech News converging on Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela."
+  ],
   "keyDevelopments": [
-    "Food & Agriculture: Coverage this cycle points to humanitarian crisis dynamics in Venezuela.",
-    "Food & Agriculture: A notable change appears in oil production/export dynamics in Venezuela.",
-    "Extractives & Mining: Coverage this cycle points to oil production/export dynamics in Venezuela.",
-    "Extractives & Mining: Reporting indicates movement in sanctions dynamics in Venezuela.",
-    "Food & Agriculture: Reporting indicates movement in fx / inflation dynamics in Venezuela."
+    {
+      "text": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a\u2026",
+      "itemIds": [
+        "33d7a1d3e17b",
+        "53843da51f92",
+        "c06f100c59ad"
+      ]
+    },
+    {
+      "text": "WASHINGTON, Feb 25 (Reuters) - The U.S.",
+      "itemIds": [
+        "53843da51f92",
+        "33d7a1d3e17b",
+        "c06f100c59ad"
+      ]
+    },
+    {
+      "text": "The end of Venezuelan oil hits food security in Cuba hard.",
+      "itemIds": [
+        "c06f100c59ad",
+        "33d7a1d3e17b",
+        "53843da51f92"
+      ]
+    },
+    {
+      "text": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration.",
+      "itemIds": [
+        "22266cca15b9",
+        "53843da51f92",
+        "c06f100c59ad"
+      ]
+    },
+    {
+      "text": "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+      "itemIds": [
+        "f02d504a5300",
+        "33d7a1d3e17b",
+        "53843da51f92"
+      ]
+    }
   ],
   "byTheNumbers": [
-    "Cross-cutting / Policy / Risk: 27 \u2014 thy diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin A",
-    "Cross-cutting / Policy / Risk: 2026 \u2014 diet and steep obesity.February 27, 2026, Santiago, Chile --In Latin America",
-    "Cross-cutting / Policy / Risk: 2018 \u2014 able Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updat",
-    "Cross-cutting / Policy / Risk: 2030 \u2014 Health Agenda for the Americas 2018-2030 Alerts and Epidemiologic Updates Do",
-    "Cross-cutting / Policy / Risk: 27 \u2014 onsecutive year Copied to clipboard 27 Feb 2026 According to the publicati"
+    {
+      "label": "Health signal",
+      "value": "27.4%",
+      "context": "healthy diet compared to 2021, when unaffordability peaked at 197.3 million. Still, 27.4%\u2026",
+      "itemId": "722639242266"
+    },
+    {
+      "label": "Health signal",
+      "value": "3.8%",
+      "context": "and regional levels. In 2024, the cost of a healthy diet increased 3.8% in Latin America\u2026",
+      "itemId": "722639242266"
+    },
+    {
+      "label": "Oil and production",
+      "value": "19",
+      "context": "Venezuela\u2019s oil ministry has suspended 19 oil production-sharing contracts with private\u2026",
+      "itemId": "b1f553be0657"
+    },
+    {
+      "label": "Items tracked this cycle",
+      "value": "35",
+      "context": "High-materiality items selected from source reporting",
+      "itemId": ""
+    },
+    {
+      "label": "Sanctions-linked developments",
+      "value": "3",
+      "context": "Items tagged with sanctions-related event signals",
+      "itemId": ""
+    }
   ],
   "sectorSynth": {
     "Extractives & Mining": {
-      "sentences": [
-        "This week in extractives & mining, reporting clustered around FX / Inflation, Oil production/export, Political transition, Sanctions.",
-        "Risk posture is elevated, with 1 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela.",
+        "Field updates show Venezuela meets with Shell execs on oil/gas projects.",
+        "Separate sources indicate U.S."
       ],
       "drivers": [
         "FX / Inflation",
@@ -36,12 +100,10 @@
       ]
     },
     "Food & Agriculture": {
-      "sentences": [
-        "This week in food & agriculture, reporting clustered around FX / Inflation, Humanitarian crisis, Oil production/export, Sanctions.",
-        "Risk posture is elevated, with 1 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a\u2026.",
+        "Field updates show The end of Venezuelan oil hits food security in Cuba hard advanced as a concrete sector development.",
+        "Separate sources indicate Food Security, could Digital Insurance help Venezuela?."
       ],
       "drivers": [
         "FX / Inflation",
@@ -56,12 +118,10 @@
       ]
     },
     "Health & Water": {
-      "sentences": [
-        "This week in health & water, reporting clustered around Political transition, Security.",
-        "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported Areas with Risk of Dengue - Centers for Disease Control and Prevention | CDC (.gov) advanced as a concrete sector development.",
+        "Field updates show The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already\u2026",
+        "Separate sources indicate The road to self-sufficiency for Venezuelan communities advanced as a concrete sector development."
       ],
       "drivers": [
         "Political transition",
@@ -74,12 +134,10 @@
       ]
     },
     "Education & Workforce": {
-      "sentences": [
-        "This week in education & workforce, reporting clustered around FX / Inflation.",
-        "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported Venezuelans See Brighter Economic Outlook After US Intervention.",
+        "Field updates show The voice of students in Venezuela.",
+        "Separate sources indicate Venezuelans rally more openly as they navigate changing political landscape advanced as a concrete sector development."
       ],
       "drivers": [
         "FX / Inflation"
@@ -91,12 +149,10 @@
       ]
     },
     "Finance & Investment": {
-      "sentences": [
-        "This week in finance & investment, reporting clustered around Debt restructuring, FX / Inflation, Oil production/export, Regulatory reform.",
-        "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported Venezuela Reviews Oil Contracts Following 2026 Hydrocarbon Law Changes.",
+        "Field updates show Bondholders should be less excited about Venezuelan debt restructuring advanced as a concrete sector development.",
+        "Separate sources indicate Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored\u2026"
       ],
       "drivers": [
         "Debt restructuring",
@@ -111,12 +167,10 @@
       ]
     },
     "Cross-cutting / Policy / Risk": {
-      "sentences": [
-        "This week in cross-cutting / policy / risk, reporting clustered around Humanitarian crisis.",
-        "Risk posture is mixed, with 0 risk flags versus 0 opportunity flags.",
-        "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments.",
-        "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified.",
-        "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+      "bullets": [
+        "Officials reported February 27, 2026, Santiago, Chile --In Latin America and the Caribbean undernourishment decreased for the fourth consecutive year, according to the 2025\u2026",
+        "Field updates show Venezuela\u2019s Long Road to Recovery.",
+        "Separate sources indicate Africa Venezuela Energy Ties: Strategic Partnership Growth."
       ],
       "drivers": [
         "Humanitarian crisis"

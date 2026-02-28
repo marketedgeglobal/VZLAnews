@@ -26,16 +26,47 @@
         return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
     }
 
+    function isBoilerplate(s) {
+        if (!s) return false;
+        const t = s.trim().toLowerCase();
+        return t === 'comprehensive up-to-date news coverage, aggregated from sources all over the world by google news'
+            || t === 'comprehensive up-to-date news coverage, aggregated from sources all over the world by google news.';
+    }
+
+    function renderDevelopment(item, idx) {
+        if (typeof item === 'string') {
+            return `<li>${esc(item)}</li>`;
+        }
+        if (!item || typeof item !== 'object') {
+            return '<li>Monitoring continues for concrete policy and operational developments.</li>';
+        }
+        const links = (item.itemIds || []).slice(0, 3)
+            .map((id, sourceIdx) => `<a href="#item-${esc(id)}">[${sourceIdx + 1}]</a>`)
+            .join(' ');
+        const sourceLine = links ? ` <span class="sources">Sources: ${links}</span>` : '';
+        return `<li>${esc(item.text || ('Development ' + (idx + 1)))}${sourceLine}</li>`;
+    }
+
+    function renderNumbers(items) {
+        return `<ul>${(items || []).slice(0, 5).map((n) => {
+            const label = esc(n && n.label ? n.label : 'Quantitative signal');
+            const value = esc(n && n.value ? n.value : 'N/A');
+            const context = n && n.context ? ` (${esc(n.context)})` : '';
+            const source = n && n.itemId ? ` <a href="#item-${esc(n.itemId)}">[source]</a>` : '';
+            return `<li><strong>${label}:</strong> ${value}${context}${source}</li>`;
+        }).join('')}</ul>`;
+    }
+
     function renderTop(highlights) {
         return `
             <section class="top-row">
                 <article class="panel">
                     <h3>Key Developments</h3>
-                    ${list((highlights.keyDevelopments || []).slice(0, 5))}
+                    <ul>${(highlights.keyDevelopments || []).slice(0, 5).map(renderDevelopment).join('')}</ul>
                 </article>
                 <article class="panel">
                     <h3>By the Numbers</h3>
-                    ${list((highlights.byTheNumbers || []).slice(0, 5))}
+                    ${renderNumbers(highlights.byTheNumbers)}
                 </article>
             </section>
         `;
@@ -47,30 +78,36 @@
         const evidenceHtml = evidence.length
             ? `<div class="item-evidence">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
             : '';
-        const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : 'MED';
+        const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : '';
+        const snippet = (!isBoilerplate(item.snippet) && (item.snippet || '').trim().length >= 10) ? esc(item.snippet) : '';
+        const s1 = item.insight2 && item.insight2.s1 ? item.insight2.s1 : '';
+        const s2 = item.insight2 && item.insight2.s2 ? item.insight2.s2 : '';
+        const insightText = (s1 && s2)
+            ? `${esc(s1)} ${esc(s2)}`
+            : 'Open the source for details; summary extraction failed for this item.';
 
         return `
             <article class="item-card">
                 <div class="item-head">
-                    <h5><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
+                    <h5><a id="item-${esc(item.id)}"></a><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
                     <div class="item-icons">${icons}</div>
                 </div>
                 <p class="item-meta">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
-                <p class="item-snippet">${esc(item.snippet)}</p>
-                <p class="item-insight">${esc(item.insight2.s1)} ${esc(item.insight2.s2)}</p>
+                ${snippet ? `<p class="item-snippet">${snippet}</p>` : ''}
+                <p class="item-insight">${insightText}</p>
                 ${evidenceHtml}
-                <p class="item-confidence">Confidence: ${esc(confidence)}</p>
+                ${confidence ? `<p class="item-confidence">Confidence: ${esc(confidence)}</p>` : ''}
             </article>
         `;
     }
 
     function renderSectors(latest) {
         return (latest.sectors || []).map((sector) => {
-            const sentences = sector.synth && sector.synth.sentences ? sector.synth.sentences.slice(0, 5) : [];
+            const bullets = sector.synth && sector.synth.bullets ? sector.synth.bullets.slice(0, 3) : [];
             return `
                 <section class="sector-block">
                     <h3>${esc(sector.name)}</h3>
-                    <div class="sector-synth">${sentences.map((s) => `<p>${esc(s)}</p>`).join('')}</div>
+                    <div class="sector-synth">${list(bullets)}</div>
                     <div class="items-grid">${(sector.items || []).map(renderItem).join('')}</div>
                 </section>
             `;
@@ -108,7 +145,7 @@
             root.innerHTML = `
                 <section class="exec-brief panel">
                     <h2>Executive Brief</h2>
-                    <p>${esc(highlights.executiveBrief || '')}</p>
+                    ${list((highlights.executiveBriefBullets || []).slice(0, 5))}
                 </section>
                 ${renderTop(highlights)}
                 ${renderSectors(latest)}

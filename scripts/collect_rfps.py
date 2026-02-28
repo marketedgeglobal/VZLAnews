@@ -261,8 +261,16 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
     )
 
     for entry in prioritized_entries:
+        raw_candidate = entry.get("snippet", "") or entry.get("summary", "") or entry.get("content", "") or ""
+        if _is_google_news_boilerplate(raw_candidate):
+            entry["snippet_status"] = "boilerplate_removed"
+            entry["snippet"] = ""
+
         if not entry.get("snippet"):
             entry["snippet"] = _entry_feed_snippet(entry, max_chars=280)
+        if _is_google_news_boilerplate(entry.get("snippet", "")):
+            entry["snippet"] = ""
+            entry["snippet_status"] = "boilerplate_removed"
 
         if fetched_count >= max_items:
             break
@@ -691,6 +699,14 @@ def _summary_excerpt(entry: dict, max_chars: int) -> str:
     return (clipped or clean[:max_chars]).strip() + "…"
 
 
+GOOGLE_NEWS_BOILERPLATE = "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News"
+
+
+def _is_google_news_boilerplate(text: str) -> bool:
+    clean = _normalize_text_block(text).strip().lower().rstrip(".")
+    return clean == GOOGLE_NEWS_BOILERPLATE.lower().rstrip(".")
+
+
 def _clean_snippet(
     text: str,
     title: str,
@@ -699,6 +715,9 @@ def _clean_snippet(
 ) -> str:
     clean = _normalize_text_block(text)
     if not clean:
+        return ""
+
+    if _is_google_news_boilerplate(clean):
         return ""
 
     clean = re.sub(
@@ -858,13 +877,15 @@ def _entry_feed_snippet(entry: dict, max_chars: int = 280) -> str:
 
 def _fallback_summary(entry: dict, section_label: str, story_index: int, max_chars: int) -> str:
     topic = _title_topic(entry)
-    topic_lower = topic[:1].lower() + topic[1:] if topic else "the topic"
+    topic_text = topic if topic else "the topic"
     section_text = section_label if section_label else "policy and risk"
 
     templates = [
-        f"Key update on {topic_lower}.",
-        f"Coverage focuses on developments linked to {topic_lower}.",
-        f"Developments related to {section_text.lower()} in Venezuela remain active.",
+        f"This cycle brought a concrete update on {topic_text}.",
+        f"Sources indicate implementation movement tied to {topic_text}.",
+        f"{section_text} signals in Venezuela shifted in relation to this development.",
+        f"New reporting links {topic_text} to near-term operating changes.",
+        f"This development remains material for {section_text.lower()} monitoring.",
     ]
     fallback = templates[story_index % len(templates)]
     if len(fallback) > max_chars:
@@ -1374,17 +1395,83 @@ def _extract_numbers(text: str) -> list[dict]:
     clean = _normalize_text_block(text)
     if not clean:
         return []
-    pattern = r"\b(?:\$)?\d+(?:[\.,]\d+)?(?:%|\s?(?:bpd|million|billion|bn|m|days|months|years))?\b"
-    numbers = []
-    for match in re.finditer(pattern, clean, flags=re.IGNORECASE):
-        value = match.group(0)
-        start = max(0, match.start() - 36)
-        end = min(len(clean), match.end() + 36)
-        context = clean[start:end].strip()
-        numbers.append({"label": "Observed figure", "value": value, "context": context})
-        if len(numbers) >= 6:
-            break
-    return numbers
+    words = clean.split()
+    if not words:
+        return []
+
+    spans = []
+    cursor = 0
+    for word in words:
+        start = clean.find(word, cursor)
+        end = start + len(word)
+        spans.append((start, end))
+        cursor = end
+
+    def _word_index(char_pos: int) -> int:
+        for idx, (start, end) in enumerate(spans):
+            if start <= char_pos < end:
+                return idx
+        return max(0, min(len(spans) - 1, len(spans) // 2))
+
+    pattern = re.compile(
+        r"(?<!\w)(?:US\$|\$)?\d{1,3}(?:[\.,]\d{3})*(?:[\.,]\d+)?(?:%|\s?(?:bpd|barrels(?:/day)?|million|billion|bn|m|days?|months?|years?))?(?!\w)",
+        flags=re.IGNORECASE,
+    )
+    priority_terms = (
+        "sanction", "treasury", "oil", "pdvsa", "release", "prison", "amnesty", "election",
+        "health", "outbreak", "inflation", "fx", "debt", "revenue", "license", "arrest",
+    )
+
+    candidates = []
+    seen = set()
+    for match in pattern.finditer(clean):
+        value = match.group(0).strip()
+        if not value:
+            continue
+        if re.fullmatch(r"\d{4}", value) and value.startswith("20"):
+            continue
+        if re.fullmatch(r"\d{1,2}", value) and int(value) < 5 and "%" not in value and "$" not in value:
+            continue
+        word_idx = _word_index(match.start())
+        left = max(0, word_idx - 12)
+        right = min(len(words), word_idx + 13)
+        context = " ".join(words[left:right]).strip()
+        if len(context) < 20:
+            continue
+        context_lower = context.lower()
+        if re.search(r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\b", context_lower):
+            if "%" not in value and "$" not in value and not re.search(r"bpd|barrel|million|billion|bn|m", value, flags=re.IGNORECASE):
+                continue
+        if re.fullmatch(r"\d{1,2}", value) and re.search(r"\b(week|month|year|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b", context_lower):
+            continue
+        score = 0
+        if any(term in context_lower for term in priority_terms):
+            score += 3
+        if "%" in value or "$" in value or "bpd" in value.lower() or "barrel" in value.lower():
+            score += 2
+        if re.search(r"\b(today|homepage|menu|copyright|privacy)\b", context_lower):
+            score -= 3
+
+        label = "Policy or market figure"
+        if any(term in context_lower for term in ("release", "prison", "amnesty", "arrest")):
+            label = "Detentions and releases"
+        elif any(term in context_lower for term in ("sanction", "treasury", "license", "revenue")):
+            label = "Sanctions and state revenue"
+        elif any(term in context_lower for term in ("oil", "pdvsa", "barrel", "bpd")):
+            label = "Oil and production"
+        elif any(term in context_lower for term in ("health", "outbreak", "dengue", "hospital")):
+            label = "Health signal"
+        elif any(term in context_lower for term in ("inflation", "fx", "debt", "bond")):
+            label = "Macro and finance"
+
+        dedupe_key = f"{value.lower()}|{context_lower[:100]}"
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+        candidates.append({"label": label, "value": value, "context": clamp_text_py(context, 120), "score": score})
+
+    candidates.sort(key=lambda item: (int(item.get("score", 0)), len(str(item.get("context", "")))), reverse=True)
+    return candidates[:8]
 
 
 def _derive_publisher(entry: dict) -> str:
@@ -1430,43 +1517,55 @@ def _icons_for_item(item: dict) -> list[str]:
     return deduped
 
 
-def _generate_insight2(item: dict) -> dict:
+def _generate_insight2(item: dict, source_text: str = "") -> dict:
     seed = item["id"]
     snippet = _normalize_text_block(item.get("snippet", ""))
+    source_text = _normalize_text_block(source_text)
     facts = item.get("metrics", {}).get("numbers", [])
     first_fact = facts[0]["value"] if facts else ""
     sector = item.get("sector", "this sector")
 
-    change_openers = [
-        "Coverage this cycle points to",
-        "The latest shift centers on",
-        "A notable change appears in",
-        "Reporting indicates movement in",
-    ]
-    impact_openers = [
-        "For donors and investors, this implies",
-        "The practical implication is",
-        "Near-term, this means",
-        "The operating takeaway is",
+    candidate_text = source_text or snippet
+    sentence_parts = [
+        s.strip()
+        for s in re.split(r"(?<=[.!?])\s+", candidate_text)
+        if s.strip() and len(s.strip()) >= 35 and not _sentence_is_noise(s.strip())
     ]
 
-    s1 = _deterministic_pick(seed + "-a", change_openers)
-    focus = _deterministic_pick(seed + "-b", item.get("event_types", []) or [sector])
-    s1 = f"{s1} {focus.lower()} dynamics in Venezuela."
-    if first_fact:
-        s1 = f"{s1[:-1]} with reference points such as {first_fact}."
+    title_norm = _normalize_text_block(item.get("title", ""))
+    filtered = [
+        s for s in sentence_parts
+        if _title_similarity(title_norm, s) < 0.90
+        and not re.search(r"\b(this article discusses|the report highlights|according to reports)\b", s, flags=re.IGNORECASE)
+    ]
 
-    if item.get("flags", {}).get("risk"):
-        posture = "heightened compliance and execution risk"
-    elif item.get("flags", {}).get("opportunity"):
-        posture = "potential openings for controlled engagement"
+    if filtered:
+        s1 = clamp_text_py(filtered[0], 180)
     else:
-        posture = "a mixed but actionable signal set"
-    s2 = f"{_deterministic_pick(seed + '-c', impact_openers)} {posture} for {sector.lower()}."
+        event_hint = _deterministic_pick(seed + "-evt", item.get("event_types", []) or [sector])
+        s1 = f"Officials and counterpart institutions advanced {event_hint.lower()} actions in Venezuela"
+        if first_fact:
+            s1 += f", with figures such as {first_fact} reported"
+        s1 += "."
 
-    headline_norm = _normalize_text_block(item.get("title", "")).lower()
+    if len(filtered) > 1:
+        s2 = clamp_text_py(filtered[1], 180)
+    else:
+        mechanism = "execution constraints and financing channels"
+        if item.get("flags", {}).get("risk"):
+            mechanism = "compliance requirements and delivery timelines"
+        elif item.get("flags", {}).get("opportunity"):
+            mechanism = "implementation windows and partner sequencing"
+        s2 = f"This matters because it changes {mechanism} for {sector.lower()} operations over the next reporting cycle."
+
+    for banned in ("this article discusses", "the report highlights", "according to reports"):
+        s1 = re.sub(re.escape(banned), "", s1, flags=re.IGNORECASE).strip()
+        s2 = re.sub(re.escape(banned), "", s2, flags=re.IGNORECASE).strip()
+
+    headline_norm = title_norm.lower()
     if headline_norm and _title_similarity(headline_norm, s1.lower()) > 0.88:
-        s1 = "The reporting adds context beyond the headline by clarifying how operating conditions are changing."
+        event_hint = _deterministic_pick(seed + "-evt2", item.get("event_types", []) or [sector])
+        s1 = f"Authorities and counterpart actors advanced {event_hint.lower()} actions in Venezuela."
 
     confidence = "HIGH" if item.get("summary_confidence", "").startswith("High") else "MED"
     if item.get("summary_confidence", "").startswith("Low"):
@@ -1491,24 +1590,72 @@ def clamp_text_py(text: str, limit: int) -> str:
     return clean[:limit].rsplit(" ", 1)[0].strip() + "…"
 
 
+def _strip_summary_leadin(text: str) -> str:
+    clean = _normalize_text_block(text)
+    patterns = [
+        r"^This cycle brought a concrete update on\s+",
+        r"^Sources indicate implementation movement tied to\s+",
+        r"^New reporting links\s+",
+        r"^Reporting points to concrete movement linked to\s+",
+        r"^Developments around\s+",
+    ]
+    for pattern in patterns:
+        clean = re.sub(pattern, "", clean, flags=re.IGNORECASE)
+    return clean.strip().rstrip(".")
+
+
+def _sentence_case_start(text: str) -> str:
+    clean = _normalize_text_block(text)
+    if not clean:
+        return ""
+    if len(clean) == 1:
+        return clean.upper()
+    return clean[0].upper() + clean[1:]
+
+
 def _build_sector_synth(section: str, items: list[dict]) -> dict:
     if not items:
-        return {"sentences": ["Coverage is limited this cycle; maintain monitoring for confirmation in the next run."], "drivers": [], "watch": ["Regulatory updates", "Partner statements", "Execution constraints"]}
+        return {
+            "bullets": [
+                "Coverage was limited in this sector during the current cycle.",
+                "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
+                "Watch the next run for confirmed operational or policy updates tied to this sector.",
+            ],
+            "drivers": [],
+            "watch": ["Regulatory updates", "Partner statements", "Execution constraints"],
+        }
 
     events = []
     for item in items:
         events.extend(item.get("event_types", []))
     drivers = sorted(set(events))[:4]
-    risk_count = sum(1 for item in items if item.get("flags", {}).get("risk"))
-    opp_count = sum(1 for item in items if item.get("flags", {}).get("opportunity"))
+    top_items = sorted(
+        items,
+        key=lambda i: (int(i.get("materiality", 1) or 1), int(i.get("risk_score", 0) or 0)),
+        reverse=True,
+    )[:3]
 
-    s1 = f"This week in {section.lower()}, reporting clustered around {', '.join(drivers) if drivers else 'cross-sector signals'}."
-    s2 = f"Risk posture is {'elevated' if risk_count > opp_count else 'mixed'}, with {risk_count} risk flags versus {opp_count} opportunity flags."
-    s3 = "The most decision-relevant shift is in policy execution speed and the reliability of counterpart commitments."
-    s4 = "For donors, leverage is strongest where implementation bottlenecks and service continuity gaps are clearly identified."
-    s5 = "For investors, controlled-entry options depend on compliance clarity, operational resilience, and trigger-based sequencing."
+    bullet_openers = [
+        "Officials reported",
+        "Field updates show",
+        "Separate sources indicate",
+    ]
+    bullets = []
+    for idx, item in enumerate(top_items):
+        base = item.get("insight2", {}).get("s1", "") or item.get("title", "")
+        base = _strip_summary_leadin(base)
+        if not base:
+            continue
+        base = _sentence_case_start(base.rstrip(". "))
+        if _title_similarity(base, item.get("title", "")) > 0.90:
+            base = f"{_title_topic({ 'title': item.get('title', '') })} advanced as a concrete sector development"
+        bullets.append(clamp_text_py(f"{bullet_openers[idx % len(bullet_openers)]} {base}.", 180))
+
+    while len(bullets) < 3:
+        bullets.append("Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.")
+
     return {
-        "sentences": [s1, s2, s3, s4, s5],
+        "bullets": bullets[:3],
         "drivers": drivers,
         "watch": ["Regulatory deadlines", "Executive decrees", "Sanctions and licensing language"],
     }
@@ -1516,40 +1663,150 @@ def _build_sector_synth(section: str, items: list[dict]) -> dict:
 
 def _build_highlights(items: list[dict], sector_synth: dict[str, dict]) -> dict:
     ranked = sorted(items, key=lambda i: (int(i.get("materiality", 1)), int(i.get("risk_score", 0))), reverse=True)
+    banned_phrases = (
+        "coverage points to",
+        "reporting clustered around",
+        "recent reporting",
+    )
+
+    executive_bullets: list[str] = []
+    opener_patterns = [
+        "Government and institutional moves show",
+        "Operational evidence across sources indicates",
+        "Multiple reports converge on",
+        "The current cycle confirms",
+        "Cross-sector tracking now shows",
+    ]
+    for idx in range(min(5, len(ranked))):
+        primary = ranked[idx]
+        secondary = ranked[(idx + 1) % len(ranked)] if len(ranked) > 1 else ranked[idx]
+        p_text = _sentence_case_start(_strip_summary_leadin(clamp_text_py(primary.get("insight2", {}).get("s1", primary.get("title", "")), 120)))
+        p_actor = primary.get("publisher") or primary.get("sector", "primary source")
+        s_actor = secondary.get("publisher") or secondary.get("sector", "secondary source")
+        first_num = ""
+        if primary.get("metrics", {}).get("numbers"):
+            first_num = str(primary["metrics"]["numbers"][0].get("value", "")).strip()
+        detail_suffix = f" with figures including {first_num}" if first_num else ""
+        line = f"{opener_patterns[idx]} {p_actor} and {s_actor} converging on {p_text}{detail_suffix}."
+        line = _normalize_text_block(line)
+        if any(phrase in line.lower() for phrase in banned_phrases):
+            continue
+        executive_bullets.append(clamp_text_py(line, 220))
+    while len(executive_bullets) < 5:
+        executive_bullets.append("Cross-source corroboration remained limited for one track this cycle, so monitoring continues for confirmation in the next run.")
+
     key_developments = []
     for item in ranked[:8]:
-        bullet = f"{item.get('sector', 'Sector')}: {clamp_text_py(item.get('insight2', {}).get('s1', item.get('title', '')), 130)}"
-        if bullet not in key_developments:
-            key_developments.append(bullet)
+        supporting = [item.get("id")]
+        for peer in ranked:
+            if peer.get("id") == item.get("id"):
+                continue
+            if set(peer.get("event_types", [])) & set(item.get("event_types", [])) or peer.get("sector") == item.get("sector"):
+                supporting.append(peer.get("id"))
+            if len(supporting) == 3:
+                break
+        sentence = _sentence_case_start(_strip_summary_leadin(clamp_text_py(item.get("insight2", {}).get("s1", item.get("title", "")), 180)))
+        if sentence and sentence[-1] not in ".!?…":
+            sentence += "."
+        if len(sentence.split()) < 7:
+            topic = _title_topic({"title": item.get("title", "")})
+            sentence = clamp_text_py(f"{topic} became a material development in this cycle.", 180)
+        if any(phrase in sentence.lower() for phrase in banned_phrases):
+            continue
+        key_developments.append({"text": sentence, "itemIds": [sid for sid in supporting if sid][:3]})
         if len(key_developments) == 5:
             break
     while len(key_developments) < 5:
-        key_developments.append("Monitoring continues for policy and market execution signals across sectors.")
+        key_developments.append({"text": "Monitoring continues for concrete policy and operational developments.", "itemIds": []})
 
-    by_numbers = []
+    scored_numbers = []
+    label_priority = {
+        "Sanctions and state revenue": 6,
+        "Oil and production": 5,
+        "Detentions and releases": 5,
+        "Macro and finance": 4,
+        "Health signal": 3,
+        "Policy or market figure": 2,
+    }
     for item in ranked:
         for metric in item.get("metrics", {}).get("numbers", []):
-            line = f"{item.get('sector')}: {metric.get('value')} — {clamp_text_py(metric.get('context', ''), 90)}"
-            if line not in by_numbers:
-                by_numbers.append(line)
-            if len(by_numbers) == 5:
-                break
+            context = str(metric.get("context", ""))
+            value = str(metric.get("value", "")).strip()
+            if not value or len(context) < 20:
+                continue
+            if re.fullmatch(r"\d{4}", value) and value.startswith("20"):
+                continue
+            if re.fullmatch(r"\d{1,2}", value) and int(value) < 5 and "%" not in value and "$" not in value:
+                continue
+            label = str(metric.get("label", "Policy or market figure"))
+            scored_numbers.append(
+                {
+                    "label": label,
+                    "value": value,
+                    "context": clamp_text_py(context, 90),
+                    "itemId": item.get("id"),
+                    "sector": str(item.get("sector", "")),
+                    "score": int(metric.get("score", 0)) + int(item.get("materiality", 1)) + int(label_priority.get(label, 0)),
+                }
+            )
+    scored_numbers.sort(key=lambda row: (int(row.get("score", 0)), len(str(row.get("context", "")))), reverse=True)
+    by_numbers = []
+    seen_num = set()
+    seen_label_value = set()
+    label_counts: dict[str, int] = {}
+    sector_counts: dict[str, int] = {}
+    for metric in scored_numbers:
+        label = str(metric.get("label", "Policy or market figure"))
+        value_raw = str(metric.get("value", ""))
+        value_norm = re.sub(r"\s+", "", value_raw.lower()).rstrip(".")
+        key = f"{label}|{value_norm}|{metric['context'][:40]}"
+        label_value_key = f"{label.lower()}|{value_norm}"
+        if key in seen_num:
+            continue
+        if label_value_key in seen_label_value:
+            continue
+        sector = str(metric.get("sector", ""))
+        if label_counts.get(label, 0) >= 2:
+            continue
+        if sector and sector_counts.get(sector, 0) >= 2:
+            continue
+        seen_num.add(key)
+        seen_label_value.add(label_value_key)
+        label_counts[label] = label_counts.get(label, 0) + 1
+        if sector:
+            sector_counts[sector] = sector_counts.get(sector, 0) + 1
+        by_numbers.append({
+            "label": metric["label"],
+            "value": metric["value"],
+            "context": metric["context"],
+            "itemId": metric["itemId"],
+        })
         if len(by_numbers) == 5:
             break
     if len(by_numbers) < 5:
-        by_numbers.insert(0, f"{len(items)} sector-priority items in the current cycle.")
-    while len(by_numbers) < 5:
-        by_numbers.append("Quantitative signal extraction was limited in available source text for this run.")
+        sanctions_count = sum(1 for item in items if "Sanctions" in (item.get("event_types", []) or []))
+        oil_count = sum(1 for item in items if "Oil production/export" in (item.get("event_types", []) or []))
+        risk_count = sum(1 for item in items if item.get("flags", {}).get("risk"))
+        fallback_facts = [
+            {"label": "Items tracked this cycle", "value": str(len(items)), "context": "High-materiality items selected from source reporting", "itemId": ""},
+            {"label": "Sanctions-linked developments", "value": str(sanctions_count), "context": "Items tagged with sanctions-related event signals", "itemId": ""},
+            {"label": "Oil-linked developments", "value": str(oil_count), "context": "Items tagged with oil production or export signals", "itemId": ""},
+            {"label": "Risk-flagged developments", "value": str(risk_count), "context": "Items carrying explicit risk flags in this cycle", "itemId": ""},
+        ]
+        for fact in fallback_facts:
+            fact_key = f"{fact['label']}|{fact['value']}|{fact['context']}"
+            if fact_key in seen_num:
+                continue
+            by_numbers.append(fact)
+            seen_num.add(fact_key)
+            if len(by_numbers) == 5:
+                break
 
-    exec_sentences = []
-    for sector, synth in sector_synth.items():
-        if synth.get("sentences"):
-            exec_sentences.append(synth["sentences"][0])
-    executive = " ".join(exec_sentences[:4])
-    executive = clamp_text_py(executive, 720)
+    while len(by_numbers) < 5:
+        by_numbers.append({"label": "Quantitative signal", "value": "N/A", "context": "Limited high-confidence numeric context in current sources", "itemId": ""})
 
     return {
-        "executiveBrief": executive,
+        "executiveBriefBullets": executive_bullets[:5],
         "keyDevelopments": key_developments[:5],
         "byTheNumbers": by_numbers[:5],
         "sectorSynth": sector_synth,
@@ -1573,225 +1830,19 @@ def _build_docs_shell(run_at: str) -> str:
 
 
 def _default_app_js() -> str:
-        return """(function () {
-    async function loadJson(path) {
-        const response = await fetch(path, { cache: 'no-store' });
-        if (!response.ok) throw new Error('Failed to load ' + path);
-        return response.json();
-    }
-
-    const iconMap = {
-        RISK: '⚠️',
-        OPPORTUNITY: '✅',
-        POLICY: '🏛️',
-        ENERGY: '⛽',
-        FX: '💱',
-        TRADE: '🚢',
-        HUMAN: '🧭',
-        NEW: '🆕'
-    };
-
-    function esc(value) {
-        return String(value || '').replace(/[&<>\"']/g, (char) => (
-            { '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' }[char] || char
-        ));
-    }
-
-    function list(items) {
-        return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
-    }
-
-    function renderTop(highlights) {
-        return `
-            <section class=\"top-row\">
-                <article class=\"panel\">
-                    <h3>Key Developments</h3>
-                    ${list((highlights.keyDevelopments || []).slice(0, 5))}
-                </article>
-                <article class=\"panel\">
-                    <h3>By the Numbers</h3>
-                    ${list((highlights.byTheNumbers || []).slice(0, 5))}
-                </article>
-            </section>
-        `;
-    }
-
-    function renderItem(item) {
-        const icons = (item.icons || []).map((icon) => `<span class=\"item-icon\" title=\"${esc(icon)}\">${iconMap[icon] || '•'}</span>`).join('');
-        const evidence = (item.insight2 && item.insight2.evidence ? item.insight2.evidence : []).slice(0, 2);
-        const evidenceHtml = evidence.length
-            ? `<div class=\"item-evidence\">${evidence.map((line) => `<p>${esc(line)}</p>`).join('')}</div>`
-            : '';
-        const confidence = item.insight2 && item.insight2.confidence ? item.insight2.confidence : 'MED';
-
-        return `
-            <article class=\"item-card\">
-                <div class=\"item-head\">
-                    <h5><a href=\"${esc(item.url)}\" target=\"_blank\" rel=\"noopener\">${esc(item.title)}</a></h5>
-                    <div class=\"item-icons\">${icons}</div>
-                </div>
-                <p class=\"item-meta\">${esc(item.publisher)} · ${esc(item.publishedAt)} · ${esc(item.sourceTier)}</p>
-                <p class=\"item-snippet\">${esc(item.snippet)}</p>
-                <p class=\"item-insight\">${esc(item.insight2.s1)} ${esc(item.insight2.s2)}</p>
-                ${evidenceHtml}
-                <p class=\"item-confidence\">Confidence: ${esc(confidence)}</p>
-            </article>
-        `;
-    }
-
-    function renderSectors(latest) {
-        return (latest.sectors || []).map((sector) => {
-            const sentences = sector.synth && sector.synth.sentences ? sector.synth.sentences.slice(0, 5) : [];
-            return `
-                <section class=\"sector-block\">
-                    <h3>${esc(sector.name)}</h3>
-                    <div class=\"sector-synth\">${sentences.map((s) => `<p>${esc(s)}</p>`).join('')}</div>
-                    <div class=\"items-grid\">${(sector.items || []).map(renderItem).join('')}</div>
-                </section>
-            `;
-        }).join('');
-    }
-
-    function renderMacros(macros) {
-        return `
-            <section class=\"macro-block\">
-                <h3>Macro Indicators</h3>
-                <p class=\"macro-note\">Daily refresh at end-of-report for context and trend checks.</p>
-                <div class=\"macro-grid\">
-                    ${(macros.indicators || []).map((m) => `
-                        <article class=\"macro-card\">
-                            <h4>${esc(m.name)}</h4>
-                            <p class=\"macro-value\">${esc(m.value)}</p>
-                            <p class=\"macro-trend\">${esc(m.trend)}</p>
-                        </article>
-                    `).join('')}
-                </div>
-            </section>
-        `;
-    }
-
-    async function init() {
-        const root = document.getElementById('app-root');
-        if (!root) return;
-        try {
-            const [latest, highlights, macros] = await Promise.all([
-                loadJson('data/latest.json'),
-                loadJson('data/highlights.json'),
-                loadJson('data/macros.json')
-            ]);
-
-            root.innerHTML = `
-                <section class=\"exec-brief panel\">
-                    <h2>Executive Brief</h2>
-                    <p>${esc(highlights.executiveBrief || '')}</p>
-                </section>
-                ${renderTop(highlights)}
-                ${renderSectors(latest)}
-                ${renderMacros(macros)}
-            `;
-        } catch (error) {
-            root.innerHTML = `<p class=\"error\">Unable to load dashboard data: ${esc(error.message)}</p>`;
-        }
-    }
-
-    init();
-})();
-"""
+        app_js_path = os.path.join(DOCS_DIR, "assets", "app.js")
+        if os.path.exists(app_js_path):
+                with open(app_js_path, "r", encoding="utf-8") as fh:
+                        return fh.read()
+        return "(function () {})();\n"
 
 
 def _default_styles_css() -> str:
-        return """:root {
-    color-scheme: light;
-}
-
-.vzla-app {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: grid;
-    gap: 18px;
-}
-
-.panel,
-.sector-block,
-.macro-block {
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    padding: 14px;
-    background: #fff;
-}
-
-.exec-brief p,
-.sector-synth p,
-.item-snippet,
-.item-insight,
-.macro-note {
-    line-height: 1.55;
-}
-
-.top-row {
-    display: grid;
-    gap: 14px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.top-row ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-.items-grid,
-.macro-grid {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.item-card,
-.macro-card {
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-.item-head {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.item-head h5 {
-    margin: 0;
-    font-size: 15px;
-}
-
-.item-icons {
-    display: flex;
-    gap: 6px;
-}
-
-.item-meta,
-.item-confidence,
-.macro-trend {
-    font-size: 12px;
-    color: #4b5563;
-}
-
-.item-evidence p {
-    margin: 4px 0;
-    font-size: 12px;
-    color: #374151;
-}
-
-.macro-value {
-    font-size: 18px;
-    margin: 2px 0;
-    font-weight: 700;
-}
-
-.error {
-    color: #b91c1c;
-}
-"""
+        styles_css_path = os.path.join(DOCS_DIR, "assets", "styles.css")
+        if os.path.exists(styles_css_path):
+                with open(styles_css_path, "r", encoding="utf-8") as fh:
+                        return fh.read()
+        return ".error { color: #b91c1c; }\n"
 
 
 def _write_if_changed(path: str, content: str) -> bool:
@@ -2397,6 +2448,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             "sourceTier": _source_quality_tier(str(entry.get("source_domain", ""))),
             "sector": section,
             "snippet": summary_text,
+            "snippet_status": str(entry.get("snippet_status", "")),
             "summary_confidence": _summary_confidence_label(entry),
             "event_types": list(entry.get("event_types", []) or []),
             "sentiment": str(entry.get("sentiment", "Neutral")),
@@ -2418,7 +2470,15 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 )
             },
         }
-        item["insight2"] = _generate_insight2(item)
+        source_text_for_insight = " ".join(
+            [
+                str(entry.get("article_text", "") or ""),
+                str(entry.get("meta_description", "") or ""),
+                str(entry.get("first_paragraph", "") or ""),
+                summary_text,
+            ]
+        ).strip()
+        item["insight2"] = _generate_insight2(item, source_text_for_insight)
         item["icons"] = _icons_for_item(item)
         normalized_items.append(item)
 

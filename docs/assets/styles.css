@@ -89,3 +89,9 @@
 .error {
     color: #b91c1c;
 }
+
+#app-root ul { margin-top: 0.25rem; margin-bottom: 0.75rem; }
+#app-root li { margin: 0.25rem 0; }
+#app-root h3 { margin-top: 1.25rem; }
+#app-root h5 { margin-top: 0.9rem; margin-bottom: 0.25rem; }
+#app-root p { margin: 0.4rem 0; line-height: 1.55; }
