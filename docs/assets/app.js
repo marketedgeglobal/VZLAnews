@@ -20,7 +20,20 @@
         const enMarkers = [' the ', ' and ', ' for ', ' with ', ' from ', ' this ', ' that '];
         const esScore = esMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
         const enScore = enMarkers.reduce((acc, marker) => acc + (probe.includes(marker) ? 1 : 0), 0);
-        return esScore > enScore ? 'es' : 'en';
+        if (esScore === 0 && enScore === 0) return 'other';
+        if (esScore >= enScore + 1) return 'es';
+        if (enScore >= esScore + 1) return 'en';
+        return 'other';
+    }
+
+    function normalizePreview(text) {
+        const clean = String(text || '').replace(/\s+/g, ' ').trim();
+        if (!clean || clean.includes('…') || clean.includes('...')) return '';
+        const parts = clean.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ])/).map((s) => s.trim()).filter(Boolean);
+        if (parts.length < 2) return '';
+        const two = `${parts[0]} ${parts[1]}`.trim();
+        if (two.length > 340) return '';
+        return two;
     }
 
     function renderLanguageSwitcher(activeLanguage) {
@@ -108,14 +121,16 @@
     }
 
     function renderItem(item) {
-        const preview = (item.preview || '').trim();
+        const preview = normalizePreview(item.preview || '');
         if (preview.length < 80) return '';
+        const sourceDate = (item.sourcePublishedAt || '').trim();
 
         return `
             <article class="item-card">
                 <div class="item-head">
                     <h5><a id="item-${esc(item.id)}"></a><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h5>
                 </div>
+                ${sourceDate ? `<p class="item-source-date">Source date: ${esc(sourceDate)}</p>` : ''}
                 <p class="item-desc">${esc(preview)}</p>
             </article>
         `;

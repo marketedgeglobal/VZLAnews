@@ -1,648 +1,48 @@
 {
-  "runAt": "2026-02-28T20:57:07.511383+00:00",
-  "totalItems": 35,
+  "runAt": "2026-02-28T21:42:22.400193+00:00",
+  "totalItems": 7,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
-          "Officials reported Check your inbox or spam folder to confirm your subscription.",
-          "Field updates show News Extra Missiles across Middle East: T&T Nationals urged to shelter in place The Government, through the Ministry of Foreign and CARICOM Affairs, has issued\u2026",
-          "Separate sources indicate News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics\u2026"
+          "Coverage was limited in this sector during the current cycle.",
+          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
+          "Watch the next run for confirmed operational or policy updates tied to this sector."
         ],
-        "drivers": [
-          "FX / Inflation",
-          "Oil production/export",
-          "Political transition",
-          "Sanctions"
-        ],
+        "drivers": [],
         "watch": [
-          "Regulatory deadlines",
-          "Executive decrees",
-          "Sanctions and licensing language"
+          "Regulatory updates",
+          "Partner statements",
+          "Execution constraints"
         ]
       },
-      "items": [
-        {
-          "id": "a81f871dce93",
-          "title": "U.S. Can't Dislodge Guerrillas From Venezuela's Gold and Coltan Flow, Experts Say: 'They Understand Mining Is the Future' - Latin Times",
-          "url": "https://www.latintimes.com/",
-          "publisher": "Latin Times",
-          "publishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Extractives & Mining",
-          "snippet": "Top news from Latinos in New York, Texas, California, and Florida with breaking news, interviews, videos and analysis on US politics, immigration, soccer, telenovelas, movies, food, diet, beauty, fashion, and more.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Security"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 25,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "10 Years",
-                "context": "U.S. Tags, Officials Say By Demian Bio In Focus Bruno Mars Took 10 Years To Release A New Album: The Result Is Food For\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "Key Ports On The Canal Amid U.S.-China Dispute By Demian Bio | 02/24/26 10:40 AM EST Tony Gonzales Trailing GOP Primary\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "Key Ports On The Canal Amid U.S.-China Dispute By Demian Bio | 02/24/26 10:40 AM EST Tony Gonzales Trailing GOP Primary\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "38",
-                "context": "El Mencho After Tracking His Lover, General Claims By Demian Bio Video 00:38 Marco Rubio Is the Most Popular Politician\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Killed In Airstrike On Tehran, Israeli Media Reports By Demian Bio | 02/28/26 15:01 PM EST Top News Trump Says It Will\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "Killed In Airstrike On Tehran, Israeli Media Reports By Demian Bio | 02/28/26 15:01 PM EST Top News Trump Says It Will\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "U.S. Eyes 'Favorable Licensing Policy' to Make Cuba More Reliant on American Fuel: Report",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "News, Immigration, Soccer, Telenovelas And Culture for Latinos in the U.S. \u2013 Latin Times Saturday, February 28, 2026 English Search form Search Politics Immigration Business Entertainment Sports Culture Lifestyle Video\u2026",
-            "s2": "Attacks, Offers 'Off Ramps' To The Regime By Demian Bio Ruben Gallego Takes Aim At Donald Trump Over Attack Against Iranian Regime: 'Draft Dodger Is Willing To Sacrifice Working Class Kids' By Demian Bio Marjorie Taylor\u2026",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 10 Years as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "U.S. Tags, Officials Say By Demian Bio In Focus Bruno Mars Took 10 Years To Release A New Album: The Result Is Food For\u2026",
-              "In Rio Grande To Prevent Migrants From Crossing By Demian Bio | 02/27/26 08:58 AM EST Reporter Reveals Jasmine Crockett\u2026"
-            ]
-          },
-          "icons": [
-            "ENERGY"
-          ]
-        },
-        {
-          "id": "b28de1e086d4",
-          "title": "Sanctions Only Now Exist in the Eyes of Opposition Economists in Venezuela - Orinoco Tribune",
-          "url": "https://orinocotribune.com/",
-          "publisher": "Orinoco Tribune",
-          "publishedAt": "2026-02-27",
-          "sourceTier": "Tier 3",
-          "sector": "Extractives & Mining",
-          "snippet": "{\"title\":\"\",\"limit\":\"7\",\"offset\":0,\"range\":\"daily\",\"time_quantity\":24,\"time_unit\":\"hour\",\"freshness\":false,\"order_by\":\"views\",\"post_type\":\"post\",\"pid\":\"\",\"exclude\":\"\",\"cat\":\"\",\"taxonomy\":\"category\",\"term_id\":\"-3\",\"author\":\"\",\"shorten_title\":{\"active\":true,\"length\":\"10\",\"words\":tr\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Sanctions",
-            "Political transition"
-          ],
-          "sentiment": "Negative",
-          "materiality": 2,
-          "risk_score": 65,
-          "entities": [],
-          "tags": [
-            "Sanctions"
-          ],
-          "flags": {
-            "risk": true,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Health signal",
-                "value": "441",
-                "context": "Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627)\u2026",
-                "score": 3
-              },
-              {
-                "label": "Sanctions and state revenue",
-                "value": "28",
-                "context": "Denounces US Violation of Right to Defense Amid Funding Blockade orinocotribune February 28, 2026 2 International News\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "27",
-                "context": "2026 News Politics Venezuela: Acting Attorney General and Ombudsperson Take Oath February 27, 2026 International News\u2026",
-                "score": 3
-              },
-              {
-                "label": "Sanctions and state revenue",
-                "value": "28",
-                "context": "Rodr\u00edguez Requests That Trump End Sanctions and Blockade Against Venezuela orinocotribune February 28, 2026 3 Central\u2026",
-                "score": 3
-              },
-              {
-                "label": "Sanctions and state revenue",
-                "value": "142",
-                "context": "22, 2026 7 International News Death Toll From US Extrajudicial Killings Reaches 142, Venezuela Condemns Renewal of US\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "27",
-                "context": "International News US Allows Limited Resale of Venezuelan Oil to Cuba February 27, 2026 Economy News Acting President\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "27",
-                "context": "International News US Allows Limited Resale of Venezuelan Oil to Cuba February 27, 2026 OT SPECIALS 1 International\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "627",
-                "context": "OPINION: MOST POPULAR Categories Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology\u2026",
-                "score": 3
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "Check your inbox or spam folder to confirm your subscription",
-            "s2": "OPINION: MOST POPULAR Categories Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627) International (11,147) Africa (441) Asia (2,521) Europe (1,051)\u2026",
-            "s3": "Implication: risk management assumptions should tighten because implementation conditions are deteriorating around sanctions, with 441 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Categories Select Category Economy (934) Health-Education-Sport-Culture-Technology (1,039) Ideology-Commune-Labor (627)\u2026",
-              "Denounces US Violation of Right to Defense Amid Funding Blockade orinocotribune February 28, 2026 2 International News\u2026"
-            ]
-          },
-          "icons": [
-            "RISK",
-            "POLICY",
-            "ENERGY"
-          ]
-        },
-        {
-          "id": "486f5429ae5e",
-          "title": "Venezuela meets with Shell execs on oil/gas projects - Trinidad Express Newspapers",
-          "url": "https://trinidadexpress.com/",
-          "publisher": "Trinidad Express Newspapers",
-          "publishedAt": "2026-02-27",
-          "sourceTier": "Tier 3",
-          "sector": "Extractives & Mining",
-          "snippet": "Sunday, October 13th 2024, marked the International Day for Disaster Risk Reduction (IDDRR), a globally recognized event that was first observ\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export",
-            "FX / Inflation"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [
-            "FX controls"
-          ],
-          "tags": [
-            "Energy",
-            "Debt/FX"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "US$3 million",
-                "context": "shot Ocelot Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
-                "score": 2
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "US$3 million",
-                "context": "pending Investigation Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar\u2026",
-                "score": 2
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "40",
-                "context": "hrs ago West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 17 hrs ago Former national\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "17",
-                "context": "West Indies women\u2019s captain Hayley Matthew\u2026 Bess Motors seniors clinch Over-40 crown 17 hrs ago Former national and top\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "a logical move\u2019 Berger Paints Barbados to close all sites on April 24 NCB leads volume Barbados unveils Bds$3.9 billion\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "3.9 billion",
-                "context": "to close all sites on April 24 NCB leads volume Barbados unveils Bds$3.9 billion budget New Federation aims to link T&T\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "Headlines Latest Headlines T&T Govt backs US, as Middle East conflict escalates 15 mins ago The Government of Trinidad\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "17",
-                "context": "1 hr ago The Government, through the Ministry of Fo\u2026 T20 REBOOT 17 hrs ago West Indies women\u2019s captain Hayley Matthew\u2026\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "News Extra Missiles across Middle East: T&T Nationals urged to shelter in place The Government, through the Ministry of Foreign and CARICOM Affairs, has issued an advisory to nationals following the rapid escalation of\u2026",
-            "s2": "Business Deputy CEO at Angostura sent on leave pending Investigation Just over ten months after his appointment as deputy chief executive officer of Angostura Holdings Ltd, Rahim Mohammed has been placed on paid\u2026",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in extractives & mining, with US$3 million as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "shot Ocelot Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar Smokers blamed\u2026",
-              "pending Investigation Night of terror: Family barricades home as dog turns vicious US$3 million a day to run radar\u2026"
-            ]
-          },
-          "icons": [
-            "ENERGY",
-            "FX"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "name": "Food & Agriculture",
       "synth": {
         "bullets": [
-          "Officials reported February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026\u2026",
-          "Field updates show CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba\u2026",
-          "Separate sources indicate Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News\u2026"
+          "Coverage was limited in this sector during the current cycle.",
+          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
+          "Watch the next run for confirmed operational or policy updates tied to this sector."
         ],
-        "drivers": [
-          "FX / Inflation",
-          "Humanitarian crisis",
-          "Oil production/export",
-          "Sanctions"
-        ],
+        "drivers": [],
         "watch": [
-          "Regulatory deadlines",
-          "Executive decrees",
-          "Sanctions and licensing language"
+          "Regulatory updates",
+          "Partner statements",
+          "Execution constraints"
         ]
       },
-      "items": [
-        {
-          "id": "33e18a5bf969",
-          "title": "Food Security, could Digital Insurance help Venezuela? - Irish Tech News",
-          "url": "https://irishtechnews.ie/",
-          "publisher": "Irish Tech News",
-          "publishedAt": "2026-02-06",
-          "sourceTier": "Tier 3",
-          "sector": "Food & Agriculture",
-          "snippet": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) * [About](https://irishtechnews.ie/about-us/) *\u2026",
-          "snippet_status": "",
-          "summary_confidence": "Low (Page extraction)",
-          "event_types": [
-            "FX / Inflation",
-            "Security"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 40,
-          "entities": [
-            "FX controls"
-          ],
-          "tags": [
-            "Debt/FX"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "MyCelsius](https://irishtechnews-ie.exactdn.com/wp-content/uploads/2026/02/Headshot-Aonghus--360x240.jpeg?lossy=1&ssl=1)\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "------------------------------------------------------------------------------------------------------------------------\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "08",
-                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "53",
-                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "05",
-                "context": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "07",
-                "context": "[Podcast](https://irishtechnews.ie/category/podcast/) * [Best Deals](https://irishtechnews.ie/category/best-deals/) *\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "08",
-                "context": "News Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "53",
-                "context": "News Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "Title: Home - Irish Tech News URL Source: http://irishtechnews.ie/ Published Time: 2015-08-01T13:53:05+01:00 Markdown Content: Home - Irish Tech News =============== * [Home](https://irishtechnews.ie/) *\u2026",
-            "s2": "EUSPA CASSINI Challenge could help, Jana Kominek Vecerkova](https://irishtechnews.ie/euspa-cassini-challenge-jana-kominek/)\u2026",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around food & agriculture decisions, with 24 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "MyCelsius](https://irishtechnews-ie.exactdn.com/wp-content/uploads/2026/02/Headshot-Aonghus--360x240.jpeg?lossy=1&ssl=1)\u2026",
-              "------------------------------------------------------------------------------------------------------------------------\u2026"
-            ]
-          },
-          "icons": [
-            "FX"
-          ]
-        },
-        {
-          "id": "ad8359b9d80a",
-          "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate - Venezuelanalysis",
-          "url": "https://venezuelanalysis.com/",
-          "publisher": "Venezuelanalysis",
-          "publishedAt": "2026-01-31",
-          "sourceTier": "Tier 2",
-          "sector": "Food & Agriculture",
-          "snippet": "Venezuelanalysis provides independent, on-the-ground news and analysis on Venezuela. It is 100% sustained by readers.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Sanctions",
-            "Humanitarian crisis",
-            "Security"
-          ],
-          "sentiment": "Negative",
-          "materiality": 3,
-          "risk_score": 90,
-          "entities": [],
-          "tags": [
-            "Sanctions"
-          ],
-          "flags": {
-            "risk": true,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "27",
-                "context": "Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "20",
-                "context": "Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026 Venezuela: Rodr\u00edguez Hosts SOUTHCOM\u2026",
-                "score": 3
-              },
-              {
-                "label": "Sanctions and state revenue",
-                "value": "5",
-                "context": "12, 2026 US Imperialism and the Venezuelan Oligarchy February 5, 2026 February 5, 2026 #SanctionsKill Facts and figures\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "20",
-                "context": "Administration Mandates Venezuelan Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026\u2026",
-                "score": 3
-              },
-              {
-                "label": "Sanctions and state revenue",
-                "value": "5",
-                "context": "9, 2026 February 12, 2026 US Imperialism and the Venezuelan Oligarchy February 5, 2026 February 5, 2026 #SanctionsKill\u2026",
-                "score": 3
-              },
-              {
-                "label": "Detentions and releases",
-                "value": "27",
-                "context": "General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026\u2026",
-                "score": 3
-              },
-              {
-                "label": "Detentions and releases",
-                "value": "23",
-                "context": "Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23,\u2026",
-                "score": 3
-              },
-              {
-                "label": "Detentions and releases",
-                "value": "23",
-                "context": "Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration\u2026",
-                "score": 3
-              }
-            ]
-          },
-          "preview": "Venezuelan Trade Unions Stage Nationwide Demonstrations, Demand Wage Hikes Working-class organizations have likewise opposed reforms to the labor law that favor the private sector. Be the first to know what is happening in Venezuela! Facts and figures about US-led sanctions, their deadly consequences and grassroots resistance.",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "February 28, 2026 February 28, 2026 News Venezuela: Attorney General and Ombudsman Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What Is Really\u2026",
-            "s2": "Leave this field empty if you\u2019re human: NEWS Venezuelan Parliament Approves Amnesty Law, Rodr\u00edguez Calls for \u2018Peace and Tolerance\u2019 February 23, 2026 February 23, 2026 Trump Administration Mandates Venezuelan Oil\u2026",
-            "s3": "Implication: risk management assumptions should tighten because implementation conditions are deteriorating around security, with 27 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Resign as Authorities Process Thousands of Amnesty Requests February 27, 2026 February 27, 2026 Multimedia \u00b7 Video What\u2026",
-              "Oil Royalties, Taxes Be Paid to US-Run Accounts February 20, 2026 February 20, 2026 Venezuela: Rodr\u00edguez Hosts SOUTHCOM\u2026"
-            ]
-          },
-          "icons": [
-            "RISK",
-            "POLICY",
-            "HUMAN"
-          ]
-        },
-        {
-          "id": "da671b4f3852",
-          "title": "The end of Venezuelan oil hits food security in Cuba hard - CiberCuba",
-          "url": "https://en.cibercuba.com/",
-          "publisher": "CiberCuba",
-          "publishedAt": "2026-01-26",
-          "sourceTier": "Tier 3",
-          "sector": "Food & Agriculture",
-          "snippet": "CiberCuba is an independent Cuban digital media outlet that reports on current affairs in Cuba and for Cubans, with coverage that includes Cuba, Miami, Europe, and the rest of the world. News, Exclusives, Interviews, Analysis, Opinion, and Entertainment.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export",
-            "Security"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 3,
-          "risk_score": 55,
-          "entities": [],
-          "tags": [
-            "Energy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "7",
-                "context": "will begin a \"friendly and controlled takeover\" of Cuba February 27, 2026, 7:01 PM A video of members of the group that\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10",
-                "context": "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "35",
-                "context": "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "change in Cuba and responds to Marco Rubio's call February 28, 2026, 5:32 PM The price of the dollar rises in the black\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "32",
-                "context": "change in Cuba and responds to Marco Rubio's call February 28, 2026, 5:32 PM The price of the dollar rises in the black\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "in Donald Trump\u00e2\u0080\u00a6\u00e2\u0080\u009d: Havana wakes up with banners defying the regime February 28, 2026, 7:14 PM Iranians celebrate in\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "palace: \"I love Trump,\" they shout while dancing amid the explosions February 28, 2026, 6:23 PM See more news \u00e2\u0086\u0092 Marco\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "6",
-                "context": "love Trump,\" they shout while dancing amid the explosions February 28, 2026, 6:23 PM See more news \u00e2\u0086\u0092 Marco Rubio Amid\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "CiberCuba: News from Cuba, the digital voice of Cubans Homepage Latest News Cuba News Miami News Entertainment Informal Exchange Rate Videos Sports CiberCuba Interviews Opinion Cuisine United States Florida Spain\u2026",
-            "s2": "United States Cuba News Donald Trump Marco Rubio Border Guard Ships Changes in Cuba Cubans in the United States MININT The White House Cuban government Shooting Coast Guard Iran Fuel crisis in Cuba Villa Clara Miami\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 7 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "will begin a \"friendly and controlled takeover\" of Cuba February 27, 2026, 7:01 PM A video of members of the group that\u2026",
-              "in Cuba by boat handling weapons has been circulated February 26, 2026, 10:35 PM What does the \"friendly and controlled\u2026"
-            ]
-          },
-          "icons": []
-        }
-      ]
+      "items": []
     },
     {
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported We have redirected you to a site for your country, if this was not correct, please use the link to go back.",
-          "Field updates show El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados\u2026",
-          "Separate sources indicate E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required\u2026"
+          "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
+          "Field updates show The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already\u2026",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
           "Political transition",
@@ -661,6 +61,7 @@
           "url": "https://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/",
           "publisher": "elpitazo.net",
           "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
           "sourceTier": "Tier 2",
           "sector": "Health & Water",
           "snippet": "Washington. El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense, Donald Trump, quien regres\u00f3 al poder el a\u00f1o pasado\u2026",
@@ -677,46 +78,6 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense,\u2026",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "88f7a527864e",
-          "title": "The road to self-sufficiency for Venezuelan communities - nrc.no",
-          "url": "https://www.nrc.no/",
-          "publisher": "nrc.no",
-          "publishedAt": "2026-02-06",
-          "sourceTier": "Tier 1",
-          "sector": "Health & Water",
-          "snippet": "The Norwegian Refugee Council (NRC) is an independent humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
             "new": false,
             "updated": false
           },
@@ -724,29 +85,65 @@
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "40",
-                "context": "humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr... NRC Wrong site?\u2026",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "40",
-                "context": "War Two. Today, we work in both new and protracted crises across 40 countries, where we help save lives and rebuild\u2026",
-                "score": -3
+                "value": "28",
+                "context": "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "10.42",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "07",
+                "context": "Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 2: El\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "43",
+                "context": "ordenados por Trump en su segundo mandato URL Source:\u2026",
+                "score": 0
               }
             ]
           },
-          "preview": "EducationDisplacement has a devastating impact on learning, and often leads to education being interrupted or denied. NRC works to ensure that children and youth forced to flee can access high-quality, safe, inclusive and relevant learning opportunities.",
-          "preview_source": "trafilatura",
-          "language": "en",
+          "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
+          "preview_source": "jina",
+          "language": "es",
           "insight2": {
-            "s1": "We have redirected you to a site for your country, if this was not correct, please use the link to go back",
-            "s2": "Go back Hide About us The Norwegian Refugee Council (NRC) is a global humanitarian organisation helping people forced to flee",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around health & water, with 40 as a measurable reference point for scenario tracking.",
+            "s1": "Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source: http://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/\u2026",
+            "s2": "Los ataques estadounidenses del \u00faltimo a\u00f1o, que han evitado el despliegue de soldados sobre el terreno, han sido **justificados por la Casa Blanca** en nombre de la seguridad nacional o la lucha antiterrorista, pero han\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security, with 28 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "humanitarian organisation helping people forced to flee. We work in crises across 40 countries, pr... NRC Wrong site?\u2026",
-              "War Two. Today, we work in both new and protracted crises across 40 countries, where we help save lives and rebuild\u2026"
+              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+              "busca poner fin al r\u00e9gimen iran\u00ed Por[EFE - Agencia de noticias](https://elpitazo.net/author/efe/) - 28 de febrero de\u2026"
             ]
           },
           "icons": []
@@ -757,6 +154,7 @@
           "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext",
           "publisher": "bing.com",
           "publishedAt": "2026-02-04",
+          "sourcePublishedAt": "2026-02-04",
           "sourceTier": "Tier 3",
           "sector": "Health & Water",
           "snippet": "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already in collapse. With US President Donald ...",
@@ -782,69 +180,17 @@
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Health signal",
-                "value": "26",
-                "context": "Donald ... Title: Venezuela's health system: when force meets fragility URL Source:\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "5",
-                "context": "Donald ... Title: Venezuela's health system: when force meets fragility URL Source:\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "in](https://www.thelancet.com/action/idLogin?type=login&redirectUri=https%3A%2F%2Fwww.thelancet.com%2Fjournals%2Flancet%\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "links dialog close links dialog * [Submit Article](https://www.editorialmanager.com/thelancet \"Submit Article\") * [Log\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "password?](https://www.thelancet.com/action/requestResetPassword) - [x] Remember me Don\u2019t have an account? [Create a\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "Lancet Journal\") * [Submit Article](https://www.editorialmanager.com/thelancet \"Submit Article\") * Log in * [Log\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "--------------------- Email/Username Your email address is a required field. E.g., j.smith@mail.com Password\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "--------------------- Email/Username Your email address is a required field. E.g., j.smith@mail.com Password\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
           "preview": "Copyright: \u00a9 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
           "preview_source": "jina",
           "language": "en",
           "insight2": {
-            "s1": "E.g., j.smith@mail.com Password [Show](http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00203-5/fulltext#) Your password is a required field",
+            "s1": "The US military strikes on Venezuela on Jan 3, 2026 and seizure of the country's President Nicol\u00e1s Maduro represent a profound shock to a health system already in collapse",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water, with 26 as a measurable reference point for scenario tracking.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
             "confidence": "HIGH",
-            "evidence": [
-              "Donald ... Title: Venezuela's health system: when force meets fragility URL Source:\u2026",
-              "Donald ... Title: Venezuela's health system: when force meets fragility URL Source:\u2026"
-            ]
+            "evidence": []
           },
           "icons": [
             "HUMAN"
@@ -856,9 +202,26 @@
       "name": "Education & Workforce",
       "synth": {
         "bullets": [
-          "Officials reported Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201\u2026",
-          "Field updates show NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News Trump to NBC News on reports of Ayatollah's death: 'We feel that that\u2026",
-          "Separate sources indicate Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser\u2026"
+          "Coverage was limited in this sector during the current cycle.",
+          "No concrete multi-source development met the threshold for a stronger synthesis bullet.",
+          "Watch the next run for confirmed operational or policy updates tied to this sector."
+        ],
+        "drivers": [],
+        "watch": [
+          "Regulatory updates",
+          "Partner statements",
+          "Execution constraints"
+        ]
+      },
+      "items": []
+    },
+    {
+      "name": "Finance & Investment",
+      "synth": {
+        "bullets": [
+          "Officials reported They were placed on your computer when you launched this website.",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
           "FX / Inflation"
@@ -871,397 +234,12 @@
       },
       "items": [
         {
-          "id": "fcd783804ddd",
-          "title": "Venezuelans See Brighter Economic Outlook After US Intervention - Bloomberg.com",
-          "url": "https://www.bloomberg.com/",
-          "publisher": "Bloomberg.com",
-          "publishedAt": "2026-02-26",
-          "sourceTier": "Tier 1",
-          "sector": "Education & Workforce",
-          "snippet": "Current Time 0:00 Loaded: 24.40% [Dubai\u2019s Worst Nightmare Unfolds as Iran Strikes Gulf Neighbors](https://www.bloomberg.com/news/articles/2026-02-28/dubai-s-worst-nightmare-unfolds-as-iran-strikes-gulf-neighbors?srnd=homepage-americas) [Iran\u2019s Missile Barrage Tests Whether US\u2026",
-          "snippet_status": "",
-          "summary_confidence": "Low (Page extraction)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Oil and production",
-                "value": "28",
-                "context": "Conflict With\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "28",
-                "context": "Practically\u2026",
-                "score": 3
-              },
-              {
-                "label": "Macro and finance",
-                "value": "10.48%",
-                "context": "Kobi Wolf/Bloomberg](https://www.bloomberg.com/news/live-blog/2026-02-28/iran-strikes?srnd=homepage-americas) ![Image\u2026",
-                "score": 2
-              },
-              {
-                "label": "Macro and finance",
-                "value": "24.40%",
-                "context": "energy\u2026",
-                "score": 2
-              },
-              {
-                "label": "Macro and finance",
-                "value": "28",
-                "context": "U.S. And Israel War Against Iran](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilMDDfXjLJQc/v0/715x477.jpg) Morteza\u2026",
-                "score": 0
-              },
-              {
-                "label": "Macro and finance",
-                "value": "7",
-                "context": "Images](https://www.bloomberg.com/news/live-blog/2026-02-28/iran-strikes?srnd=homepage-americas) [![Image 6: Explosions\u2026",
-                "score": 0
-              },
-              {
-                "label": "Macro and finance",
-                "value": "28",
-                "context": "AFP/Getty Images](https://www.bloomberg.com/news/live-blog/2026-02-28/iran-strikes?srnd=homepage-americas) [![Image 3:\u2026",
-                "score": 0
-              },
-              {
-                "label": "Macro and finance",
-                "value": "28",
-                "context": "Atta Kenare/AFP/Getty Images](https://www.bloomberg.com/news/live-blog/2026-02-28/iran-strikes?srnd=homepage-americas)\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "Title: Bloomberg - Business News, Stock Markets, Finance, Breaking & World News URL Source: http://www.bloomberg.com/ Markdown Content: Live [Iran Says 201 Killed, US Military Reports No\u2026",
-            "s2": "And Israel War Against Iran](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilMDDfXjLJQc/v0/715x477.jpg) Morteza Nikoubazl/NurPhoto/Getty\u2026",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in education & workforce, with 28 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Conflict With\u2026",
-              "Practically\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "682e563dbf8a",
-          "title": "The voice of students in Venezuela - universitas.no",
-          "url": "https://www.universitas.no/",
-          "publisher": "universitas.no",
-          "publishedAt": "2026-02-23",
-          "sourceTier": "Tier 3",
-          "sector": "Education & Workforce",
-          "snippet": "\u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo. Her spiser studenter billig Reagerer etter avbrytelsen: \u2013 Kunne v\u00e6rt en samtale Sentralbanksjefen m\u00e5tte avbryte studenttale Quiz uke 9 Universitas' store quiz!",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "25.000",
-                "context": "med mandag denne uka. Utvalget foresl\u00e5r at studenter som f\u00e5r barn f\u00e5r 25.000 kroner ekstra. Det er NSO-lederen positiv\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "16",
-                "context": "styresmaktene,\u00bb forteller professor ved universitetet, Steven Witzmann. Barth Eides s\u00f8nn ble praktikant 16 dager siden\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "Kanskje befolkningsproblemet l\u00f8ser seg om studiest\u00f8tta knyttes til G? Krever j\u00f8diske lister 15 dager siden Ada Louise\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "avbrytelsen: \u2013 Kunne v\u00e6rt en samtale Sentralbanksjefen m\u00e5tte avbryte studenttale Quiz uke 9 Universitas' store quiz!\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "uke 9 Universitas' store quiz! Med fasit! Planla fredelig demonstrasjon: Lazar Dini\u0107 (24) risikerer fem \u00e5r i fengsel\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "6",
-                "context": "Bank Reagerer etter avbrutt tale Notiser D\u00f8de personer lever videre p\u00e5 SoMe 6 timer siden Ada Louise Andreassen Meta\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "730",
-                "context": "kunstig intelligens som kan simulere en persons aktivitet p\u00e5 sosiale medier, skriver 730. Med Metas nye KI-teknologi\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "13",
-                "context": "og f\u00e6rre vil utdanne seg til l\u00e6rere? \u00abStudent\u00f8konomi skal ikke v\u00e6re prevensjon\u00bb 13 dager siden Ada Louise Andreassen\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Meta har f\u00e5tt innvilget et patent for kunstig intelligens som kan simulere en persons aktivitet p\u00e5 sosiale medier, skriver 730. Med Metas nye KI-teknologi kan du dele bilder fra livet ditt, selv etter at du d\u00f8r.",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "Universitas Jump to main content Nyhet Kultur Meninger Utenriks Inter S\u00f8k Nyhet Kultur Meninger Utenriks Inter Nyhet Kultur Kommentarer PDF av aviser Utenriks Anmeldelser Debatt Magasinet Baksiden Kontakt oss Annonsere?",
-            "s2": "Om Universitas Universitas \u00abOrd har makt, og Klein misbrukte den makten\u00bb D\u00f8de personer lever videre p\u00e5 SoMe Stor matguide i Oslo",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around education & workforce, with 25.000 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "med mandag denne uka. Utvalget foresl\u00e5r at studenter som f\u00e5r barn f\u00e5r 25.000 kroner ekstra. Det er NSO-lederen positiv\u2026",
-              "styresmaktene,\u00bb forteller professor ved universitetet, Steven Witzmann. Barth Eides s\u00f8nn ble praktikant 16 dager siden\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "f2a997f00994",
-          "title": "Venezuelans rally more openly as they navigate changing political landscape - NBC News",
-          "url": "https://www.nbcnews.com/",
-          "publisher": "NBC News",
-          "publishedAt": "2026-02-11",
-          "sourceTier": "Tier 1",
-          "sector": "Education & Workforce",
-          "snippet": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "FX / Inflation"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [
-            "FX controls"
-          ],
-          "tags": [
-            "Debt/FX"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "19m",
-                "context": "'A large number' of Iranian leaders were killed in strikes Just now 19m ago In a phone call with NBC News, Trump said\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "of Ayatollah's death: 'We feel that that is a correct story' IE 11 is not supported. For an optimal experience visit\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "32",
-                "context": "FOR SUBSCRIBERS How U.S. military efforts in Iran differ from other operations 01:32 FOR SUBSCRIBERS Israel targeted\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "50",
-                "context": "01:32 FOR SUBSCRIBERS Israel targeted Iranian leaders while U.S. hit missile sites 01:50 OpenAI strikes deal with\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "7m",
-                "context": "gather at the 'March 4 Democracy' protest in Washington, D.C. Just now 7m ago Protesters unfurled a giant banner\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "38",
-                "context": "FOR SUBSCRIBERS Senior Iranian figures killed in strikes, Israeli military official says 01:38 FOR SUBSCRIBERS\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "OpenAI strikes deal with Pentagon, hours after Trump cut off talks with Anthropic CEO Sam Altman announced the agreement, which comes after Pete Hegseth said he would label rival Anthropic a national security risk. In a phone call with NBC News, Trump confirmed that \"a large amount of leadership\" had been killed in Iran in today's strikes. In an interview with NBC News, the president said today's military strikes in Iran are \"already a success.\"",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "NBC News - Breaking Headlines and Video Reports on World, U.S. and Local Angles | NBC News Trump to NBC News on reports of Ayatollah's death: 'We feel that that is a correct story' IE 11 is not supported",
-            "s2": "For an optimal experience visit our site on another browser",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in education & workforce, with 15 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "SUBSCRIBERS Protests against U.S. and Israeli strikes on Iran form in NYC 01:15 FOR SUBSCRIBERS Senior Iranian figures\u2026",
-              "'A large number' of Iranian leaders were killed in strikes Just now 19m ago In a phone call with NBC News, Trump said\u2026"
-            ]
-          },
-          "icons": [
-            "FX"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Finance & Investment",
-      "synth": {
-        "bullets": [
-          "Officials reported Associated Press News: Breaking News, Latest Headlines and Videos Menu World SECTIONS Israel-Hamas War Russia-Ukraine War Espa\u00f1ol China Asia Pacific Latin\u2026",
-          "Field updates show Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation\u2026",
-          "Separate sources indicate They were placed on your computer when you launched this website."
-        ],
-        "drivers": [
-          "Debt restructuring",
-          "FX / Inflation",
-          "Oil production/export"
-        ],
-        "watch": [
-          "Regulatory deadlines",
-          "Executive decrees",
-          "Sanctions and licensing language"
-        ]
-      },
-      "items": [
-        {
-          "id": "9047dc697889",
-          "title": "Bondholders should be less excited about Venezuelan debt restructuring - OMFIF",
-          "url": "https://www.omfif.org/",
-          "publisher": "OMFIF",
-          "publishedAt": "2026-02-26",
-          "sourceTier": "Tier 3",
-          "sector": "Finance & Investment",
-          "snippet": "[Register >](https://www.omfif.org/meetings/china-uk-investor-forum-2026-navigating-new-horizons-uk-china-co-operation-in-a-globalised-world/) ### [Commentaries >](https://www.omfif.org/news/ \"Commentaries >\") [![Image 4: Japan\u2019s missing balance\u2026",
-          "snippet_status": "",
-          "summary_confidence": "Low (Page extraction)",
-          "event_types": [
-            "Debt restructuring"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [
-            "Bond restructuring"
-          ],
-          "tags": [
-            "Debt/FX"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Macro and finance",
-                "value": "6",
-                "context": "a blind spot for the financial sector ... [Read more\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "in this one-sided view of state finances ... [Read more >](https://www.omfif.org/2026/02/japans-missing-balance-sheet/)\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "19",
-                "context": "[Forum](https://www.omfif.org/meeting-category/forum/ \"Forum\"), [Paris](https://www.omfif.org/meeting-location/paris/\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "19",
-                "context": "broadcast\") #### [March FOMC meeting: assessment and outlook for US monetary\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "12",
-                "context": "since 2010 and investor ... [Register\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "Statistics ... [Register\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "investor forum\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Discussions around central bank digital currencies typically begin with the intended use case. If the ...",
-          "preview_source": "jina",
-          "language": "en",
-          "insight2": {
-            "s1": "Title: Home - OMFIF URL Source: http://www.omfif.org/ Markdown Content: The next phase of US cryptoassets regulation --------------------------------------------\u2026",
-            "s2": "[Register >](https://www.omfif.org/meetings/march-fomc-meeting-assessment-and-outlook-for-us-monetary-policy/) [![Image 2: European sovereign, supranational and agency forum\u2026",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 6 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "a blind spot for the financial sector ... [Read more\u2026",
-              "in this one-sided view of state finances ... [Read more >](https://www.omfif.org/2026/02/japans-missing-balance-sheet/)\u2026"
-            ]
-          },
-          "icons": [
-            "FX"
-          ]
-        },
-        {
           "id": "0845d51e0693",
           "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
           "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
           "publisher": "bing.com",
           "publishedAt": "2026-02-26",
+          "sourcePublishedAt": "2026-02-26",
           "sourceTier": "Tier 3",
           "sector": "Finance & Investment",
           "snippet": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
@@ -1327,9 +305,9 @@
               }
             ]
           },
-          "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan goods while facilitating reciprocal African investment in Venezuela. The visit emphasized creating a comprehensive framework for trade that extends beyond oil and gas, promoting manufactured goods, services and skills exchange.",
+          "preview": "Request blocked. We can't connect to the server for this app or website at this time.",
           "preview_source": "jina",
-          "language": "es",
+          "language": "en",
           "insight2": {
             "s1": "They were placed on your computer when you launched this website",
             "s2": "You can change your cookie settings through your browser",
@@ -1343,95 +321,6 @@
           "icons": [
             "FX"
           ]
-        },
-        {
-          "id": "a0401771fd98",
-          "title": "Venezuela\u2019s acting president signs oil industry overhaul, easing state control to lure investors - AP News",
-          "url": "https://apnews.com/",
-          "publisher": "AP News",
-          "publishedAt": "2026-01-30",
-          "sourceTier": "Tier 1",
-          "sector": "Finance & Investment",
-          "snippet": "Read the latest headlines, breaking news, and videos at APNews.com, the definitive source for independent journalism from every corner of the globe.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export",
-            "FX / Inflation"
-          ],
-          "sentiment": "Positive",
-          "materiality": 3,
-          "risk_score": 27,
-          "entities": [
-            "FX controls"
-          ],
-          "tags": [
-            "Energy",
-            "Debt/FX"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "25",
-                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "and Thunder as Dort is ejected after fouling Jokic Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "30",
-                "context": "Transportation Abortion LGBTQ+ Notable Deaths TOP STORIES Attorney general announces indictment against 30 more people\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "86",
-                "context": "behind dozens of hits of the 1960s and '70s, dies at age 86 Actor Tessa Thompson, Sen. Adam Schiff and more sound off\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "en",
-          "insight2": {
-            "s1": "Associated Press News: Breaking News, Latest Headlines and Videos Menu World SECTIONS Israel-Hamas War Russia-Ukraine War Espa\u00f1ol China Asia Pacific Latin America Europe Africa TOP STORIES LIVE Israeli officials say\u2026",
-            "s2": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 25 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
-            ]
-          },
-          "icons": [
-            "FX",
-            "NEW"
-          ]
         }
       ]
     },
@@ -1439,13 +328,11 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza,\u2026",
-          "Field updates show El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero.",
-          "Separate sources indicate Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto\u2026"
+          "Officials reported Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source:\u2026",
+          "Field updates show Title: Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026.",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
-        "drivers": [
-          "FX / Inflation"
-        ],
+        "drivers": [],
         "watch": [
           "Regulatory deadlines",
           "Executive decrees",
@@ -1459,6 +346,7 @@
           "url": "https://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
           "publisher": "elpitazo.net",
           "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
           "sourceTier": "Tier 2",
           "sector": "Cross-cutting / Policy / Risk",
           "snippet": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
@@ -1475,7 +363,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -1483,7 +371,13 @@
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
+                "context": "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "8",
+                "context": "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026",
                 "score": 0
               },
               {
@@ -1500,88 +394,44 @@
               },
               {
                 "label": "Policy or market figure",
-                "value": "48",
-                "context": "Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026 Un\u2026",
+                "value": "8",
+                "context": "Andes](https://elpitazo.net/category/regiones/los-andes/) * [Guayana](https://elpitazo.net/category/regiones/guayana/)\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/)\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "8",
-                "context": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en",
+                "context": "la mayor de 10 a\u00f1os, **muriendo mientras intentaba socorrer a la de 8 a\u00f1os**. Ambos fueron hallados sin vida entre los\u2026",
                 "score": 0
-              }
-            ]
-          },
-          "preview": "",
-          "preview_source": "none",
-          "language": "es",
-          "insight2": {
-            "s1": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia",
-            "s2": "El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "de 48 a\u00f1os, quien era pastor\u2026 Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero,\u2026",
-              "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026"
-            ]
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "00a433b0fcae",
-          "title": "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb",
-          "url": "https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "FX / Inflation"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
+              },
               {
                 "label": "Policy or market figure",
-                "value": "27",
-                "context": "que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X,\u2026",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
                 "score": 0
               }
             ]
           },
-          "preview": "Roc\u00edo Fern\u00e1ndez, capitana del Ej\u00e9rcito Bolivariano y perteneciente al pueblo originario wayuu, y Jes\u00fas Sifontes, teniente de corbeta de la Armada, est\u00e1n entre los excarcelados. Para este s\u00e1bado, familiares, activistas y organizaciones no gubernamentales est\u00e1n convocando a una vigilia en las adyacencias de El Helicoide para exigir la liberaci\u00f3n de todos los presos pol\u00edticos",
+          "preview": "Harold Castillo, de 48 a\u00f1os, quien era pastor evang\u00e9lico, intent\u00f3 salvar a sus dos hijas menores de edad cuando se percat\u00f3 de que las llamas consum\u00edan el inmueble. Una sola sobrevivi\u00f3 y permanece en cuidados intensivos",
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero",
-            "s2": "En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around fx / inflation, with 27 as a measurable reference point for scenario tracking.",
+            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
+            "s2": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 28 de febrero de 2026 ![Image\u2026",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X,\u2026"
+              "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
+              "Search [](http://elpitazo.net/sin-categoria/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/#) [sin\u2026"
             ]
           },
-          "icons": [
-            "FX",
-            "NEW"
-          ]
+          "icons": []
         },
         {
           "id": "3a89dd46f7a3",
@@ -1589,6 +439,7 @@
           "url": "https://elpitazo.net/regiones/falla-de-una-aeronave-detuvo-temporalmente-los-aterrizajes-en-el-aeropuerto-de-maiquetia/",
           "publisher": "elpitazo.net",
           "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
           "sourceTier": "Tier 2",
           "sector": "Cross-cutting / Policy / Risk",
           "snippet": "Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda, lo que oblig\u00f3 a suspender temporalmente los aterrizajes hasta retirar el avi\u00f3n de\u2026",
@@ -1605,15 +456,57 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
                 "label": "Policy or market figure",
+                "value": "27",
+                "context": "a Caracas, esperando que la pista quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "28",
+                "context": "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
                 "value": "24",
                 "context": "una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de febrero de 2026 ![Image\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "[Facebook](https://www.facebook.com/elpitazotv \"Facebook\") Publicidad y Ventas [Suscr\u00edbete a nuestros\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "5",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "Ventas [Suscr\u00edbete a nuestros boletines](https://boletineselpitazo.com/) [![Image 3: El\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "12",
+                "context": "los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026",
                 "score": 0
               }
             ]
@@ -1622,17 +515,16 @@
           "preview_source": "jina",
           "language": "es",
           "insight2": {
-            "s1": "Caracas.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda, lo que oblig\u00f3 a\u2026",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 24 as a measurable reference point for scenario tracking.",
+            "s1": "Title: Falla de una aeronave detuvo temporalmente los aterrizajes en el aeropuerto de Maiquet\u00eda URL Source:\u2026",
+            "s2": "Foto: cortes\u00eda _Caracas_.- Una aeronave present\u00f3 una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el **aeropuerto internacional Sim\u00f3n Bol\u00edvar de Maiquet\u00eda**, lo\u2026",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 27 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "una falla en su tren de aterrizaje la tarde de este viernes, 24 de febrero, mientras intentaba aterrizar en el\u2026"
+              "a Caracas, esperando que la pista quedara libre Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 27 de\u2026",
+              "[Deportes](https://elpitazo.net/category/deportes/) * [Tecnolog\u00eda](https://elpitazo.net/category/tecnologia/) Search\u2026"
             ]
           },
-          "icons": [
-            "NEW"
-          ]
+          "icons": []
         }
       ]
     }

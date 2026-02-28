@@ -27,6 +27,7 @@ import time as _time
 import feedparser
 import requests
 import yaml
+from bs4 import BeautifulSoup
 from dateutil import parser as dateutil_parser
 
 try:
@@ -237,6 +238,45 @@ def _extract_meta_description(html: str) -> str:
     return ""
 
 
+def _extract_source_published_date(html: str) -> str:
+    if not html:
+        return ""
+
+    candidates: list[str] = []
+
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+        meta_keys = {
+            "article:published_time",
+            "og:published_time",
+            "pubdate",
+            "publishdate",
+            "datepublished",
+            "date",
+            "dc.date",
+            "dc.date.issued",
+        }
+        for meta in soup.find_all("meta"):
+            key = (meta.get("property") or meta.get("name") or meta.get("itemprop") or "").strip().lower()
+            content = (meta.get("content") or "").strip()
+            if key in meta_keys and content:
+                candidates.append(content)
+        for time_tag in soup.find_all("time"):
+            datetime_attr = (time_tag.get("datetime") or "").strip()
+            if datetime_attr:
+                candidates.append(datetime_attr)
+    except Exception:  # noqa: BLE001
+        pass
+
+    for candidate in candidates:
+        try:
+            parsed = dateutil_parser.parse(candidate)
+            return parsed.date().isoformat()
+        except Exception:  # noqa: BLE001
+            continue
+    return ""
+
+
 def _extract_first_meaningful_paragraph(html: str) -> str:
     if not html:
         return ""
@@ -315,7 +355,7 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
             break
         link = entry.get("link", "")
         publisher_url = str(entry.get("publisher_url", "") or "").strip()
-        preferred_url = publisher_url or link
+        preferred_url = publisher_url if _is_valid_resource_url(publisher_url) else link
         if not preferred_url:
             continue
         if _is_blocked_extraction_domain(entry, blocked_domains):
@@ -333,9 +373,15 @@ def enrich_entries_with_article_text(entries: list[dict], cfg: dict) -> None:
         if resolved_link and resolved_link != preferred_url:
             entry["link"] = resolved_link
             entry["source_domain"] = _domain(resolved_link) or entry.get("source_domain", "")
-        elif publisher_url:
+        elif publisher_url and _is_valid_resource_url(publisher_url):
             entry["link"] = publisher_url
             entry["source_domain"] = _domain(publisher_url) or entry.get("source_domain", "")
+
+        resolved_domain = _domain(entry.get("link", "") or resolved_link or preferred_url).lower().strip()
+        if resolved_domain and "news.google.com" not in resolved_domain:
+            source_published_at = _extract_source_published_date(html)
+            if source_published_at:
+                entry["source_published_at"] = source_published_at
 
         meta_desc = _extract_meta_description(html)
         cleaned_meta = _clean_snippet(meta_desc, entry.get("title", ""), max_chars=280, min_chars=80)
@@ -812,11 +858,13 @@ def _validate_preview_text(text: str) -> str:
     sentences = _preview_sentence_split(clean)
     if len(sentences) < 2:
         return ""
-    if len(sentences) > 3:
-        clean = " ".join(sentences[:3])
+    if len(sentences) > 2:
+        clean = " ".join(sentences[:2])
     else:
         clean = " ".join(sentences)
-    if len(clean) > 680:
+    if "…" in clean or "..." in clean:
+        return ""
+    if len(clean) > 360:
         return ""
     if _is_google_news_boilerplate(clean):
         return ""
@@ -828,14 +876,14 @@ def _validate_preview_text(text: str) -> str:
 def _detect_content_language(*texts: str) -> str:
     combined = " ".join([_normalize_text_block(text) for text in texts if text]).strip()
     if not combined:
-        return "en"
+        return "other"
     low = combined.lower()
     if re.search(r"[áéíóúñ¿¡]", low):
         return "es"
 
     spanish_markers = {
         " de ", " la ", " el ", " y ", " en ", " para ", " por ", " con ", " una ", " del ",
-        "venezuela", "gobierno", "economía", "petróleo", "inflación", "mercado", "sancciones",
+        "venezuela", "gobierno", "economía", "petróleo", "inflación", "mercado", "sanciones",
     }
     english_markers = {
         " the ", " and ", " in ", " for ", " with ", " from ", " that ", " this ", "venezuela",
@@ -843,7 +891,48 @@ def _detect_content_language(*texts: str) -> str:
     }
     score_es = sum(1 for marker in spanish_markers if marker in f" {low} ")
     score_en = sum(1 for marker in english_markers if marker in f" {low} ")
-    return "es" if score_es > score_en else "en"
+    if score_es == 0 and score_en == 0:
+        return "other"
+    if score_es >= score_en + 1:
+        return "es"
+    if score_en >= score_es + 1:
+        return "en"
+    return "other"
+
+
+def _is_probable_homepage_url(url: str) -> bool:
+    if not url:
+        return True
+    try:
+        parsed = urlparse(url)
+    except Exception:  # noqa: BLE001
+        return True
+
+    path = (parsed.path or "").strip().lower()
+    if path in {"", "/", "/home", "/home/", "/index", "/index/", "/index.html", "/en", "/es"}:
+        return True
+
+    segments = [segment for segment in path.split("/") if segment]
+    if len(segments) <= 1 and not parsed.query:
+        return True
+    return False
+
+
+def _is_valid_resource_url(url: str) -> bool:
+    if not url:
+        return False
+    try:
+        parsed = urlparse(url)
+    except Exception:  # noqa: BLE001
+        return False
+    host = (parsed.netloc or "").lower().strip()
+    if not host:
+        return False
+    if "news.google.com" in host:
+        return False
+    if _is_probable_homepage_url(url):
+        return False
+    return True
 
 
 def _load_preview_cache(latest_payload_path: str) -> dict[str, dict]:
@@ -866,6 +955,8 @@ def _load_preview_cache(latest_payload_path: str) -> dict[str, dict]:
                 continue
             url = str(item.get("url", "") or "").strip()
             if not url:
+                continue
+            if not _is_valid_resource_url(url):
                 continue
             preview = _validate_preview_text(str(item.get("preview", "") or ""))
             if not preview:
@@ -2702,6 +2793,7 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
             "url": str(entry.get("link", "")),
             "publisher": _derive_publisher(entry),
             "publishedAt": published_at,
+            "sourcePublishedAt": str(entry.get("source_published_at", "") or ""),
             "sourceTier": _source_quality_tier(str(entry.get("source_domain", ""))),
             "sector": section,
             "snippet": summary_text,
@@ -2727,6 +2819,10 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
                 )
             },
         }
+        if not _is_valid_resource_url(item.get("url", "")):
+            continue
+        if not item["sourcePublishedAt"] and item.get("publishedAt"):
+            item["sourcePublishedAt"] = str(item.get("publishedAt", ""))
         entry_url = str(entry.get("link", "") or "").strip()
         preview_payload = preview_cache.get(entry_url)
         if not preview_payload:
@@ -2744,7 +2840,11 @@ def run(config_path: str = CONFIG_PATH, feeds_path: str = FEEDS_PATH) -> None:
 
         item["preview"] = preview_payload.get("preview", "")
         item["preview_source"] = preview_payload.get("preview_source", "none")
+        if not item["preview"]:
+            continue
         item["language"] = _detect_content_language(item.get("preview", ""), item.get("title", ""))
+        if item["language"] not in {"en", "es"}:
+            continue
         source_parts = [
             str(entry.get("article_text", "") or "").strip(),
             str(entry.get("meta_description", "") or "").strip(),

@@ -4,7 +4,7 @@
     --me-primary-strong: #0a4eb8;
     --me-accent: #7fccf7;
     --me-accent-2: #3899ec;
-    --me-bg: #f3f8ff;
+    --me-bg: #eaf3ff;
     --me-surface: #ffffff;
     --me-border: #cfe0f4;
     --me-text: #14304d;
@@ -15,6 +15,14 @@
 body {
     background: var(--me-bg);
     color: var(--me-text);
+    font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
 }
 
 .vzla-app {
@@ -120,6 +128,13 @@ body {
     margin-top: 8px;
     color: var(--me-text);
     font-size: 15px;
+}
+
+.item-source-date {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: var(--me-muted);
 }
 
 .macro-value {
