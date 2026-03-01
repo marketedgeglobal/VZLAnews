@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-03-01T05:03:35.875164+00:00",
-  "fetched": 3726,
-  "filtered": 438,
-  "deduplicated": 58,
-  "selected": 58,
-  "diff_new": 37,
+  "run_at": "2026-03-01T05:22:25.208172+00:00",
+  "fetched": 4082,
+  "filtered": 440,
+  "deduplicated": 54,
+  "selected": 54,
+  "diff_new": 31,
   "diff_updated": 0,
-  "diff_dropped": 0,
+  "diff_dropped": 4,
   "trend_summary": {
-    "freq_7d": 46.0,
+    "freq_7d": 44.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
@@ -81,16 +81,16 @@
     },
     "Finance": {
       "health": 7,
-      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Oil production/export, Regulatory reform. Risk pressure is mixed with an average score of 29/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Oil production/export. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Trump has big plans for Venezuela's oil but are they feasible?",
+        "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain",
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Venezuela to Grant More Oil Blocks to Chevron"
+        "Maurel & Prom: Update on Venezuela"
       ],
       "opportunities": [
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Venezuela to Grant More Oil Blocks to Chevron",
-        "Venezuela Suspends 19 Oil Production Contracts"
+        "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain",
+        "Maurel & Prom: Update on Venezuela"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -120,10 +120,10 @@
       "summary": "This week in health, signal flow is concentrated around Security. Risk pressure is mixed with an average score of 38/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
-        "Trump pushes US toward war with Iran as advisers urge focus on economy"
+        "Trump's Iran strike tests MAGA unity ahead of midterms"
       ],
       "opportunities": [
-        "Trump pushes US toward war with Iran as advisers urge focus on economy",
+        "Trump's Iran strike tests MAGA unity ahead of midterms",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
@@ -134,7 +134,7 @@
       ]
     },
     "Governance": {
-      "health": 8,
+      "health": 7,
       "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 25/100. Positive momentum appears in 0 items, while 2 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
@@ -142,9 +142,9 @@
         "Trump's Iran strikes mark his biggest foreign policy gamble"
       ],
       "opportunities": [
+        "Venezuela en transici\u00f3n geopol\u00edtica",
         "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
-        "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
-        "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb"
+        "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -154,7 +154,7 @@
     },
     "Infrastructure": {
       "health": 8,
-      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 24/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 23/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
         "Texas port humming as Trump ramps up Venezuela oil",
@@ -175,10 +175,10 @@
   "timeline_rows": [
     {
       "date": "2026-03-01",
-      "signals_count": 58,
+      "signals_count": 54,
       "sanctions_count": 4,
-      "oil_count": 14,
-      "risk_avg": 29.12
+      "oil_count": 11,
+      "risk_avg": 29.67
     },
     {
       "date": "2026-02-28",

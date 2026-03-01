@@ -253,6 +253,46 @@
         }
     }
 
+    async function loadPdfPubs2025() {
+        try {
+            return await loadJson('data/pdf_publications_2025.json');
+        } catch {
+            return null;
+        }
+    }
+
+    function renderPdfPubsCard(pubs) {
+        const list = (pubs && Array.isArray(pubs.publications)) ? pubs.publications : [];
+        const body = list.length
+            ? list.slice(0, 8).map((publication) => `
+                <div class="pub-row">
+                    <div class="pub-title">
+                        <a href="${esc(publication.url)}" target="_blank" rel="noopener">PDF: ${esc(publication.title)}</a>
+                    </div>
+                    <div class="pub-meta">
+                        ${esc(publication.publisher || 'Source')}
+                        ${publication.publishedAt ? ` · ${esc(formatDisplayDate(publication.publishedAt))}` : ''}
+                        ${publication.sector ? ` · ${esc(publication.sector)}` : ''}
+                    </div>
+                    <div class="pub-abstract">${esc(publication.abstract || '')}</div>
+                </div>
+            `).join('')
+            : '<div class="pub-empty">No open-access Venezuela-focused PDFs detected for 2025 from your current feed set.</div>';
+
+        return `
+            <section class="panel pub-card" id="deep-dive-pubs">
+                <div class="pub-head">
+                    <div>
+                        <h3>Deep-Dive Publications (PDF) – Venezuela (2025)</h3>
+                        <div class="pub-sub">In-depth secondary research: reports, working papers, and studies. Open access only.</div>
+                    </div>
+                    <div class="pub-count">${esc(String((pubs && pubs.count) ?? list.length))} found</div>
+                </div>
+                ${body}
+            </section>
+        `;
+    }
+
     function renderBdOppsCard(bd) {
         const opps = (bd && Array.isArray(bd.opportunities)) ? bd.opportunities : [];
         const rows = opps.length
@@ -290,10 +330,11 @@
         const root = document.getElementById('app-root');
         if (!root) return;
         try {
-            const [latest, macros, imf, bd] = await Promise.all([
+            const [latest, macros, imf, pdfPubs, bd] = await Promise.all([
                 loadJson('data/latest.json'),
                 loadJson('data/macros.json'),
                 loadIMF(),
+                loadPdfPubs2025(),
                 loadBdOpps()
             ]);
             const debugMode = new URLSearchParams(window.location.search).get('debug') === '1';
@@ -322,6 +363,7 @@
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}
+                    ${renderPdfPubsCard(pdfPubs)}
                     ${renderBdOppsCard(bd)}
                     ${debugMode ? renderRejectedDebug(rejectedRuntime, rejectedBuild) : ''}
                 `;

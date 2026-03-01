@@ -372,3 +372,42 @@ a:hover {
     line-height: 1.6;
 }
 .opp-empty { color: var(--me-muted); padding: 6px 0; }
+
+.pub-card { margin-top: 18px; }
+.pub-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.pub-sub { color: var(--me-muted); font-size: 0.95rem; margin-top: 2px; }
+.pub-count {
+    color: var(--me-muted);
+    font-size: 0.9rem;
+    border: 1px solid var(--me-border);
+    border-radius: 999px;
+    padding: 6px 10px;
+    white-space: nowrap;
+}
+.pub-row {
+    padding: 10px 0;
+    border-top: 1px solid var(--me-border);
+}
+.pub-row:first-of-type { border-top: none; }
+.pub-title a {
+    font-weight: 650;
+    text-decoration: none;
+    color: var(--me-primary);
+}
+.pub-title a:hover { color: var(--me-primary-strong); }
+.pub-meta {
+    color: var(--me-muted);
+    font-size: 0.86rem;
+    margin-top: 2px;
+}
+.pub-abstract {
+    margin-top: 6px;
+    line-height: 1.6;
+}
+.pub-empty { color: var(--me-muted); padding: 6px 0; }

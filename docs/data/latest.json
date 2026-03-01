@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-01T05:03:35.875164+00:00",
-  "totalItems": 56,
+  "runAt": "2026-03-01T05:22:25.208172+00:00",
+  "totalItems": 53,
   "sectors": [
     {
       "name": "Extractives & Mining",
@@ -50,7 +50,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -83,8 +83,7 @@
             ]
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -221,7 +220,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -240,7 +239,8 @@
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY"
+            "ENERGY",
+            "NEW"
           ]
         },
         {
@@ -270,7 +270,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -287,8 +287,7 @@
             "evidence": []
           },
           "icons": [
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -317,7 +316,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -335,8 +334,7 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE",
-            "NEW"
+            "TRADE"
           ]
         },
         {
@@ -885,7 +883,7 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters'\u2026",
+          "Officials reported WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning\u2026",
           "Field updates show Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
@@ -900,15 +898,15 @@
       },
       "items": [
         {
-          "id": "f0c58e0d671f",
-          "title": "Trump pushes US toward war with Iran as advisers urge focus on economy",
-          "url": "https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
+          "id": "9dc273902671",
+          "title": "Trump's Iran strike tests MAGA unity ahead of midterms",
+          "url": "https://www.reuters.com/world/us/trumps-iran-strike-tests-maga-unity-ahead-midterms-2026-02-28/",
           "publisher": "reuters.com",
-          "publishedAt": "2026-02-20",
-          "sourcePublishedAt": "2026-02-20",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
           "sourceTier": "Tier 1",
           "sector": "Health & Water",
-          "snippet": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the ...",
+          "snippet": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
@@ -916,9 +914,7 @@
           "materiality": 2,
           "risk_score": 30,
           "entities": [],
-          "tags": [
-            "Elections"
-          ],
+          "tags": [],
           "flags": {
             "risk": false,
             "opportunity": false,
@@ -928,13 +924,13 @@
           "metrics": {
             "numbers": []
           },
-          "preview": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the ...",
+          "preview": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the",
+            "s1": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around health & water decisions.",
             "confidence": "HIGH",
             "evidence": []
           },
@@ -1028,14 +1024,13 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela\u2026",
-          "Field updates show Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to\u2026",
-          "Separate sources indicate Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law."
+          "Officials reported Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's\u2026",
+          "Field updates show They were placed on your computer when you launched this website.",
+          "Separate sources indicate Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest\u2026"
         ],
         "drivers": [
           "FX / Inflation",
-          "Oil production/export",
-          "Regulatory reform"
+          "Oil production/export"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1045,11 +1040,11 @@
       },
       "items": [
         {
-          "id": "a3fe549e46ee",
-          "title": "Trump has big plans for Venezuela's oil but are they feasible?",
-          "url": "https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html",
-          "publisher": "sg.finance.yahoo.com",
-          "publishedAt": "2026-02-15",
+          "id": "1e5e0af76232",
+          "title": "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain",
+          "url": "https://finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html?fr=sycsrp_catchall",
+          "publisher": "finance.yahoo.com",
+          "publishedAt": "2026-02-16",
           "sourcePublishedAt": "2026-02-16",
           "sourceTier": "Tier 3",
           "sector": "Finance & Investment",
@@ -1075,52 +1070,16 @@
           "metrics": {
             "numbers": [
               {
-                "label": "Oil and production",
-                "value": "$4bn",
-                "context": "in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare that to second-placed Saudi Arabia,\u2026",
-                "score": 5
+                "label": "Policy or market figure",
+                "value": "0%",
+                "context": "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+                "score": 2
               },
               {
-                "label": "Oil and production",
-                "value": "$100bn",
-                "context": "Venezuela's opposition says party leader kidnapped hours after being freed Trump seeks $100bn for Venezuela oil, but\u2026",
-                "score": 5
-              },
-              {
-                "label": "Oil and production",
-                "value": "$100bn",
-                "context": "Getty Images] Trump has asked US oil firms to spend at least $100bn (\u00a375bn) on restoring Venezuela's battered\u2026",
-                "score": 5
-              },
-              {
-                "label": "Oil and production",
-                "value": "300 billion",
-                "context": "his plan to ramp up sales can be realised. Officially, Venezuela has 300 billion barrels of oil reserves \u2013 yet in 2023,\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "211.6 million",
-                "context": "billion barrels of oil reserves \u2013 yet in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "7",
-                "context": "his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela has\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "75bn",
-                "context": "Images] Trump has asked US oil firms to spend at least $100bn (\u00a375bn) on restoring Venezuela's battered infrastructure\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "267 billion",
-                "context": "oil, worth about $4bn. Compare that to second-placed Saudi Arabia, which has 267 billion barrels of reserves, but had\u2026",
-                "score": 3
+                "label": "Policy or market figure",
+                "value": "27",
+                "context": "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026",
+                "score": 0
               }
             ]
           },
@@ -1128,13 +1087,13 @@
           "preview_source": "trafilatura",
           "language": "en",
           "insight2": {
-            "s1": "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela has the world's largest oil reserves, but the industry has\u2026",
-            "s2": "Trump now says that he plans to visit the South American country, although no date has been set",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with $4bn as a measurable reference point for scenario tracking.",
+            "s1": "Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 0% as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare that to second-placed Saudi Arabia,\u2026",
-              "Venezuela's opposition says party leader kidnapped hours after being freed Trump seeks $100bn for Venezuela oil, but\u2026"
+              "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+              "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026"
             ]
           },
           "icons": [
@@ -1168,45 +1127,86 @@
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "05",
+                "context": "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "85",
+                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "84",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "92",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "82",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "88",
+                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
+                "score": 0
+              }
+            ]
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment.",
+            "s1": "They were placed on your computer when you launched this website",
+            "s2": "You can change your cookie settings through your browser",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 05 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
+              "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026"
+            ]
           },
           "icons": [
             "FX"
           ]
         },
         {
-          "id": "711b00e3a6a4",
-          "title": "Venezuela Suspends 19 Oil Production Contracts",
-          "url": "https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
+          "id": "454cd2e6560d",
+          "title": "Maurel & Prom: Update on Venezuela",
+          "url": "https://finance.yahoo.com/news/maurel-prom-venezuela-072300797.html",
           "publisher": "finance.yahoo.com",
-          "publishedAt": "2026-02-27",
-          "sourcePublishedAt": "2026-02-27",
+          "publishedAt": "2026-02-15",
+          "sourcePublishedAt": "2026-02-16",
           "sourceTier": "Tier 3",
           "sector": "Finance & Investment",
-          "snippet": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law.",
+          "snippet": "PARIS, February 16, 2026--Regulatory News: Etablissements Maurel & Prom S.A. (\"M&P\", the \"Group\") (Paris:MAU) wishes to provide an update on its activities in Venezuela.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export",
-            "Regulatory reform"
-          ],
-          "sentiment": "Positive",
-          "materiality": 2,
-          "risk_score": 12,
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 1,
+          "risk_score": 15,
           "entities": [],
-          "tags": [
-            "Energy"
-          ],
+          "tags": [],
           "flags": {
             "risk": false,
             "opportunity": false,
@@ -1216,30 +1216,36 @@
           "metrics": {
             "numbers": [
               {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "reviewing foreign participation under a newly amended hydrocarbons law. Venezuela has suspended 19 production-sharing\u2026",
-                "score": 3
+                "label": "Policy or market figure",
+                "value": "0%",
+                "context": "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+                "score": 2
               },
               {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly\u2026",
-                "score": 3
+                "label": "Policy or market figure",
+                "value": "27",
+                "context": "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "16",
+                "context": "PARIS, February 16, 2026--Regulatory News: Etablissements Maurel & Prom S.A. (\"M&P\", the \"Group\") (Paris:MAU) wishes",
+                "score": 0
               }
             ]
           },
-          "preview": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law.",
-          "preview_source": "fallback_summary",
+          "preview": "On 13 February 2026, OFAC issued General License 50 (\"GL 50\") authorising certain international operators to resume oil and gas operations in Venezuela. M&P is not currently included in the list of entities covered by this general license.",
+          "preview_source": "trafilatura",
           "language": "en",
           "insight2": {
-            "s1": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 19 as a measurable reference point for scenario tracking.",
+            "s1": "Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning\u2026",
+            "s2": "(\"M&P\", the \"Group\") (Paris:MAU) wishes to provide an update on its activities in Venezuela",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in finance & investment, with 0% as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "reviewing foreign participation under a newly amended hydrocarbons law. Venezuela has suspended 19 production-sharing\u2026",
-              "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly\u2026"
+              "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
+              "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026"
             ]
           },
           "icons": [
@@ -1257,10 +1263,10 @@
           "Separate sources indicate President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks\u2026"
         ],
         "drivers": [
-          "Oil production/export",
           "Political transition",
           "Regulatory reform",
-          "Sanctions"
+          "Sanctions",
+          "Security"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1410,105 +1416,6 @@
           ]
         },
         {
-          "id": "944028338883",
-          "title": "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
-          "url": "https://www.elnacional.com/2026/02/trump-destaca-relacion-energetica-con-venezuela-y-plan-conjunto-para-refinar-crudo/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Donald Trump afirm\u00f3 que su administraci\u00f3n tiene la intenci\u00f3n de colaborar en la reconstrucci\u00f3n de Venezuela.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
-          "entities": [],
-          "tags": [
-            "Infrastructure",
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "instalaciones estadounidenses para exportarlo globalmente Por Mar\u00eda Valentina Zambrano febrero 27, 2026 9:23 pm Donald\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "23",
-                "context": "instalaciones estadounidenses para exportarlo globalmente Por Mar\u00eda Valentina Zambrano febrero 27, 2026 9:23 pm Donald\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "Reuters: Washington asume manejo directo de los ingresos petroleros de Venezuela febrero 27, 2026 Netflix se retira de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "venezolano en instalaciones estadounidenses para exportarlo globalmente Por Mar\u00eda Valentina Zambrano febrero 27, 2026\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "360.000",
-                "context": "y tan popular entre el pueblo venezolano? Fue muy popular. De hecho, 360.000 barriles de crudo venezolano est\u00e1n ahora\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "Paramount febrero 27, 2026 Delcy Rodr\u00edguez y Shell analizan proyectos gas\u00edferos febrero 26, 2026 Monedas digitales y\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "26",
-                "context": "Monedas digitales y educaci\u00f3n financiera: lo que los ciudadanos deben saber febrero 26, 2026 Lara ser\u00e1 la sede de la\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "56",
-                "context": "ciudadanos deben saber febrero 26, 2026 Lara ser\u00e1 la sede de la 56\u00b0 Asamblea Anual de Consecomercio febrero 26, 2026\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "\u201cY con nuestro nuevo amigo y socio, Venezuela, vamos a hacer muchas otras cosas. Tenemos una excelente relaci\u00f3n con su gobierno\u201d, dijo.",
-          "preview_source": "trafilatura",
-          "language": "es",
-          "insight2": {
-            "s1": "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia\u2026",
-            "s2": "En declaraciones ofrecidas durante un evento en Texas, destac\u00f3 la relaci\u00f3n con las nuevas autoridades venezolanas y la importancia del petr\u00f3leo en ese v\u00ednculo bilateral, describiendo a Venezuela como un \u201cnuevo amigo y\u2026",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions, with 9 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "instalaciones estadounidenses para exportarlo globalmente Por Mar\u00eda Valentina Zambrano febrero 27, 2026 9:23 pm Donald\u2026",
-              "instalaciones estadounidenses para exportarlo globalmente Por Mar\u00eda Valentina Zambrano febrero 27, 2026 9:23 pm Donald\u2026"
-            ]
-          },
-          "icons": [
-            "TRADE",
-            "NEW"
-          ]
-        },
-        {
           "id": "a01ce16af823",
           "title": "Trump touts economy, energy in Texas, mum on his favorite in Republican Senate race",
           "url": "https://www.reuters.com/world/us/trump-tout-economy-energy-texas-ahead-republican-primaries-2026-02-27/",
@@ -1592,6 +1499,18 @@
               },
               {
                 "label": "Policy or market figure",
+                "value": "24",
+                "context": "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
                 "value": "25",
                 "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
                 "score": 0
@@ -1607,18 +1526,6 @@
                 "value": "25",
                 "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
                 "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "24",
-                "context": "York antique store shelf Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "7",
-                "context": "York antique store shelf Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
-                "score": 0
               }
             ]
           },
@@ -1632,7 +1539,7 @@
             "confidence": "HIGH",
             "evidence": [
               "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+              "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026"
             ]
           },
           "icons": [
@@ -1824,6 +1731,52 @@
             "s1": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
             "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "35c7f8557804",
+          "title": "Colombia\u2019s ELN rebels declare a unilateral ceasefire ahead of key congressional elections",
+          "url": "https://apnews.com/article/colombia-eln-ceasefire-gustavo-petro-congressional-elections-c4925ab5f825ce7fdb48550a8a2715ce",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-23",
+          "sourcePublishedAt": "2026-02-23",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Colombia\u2019s largest remaining rebel group has declared a unilateral ceasefire ahead of next month's congressional elections.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Political transition"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Elections",
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Earlier this month, Indigenous Sen. Aida Quilcue was kidnapped while she traveled between two towns in the southwest Cauca region, but was released unharmed a few hours later, as the military deployed troops to rescue her.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "Colombia\u2019s largest remaining rebel group has declared a unilateral ceasefire ahead of next month's congressional elections",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
             "confidence": "HIGH",
             "evidence": []
           },

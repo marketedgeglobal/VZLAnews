@@ -98,6 +98,19 @@ Bing News – AP Venezuela politics - https://www.bing.com/news/search?q=site:ap
 
 
 # ============================
+# PDF / DEEP-DIVE BOOSTER QUERIES
+# ============================
+
+Google News – Venezuela report PDF (2025) - https://news.google.com/rss/search?q=Venezuela+report+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela working paper PDF (2025) - https://news.google.com/rss/search?q=Venezuela+working+paper+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – IMF Venezuela PDF (2025) - https://news.google.com/rss/search?q=site:imf.org+Venezuela+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – World Bank Venezuela PDF (2025) - https://news.google.com/rss/search?q=site:worldbank.org+Venezuela+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – IDB Venezuela PDF (2025) - https://news.google.com/rss/search?q=site:iadb.org+Venezuela+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – CAF Venezuela PDF (2025) - https://news.google.com/rss/search?q=site:caf.com+Venezuela+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+Google News – ReliefWeb Venezuela PDF (2025) - https://news.google.com/rss/search?q=site:reliefweb.int+Venezuela+filetype:pdf+2025&hl=en-US&gl=US&ceid=US:en
+
+
+# ============================
 # SPANISH-LANGUAGE SOURCES
 # ============================
 

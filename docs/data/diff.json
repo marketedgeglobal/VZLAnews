@@ -1,36 +1,30 @@
 {
-  "runAt": "2026-03-01T05:03:35.875164+00:00",
+  "runAt": "2026-03-01T05:22:25.208172+00:00",
   "counts": {
-    "new": 37,
+    "new": 31,
     "updated": 0,
-    "dropped": 0
+    "dropped": 4
   },
   "new": [
-    "url::https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/",
-    "url::https://www.reuters.com/world/americas/rubio-travels-meet-caribbean-leaders-us-squeezes-cuba-venezuela-2026-02-23/",
-    "url::https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
-    "url::https://finance.yahoo.com/news/venezuela-grant-more-oil-blocks-012655616.html",
-    "url::https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
-    "url::https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html",
+    "url::https://www.reuters.com/world/us/trumps-iran-strike-tests-maga-unity-ahead-midterms-2026-02-28/",
+    "url::https://finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html?fr=sycsrp_catchall",
+    "url::https://finance.yahoo.com/news/maurel-prom-venezuela-072300797.html",
+    "url::https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/",
     "url::https://apnews.com/article/maduro-venezuela-criminal-case-9dc08ea33228d05feec7ab3c473dd762",
     "url::https://www.reuters.com/business/media-telecom/brazils-lula-says-maduro-should-be-tried-venezuela-not-abroad-2026-02-20/",
     "url::https://apnews.com/article/venezuela-political-prisoners-release-amnesty-918eda09c041c74ef863a44b83eeab09",
     "url::https://www.reuters.com/business/energy/repsol-is-owed-54-billion-by-venezuela-report-shows-2026-02-19/",
     "url::https://apnews.com/video/venezuelan-president-signs-amnesty-bill-that-could-free-hundreds-detained-for-political-reasons-00028df1c52242ea96ede44a4b9488b0",
+    "url::https://www.elnacional.com/2026/03/venezuela-el-miedo-retrocede-el-poder-calcula-el-mundo-condiciona/",
     "url::https://www.elnacional.com/2026/02/foro-penal-contabiliza-al-menos-ocho-presos-politicos-militares-excarcelados/",
     "url::https://www.elnacional.com/2026/02/en-venezuela-se-han-registrado-36-casos-de-fiebre-amarilla-desde-mediados-de-2025/",
     "url::https://www.elnacional.com/2026/02/las-adversidades-de-un-preso-politico/",
     "url::https://www.elnacional.com/2026/02/el-primer-ministro-abiertamente-gay-en-los-paises-bajos/",
-    "url::https://www.elnacional.com/2026/02/venezuela-sin-autoridad-central-consolidada/",
-    "url::https://www.elnacional.com/2026/02/1766-el-gobernador-jose-solano-y-la-epidemia-de-viruela/",
-    "url::https://www.elnacional.com/2026/02/cesar-chirinos-principe-de-la-marginalidad/",
-    "url::https://www.elnacional.com/2026/02/miradas-al-continente-el-canastillo-de-costura/",
-    "url::https://www.elnacional.com/2026/02/trump-destaca-relacion-energetica-con-venezuela-y-plan-conjunto-para-refinar-crudo/",
     "url::https://elpitazo.net/politica/asamblea-nacional-recibira-postulaciones-para-fiscal-general-y-defensor-del-pueblo-del-2-al-9-de-marzo/",
     "url::https://efectococuyo.com/salud/el-gobierno-reconoce-un-brote-de-fiebre-amarilla-en-venezuela-y-lanza-vacunacion-urgente-en-cuatro-estados/",
     "url::https://efectococuyo.com/politica/comision-parlamentaria-cifra-en-223-las-personas-que-han-salido-de-prision-tras-amnistia-en-venezuela/",
-    "url::https://www.reuters.com/business/energy/guyanas-oil-growth-potential-rises-venezuela-tensions-set-ease-2026-02-17/",
     "url::https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d",
+    "url::https://money.usnews.com/investing/news/articles/2026-02-13/exclusive-venezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say",
     "url::https://apnews.com/article/venezuela-political-prisoners-detained-amnesty-delcy-38494341c7f1fc5c6b3f2936a7830fb8",
     "url::https://www.reuters.com/world/americas/spain-urges-eu-lift-sanctions-venezuelas-interim-president-after-amnesty-bill-2026-02-20/",
     "url::https://apnews.com/article/venezuela-political-prisoners-amnesty-a9ca383178e59bb49e9258b45fd6de07",
@@ -45,5 +39,10 @@
     "url::https://apnews.com/article/bolivia-evo-morales-rodrigo-paz-nicolas-maduro-donald-trump-6cb79d08bc8029e7d4ebbff1a7bfd380"
   ],
   "updated": [],
-  "dropped": []
+  "dropped": [
+    "url::https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
+    "url::https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
+    "url::https://finance.yahoo.com/news/venezuela-grant-more-oil-blocks-012655616.html",
+    "url::https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html"
+  ]
 }
