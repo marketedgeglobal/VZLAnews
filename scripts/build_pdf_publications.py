@@ -3,7 +3,7 @@ import json
 import os
 import re
 import time as _time
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 import feedparser
 import requests
@@ -13,9 +13,9 @@ LATEST_JSON = "docs/data/latest.json"
 FEEDS_TXT = "feeds.txt"
 TODAY = datetime.date.today()
 YEAR_MAX = TODAY.year
-YEAR_MIN = TODAY.year - 1
-TARGET_YEARS = {YEAR_MIN, YEAR_MAX}
-OUT_JSON = "docs/data/pdf_publications_2025_2026.json"
+YEAR_MIN = TODAY.year - 2
+TARGET_YEARS = set(range(YEAR_MIN, YEAR_MAX + 1))
+OUT_JSON = "docs/data/pdf_publications_recent.json"
 
 UA = "Mozilla/5.0 (compatible; MarketEdgeVZLAnews/1.0; +https://marketedgeglobal.github.io/VZLAnews/)"
 
@@ -24,6 +24,11 @@ ALLOWED_DOMAINS = [
     "worldbank.org",
     "iadb.org",
     "caf.com",
+    "undp.org",
+    "cepal.org",
+    "eclac.org",
+    "fao.org",
+    "ifpri.org",
     "reliefweb.int",
     "ochaonline",
     "who.int",
@@ -38,6 +43,14 @@ ALLOWED_DOMAINS = [
     "ssrn.com",
     "doi.org",
     "openalex.org",
+    "brookings.edu",
+    "csis.org",
+    "wilsoncenter.org",
+    "chathamhouse.org",
+    "carnegieendowment.org",
+    "iisd.org",
+    "wri.org",
+    "odi.org",
 ]
 
 PAYWALL_HINTS = [
@@ -70,6 +83,67 @@ RESEARCH_HINTS = [
     "technical note",
     "discussion paper",
     "research paper",
+]
+
+SECTOR_HINTS = [
+    "extractives",
+    "oil",
+    "gas",
+    "mining",
+    "agriculture",
+    "food security",
+    "health",
+    "public health",
+    "geopolitics",
+    "governance",
+    "business environment",
+    "private sector",
+    "economic growth",
+    "macroeconomic",
+    "inflation",
+    "environment",
+    "sustainability",
+    "climate",
+    "energy transition",
+    "infrastructure",
+    "water",
+]
+
+PUBLICATION_FEED_URLS = [
+    "https://news.google.com/rss/search?q=Venezuela+filetype:pdf+report+OR+publication+OR+working+paper&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:worldbank.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:iadb.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:undp.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:imf.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:un.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:brookings.edu+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:csis.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:wilsoncenter.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=site:chathamhouse.org+Venezuela+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+extractives+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+agriculture+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+health+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+geopolitics+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+business+environment+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+economic+growth+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=Venezuela+environment+sustainability+filetype:pdf+report&hl=en-US&gl=US&ceid=US:en",
+    "https://www.bing.com/news/search?q=site:worldbank.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:iadb.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:undp.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:imf.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:un.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:cepal.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:brookings.edu+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:csis.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:wilsoncenter.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=site:chathamhouse.org+Venezuela+report&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+extractives+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+agriculture+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+health+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+geopolitics+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+business+environment+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+economic+growth+report+pdf&format=rss",
+    "https://www.bing.com/news/search?q=Venezuela+environment+sustainability+report+pdf&format=rss",
 ]
 
 VZ_KEYS = [
@@ -109,6 +183,11 @@ def vz_relevant(text: str) -> bool:
     return any(key in low for key in VZ_KEYS)
 
 
+def topic_relevant(text: str) -> bool:
+    low = (text or "").lower()
+    return any(key in low for key in SECTOR_HINTS)
+
+
 def looks_like_research(text: str) -> bool:
     low = (text or "").lower()
     return any(key in low for key in RESEARCH_HINTS)
@@ -133,9 +212,10 @@ def infer_year(item: dict) -> int | None:
             str(item.get("source_url") or ""),
         ]
     )
-    match_text = re.search(r"\b(20\d{2})\b", haystack)
-    if match_text:
-        return int(match_text.group(1))
+    years = [int(found) for found in re.findall(r"\b(20\d{2})\b", haystack)]
+    in_range = [year for year in years if YEAR_MIN <= year <= YEAR_MAX]
+    if in_range:
+        return max(in_range)
 
     return None
 
@@ -163,7 +243,32 @@ def is_pdf_url(url: str) -> bool:
     return url.lower().split("?")[0].endswith(".pdf")
 
 
+def unwrap_search_redirect(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url)
+    except Exception:
+        return url
+
+    domain = (parsed.netloc or "").lower()
+    query = parse_qs(parsed.query or "")
+
+    if "bing.com" in domain and parsed.path.startswith("/news/apiclick"):
+        target = (query.get("url") or [""])[0]
+        if target:
+            return unquote(target)
+
+    if "news.google.com" in domain and "url" in query:
+        target = (query.get("url") or [""])[0]
+        if target:
+            return unquote(target)
+
+    return url
+
+
 def resolve_final_url(url: str) -> str:
+    url = unwrap_search_redirect(url)
     if not url:
         return ""
     try:
@@ -210,7 +315,18 @@ def load_feed_urls(path: str = FEEDS_TXT) -> list[str]:
                 url = line
             if url.startswith("http"):
                 urls.append(url)
-    return urls
+    for publication_url in PUBLICATION_FEED_URLS:
+        urls.append(publication_url)
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for url in urls:
+        key = url.strip()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(key)
+    return deduped
 
 
 def _parse_entry_datetime(entry) -> datetime.datetime | None:
@@ -238,7 +354,7 @@ def _parse_entry_datetime(entry) -> datetime.datetime | None:
 def _extract_best_link(entry) -> str:
     direct = str(entry.get("link") or "").strip()
     if direct:
-        return direct
+        return unwrap_search_redirect(direct)
     links = entry.get("links") or []
     if isinstance(links, list):
         for link in links:
@@ -246,7 +362,7 @@ def _extract_best_link(entry) -> str:
                 continue
             href = str(link.get("href") or "").strip()
             if href:
-                return href
+                return unwrap_search_redirect(href)
     return ""
 
 
@@ -393,16 +509,16 @@ def main() -> None:
                 " ".join(item.get("categories") or []),
             ]
         )
-        if not vz_relevant(haystack):
+        relevance_haystack = " ".join([haystack, str(item.get("source_url") or "")])
+        if not vz_relevant(relevance_haystack):
             continue
 
         year = infer_year(item)
         if year not in TARGET_YEARS and not mentions_target_years(item, TARGET_YEARS):
             continue
 
-        if not looks_like_research(haystack):
-            # Keep only if domain is strongly institutional and it resolves to PDF.
-            pass
+        if not (looks_like_research(haystack) or topic_relevant(haystack)):
+            continue
 
         final_url = resolve_final_url(url)
         if not final_url:
@@ -448,10 +564,11 @@ def main() -> None:
 
     publications.sort(key=lambda publication: str(publication.get("publishedAt") or ""), reverse=True)
 
+    year_range_sorted = sorted(TARGET_YEARS)
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "yearRange": [YEAR_MIN, YEAR_MAX],
-        "yearLabel": f"{YEAR_MIN}-{YEAR_MAX}",
+        "yearRange": year_range_sorted,
+        "yearLabel": f"{year_range_sorted[0]}-{year_range_sorted[-1]}",
         "count": len(publications),
         "publications": publications[:25],
     }
