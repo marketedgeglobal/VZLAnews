@@ -1,4 +1,6 @@
 (function () {
+    const SHOW_PUBLICATIONS_CARD = false;
+
     async function loadJson(path) {
         const response = await fetch(path, { cache: 'no-store' });
         if (!response.ok) throw new Error('Failed to load ' + path);
@@ -288,7 +290,6 @@
                 <div class="exec-head">
                     <div>
                         <h3>${esc((brief && brief.title) || 'Executive Rapid Brief')}</h3>
-                        <div class="exec-sub">Snappy takeaways that state what happened and why it matters.</div>
                     </div>
                     <div class="exec-date">${esc(date)}</div>
                 </div>
@@ -375,7 +376,7 @@
                 loadJson('data/latest.json'),
                 loadJson('data/macros.json'),
                 loadIMF(),
-                loadPdfPubs2Y(),
+                SHOW_PUBLICATIONS_CARD ? loadPdfPubs2Y() : Promise.resolve(null),
                 loadBdOpps(),
                 loadExecBrief()
             ]);
@@ -406,7 +407,7 @@
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}
-                    ${renderPdfPubsCard(pdfPubs)}
+                    ${SHOW_PUBLICATIONS_CARD ? renderPdfPubsCard(pdfPubs) : ''}
                     ${renderBdOppsCard(bd)}
                     ${debugMode ? renderRejectedDebug(rejectedRuntime, rejectedBuild) : ''}
                 `;

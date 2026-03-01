@@ -290,6 +290,8 @@ def build_sentence(item, theme):
     happened = core_text.rstrip(". ")
     if len(happened) > 210:
         happened = happened[:208].rsplit(" ", 1)[0].rstrip(".,;: ")
+    # Remove date suffix like " through YYYY-MM-DD" to streamline prose
+    happened = re.sub(r"\s+through\s+\d{4}-\d{2}-\d{2}$", "", happened)
 
     so_what = SO_WHAT.get(theme, "This matters for risk and opportunity in Venezuela.")
     sentence = f"{actor_prefix}{happened}. {so_what}"
