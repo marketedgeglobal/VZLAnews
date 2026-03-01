@@ -192,7 +192,7 @@ class TestFilterEntries:
             published=NOW - timedelta(days=1),
         )
         result = cr.filter_entries([geo], cfg, NOW)
-        assert len(result) == 1
+        assert result == []
 
     def test_requires_venezuela_in_title_for_news_cards(self):
         cfg = minimal_cfg()

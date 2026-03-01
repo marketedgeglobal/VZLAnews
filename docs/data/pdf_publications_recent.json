@@ -1,60 +1,11 @@
 {
-  "asOf": "2026-03-01T19:42:11.530118+00:00",
+  "asOf": "2026-03-01T19:48:14.758595+00:00",
   "yearRange": [
     2024,
     2025,
     2026
   ],
   "yearLabel": "2024-2026",
-  "count": 4,
-  "publications": [
-    {
-      "id": "",
-      "title": "Venezuela: Governance and the Law",
-      "url": "https://www.worldbank.org/en/publication/wdr2017",
-      "pageUrl": "https://www.worldbank.org/en/publication/wdr2017",
-      "pdfUrl": "https://openknowledge.worldbank.org/bitstream/handle/10986/25880/9781464809507.pdf",
-      "publisher": "www.worldbank.org",
-      "publishedAt": "2026-02-18",
-      "year": 2026,
-      "sector": "",
-      "abstract": "Ineffective policies can persist, while potentially effective policies are often not adopted. The World Development Report 2017: Governance and the Law explores why some policies fail to achieve . Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the www.worldbank.org publication page."
-    },
-    {
-      "id": "",
-      "title": "Venezuela: Human Development Report 2025",
-      "url": "https://hdr.undp.org/content/human-development-report-2025",
-      "pageUrl": "https://hdr.undp.org/content/human-development-report-2025",
-      "pdfUrl": "https://hdr.undp.org/system/files/documents/global-report-document/hdr2025reporten.pdf",
-      "publisher": "hdr.undp.org",
-      "publishedAt": "2025-05-05",
-      "year": 2025,
-      "sector": "",
-      "abstract": "Artificial intelligence (AI) has broken into a dizzying gallop. While AI feats grab headlines, they privilege technology in a make-believe vacuum, obscuring what really matters: people’s choices. Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the hdr.undp.org publication page."
-    },
-    {
-      "id": "",
-      "title": "Venezuela: From Measurement to Action",
-      "url": "https://www.imf.org/external/pubs/ft/fandd/2000/06/kauf.htm",
-      "pageUrl": "https://www.imf.org/external/pubs/ft/fandd/2000/06/kauf.htm",
-      "pdfUrl": "https://www.imf.org/external/pubs/ft/fandd/2000/06/pdf/kauf.pdf",
-      "publisher": "www.imf.org",
-      "publishedAt": "2024-12-12",
-      "year": 2024,
-      "sector": "",
-      "abstract": "Policymakers generally rely on anecdotal evidence to assess the quality of governance, but this information is often misleading and incomplete. How can governments and civil society best encourage . Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the www.imf.org publication page."
-    },
-    {
-      "id": "",
-      "title": "Venezuela: F&D Magazine",
-      "url": "https://www.imf.org/en/publications/fandd/issues/2018/06/inside-the-world-of-global-tax-havens-and-offshore-banking-damgaard",
-      "pageUrl": "https://www.imf.org/en/publications/fandd/issues/2018/06/inside-the-world-of-global-tax-havens-and-offshore-banking-damgaard",
-      "pdfUrl": "https://www.imf.org/-/media/files/publications/fandd/article/2018/june/ar/damgaard.pdf?%5Bobject%20Object%5D",
-      "publisher": "www.imf.org",
-      "publishedAt": "2024-09-22",
-      "year": 2024,
-      "sector": "",
-      "abstract": "New research reveals that multinational firms have invested $12 trillion globally in empty corporate shells, and citizens of some financially unstable and oil-producing countries hold a . The publication synthesizes evidence intended to support planning decisions in the Venezuelan operating environment as of 2024. Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the www.imf.org publication page."
-    }
-  ]
+  "count": 0,
+  "publications": []
 }
