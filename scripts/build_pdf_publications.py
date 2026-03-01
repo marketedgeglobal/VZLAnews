@@ -627,9 +627,6 @@ def main() -> None:
         if year not in TARGET_YEARS and not mentions_target_years(item, TARGET_YEARS):
             continue
 
-        if not (looks_like_research(haystack) or topic_relevant(haystack)):
-            continue
-
         final_url = resolve_final_url(url)
         if not final_url:
             continue
