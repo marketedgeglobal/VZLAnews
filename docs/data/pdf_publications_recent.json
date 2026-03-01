@@ -1,11 +1,48 @@
 {
-  "asOf": "2026-03-01T19:54:42.638211+00:00",
+  "asOf": "2026-03-01T20:19:53.220084+00:00",
   "yearRange": [
     2024,
     2025,
     2026
   ],
   "yearLabel": "2024-2026",
-  "count": 0,
-  "publications": []
+  "count": 3,
+  "publications": [
+    {
+      "id": "",
+      "title": "Human rights violations escalate in Venezuela following disputed presidential election",
+      "url": "https://news.un.org/en/story/2024/10/1155736",
+      "pageUrl": "https://news.un.org/en/story/2024/10/1155736",
+      "pdfUrl": "https://documents.un.org/doc/undoc/ltd/g24/184/07/pdf/g2418407.pdf",
+      "publisher": "news.un.org",
+      "publishedAt": "2024-10-14",
+      "year": 2024,
+      "sector": "",
+      "abstract": "The Mission’s findings reveal a coordinated effort to target perceived political opponents. Abuses “were committed as part of a coordinated plan to silence, discourage and quash opposition to the . Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the news.un.org publication page."
+    },
+    {
+      "id": "",
+      "title": "Venezuela and the Struggle Between Autocracy and Democracy",
+      "url": "https://www.wilsoncenter.org/publication/venezuela-and-struggle-between-autocracy-and-democracy",
+      "pageUrl": "https://www.wilsoncenter.org/publication/venezuela-and-struggle-between-autocracy-and-democracy",
+      "pdfUrl": "https://www.wilsoncenter.org/sites/default/files/media/uploads/documents/Venezuela%20Desk_4.pdf",
+      "publisher": "www.wilsoncenter.org",
+      "publishedAt": "2024-08-06",
+      "year": 2024,
+      "sector": "",
+      "abstract": "In a new series of policy briefs, the “Venezuela Desk,” the Wilson Center’s Latin America Program examines Venezuela’s flawed July 28 presidential election, the government’s response to post-election . The publication synthesizes evidence intended to support planning decisions in the Venezuelan operating environment as of 2024. Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the www.wilsoncenter.org publication page."
+    },
+    {
+      "id": "",
+      "title": "Venezuela’s Transition to Democracy, Still in Reach",
+      "url": "https://www.wilsoncenter.org/publication/venezuelas-transition-democracy-still-reach",
+      "pageUrl": "https://www.wilsoncenter.org/publication/venezuelas-transition-democracy-still-reach",
+      "pdfUrl": "https://www.wilsoncenter.org/sites/default/files/media/uploads/documents/Venezuela%20Desk_3-1.pdf",
+      "publisher": "www.wilsoncenter.org",
+      "publishedAt": "2024-07-31",
+      "year": 2024,
+      "sector": "",
+      "abstract": "In a new series of policy briefs, the “Venezuela Desk,” the Wilson Center’s Latin America Program examines Venezuela’s flawed July 28 presidential election, the government’s response to post-election . The publication synthesizes evidence intended to support planning decisions in the Venezuelan operating environment as of 2024. Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the www.wilsoncenter.org publication page."
+    }
+  ]
 }

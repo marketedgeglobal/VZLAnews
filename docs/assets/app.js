@@ -11,6 +11,15 @@
         ));
     }
 
+    function host(rawUrl) {
+        if (!rawUrl) return '';
+        try {
+            return new URL(rawUrl).host.toLowerCase();
+        } catch {
+            return '';
+        }
+    }
+
     function detectLanguage(item) {
         const declared = (item && item.language ? String(item.language) : '').toLowerCase();
         return (declared === 'es' || declared === 'en') ? declared : 'other';
@@ -270,10 +279,24 @@
     }
 
     function renderExecBriefCard(brief) {
-        const bullets = (brief && Array.isArray(brief.bullets)) ? brief.bullets.slice(0, 5) : [];
-        const body = bullets.length
-            ? `<ul class="exec-bullets">${bullets.map((text) => `<li>${esc(text)}</li>`).join('')}</ul>`
-            : '<div class="exec-empty">No executive summary available today.</div>';
+        const rows = (brief && Array.isArray(brief.rows)) ? brief.rows.slice(0, 6) : [];
+        const body = rows.length
+            ? `<div class="exec-rows">
+                ${rows.map((row) => `
+                    <div class="exec-row">
+                        <div class="exec-subheading">${esc(row.subheading || '')}</div>
+                        <div class="exec-sentence">${esc(row.sentence || '')}</div>
+                        <div class="exec-links">
+                            ${((row.sources || []).slice(0, 2).map((source) => {
+                                const url = source && source.url ? String(source.url) : '';
+                                if (!url) return '';
+                                return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(host(url) || 'source')}</a>`;
+                            }).filter(Boolean).join(' · '))}
+                        </div>
+                    </div>
+                `).join('')}
+              </div>`
+            : '<div class="exec-empty">No executive brief available today.</div>';
         const date = (brief && brief.asOf) ? String(brief.asOf).slice(0, 10) : '';
 
         return `
@@ -281,7 +304,7 @@
                 <div class="exec-head">
                     <div>
                         <h3>${esc((brief && brief.title) || 'Executive Rapid Brief')}</h3>
-                        <div class="exec-sub">Copy-ready synthesis from today’s Venezuela news and deep-dive publications.</div>
+                        <div class="exec-sub">Snappy takeaways that state what happened and why it matters.</div>
                     </div>
                     <div class="exec-date">${esc(date)}</div>
                 </div>
@@ -330,7 +353,7 @@
     function renderBdOppsCard(bd) {
         const opps = (bd && Array.isArray(bd.opportunities)) ? bd.opportunities : [];
         const rows = opps.length
-            ? opps.slice(0, 10).map((o) => `
+            ? opps.slice(0, 5).map((o) => `
                 <div class="opp-row">
                     <div class="opp-title">
                         <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a>
@@ -394,8 +417,8 @@
                 const rejectedRuntime = [];
                 const sectorsHtml = renderSectors(latest, activeLanguage, rejectedRuntime);
                 root.innerHTML = `
-                    ${renderLanguageSwitcher(activeLanguage)}
                     ${renderExecBriefCard(execBrief)}
+                    ${renderLanguageSwitcher(activeLanguage)}
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}

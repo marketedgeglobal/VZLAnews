@@ -1,8 +1,8 @@
-name: Build Executive Rapid Brief
+name: Build Executive Rapid Brief (Snappy)
 
 on:
   schedule:
-    - cron: "25 11 * * *"
+    - cron: "30 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,12 +20,12 @@ jobs:
 
       - name: Build executive rapid brief JSON
         run: |
-          python scripts/build_exec_brief.py
+          python scripts/build_exec_brief_snappy.py
 
       - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add docs/data/exec_brief.json
-          git commit -m "chore(data): update executive rapid brief" || exit 0
+          git commit -m "chore(data): update exec rapid brief" || exit 0
           git push

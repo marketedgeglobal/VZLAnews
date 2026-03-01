@@ -418,7 +418,7 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .exec-sub {
     color: var(--me-muted);
@@ -433,11 +433,22 @@ a:hover {
     padding: 6px 10px;
     white-space: nowrap;
 }
-.exec-bullets {
-    margin: 8px 0 0 18px;
+.exec-rows { display: flex; flex-direction: column; gap: 10px; }
+.exec-row {
+    padding-top: 10px;
+    border-top: 1px solid var(--me-border);
 }
-.exec-bullets li {
-    margin: 8px 0;
-    line-height: 1.65;
+.exec-row:first-child { border-top: none; padding-top: 0; }
+.exec-subheading { font-weight: 750; font-size: 1.02rem; }
+.exec-sentence { margin-top: 4px; line-height: 1.6; }
+.exec-links {
+    margin-top: 4px;
+    font-size: 0.86rem;
+    color: var(--me-muted);
 }
+.exec-links a {
+    color: var(--me-primary);
+    text-decoration: none;
+}
+.exec-links a:hover { color: var(--me-primary-strong); }
 .exec-empty { color: var(--me-muted); }

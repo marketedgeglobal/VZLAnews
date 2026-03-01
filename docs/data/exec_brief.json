@@ -1,11 +1,87 @@
 {
-  "asOf": "2026-03-01T20:05:09.286717Z",
+  "asOf": "2026-03-01T20:18:55.158643Z",
   "title": "Executive Rapid Brief",
-  "bullets": [
-    "Cross-cutting / Policy / Risk coverage across 7 items points to combined pressure around regulatory reform and policy, with counterpart decisions likely to hinge on near-term policy execution. Signals remain active in reporting through 2026-02-26, indicating the trend set is still developing rather than resolved.",
-    "Extractives & Mining coverage across 3 items points to combined pressure around oil production/export and energy, with counterpart decisions likely to hinge on near-term policy execution. Signals remain active in reporting through 2026-02-23, indicating the trend set is still developing rather than resolved.",
-    "Finance & Investment coverage across 1 item points to combined pressure around humanitarian crisis and fx / inflation, with counterpart decisions likely to hinge on near-term policy execution. Signals remain active in reporting through 2026-02-19, indicating the trend set is still developing rather than resolved.",
-    "Food & Agriculture coverage across 1 item points to combined pressure around sanctions and humanitarian crisis, with counterpart decisions likely to hinge on near-term policy execution. Signals remain active in reporting through 2026-02-01, indicating the trend set is still developing rather than resolved.",
-    "Deep-dive research to anchor decisions: No new open-access Venezuela-focused PDF publication was detected in the current source set."
+  "rows": [
+    {
+      "theme": "sanctions",
+      "subheading": "Compliance risk moves",
+      "sentence": "Recent reporting across 3 items in Food & Agriculture, Cross-cutting / Policy / Risk points to shifts in sanctions and humanitarian crisis through 2026-02-20; this changes counterparty risk and deal feasibility for corporates and donors.",
+      "sources": [
+        {
+          "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
+          "url": "https://venezuelanalysis.com/opinion/unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-venezuela-challenges-and-prospects-for-zero-hunger-in-a-transforming-petrostate/"
+        },
+        {
+          "title": "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
+          "url": "https://www.reuters.com/world/americas/spain-urges-eu-lift-sanctions-venezuelas-interim-president-after-amnesty-bill-2026-02-20/"
+        }
+      ]
+    },
+    {
+      "theme": "politics",
+      "subheading": "Governance signal spikes",
+      "sentence": "Recent reporting across 6 items in Cross-cutting / Policy / Risk, Extractives & Mining points to shifts in policy and regulatory reform through 2026-02-27; this affects policy continuity, stakeholder alignment, and implementation risk.",
+      "sources": [
+        {
+          "title": "Venezuela attorney general resigns, then lands acting ombudsman role in surprise move",
+          "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d"
+        },
+        {
+          "title": "Venezuela says more than 3,200 people have been fully released since amnesty law took effect",
+          "url": "https://apnews.com/article/venezuela-political-prisoners-detained-amnesty-delcy-38494341c7f1fc5c6b3f2936a7830fb8"
+        }
+      ]
+    },
+    {
+      "theme": "macro",
+      "subheading": "Fiscal reality shows through",
+      "sentence": "Recent reporting across 5 items in Cross-cutting / Policy / Risk, Finance & Investment points to shifts in policy and humanitarian crisis through 2026-03-01; this shifts assumptions on stability, pricing, and operating conditions.",
+      "sources": [
+        {
+          "title": "María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”",
+          "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/"
+        },
+        {
+          "title": "IMF says Venezuela's economic, humanitarian situation is 'quite fragile'",
+          "url": "https://www.reuters.com/world/americas/imf-says-venezuelas-economic-humanitarian-situation-is-quite-fragile-2026-02-19/"
+        }
+      ]
+    },
+    {
+      "theme": "investment",
+      "subheading": "Procurement and funding pipeline",
+      "sentence": "Recent reporting across 2 items in Cross-cutting / Policy / Risk, Finance & Investment points to shifts in policy and fx / inflation through 2026-03-01; this creates near-term entry points for advisory, partnerships, and bids.",
+      "sources": [
+        {
+          "title": "Venezuela en transición geopolítica",
+          "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/"
+        },
+        {
+          "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
+          "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9"
+        }
+      ]
+    },
+    {
+      "theme": "energy",
+      "subheading": "Oil flows matter again",
+      "sentence": "Recent reporting across 4 items in Extractives & Mining points to shifts in oil production/export and energy through 2026-03-01; this influences export revenue, contract risk, and near-term cash dynamics.",
+      "sources": [
+        {
+          "title": "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources say",
+          "url": "https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/"
+        },
+        {
+          "title": "Agroindustria venezolana podría incrementar su oferta exportable entre 25% y 40% impulsada por una nueva bonanza petrolera",
+          "url": "https://www.elnacional.com/2026/03/agroindustria-podria-incrementar-su-oferta-exportable-entre-25-y-40/"
+        }
+      ]
+    },
+    {
+      "theme": "macro",
+      "subheading": "Deep-dive evidence update",
+      "sentence": "No new open-access Venezuela publication was confirmed in this cycle; this keeps uncertainty higher for medium-term planning than when fresh deep-dive evidence is available.",
+      "sources": []
+    }
   ]
 }

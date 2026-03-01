@@ -180,6 +180,21 @@ def _entry_date_iso(entry: dict) -> str:
         return ""
 
 
+def _parse_iso_date(value: str) -> datetime.date:
+    text = norm(value)
+    if not text:
+        return datetime.date.min
+    for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S"):
+        try:
+            return datetime.datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    try:
+        return parsedate_to_datetime(text).date()
+    except Exception:
+        return datetime.date.min
+
+
 def split_sentences(value: str):
     parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ])", value.strip())
     return [part.strip() for part in parts if part.strip()]
@@ -375,18 +390,20 @@ def main() -> None:
 
     opportunities.sort(
         key=lambda opp: (
+            _parse_iso_date(str(opp.get("publishedAt", "") or "")),
             int(opp.get("score", 0)),
             0 if norm(opp.get("deadline", "")) else 1,
             str(opp.get("deadline", "")),
-            str(opp.get("publishedAt", "")),
         ),
         reverse=True,
     )
 
+    top_opportunities = opportunities[:5]
+
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "count": len(opportunities),
-        "opportunities": opportunities[:25],
+        "count": len(top_opportunities),
+        "opportunities": top_opportunities,
     }
 
     os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
