@@ -33,6 +33,10 @@ BD_FEED_URLS = [
     "https://news.google.com/rss/search?q=site:tendersinfo.com+venezuela+tender+OR+procurement",
     "https://www.bing.com/news/search?q=site:undp.org+venezuela+procurement+tender+rfp&format=rss",
     "https://www.bing.com/news/search?q=site:worldbank.org+venezuela+procurement+tender+request+for+proposals&format=rss",
+    "https://news.google.com/rss/search?q=Venezuela+licitaci%C3%B3n+OR+convocatoria+OR+expresi%C3%B3n+de+inter%C3%A9s",
+    "https://www.bing.com/news/search?q=venezuela+licitacion+convocatoria+expresion+de+interes&format=rss",
+    "https://www2.fundsforngos.org/category/cfp/feed/",
+    "https://www2.fundsforngos.org/category/grants-and-resources/feed/",
 ]
 
 OPP_TERMS = [
@@ -40,7 +44,12 @@ OPP_TERMS = [
     "request for quotation", "rfq", "tender", "procurement", "invitation to bid", "itb",
     "call for proposals", "call for applications", "open call",
     "expression of interest", "eoi", "terms of reference", "tor",
-    "grant", "funding opportunity", "services required", "consultancy", "consultant"
+    "grant", "funding opportunity", "services required", "consultancy", "consultant",
+    "request for proposals", "requests for proposals", "call for expression of interest",
+    "bid", "bidding", "solicitation", "vendor registration", "supplier registration",
+    "licitación", "licitacion", "convocatoria", "convocatoria abierta",
+    "expresión de interés", "expresion de interes", "términos de referencia", "terminos de referencia",
+    "adquisición", "adquisicion", "contratación", "contratacion", "concurso", "subvención", "subvencion",
 ]
 
 EXCLUDE_TERMS = ["opinion", "commentary", "podcast", "video", "newsletter", "profile", "interview"]
@@ -50,7 +59,16 @@ VZLA_TERMS = [
     "bolivar", "bolívar", "maracaibo", "orinoco", "zulia", "guyana essequibo"
 ]
 
-ACRONYM_TERMS = {"rfp", "rfi", "rfq", "itb", "eoi", "tor"}
+ACRONYM_TERMS = {"rfp", "rfi", "rfq", "itb", "eoi", "tor", "cfp", "rfqs", "eois"}
+
+OPPORTUNITY_DOMAINS = {
+    "fundsforngos.org",
+    "devbusiness.un.org",
+    "ungm.org",
+    "dgmarket.com",
+    "tendersinfo.com",
+    "reliefweb.int",
+}
 
 TITLE_URL_OPP_TERMS = [
     "request for proposal", "rfp", "request for information", "rfi",
@@ -59,6 +77,10 @@ TITLE_URL_OPP_TERMS = [
     "tender", "procurement", "call for proposals", "call for applications",
     "open call", "funding opportunity", "consultancy", "consultant",
     "services required", "bid notice", "tender notice",
+    "request for proposals", "requests for proposals", "call for expression of interest",
+    "grant", "cfp", "solicitation", "bidding",
+    "licitación", "licitacion", "convocatoria", "expresión de interés", "expresion de interes",
+    "términos de referencia", "terminos de referencia", "adquisición", "adquisicion",
 ]
 
 ACTION_TERMS = [
@@ -66,6 +88,10 @@ ACTION_TERMS = [
     "evaluation criteria", "procurement notice", "tender notice", "deadline", "closing date",
     "request for proposal", "request for information", "request for quotation",
     "expression of interest", "terms of reference", "call for proposals", "call for applications",
+    "request for proposals", "requests for proposals", "open call", "funding opportunity",
+    "supplier registration", "vendor registration", "bid", "bidding", "solicitation",
+    "postular", "postulación", "postulacion", "presentar oferta", "presentación", "presentacion",
+    "fecha límite", "fecha limite", "licitación", "licitacion", "convocatoria",
 ]
 
 DEADLINE_PATTERNS = [
