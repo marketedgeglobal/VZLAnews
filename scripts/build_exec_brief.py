@@ -158,8 +158,9 @@ def build_news_bullets(_latest, news_items):
             top_themes.append("implementation timing")
 
         count = len(sector_items)
+        count_label = "item" if count == 1 else "items"
         sentence1 = (
-            f"{sector_name} coverage across {count} items points to combined pressure around {top_themes[0]} and {top_themes[1]}, "
+            f"{sector_name} coverage across {count} {count_label} points to combined pressure around {top_themes[0]} and {top_themes[1]}, "
             "with counterpart decisions likely to hinge on near-term policy execution."
         )
         if latest_date:
