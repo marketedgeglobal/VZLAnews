@@ -1,6 +1,6 @@
 # 🇻🇪 VZLAnews – Latest News from Venezuela
 
-> Last updated: **2026-03-01 07:48 UTC**
+> Last updated: **2026-03-01 13:51 UTC**
 
 Automated digest (updated every 6 hours) of news and updates from Venezuela, aggregated from multiple sources.
 
@@ -8,19 +8,19 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 
 ## El Nacional
 
-- [La sociedad venezolana continúa silenciada](https://bitlysdowssl-aws.com/2026/03/la-sociedad-venezolana-continua-silenciada/) — Sun, 01 Mar 2026 05:24:00 +0000
-- [Escenario en harapos](https://bitlysdowssl-aws.com/2026/03/escenario-en-harapos/) — Sun, 01 Mar 2026 05:23:00 +0000
-- [A María Corina no la invitaron](https://bitlysdowssl-aws.com/2026/03/a-maria-corina-no-la-invitaron/) — Sun, 01 Mar 2026 05:22:00 +0000
-- [Amnistía castrochavista](https://bitlysdowssl-aws.com/2026/03/amnistia-castrochavista/) — Sun, 01 Mar 2026 05:21:00 +0000
-- [Venezuela: el miedo retrocede, el poder calcula, el mundo condiciona](https://bitlysdowssl-aws.com/2026/03/venezuela-el-miedo-retrocede-el-poder-calcula-el-mundo-condiciona/) — Sun, 01 Mar 2026 05:20:00 +0000
+- [Ataques iraníes sobre Israel dejaron una persona muerta y 121 heridas](https://bitlysdowssl-aws.com/2026/03/ataques-iranies-sobre-israel-dejaron-una-persona-muerta/) — Sun, 01 Mar 2026 12:48:49 +0000
+- [Excarcelado Miguel Gómez, director de TV por cable detenido por retransmitir imágenes de la captura de Maduro](https://bitlysdowssl-aws.com/2026/03/excarcelado-miguel-gomez-director-de-tv-por-cable/) — Sun, 01 Mar 2026 12:46:17 +0000
+- [Irán decreta 40 días de luto tras confirmar la muerte de Ali Jameneí: promete la mayor operación militar de su historia](https://bitlysdowssl-aws.com/2026/03/iran-decreta-40-dias-de-luto-tras-confirmar-la-muerte-de-ali-jamenei-promete-la-mayor-operacion-militar-de-su-historia/) — Sun, 01 Mar 2026 12:10:56 +0000
+- ["Deben deponer las armas o enfrentarán una muerte segura": seis mensajes clave de la declaración en la que Trump anunció los ataques a Irán](https://bitlysdowssl-aws.com/2026/03/seis-mensajes-clave-de-la-declaracion-en-la-que-trump/) — Sun, 01 Mar 2026 12:07:07 +0000
+- [Este es el momento exacto cuando la televisión pública iraní anunció la muerte del líder supremo Alí Jamenei](https://bitlysdowssl-aws.com/2026/03/momento-cuando-la-television-irani-anuncio-la-muerte-de-ali-jamenei/) — Sun, 01 Mar 2026 11:49:26 +0000
 
 ## Efecto Cocuyo
 
+- [Trump amenaza a Irán con una «fuerza nunca vista» si cumple su promesa de ofensiva](https://efectococuyo.com/asignar-categoria/trump-amenaza-iran-fuerza-nunca-vista-si-cumple-promesa-de-ofensiva/) — Sun, 01 Mar 2026 12:57:07 +0000
+- [Papa León XIV urge detener espiral de violencia](https://efectococuyo.com/internacionales/papa-leon-xiv-urge-detener-espiral-de-violencia/) — Sun, 01 Mar 2026 12:41:55 +0000
+- [Cómo se elige al líder supremo de Irán y quiénes son los favoritos](https://efectococuyo.com/internacionales/como-se-elige-al-lider-supremo-de-iran-quienes-son-los-favoritos/) — Sun, 01 Mar 2026 12:32:30 +0000
 - [Desviación del MP a aparato represor: cronología de Tarek William Saab](https://efectococuyo.com/la-humanidad/desviacion-del-mp-a-aparato-represor-cronologia-de-tarek-william-saab/) — Sun, 01 Mar 2026 06:45:00 +0000
 - [Trump anuncia muerte del ayatolá Ali Jameneí](https://efectococuyo.com/internacionales/trump-confirma-muerte-del-ayatola-ali-jamenei/) — Sat, 28 Feb 2026 22:37:09 +0000
-- [Alí Jameneí, el líder supremo iraní que acaparó el poder en el país desde 1989](https://efectococuyo.com/internacionales/ali-jamenei-lider-supremo-irani-que-acaparo-poder-desde-1989/) — Sat, 28 Feb 2026 22:35:31 +0000
-- [La amnistía “selectiva” del chavismo busca mantener control interno, pero presión de EEUU puede ampliarla](https://efectococuyo.com/politica/amnistia-chavismo-mantener-control-interno-presion-eeuu-ampliarla/) — Sat, 28 Feb 2026 21:00:00 +0000
-- [Miraflores llama a EEUU e Israel a retomar la negociación con Irán](https://efectococuyo.com/internacionales/miraflores-llama-eeuu-israel-retomar-negociacion-iran/) — Sat, 28 Feb 2026 19:18:55 +0000
 
 ## El Pitazo
 
@@ -33,10 +33,10 @@ Automated digest (updated every 6 hours) of news and updates from Venezuela, agg
 ## Google News – Venezuela
 
 - [Enrique Márquez dice que Venezuela “es otro país” tras la captura de Maduro: “Estamos listos para seguir los cambios” - CNN en Español](https://news.google.com/rss/articles/CBMilwFBVV95cUxQTnJCcWQ3YzR4V3RqRjlobE0taVowYzZUWF9GZlJuRDdNYm1ROTM1amptdjduOHpwTnA3b3RKZElZZEFyLTZqRVpTeVJiVl9Ua3BaSGdRdWRUSThZQkJwWlFsM1RwSHRvaU5RZTgyV0FmTE40NzFna1JqMVFKYUZSVjl2V2pDa2ZITk0xMlhsZjkxS1ZlVW5n?oc=5) — Sat, 28 Feb 2026 03:45:00 GMT
+- [Reacciones a las declaraciones del ex preso político Enrique Márquez: “se volvió a ver una rueda de prensa en Venezuela” - NTN24](https://news.google.com/rss/articles/CBMi9wFBVV95cUxNeU83NnpBY3JYREF3eURBVk9fVXJmUjgyeDJRbHJpYU5RbzBrNHE4WFRWQWxYS2dLQmRCMV9vZ2pfMUlIWnRLU0hvNDdNaHVDWnNLdWlQcDdLMnVBUGE5d1diMGFCLW5hWkFYeTBBTUhrX3BiNHNxdVVCNHdUYW9vZXRkWEFyYnlzVkh6dmxHS2dLQUVUUlRQaXl1WEZiVUlMS1RnRldfVmhYLVNTbTdMNkNCV0xsLXV5TmczZEpia1JoNnFVc3hPX0NmNzBqdGZ2NURzUWljTE1BUk9EMmhCYXVvbXBnanZlZDRYNGF0UTlEa19UbkdJ0gH3AUFVX3lxTE9hREs0eEM0Sm9QS2lsUWNpTjQyNG1QQnJQZ0JaU0JqemtLYS16MFp2SG1lTUhIVzA5cGVBaWxsdDl0RVVnS2JjYjhJdGplNktsUFhadVVYNEJRR21xWkU2Zy1tQkJrLW1obmNDLWQ2U3hvVzNSVUhIZGVCd0huNnZCXzNvay1maEtnX2ZUMlF4bEJXeWNrODFLZUlxNlJ0TTBFUVpHdzlDUXdfQllFaXN1TzgxbXh3RzJscmU1eVlZZlVIbEFDUG1VdEF2bHk2UktCZ2RUMmx4Z2pKY2kzMFJjT2R6YUNUSEpsank2NzBfbTFyQ0l3bGM?oc=5) — Fri, 27 Feb 2026 23:14:08 GMT
+- [Enrique Márquez asegura que la crisis política terminará en una elección y pide que el destino sea "la democracia" - El Nacional](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQQy0tckNmS3R5MFFUdExzTHlTUVdaT2N0TnB6Ym4tVEtIbFhKTWNFUnA4NEpoOF9MVll4Y0NmUkMwV19mOFVnX3V3M2NqSE9zd3FQdUVaWEYtcGFHWVA4aHNkalk0Y0xZRHNaSVBHTTlpMGNEOVVFSDFjd28ycXpTMzVuS1ViMzA2cGhNZjVfeUdpTkZzN1drSlVzQmxoV1JQRDBrbVFqb2luOWhucDV6WmtCUFh0OTZXMWx6LXhpTnBZck1SYlNTNlY4SHdBS0FnSTM2amZoVk5KX2NfVG51N0ZB?oc=5) — Fri, 27 Feb 2026 19:14:20 GMT
 - [Juan Pablo Guanipa: “No tengo dudas: Venezuela va hacia unas elecciones” - EL PAÍS](https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3lpeDFsM2lhQkhSYXA1S3NpMmlEWFBhalFlUWhGUmJPMmZGTHkwc3N6RTQzR2dJOFFfV3ZjdzB4WW52Zl9PRktsLWdUZ1c5VEFSQWltVVpEdWEyQ1Z6NTNWeVQ5X3BJb2hFd054UnB3a0dEMS0wMGtlRi14N3p0RW1fNGJaSzRVRnNGT0hWR1k5YWU4UmFwM2tGZjR3X2VRcVpBNjR0Smt0dmR1aHZFb9IBxAFBVV95cUxNT2QzT1lIblJRSHoxMXp0S0NHNWhfenVyejdQOF92bmkzaFAzUXdXRElfLWFJR3kwRFJQUkxMaVRUcFJ5MW8xTUtGWFZDQ1BNOGN5VUNfa2ZVeXIwdGRQNnBqZVd2elRvMVI2MzZpNmJja3JWZTVKQTdZa1hVVGV6N04wbk9rMUxwbkVHZUI5dF9LT0dfa2pNUkEwVmhfNjRKbDl4LXRvOWk3T0pWUi1GaDQ3T1pWbnNTbkNrVF9FWVRndHBh?oc=5) — Fri, 27 Feb 2026 04:30:00 GMT
-- [Venezuela otorga libertad condicional a 31 militares - dw.com](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRVJCMWttY2xWbkdDZndKbVFYdDRGd2ItYUd2cFpHdl9tRnBvLWQ2NDRURUw5anZybmtVc29WUDNibGI3VjY1bEUwbXpaTGpKS19Ga0NaVExiY1RZVzM5R1NnWlNGd1huNHNMdFNrblk5VVNjVjZZYXZDOVlKckMtMnpRbkpDZzV4Nk14SjVB0gGOAUFVX3lxTFAzZGxGeGgxclZReXRXcE5MVXdfRDluOVBxdFhtOUEzZVBQdDZsZENrQm82Z1BGQ3gzaGM2eW9SeDAtd3JzMUhPcHRZTmJuWGFXcHR2UGtIUHpNT2hRMXBLbjM2Z2pQeDBySUplYV9weURTQ1hJeWRvUlg5bEg3eW84VTR2eW45ODZRZ24xNEE?oc=5) — Sun, 01 Mar 2026 00:26:58 GMT
-- [Una semana de la ley de amnistía en Venezuela: más de 4.000 libertades plenas a perseguidos políticos - EL PAÍS](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQd2stanpnQzVZbW1qLUJWMVJHbEsteHlibzIzRHRGNE8zTG5FYWQ3MVFYMi1oMEcyTEF0X2ZTc0hwdWNLVjk5STZJRjJDbEcyV21lXzkxUTN0dHo3Q01OY2hlMlBkdXAtQTdOZF9CT0dLaWJzT0RkMGt0Z0pYTzc1YlZRNmFqUm1McDJUY0tBVGZEYk5LOHhQaU9HaG5OeDVReDhsY3NOLXRsSUJCZVpRNWV0dTB2WmwxQUk2MFpJdktXY1h4MWZSdFJFeFVSQXprSkN4azh0aEgyQdIB7gFBVV95cUxOd2FiVjY1OHdxMDF5NEJ2TkxpVF9XLXNaOF9ZZVBFS3o3SnRnaDlDTVpFOUlseENXcXdRWWw2ZHBYUm5RVmt3a0pkWHNDR0wwclFiaHliX1ptai01VFE2MnQ4cXlfSTNfVVA5ZDd1ZWxjUVlRLWE4MGpRZXFZQUFFNkR3YTFyU19CT0R5cmc0ajNtcXhRTktrWndTbGliR1U2ZlJuLUs0Q3Q1RTk0STV2dG94M0ZoM1JlaklaT1lQZ1VLSWV0czNveGM1ZmdjdTdZRGlYMnJhX3czZWdFYXRjeGU5MHQ0Q052RnlseUxB?oc=5) — Sat, 28 Feb 2026 04:30:00 GMT
-- [Alto comisionado de la ONU pide liberar a todos los presos políticos en Venezuela - El Nacional](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM2s1MlhZRGNEcGhNaXUxcUU5UjZYX3hWMk5DZkliN3V1NHFTUFJkM203WVRtOWFXSEZobkEzVVh0UXJqT1g4LS1mUV95U0RCTG0wZFpDbkJmUkZ3Z3I3ZDJUVUtJY01VWm5IUzQ2Wk5mZ2I1SjR2eHg1ZWpjYUxmN216ZEVMbUxjMDh1cmhNQWdGbXJXb3N4MWpsN3BYQnRNU19fb0RIQ1gybWwyMzYtQ3dQaE01YUNh?oc=5) — Fri, 27 Feb 2026 11:59:07 GMT
+- [Venezuela otorga libertad condicional a 31 militares - dw.com](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRVJCMWttY2xWbkdDZndKbVFYdDRGd2ItYUd2cFpHdl9tRnBvLWQ2NDRURUw5anZybmtVc29WUDNibGI3VjY1bEUwbXpaTGpKS19Ga0NaVExiY1RZVzM5R1NnWlNGd1huNHNMdFNrblk5VVNjVjZZYXZDOVlKckMtMnpRbkpDZzV4Nk14SjVB0gGOAUFVX3lxTFAzZGxGeGgxclZReXRXcE5MVXdfRDluOVBxdFhtOUEzZVBQdDZsZENrQm82Z1BGQ3gzaGM2eW9SeDAtd3JzMUhPcHRZTmJuWGFXcHR2UGtIUHpNT2hRMXBLbjM2Z2pQeDBySUplYV9weURTQ1hJeWRvUlg5bEg3eW84VTR2eW45ODZRZ24xNEE?oc=5) — Sun, 01 Mar 2026 00:35:16 GMT
 
 ---
 
