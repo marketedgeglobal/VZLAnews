@@ -7,10 +7,27 @@ LATEST_JSON = "docs/data/latest.json"
 PUBS_JSON = "docs/data/pdf_publications_recent.json"
 OUT_JSON = "docs/data/exec_brief.json"
 
+NOISE_PATTERNS = [
+    r"The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response\.?",
+    r"See All Newsletters.*$",
+    r"AP QUIZZES.*$",
+    r"Test Your News I\.Q.*$",
+    r"The Afternoon Wire.*$",
+    r"Anthropic.*$",
+]
+
 
 def norm(text):
     cleaned = re.sub(r"\s+", " ", str(text or "")).strip()
     cleaned = cleaned.replace("—", "-")
+    return cleaned
+
+
+def clean_substance_text(text):
+    cleaned = norm(text)
+    for pattern in NOISE_PATTERNS:
+        cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" .;")
     return cleaned
 
 
@@ -20,7 +37,7 @@ def split_sentences(text):
 
 
 def cap_sentences(text, max_sentences=2):
-    sentences = [segment for segment in split_sentences(text) if len(segment) > 30]
+    sentences = [segment for segment in split_sentences(clean_substance_text(text)) if len(segment) > 30]
     if not sentences:
         return ""
     return " ".join(sentences[:max_sentences])
@@ -73,14 +90,35 @@ def choose_top_news(items, n=12):
 def substance(item):
     insight = item.get("insight2")
     if isinstance(insight, dict):
-        merged = " ".join([insight.get("s1", ""), insight.get("s2", "")])
+        merged = " ".join([insight.get("s1", "")])
         compact = cap_sentences(merged, max_sentences=2)
         if compact:
             return compact
     return cap_sentences(item.get("preview") or item.get("description") or item.get("snippet") or "", max_sentences=2)
 
 
-def build_news_bullets(news_items):
+def first_sentence(text):
+    sentences = split_sentences(clean_substance_text(text))
+    if not sentences:
+        return ""
+    sentence = sentences[0]
+    if len(sentence) > 210:
+        sentence = sentence[:207].rsplit(" ", 1)[0].strip() + "..."
+    return norm(sentence)
+
+
+def quality_sentence(text):
+    sentence = first_sentence(text)
+    if len(sentence) < 60:
+        return ""
+    low = sentence.lower()
+    blocked = ["newsletter", "quiz", "caught up", "see all"]
+    if any(token in low for token in blocked):
+        return ""
+    return sentence
+
+
+def build_news_bullets(latest, news_items):
     starters = [
         "Political and regulatory signals:",
         "Economic and market movement:",
@@ -88,51 +126,64 @@ def build_news_bullets(news_items):
         "Energy and extractives developments:",
     ]
 
-    pool = []
-    for item in news_items:
-        text = substance(item)
-        if text:
-            pool.append({
-                "sector": item.get("sector") or "General",
-                "text": norm(text),
-            })
+    sectors = latest.get("sectors") or []
+    sector_bullets = []
+    for sector in sectors:
+        sector_name = norm(sector.get("name") or "")
+        if not sector_name:
+            continue
 
-    if not pool:
+        synth = sector.get("synth") or {}
+        synth_bullets = [quality_sentence(value) for value in (synth.get("bullets") or [])]
+        synth_bullets = [value for value in synth_bullets if value]
+
+        item_summaries = []
+        for item in (sector.get("items") or [])[:6]:
+            candidate = quality_sentence(substance(item))
+            if candidate:
+                item_summaries.append(candidate)
+
+        merged = []
+        for candidate in synth_bullets + item_summaries:
+            if candidate and candidate not in merged:
+                merged.append(candidate)
+            if len(merged) >= 2:
+                break
+
+        drivers = [norm(value).lower() for value in (synth.get("drivers") or []) if norm(value)]
+        if drivers:
+            lead = f"{sector_name} reporting keeps {', '.join(drivers[:2])} in focus for near-term decisions."
+        else:
+            lead = f"{sector_name} reporting points to meaningful shifts that require close monitoring in the coming days."
+
+        if merged:
+            if len(merged) > 1:
+                body = f"{merged[0]} {merged[1]}"
+            else:
+                body = merged[0]
+            sector_bullets.append(norm(f"{lead} {body}"))
+
+        if len(sector_bullets) >= 4:
+            break
+
+    if not sector_bullets:
+        pool = [quality_sentence(substance(item)) for item in news_items]
+        pool = [entry for entry in pool if entry]
+    else:
+        pool = []
+
+    if not sector_bullets and not pool:
         return [
             "Political and regulatory signals: Coverage remains thin in the current cycle, so directional interpretation should stay conservative until fresh source reporting arrives."
         ]
 
-    grouped = {}
-    for entry in pool:
-        grouped.setdefault(entry["sector"], []).append(entry["text"])
+    if sector_bullets:
+        return sector_bullets[:4]
 
-    preferred_sectors = sorted(grouped.keys(), key=lambda key: len(grouped[key]), reverse=True)
-    bullets = []
-
-    for index in range(4):
-        if index >= len(preferred_sectors):
-            break
-        sector = preferred_sectors[index]
-        snippets = grouped.get(sector, [])[:2]
-        if not snippets:
-            continue
-        if len(snippets) == 1:
-            sentence = snippets[0]
-        else:
-            sentence = f"{snippets[0]} {snippets[1]}"
-        bullets.append(norm(f"{starters[index]} {sentence}"))
-
-    if len(bullets) < 4:
-        leftovers = [entry["text"] for entry in pool]
-        used = set(" ".join(bullets).split())
-        for candidate in leftovers:
-            if len(bullets) >= 4:
-                break
-            if candidate and candidate.split()[0] not in used:
-                lead = starters[len(bullets) % len(starters)]
-                bullets.append(norm(f"{lead} {candidate}"))
-
-    return bullets[:4]
+    fallback = []
+    for idx, candidate in enumerate(pool[:4]):
+        fallback.append(norm(f"{starters[idx % len(starters)]} {candidate}"))
+    return fallback[:4]
 
 
 def build_publication_bullet(publications):
@@ -151,7 +202,9 @@ def build_publication_bullet(publications):
 
 
 def build_exec_bullets(news_items, publications):
-    bullets = build_news_bullets(news_items)
+    with open(LATEST_JSON, "r", encoding="utf-8") as handle:
+        latest = json.load(handle)
+    bullets = build_news_bullets(latest, news_items)
     bullets.append(build_publication_bullet(publications))
     final = [norm(bullet) for bullet in bullets if norm(bullet)]
     return final[:5]
