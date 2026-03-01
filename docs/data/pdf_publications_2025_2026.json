@@ -1,28 +1,10 @@
 {
-  "asOf": "2026-03-01T06:11:19.810023+00:00",
-  "startYear": 2025,
-  "endYear": 2026,
-  "count": 2,
-  "publications": [
-    {
-      "id": "",
-      "title": "The Mystery of Venezuela's Oil: Why the World's Largest Reserves Are Barely Being Pumped",
-      "url": "https://www.gao.gov/assets/gao-21-239.pdf",
-      "publisher": "www.bing.com",
-      "publishedAt": "2026-02-22",
-      "year": 2026,
-      "sector": "",
-      "abstract": "Venezuela sits on more barrels of oil than Saudi Arabia. So why does it pump less than 1% of the global supply?"
-    },
-    {
-      "id": "f22a8e7c62c2",
-      "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
-      "url": "https://venezuelanalysis.com/wp-content/uploads/2026/02/Burdynska-Schuurman-2026-Unilateral-sanctions-food-insecurity-and-food-sovereignty-construction-in-Venezuela-challenges-and-prospects-for-Zero-Hunger-in-a-transforming-petrostate-ERA.pdf",
-      "publisher": "venezuelanalysis.com",
-      "publishedAt": "2026-02-18",
-      "year": 2026,
-      "sector": "Food & Agriculture",
-      "abstract": "Natalia Burdynska Schuurman researched Venezuela's construction of food sovereignty under the Bolivarian Revolution and amid US sanctions."
-    }
-  ]
+  "asOf": "2026-03-01T18:24:24.312243+00:00",
+  "yearRange": [
+    2025,
+    2026
+  ],
+  "yearLabel": "2025-2026",
+  "count": 0,
+  "publications": []
 }
