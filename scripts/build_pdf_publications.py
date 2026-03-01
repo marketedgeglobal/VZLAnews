@@ -2,11 +2,15 @@ import datetime
 import json
 import os
 import re
+import time as _time
 from urllib.parse import urlparse
 
+import feedparser
 import requests
+from dateutil import parser as dateutil_parser
 
 LATEST_JSON = "docs/data/latest.json"
+FEEDS_TXT = "feeds.txt"
 TARGET_YEAR = 2025
 OUT_JSON = "docs/data/pdf_publications_2025.json"
 
@@ -118,13 +122,58 @@ def infer_year(item: dict) -> int | None:
     match_url = re.search(r"(20\d{2})", str(url))
     if match_url:
         return int(match_url.group(1))
+
+    haystack = " ".join(
+        [
+            str(item.get("title") or ""),
+            str(item.get("preview") or ""),
+            str(item.get("description") or ""),
+            str(item.get("source_url") or ""),
+        ]
+    )
+    match_text = re.search(r"\b(20\d{2})\b", haystack)
+    if match_text:
+        return int(match_text.group(1))
+
     return None
+
+
+def mentions_target_year(item: dict, year: int) -> bool:
+    target = str(year)
+    haystack = " ".join(
+        [
+            str(item.get("title") or ""),
+            str(item.get("preview") or ""),
+            str(item.get("description") or ""),
+            str(item.get("url") or ""),
+            str(item.get("source_url") or ""),
+        ]
+    )
+    return re.search(rf"\b{re.escape(target)}\b", haystack) is not None
 
 
 def is_pdf_url(url: str) -> bool:
     if not url:
         return False
     return url.lower().split("?")[0].endswith(".pdf")
+
+
+def resolve_final_url(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        response = requests.head(url, allow_redirects=True, timeout=12, headers={"User-Agent": UA})
+        if response.url:
+            return str(response.url)
+    except requests.RequestException:
+        pass
+    try:
+        response = requests.get(url, allow_redirects=True, timeout=12, headers={"User-Agent": UA}, stream=True)
+        if response.url:
+            return str(response.url)
+    except requests.RequestException:
+        pass
+    return url
 
 
 def head_is_pdf(url: str) -> tuple[bool, str]:
@@ -139,6 +188,116 @@ def head_is_pdf(url: str) -> tuple[bool, str]:
 def split_sentences(text: str) -> list[str]:
     parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ])", (text or "").strip())
     return [part.strip() for part in parts if part.strip()]
+
+
+def load_feed_urls(path: str = FEEDS_TXT) -> list[str]:
+    urls: list[str] = []
+    if not os.path.exists(path):
+        return urls
+    with open(path, "r", encoding="utf-8") as fh:
+        for raw_line in fh:
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if " - http" in line:
+                url = line.split(" - ", 1)[1].strip()
+            else:
+                url = line
+            if url.startswith("http"):
+                urls.append(url)
+    return urls
+
+
+def _parse_entry_datetime(entry) -> datetime.datetime | None:
+    for attr in ("published_parsed", "updated_parsed"):
+        val = entry.get(attr)
+        if val:
+            try:
+                ts = _time.mktime(val)
+                return datetime.datetime.fromtimestamp(ts, tz=datetime.timezone.utc)
+            except (OverflowError, OSError):
+                pass
+    for attr in ("published", "updated"):
+        val = entry.get(attr)
+        if val:
+            try:
+                dt = dateutil_parser.parse(str(val))
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=datetime.timezone.utc)
+                return dt
+            except (ValueError, OverflowError):
+                pass
+    return None
+
+
+def _extract_best_link(entry) -> str:
+    direct = str(entry.get("link") or "").strip()
+    if direct:
+        return direct
+    links = entry.get("links") or []
+    if isinstance(links, list):
+        for link in links:
+            if not isinstance(link, dict):
+                continue
+            href = str(link.get("href") or "").strip()
+            if href:
+                return href
+    return ""
+
+
+def _items_from_feeds(feed_urls: list[str]) -> list[dict]:
+    items: list[dict] = []
+    for url in feed_urls:
+        try:
+            parsed = feedparser.parse(url, request_headers={"User-Agent": UA})
+        except Exception:
+            continue
+
+        entries = getattr(parsed, "entries", []) or []
+        for entry in entries:
+            title = norm(entry.get("title") or "")
+            link = _extract_best_link(entry)
+            if not title or not link:
+                continue
+
+            published_dt = _parse_entry_datetime(entry)
+            published_iso = published_dt.date().isoformat() if published_dt else ""
+
+            source = entry.get("source") or {}
+            publisher = ""
+            if isinstance(source, dict):
+                publisher = norm(source.get("title") or "")
+            if not publisher:
+                publisher = domain_of(link)
+
+            summary = norm(entry.get("summary") or entry.get("description") or "")
+            tags = entry.get("tags") or []
+            categories: list[str] = []
+            if isinstance(tags, list):
+                for tag in tags:
+                    if isinstance(tag, dict):
+                        term = norm(tag.get("term") or "")
+                        if term:
+                            categories.append(term)
+
+            items.append(
+                {
+                    "id": str(entry.get("id") or entry.get("guid") or ""),
+                    "title": title,
+                    "url": link,
+                    "source_url": url,
+                    "preview": summary,
+                    "description": summary,
+                    "publisher": publisher,
+                    "publishedAt": published_iso,
+                    "dateISO": published_iso,
+                    "categories": categories,
+                    "tags": categories,
+                    "sector": "",
+                }
+            )
+
+    return items
 
 
 def make_abstract(item: dict) -> str:
@@ -186,11 +345,31 @@ def _items_from_latest(payload: dict) -> list[dict]:
     return []
 
 
+def _merge_items(primary: list[dict], secondary: list[dict]) -> list[dict]:
+    merged: list[dict] = []
+    seen: set[str] = set()
+    for item in primary + secondary:
+        if not isinstance(item, dict):
+            continue
+        url = str(item.get("url") or "").strip()
+        title = str(item.get("title") or "").strip()
+        if not url or not title:
+            continue
+        key = url.split("#", 1)[0]
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+    return merged
+
+
 def main() -> None:
     with open(LATEST_JSON, "r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    items = _items_from_latest(data)
+    latest_items = _items_from_latest(data)
+    feed_items = _items_from_feeds(load_feed_urls())
+    items = _merge_items(latest_items, feed_items)
     publications = []
     seen: set[str] = set()
 
@@ -213,20 +392,23 @@ def main() -> None:
             continue
 
         year = infer_year(item)
-        if year != TARGET_YEAR:
+        if year != TARGET_YEAR and not mentions_target_year(item, TARGET_YEAR):
             continue
 
         if not looks_like_research(haystack):
             # Keep only if domain is strongly institutional and it resolves to PDF.
             pass
 
-        if not allowed_domain(url):
+        final_url = resolve_final_url(url)
+        if not final_url:
             continue
 
-        final_url = url
-        pdf = is_pdf_url(url)
+        if not allowed_domain(final_url):
+            continue
+
+        pdf = is_pdf_url(final_url)
         if not pdf:
-            ok, resolved = head_is_pdf(url)
+            ok, resolved = head_is_pdf(final_url)
             if not ok:
                 continue
             pdf = True
