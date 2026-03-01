@@ -71,6 +71,22 @@ LatinFinance - https://www.latinfinance.com/rss
 
 
 # ============================
+# ENGLISH-LANGUAGE BOOSTER QUERIES
+# ============================
+
+Google News – Venezuela economy policy (en-US) - https://news.google.com/rss/search?q=Venezuela+economy+policy&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela sanctions compliance (en-US) - https://news.google.com/rss/search?q=Venezuela+sanctions+compliance+OFAC&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela oil licenses Chevron (en-US) - https://news.google.com/rss/search?q=Venezuela+oil+license+Chevron+OFAC&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela gas LNG projects (en-US) - https://news.google.com/rss/search?q=Venezuela+gas+LNG+project&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela mining investment (en-US) - https://news.google.com/rss/search?q=Venezuela+mining+investment+gold&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela debt restructuring bonds (en-US) - https://news.google.com/rss/search?q=Venezuela+debt+restructuring+bonds&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela IMF World Bank financing (en-US) - https://news.google.com/rss/search?q=Venezuela+IMF+World+Bank+financing&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela public private partnership (en-US) - https://news.google.com/rss/search?q=Venezuela+public+private+partnership+infrastructure&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela humanitarian logistics (en-US) - https://news.google.com/rss/search?q=Venezuela+humanitarian+logistics+aid&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela elections governance risk (en-US) - https://news.google.com/rss/search?q=Venezuela+election+governance+risk&hl=en-US&gl=US&ceid=US:en
+
+
+# ============================
 # SPANISH-LANGUAGE SOURCES
 # ============================
 
