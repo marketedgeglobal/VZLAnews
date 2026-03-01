@@ -481,6 +481,56 @@ def make_abstract(item: dict) -> str:
     return " ".join(sentences[:4])
 
 
+def _ensure_venezuela_in_title(title: str) -> str:
+    clean_title = norm(title)
+    if not clean_title:
+        return "Venezuela publication"
+    if "venezuela" in clean_title.lower() or "venezuelan" in clean_title.lower():
+        return clean_title
+    return f"Venezuela: {clean_title}"
+
+
+def _build_four_sentence_overview(item: dict, publication_title: str) -> str:
+    base = make_abstract(item)
+    candidates = [
+        sentence.strip().rstrip(".") + "."
+        for sentence in split_sentences(base)
+        if sentence and sentence.strip()
+    ]
+
+    unique: list[str] = []
+    seen: set[str] = set()
+    for sentence in candidates:
+        key = sentence.lower().strip()
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(sentence)
+
+    title_topic = publication_title.rstrip(".")
+    publisher = norm(item.get("publisher") or "")
+    year = infer_year(item) or YEAR_MAX
+    fallback_sentences = [
+        f"{title_topic} provides context relevant to Venezuela-focused policy and market monitoring.",
+        f"The publication synthesizes evidence intended to support planning decisions in the Venezuelan operating environment.",
+        f"Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology.",
+        f"This item is included in the {YEAR_MIN}-{YEAR_MAX} deep-dive window and can be downloaded at no cost from the publisher page.",
+    ]
+    if publisher:
+        fallback_sentences[3] = (
+            f"This item is included in the {YEAR_MIN}-{YEAR_MAX} deep-dive window and can be downloaded at no cost from the {publisher} publication page."
+        )
+    if year:
+        fallback_sentences[1] = (
+            f"The publication synthesizes evidence intended to support planning decisions in the Venezuelan operating environment as of {year}."
+        )
+
+    while len(unique) < 4:
+        unique.append(fallback_sentences[len(unique)])
+
+    return " ".join(unique[:4])
+
+
 def _items_from_latest(payload: dict) -> list[dict]:
     direct_items = payload.get("items")
     if isinstance(direct_items, list):
@@ -565,6 +615,8 @@ def main() -> None:
         if not allowed_domain(final_url):
             continue
 
+        landing_page_url = "" if is_pdf_url(final_url) else final_url
+
         candidate_urls: list[str] = [final_url]
         if not is_pdf_url(final_url):
             candidate_urls.extend(extract_pdf_links_from_page(final_url))
@@ -598,29 +650,34 @@ def main() -> None:
         if not chosen_pdf_url:
             continue
 
-        final_url = chosen_pdf_url
+        if not landing_page_url:
+            continue
 
-        dedupe_key = final_url.split("#")[0]
+        dedupe_key = chosen_pdf_url.split("#")[0]
         if dedupe_key in seen:
             continue
         seen.add(dedupe_key)
 
-        publisher = norm(item.get("publisher") or domain_of(final_url))
+        title_with_country = _ensure_venezuela_in_title(title)
+        publisher = norm(item.get("publisher") or domain_of(landing_page_url))
         published_at = item.get("publishedAt") or item.get("dateISO") or ""
         publication_year = year if year in TARGET_YEARS else YEAR_MAX
         if not published_at:
             published_at = str(publication_year)
+        overview = _build_four_sentence_overview(item, title_with_country)
 
         publications.append(
             {
                 "id": item.get("id") or "",
-                "title": title,
-                "url": final_url,
+                "title": title_with_country,
+                "url": landing_page_url,
+                "pageUrl": landing_page_url,
+                "pdfUrl": chosen_pdf_url,
                 "publisher": publisher,
                 "publishedAt": published_at,
                 "year": publication_year,
                 "sector": item.get("sector") or "",
-                "abstract": make_abstract(item),
+                "abstract": overview,
             }
         )
 

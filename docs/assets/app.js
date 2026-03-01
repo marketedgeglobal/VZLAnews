@@ -265,10 +265,12 @@
         const list = (pubs && Array.isArray(pubs.publications)) ? pubs.publications : [];
         const periodLabel = (pubs && pubs.yearLabel) ? pubs.yearLabel : 'Last 3 Years';
         const body = list.length
-            ? list.slice(0, 8).map((publication) => `
+            ? list.slice(0, 8).map((publication) => {
+                const pageUrl = publication.pageUrl || publication.url || '';
+                return `
                 <div class="pub-row">
                     <div class="pub-title">
-                        <a href="${esc(publication.url)}" target="_blank" rel="noopener">PDF: ${esc(publication.title)}</a>
+                        <a href="${esc(pageUrl)}" target="_blank" rel="noopener">${esc(publication.title)}</a>
                     </div>
                     <div class="pub-meta">
                         ${esc(publication.publisher || 'Source')}
@@ -276,8 +278,10 @@
                         ${publication.sector ? ` · ${esc(publication.sector)}` : ''}
                     </div>
                     <div class="pub-abstract">${esc(publication.abstract || '')}</div>
+                    ${pageUrl ? `<div class="pub-link"><a href="${esc(pageUrl)}" target="_blank" rel="noopener">Open publication page</a></div>` : ''}
                 </div>
-            `).join('')
+            `;
+            }).join('')
             : `<div class="pub-empty">No open-access Venezuela-focused PDFs detected for ${esc(periodLabel)} from your current source set.</div>`;
 
         return `
