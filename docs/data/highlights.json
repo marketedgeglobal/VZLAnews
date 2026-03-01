@@ -3,8 +3,8 @@
     "Government and institutional moves show reuters.com and venezuelanalysis.com converging on U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company\u2026 with\u2026",
     "Operational evidence across sources indicates venezuelanalysis.com and reuters.com converging on Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed\u2026 with\u2026",
     "Multiple reports converge on reuters.com and jpost.com converging on Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president,\u2026.",
-    "The current cycle confirms jpost.com and money.usnews.com converging on An illustration of oil rigs over a background of a Venezuelan flag with figures including $2 billion.",
-    "Cross-sector tracking now shows money.usnews.com and reuters.com converging on HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without\u2026."
+    "The current cycle confirms jpost.com and yahoo.com converging on An illustration of oil rigs over a background of a Venezuelan flag with figures including $2 billion.",
+    "Cross-sector tracking now shows yahoo.com and money.usnews.com converging on Anthropic Nancy Guthrie timeline Bill Clinton testifies 'Spiderwebs' on Mars Japan's 'window workers' Pakistan and\u2026."
   ],
   "keyDevelopments": [
     {
@@ -12,7 +12,7 @@
       "itemIds": [
         "284fde5ff4f3",
         "1b51d4fe2a5d",
-        "8cad614b01bc"
+        "53843da51f92"
       ]
     },
     {
@@ -40,9 +40,9 @@
       ]
     },
     {
-      "text": "HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past \u2060two weeks, four sources\u2026",
+      "text": "Anthropic Nancy Guthrie timeline Bill Clinton testifies 'Spiderwebs' on Mars Japan's 'window workers' Pakistan and Afghanistan Texas drone shooting Minnesota Medicaid freeze Cuba\u2026",
       "itemIds": [
-        "8cad614b01bc",
+        "53843da51f92",
         "284fde5ff4f3",
         "f22a8e7c62c2"
       ]
@@ -75,9 +75,9 @@
     },
     {
       "label": "Detentions and releases",
-      "value": "25",
-      "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The\u2026",
-      "itemId": "5e53e0f480cc"
+      "value": "3,200",
+      "context": "have regained freedom under a new amnesty law. Venezuela says more than 3,200 people have\u2026",
+      "itemId": "779913837acc"
     }
   ],
   "sectorSynth": {
@@ -85,7 +85,7 @@
       "bullets": [
         "Officials reported U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize\u2026",
         "Field updates show An illustration of oil rigs over a background of a Venezuelan flag.",
-        "Separate sources indicate HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past\u2026"
+        "Separate sources indicate Anthropic Nancy Guthrie timeline Bill Clinton testifies 'Spiderwebs' on Mars Japan's 'window workers' Pakistan and Afghanistan Texas drone shooting\u2026"
       ],
       "drivers": [
         "Oil production/export",
@@ -118,8 +118,8 @@
     },
     "Health & Water": {
       "bullets": [
-        "Officials reported WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning\u2026",
-        "Field updates show Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
+        "Officials reported The Afternoon Wire Get caught up on what you may have missed throughout the day.",
+        "Field updates show WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four\u2026",
         "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
       ],
       "drivers": [
@@ -146,13 +146,12 @@
     },
     "Finance & Investment": {
       "bullets": [
-        "Officials reported Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's\u2026",
-        "Field updates show They were placed on your computer when you launched this website.",
-        "Separate sources indicate Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest\u2026"
+        "Officials reported Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to\u2026",
+        "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+        "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
       ],
       "drivers": [
-        "FX / Inflation",
-        "Oil production/export"
+        "FX / Inflation"
       ],
       "watch": [
         "Regulatory deadlines",
@@ -163,14 +162,13 @@
     "Cross-cutting / Policy / Risk": {
       "bullets": [
         "Officials reported Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the\u2026",
-        "Field updates show With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
-        "Separate sources indicate President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks\u2026"
+        "Field updates show Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars.",
+        "Separate sources indicate Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in\u2026"
       ],
       "drivers": [
         "Political transition",
         "Regulatory reform",
-        "Sanctions",
-        "Security"
+        "Sanctions"
       ],
       "watch": [
         "Regulatory deadlines",

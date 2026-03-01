@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-03-01T05:22:25.208172+00:00",
-  "totalItems": 53,
+  "runAt": "2026-03-01T19:21:24.209786+00:00",
+  "totalItems": 49,
   "sectors": [
     {
       "name": "Extractives & Mining",
@@ -8,7 +8,7 @@
         "bullets": [
           "Officials reported U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize\u2026",
           "Field updates show An illustration of oil rigs over a background of a Venezuelan flag.",
-          "Separate sources indicate HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past\u2026"
+          "Separate sources indicate Anthropic Nancy Guthrie timeline Bill Clinton testifies 'Spiderwebs' on Mars Japan's 'window workers' Pakistan and Afghanistan Texas drone shooting\u2026"
         ],
         "drivers": [
           "Oil production/export",
@@ -50,7 +50,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -83,7 +83,8 @@
             ]
           },
           "icons": [
-            "ENERGY"
+            "ENERGY",
+            "NEW"
           ]
         },
         {
@@ -116,7 +117,7 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -187,7 +188,60 @@
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY"
+            "ENERGY",
+            "NEW"
+          ]
+        },
+        {
+          "id": "53843da51f92",
+          "title": "US says it will allow resale of Venezuelan oil to Cuba",
+          "url": "https://www.yahoo.com/news/articles/us-allow-resale-venezuelan-oil-183146811.html",
+          "publisher": "yahoo.com",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "sourceTier": "Tier 3",
+          "sector": "Extractives & Mining",
+          "snippet": "WASHINGTON, Feb 25 (Reuters) - The U.S. Treasury Department said on Wednesday it would authorize companies seeking licenses to resell Venezuelan oil to Cuba, according \u200cto guidance posted on the ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Oil production/export"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 60,
+          "entities": [
+            "OFAC"
+          ],
+          "tags": [
+            "Sanctions",
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "WASHINGTON, Feb 25 (Reuters) - The U.S. Treasury Department said on Wednesday it would authorize companies seeking licenses to resell Venezuelan oil to Cuba, according \u200cto guidance posted on the ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Anthropic Nancy Guthrie timeline Bill Clinton testifies 'Spiderwebs' on Mars Japan's 'window workers' Pakistan and Afghanistan Texas drone shooting Minnesota Medicaid freeze Cuba speedboat shooting US says it will allow\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "ENERGY",
+            "NEW"
           ]
         },
         {
@@ -270,7 +324,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -287,7 +341,8 @@
             "evidence": []
           },
           "icons": [
-            "ENERGY"
+            "ENERGY",
+            "NEW"
           ]
         },
         {
@@ -316,7 +371,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -334,19 +389,20 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE"
+            "TRADE",
+            "NEW"
           ]
         },
         {
-          "id": "c1a1bdbc237e",
-          "title": "Texas port humming as Trump ramps up Venezuela oil",
-          "url": "https://www.france24.com/en/live-news/20260301-texas-port-humming-as-trump-ramps-up-venezuela-oil",
-          "publisher": "france24.com",
-          "publishedAt": "2026-02-28",
+          "id": "a7286ecd0c29",
+          "title": "Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por una nueva bonanza petrolera",
+          "url": "https://www.elnacional.com/2026/03/agroindustria-podria-incrementar-su-oferta-exportable-entre-25-y-40/",
+          "publisher": "elnacional.com",
+          "publishedAt": "2026-03-01",
           "sourcePublishedAt": "2026-03-01",
           "sourceTier": "Tier 3",
           "sector": "Extractives & Mining",
-          "snippet": "A cargo ship teems with workers in hard hats at the Port of Houston, the latest US vessel headed to Venezuela after President Donald Trump lifted restrictions to boost oil production in the crisis-hit\u2026",
+          "snippet": "Durante la cuarta edici\u00f3n de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnolog\u00edas emergentes, inteligencia artificial, finanzas y los escenarios claves para\u2026",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [
@@ -357,83 +413,47 @@
           "risk_score": 30,
           "entities": [],
           "tags": [
-            "Energy",
             "Infrastructure"
           ],
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
-                "label": "Oil and production",
-                "value": "303 billion",
-                "context": "United States, and has the world's largest proven reserves with more than 303 billion barrels, according to global oil\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "24",
-                "context": "humming as Trump ramps up Venezuela oil Skip to main content France 24 - International breaking news, top stories and\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "27",
-                "context": "to boost oil production in the crisis-hit country. Issued on: 01/03/2026 - 02:27 3 min Reading time Share Trump\u2019s\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "80 million",
-                "context": "the Union address, Trump said the United States had received more than 80 million barrels of oil from Venezuela,\u2026",
-                "score": 3
+                "label": "Policy or market figure",
+                "value": "25%",
+                "context": "para 2026 The post Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por una\u2026",
+                "score": 2
               },
               {
                 "label": "Policy or market figure",
-                "value": "20 days",
-                "context": "enough cargo to go to Venezuela,\" he told AFP. \"And now, in 20 days, we're able to complete the orders to fill our ship\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "300",
-                "context": "on Iran risk igniting regional war Middle East Pakistan says more than 300 Afghan forces killed as cross-border strikes\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "120",
-                "context": "were more than 8,500 cubic meters of goods onboard, equivalent to around 120 containers. \"Before, it took us six to\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8,500",
-                "context": "nation. Greg Diaz, the company's Venezuelan-American owner, said there were more than 8,500 cubic meters of goods\u2026",
-                "score": 0
+                "value": "40%",
+                "context": "The post Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por una nueva\u2026",
+                "score": 2
               }
             ]
           },
-          "preview": "A cargo ship teems with workers in hard hats at the Port of Houston, the latest US vessel headed to Venezuela after President Donald Trump lifted restrictions to boost oil production in the crisis-hit\u2026",
+          "preview": "Durante la cuarta edici\u00f3n de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnolog\u00edas emergentes, inteligencia artificial, finanzas y los escenarios claves para\u2026",
           "preview_source": "fallback_summary",
-          "language": "en",
+          "language": "es",
           "insight2": {
-            "s1": "Issued on: 01/03/2026 - 02:27 3 min Reading time Share Trump\u2019s Venezuela shift drives surge in oilfield equipment demand, majors stay wary \u00a9 RONALDO SCHEMIDT / AFP US sanctions have crippled Venezuela for years, but\u2026",
-            "s2": "Washington has used a carrot-and-stick approach with Rodriguez, praising her for welcoming US oil companies but at the same time threatening Venezuela with punishment if she does not cooperate",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 303 billion as a measurable reference point for scenario tracking.",
+            "s1": "Durante la cuarta edici\u00f3n de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnolog\u00edas emergentes,\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 25% as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "United States, and has the world's largest proven reserves with more than 303 billion barrels, according to global oil\u2026",
-              "humming as Trump ramps up Venezuela oil Skip to main content France 24 - International breaking news, top stories and\u2026"
+              "para 2026 The post Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por una\u2026",
+              "The post Agroindustria venezolana podr\u00eda incrementar su oferta exportable entre 25% y 40% impulsada por una nueva\u2026"
             ]
           },
           "icons": [
             "ENERGY",
-            "TRADE"
+            "TRADE",
+            "NEW"
           ]
         },
         {
@@ -516,24 +536,23 @@
           ]
         },
         {
-          "id": "b1f553be0657",
-          "title": "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, reports",
-          "url": "https://indianexpress.com/article/world/us-news/venezuela-suspends-19-oil-gas-production-sharing-contracts-signed-under-maduro-government-10554560/",
-          "publisher": "indianexpress.com",
-          "publishedAt": "2026-02-26",
-          "sourcePublishedAt": "2026-02-27",
-          "sourceTier": "Tier 3",
+          "id": "326881234757",
+          "title": "Dgcim detiene al ex viceministro de Deporte Alexander \u00abMimou\u00bb Vargas",
+          "url": "https://elpitazo.net/politica/dgcim-detiene-al-ex-viceministro-de-deporte-alexander-mimou-vargas/",
+          "publisher": "elpitazo.net",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 2",
           "sector": "Extractives & Mining",
-          "snippet": "The suspension has had no impact on the country's oil and gas \u2060output \u200bso far, the sources said.",
+          "snippet": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de Nicol\u00e1s Maduro. Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [
-            "Oil production/export",
             "Political transition"
           ],
           "sentiment": "Neutral",
-          "materiality": 2,
-          "risk_score": 30,
+          "materiality": 1,
+          "risk_score": 15,
           "entities": [
             "Maduro"
           ],
@@ -544,89 +563,47 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "\u2013 and the two regions Racket s Venezuela\u2019s oil ministry has suspended 19 oil production-sharing contracts with private\u2026",
-                "score": 3
-              },
-              {
-                "label": "Health signal",
-                "value": "10",
-                "context": "Pune Chandigarh Ahmedabad Lucknow Hyderabad Bangalore Technology Lifestyle Health Education Trending Top 10 Shorts My\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "country's oil and gas \u2060output \u200bso far, the sources said. Venezuela suspends 19 oil, gas production-sharing contracts\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "Games Health Research \ud83c\udf99\ufe0f Podcast Advertisement News World US News Venezuela suspends 19 oil, gas production-sharing\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "19 oil, gas production-sharing contracts signed under Maduro government, reports Venezuela suspends 19 oil, gas\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "production-sharing contracts with private companies. (File Photo) Venezuela\u2019s oil ministry has suspended 19 oil\u2026",
-                "score": 3
-              },
-              {
-                "label": "Oil and production",
-                "value": "19",
-                "context": "Bookmark Bookmark Print Share Whatsapp twitter Facebook Venezuela's oil ministry has suspended 19 oil\u2026",
-                "score": 3
-              },
-              {
                 "label": "Policy or market figure",
-                "value": "5",
-                "context": "escalates 8 hours ago Pakistan vs Sri Lanka highlights: PAK win by 5 runs vs SL but knocked out of World Cup 9 hours ago",
+                "value": "28",
+                "context": "Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex\u2026",
                 "score": 0
               }
             ]
           },
-          "preview": "The suspension has had no impact on the country\u2019s oil and gas output so far, the sources said. State oil giant PDVSA is selling the crude produced under the contracts while they are suspended, they added.",
-          "preview_source": "trafilatura",
-          "language": "en",
+          "preview": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de Nicol\u00e1s Maduro. Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
+          "preview_source": "fallback_summary",
+          "language": "es",
           "insight2": {
-            "s1": "By: Reuters 2 min read Feb 27, 2026 06:02 AM IST First published on: Feb 27, 2026 at 06:02 AM IST Make us preferred source on Google Share Comments Bookmark Bookmark Print Share Whatsapp twitter Facebook Venezuela's oil\u2026",
-            "s2": "(File Photo) Venezuela\u2019s oil ministry has suspended 19 oil production-sharing contracts with private companies signed under the administration of President Nicolas Maduro, four sources with knowledge of the move told\u2026",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in extractives & mining, with 19 as a measurable reference point for scenario tracking.",
+            "s1": "Caracas.- Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex viceministro del Deporte, Alexander \u00abMimou\u00bb Vargas, quien fue un cercano colaborador de\u2026",
+            "s2": "Fuentes de El Pitazo confirmaron la detenci\u00f3n\u2026",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around political transition, with 28 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "\u2013 and the two regions Racket s Venezuela\u2019s oil ministry has suspended 19 oil production-sharing contracts with private\u2026",
-              "Pune Chandigarh Ahmedabad Lucknow Hyderabad Bangalore Technology Lifestyle Health Education Trending Top 10 Shorts My\u2026"
+              "Funcionarios de la Direcci\u00f3n General de Contrainteligencia Militar (Dgcim) detuvieron este s\u00e1bado 28 de febrero al ex\u2026"
             ]
           },
           "icons": [
             "ENERGY",
-            "TRADE"
+            "TRADE",
+            "NEW"
           ]
         },
         {
-          "id": "2538a1acf901",
-          "title": "Petrolero Skipper y dos millones de barriles vinculados a Ir\u00e1n\u00a0pasan a proceso legal",
-          "url": "https://www.elnacional.com/2026/02/petrolero-skipper-y-dos-millones-de-barriles-vinculados-a-iran-pasan-a-proceso-legal/",
+          "id": "c3c0d88356d6",
+          "title": "Env\u00edos desde Houston marcan nueva fase en la reactivaci\u00f3n petrolera venezolana",
+          "url": "https://www.elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera/",
           "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
           "sourceTier": "Tier 3",
           "sector": "Extractives & Mining",
-          "snippet": "El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento.",
+          "snippet": "En su reciente discurso sobre el Estado de la Uni\u00f3n, el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de Venezuela, y describi\u00f3 a la naci\u00f3n como \"nuestro nuevo amigo y socio\" The post Env\u00edos desde Houston marcan nueva\u2026",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
@@ -638,143 +615,34 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": [
               {
                 "label": "Policy or market figure",
-                "value": "11",
-                "context": "Nicol\u00e1s Maduro Estados Unidos Venezuela MINUTO A MINUTO Relacionadas Un muerto y 11 heridos tras ataques iran\u00edes en los\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "l\u00edder supremo iran\u00ed que se mantuvo en el poder desde 1989 febrero 28, 2026 Los iran\u00edes celebran el anuncio de la muerte\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "22",
-                "context": "el anuncio de la muerte de Jamenei febrero 28, 2026 Asciende a 22 la cifra de muertos por accidente de avi\u00f3n militar\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Fiscal\u00eda de M\u00e9xico entrega el cuerpo del Mencho a su familia febrero 28, 2026 Contenido Patrocinado CONTACTOS [email\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "crudo il\u00edcito en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper,\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10",
-                "context": "en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper, recientemente\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "05",
-                "context": "en las cadenas de suministro globales Por El Nacional febrero 28, 2026 10:05 am El petrolero Skipper, recientemente\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "ataques iran\u00edes en los aeropuertos de Abu Dabi y de Dub\u00e1i febrero 28, 2026 \u00bfQui\u00e9n era Al\u00ed Jamenei? El l\u00edder supremo\u2026",
+                "value": "80",
+                "context": "el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de\u2026",
                 "score": 0
               }
             ]
           },
-          "preview": "El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento.",
+          "preview": "En su reciente discurso sobre el Estado de la Uni\u00f3n, el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de Venezuela, y describi\u00f3 a la naci\u00f3n como \"nuestro nuevo amigo y socio\" The post Env\u00edos desde Houston marcan nueva\u2026",
           "preview_source": "fallback_summary",
           "language": "es",
           "insight2": {
-            "s1": "Petrolero Skipper y 2 millones de barriles vinculados a Ir\u00e1n pasan a proceso legal Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n\u2026",
-            "s2": "(\u00a92025 Vantor v\u00eda AP) El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento de aproximadamente dos millones de barriles de\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around extractives & mining, with 11 as a measurable reference point for scenario tracking.",
+            "s1": "En su reciente discurso sobre el Estado de la Uni\u00f3n, el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de Venezuela, y describi\u00f3 a la naci\u00f3n como \"nuestro nuevo\u2026",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around extractives & mining decisions, with 80 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "Nicol\u00e1s Maduro Estados Unidos Venezuela MINUTO A MINUTO Relacionadas Un muerto y 11 heridos tras ataques iran\u00edes en los\u2026",
-              "l\u00edder supremo iran\u00ed que se mantuvo en el poder desde 1989 febrero 28, 2026 Los iran\u00edes celebran el anuncio de la muerte\u2026"
-            ]
-          },
-          "icons": [
-            "ENERGY"
-          ]
-        },
-        {
-          "id": "0968b16f031c",
-          "title": "Una visi\u00f3n de futuro que convoque a todos los venezolanos",
-          "url": "https://www.elnacional.com/2026/02/una-vision-de-futuro-que-convoque-a-todos-los-venezolanos/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Extractives & Mining",
-          "snippet": "Venezuela es un gigante en pleno despertar. Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro, entramos ahora en la fase decisiva: ejecutar y construir una\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Energy",
-            "Infrastructure"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "de futuro que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "17",
-                "context": "todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un gigante en pleno\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Venezuela es un gigante en pleno despertar. Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro, entramos ahora en la fase decisiva: ejecutar y construir una arquitectura productiva, institucional y humana para un pa\u00eds de Clase Mundial.",
-          "preview_source": "trafilatura",
-          "language": "es",
-          "insight2": {
-            "s1": "Una visi\u00f3n de futuro que convoque a todos los venezolanos - EL NACIONAL Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n Econom\u00eda\u2026",
-            "s2": "Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro , entramos ahora en la fase decisiva: ejecutar y\u2026",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 28 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "de futuro que convoque a todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela\u2026",
-              "todos los venezolanos Por Emilio Venuti febrero 28, 2026 1:15 am Actualizado 3:17 am Venezuela es un gigante en pleno\u2026"
+              "el presidente Donald Trump dijo que Estados Unidos hab\u00eda recibido m\u00e1s de 80 millones de barriles de petr\u00f3leo de\u2026"
             ]
           },
           "icons": [
             "ENERGY",
-            "TRADE"
+            "NEW"
           ]
         }
       ]
@@ -826,7 +694,7 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
@@ -874,7 +742,8 @@
             "RISK",
             "POLICY",
             "FX",
-            "HUMAN"
+            "HUMAN",
+            "NEW"
           ]
         }
       ]
@@ -883,8 +752,8 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning\u2026",
-          "Field updates show Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
+          "Officials reported The Afternoon Wire Get caught up on what you may have missed throughout the day.",
+          "Field updates show WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
@@ -898,15 +767,112 @@
       },
       "items": [
         {
-          "id": "9dc273902671",
-          "title": "Trump's Iran strike tests MAGA unity ahead of midterms",
-          "url": "https://www.reuters.com/world/us/trumps-iran-strike-tests-maga-unity-ahead-midterms-2026-02-28/",
-          "publisher": "reuters.com",
+          "id": "befbf9709a92",
+          "title": "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
+          "url": "https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
+          "publisher": "apnews.com",
           "publishedAt": "2026-02-28",
           "sourcePublishedAt": "2026-02-28",
           "sourceTier": "Tier 1",
           "sector": "Health & Water",
-          "snippet": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
+          "snippet": "President Trump\u2019s decision to strike Iran pulls him toward the kind of overseas conflict he once attacked.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Security"
+          ],
+          "sentiment": "Negative",
+          "materiality": 2,
+          "risk_score": 60,
+          "entities": [],
+          "tags": [
+            "Elections"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "Trump justified the action as necessary to prevent Iran from obtaining nuclear weapons or developing missiles capable of reaching the US, less than a year after he said airstrikes \u201cobliterated\u201d their capability. US intelligence has also said Iran\u2019s weapons capability was substantially degraded.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around health & water decisions, with 25 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "200b4785b03b",
+          "title": "Just one in four Americans supports US strikes on Iran, Reuters/Ipsos poll finds",
+          "url": "https://www.reuters.com/world/us/just-one-four-americans-support-us-strikes-iran-reutersipsos-poll-finds-2026-03-01/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 1",
+          "sector": "Health & Water",
+          "snippet": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump ...",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
@@ -914,7 +880,9 @@
           "materiality": 2,
           "risk_score": 30,
           "entities": [],
-          "tags": [],
+          "tags": [
+            "Infrastructure"
+          ],
           "flags": {
             "risk": false,
             "opportunity": false,
@@ -924,82 +892,20 @@
           "metrics": {
             "numbers": []
           },
-          "preview": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
+          "preview": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's",
+            "s1": "WASHINGTON, March 1 (Reuters) - Only one in four Americans approves of the U.S. strikes that killed Iran\u2019s leader, while about half \u2014 including one in four Republicans \u2014 believe President Donald Trump",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around health & water decisions.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in health & water.",
             "confidence": "HIGH",
             "evidence": []
           },
           "icons": [
+            "TRADE",
             "NEW"
           ]
-        },
-        {
-          "id": "ea3accf446da",
-          "title": "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
-          "url": "https://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
-          "sector": "Health & Water",
-          "snippet": "Washington. El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense, Donald Trump, quien regres\u00f3 al poder el a\u00f1o pasado\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Security"
-          ],
-          "sentiment": "Negative",
-          "materiality": 1,
-          "risk_score": 45,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "25",
-                "context": "plegado a sus demandas, como la apertura del sector petrolero venezolano. El 25 de diciembre de 2025, Estados Unidos,\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "43",
-                "context": "ordenados por Trump en su segundo mandato URL Source:\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "44",
-                "context": "ordenados por Trump en su segundo mandato URL Source:\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Las operaciones han generado cr\u00edticas de la oposici\u00f3n y de algunos miembros del Partido Republicano hacia Trump, quien suele reivindicar para s\u00ed el Premio Nobel de la Paz con el argumento de que ha puesto fin a al menos ocho guerras y fue muy cr\u00edtico con la invasi\u00f3n de Irak de 2003 bajo el mandato del tambi\u00e9n republicano George W. Bush (2001-2009).",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source: http://elpitazo.net/internacionales/de-venezuela-a-iran-los-bombardeos-ordenados-por-trump-en-su-segundo-mandato/\u2026",
-            "s2": "Los ataques estadounidenses del \u00faltimo a\u00f1o, que han evitado el despliegue de soldados sobre el terreno, han sido **justificados por la Casa Blanca** en nombre de la seguridad nacional o la lucha antiterrorista, pero han\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security, with 25 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "plegado a sus demandas, como la apertura del sector petrolero venezolano. El 25 de diciembre de 2025, Estados Unidos,\u2026",
-              "ordenados por Trump en su segundo mandato URL Source:\u2026"
-            ]
-          },
-          "icons": []
         }
       ]
     },
@@ -1024,13 +930,12 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's\u2026",
-          "Field updates show They were placed on your computer when you launched this website.",
-          "Separate sources indicate Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest\u2026"
+          "Officials reported Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to\u2026",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
-          "FX / Inflation",
-          "Oil production/export"
+          "FX / Inflation"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1039,67 +944,6 @@
         ]
       },
       "items": [
-        {
-          "id": "1e5e0af76232",
-          "title": "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain",
-          "url": "https://finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html?fr=sycsrp_catchall",
-          "publisher": "finance.yahoo.com",
-          "publishedAt": "2026-02-16",
-          "sourcePublishedAt": "2026-02-16",
-          "sourceTier": "Tier 3",
-          "sector": "Finance & Investment",
-          "snippet": "The US president wants American energy firms to start extracting the crude but they are reluctant.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Oil production/export"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 3,
-          "risk_score": 45,
-          "entities": [],
-          "tags": [
-            "Energy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "0%",
-                "context": "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
-                "score": 2
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "For US energy companies, however, there are huge practical difficulties to be overcome. Venezuela's state-owned oil company, PDVSA, is a shadow of its former self.",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning\u2026",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 0% as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
-              "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026"
-            ]
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
         {
           "id": "0845d51e0693",
           "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
@@ -1123,132 +967,24 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "05",
-                "context": "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
-                "score": 3
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "84",
-                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "85",
-                "context": "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "84",
-                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "92",
-                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "82",
-                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "88",
-                "context": "- ENGLISH](http://www.zawya.com/en/mena) * [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA -\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "They were placed on your computer when you launched this website",
-            "s2": "You can change your cookie settings through your browser",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 05 as a measurable reference point for scenario tracking.",
+            "s1": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment.",
             "confidence": "HIGH",
-            "evidence": [
-              "Venezuela Advance Practical Trade and Investment Cooperation URL Source:\u2026",
-              "* [UAE - ENGLISH](http://www.zawya.com/en/uae) * [KSA - ENGLISH](http://www.zawya.com/en/saudi-arabia) * [\u0627\u0644\u0634\u0631\u0652\u0642\u064f\u2026"
-            ]
+            "evidence": []
           },
           "icons": [
-            "FX"
-          ]
-        },
-        {
-          "id": "454cd2e6560d",
-          "title": "Maurel & Prom: Update on Venezuela",
-          "url": "https://finance.yahoo.com/news/maurel-prom-venezuela-072300797.html",
-          "publisher": "finance.yahoo.com",
-          "publishedAt": "2026-02-15",
-          "sourcePublishedAt": "2026-02-16",
-          "sourceTier": "Tier 3",
-          "sector": "Finance & Investment",
-          "snippet": "PARIS, February 16, 2026--Regulatory News: Etablissements Maurel & Prom S.A. (\"M&P\", the \"Group\") (Paris:MAU) wishes to provide an update on its activities in Venezuela.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "0%",
-                "context": "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
-                "score": 2
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "16",
-                "context": "PARIS, February 16, 2026--Regulatory News: Etablissements Maurel & Prom S.A. (\"M&P\", the \"Group\") (Paris:MAU) wishes",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "On 13 February 2026, OFAC issued General License 50 (\"GL 50\") authorising certain international operators to resume oil and gas operations in Venezuela. M&P is not currently included in the list of entities covered by this general license.",
-          "preview_source": "trafilatura",
-          "language": "en",
-          "insight2": {
-            "s1": "Private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal loans Improve credit score How to get approved Videos Latest Editor's picks Trending stocks Investing insights Live shows Morning\u2026",
-            "s2": "(\"M&P\", the \"Group\") (Paris:MAU) wishes to provide an update on its activities in Venezuela",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in finance & investment, with 0% as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer\u2026",
-              "Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans\u2026"
-            ]
-          },
-          "icons": [
+            "FX",
             "NEW"
           ]
         }
@@ -1259,14 +995,13 @@
       "synth": {
         "bullets": [
           "Officials reported Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the\u2026",
-          "Field updates show With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
-          "Separate sources indicate President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks\u2026"
+          "Field updates show Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars.",
+          "Separate sources indicate Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in\u2026"
         ],
         "drivers": [
           "Political transition",
           "Regulatory reform",
-          "Sanctions",
-          "Security"
+          "Sanctions"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -1325,68 +1060,21 @@
           ]
         },
         {
-          "id": "dbbab6c07592",
-          "title": "Trump's Iran strikes mark his biggest foreign policy gamble",
-          "url": "https://www.reuters.com/world/us/trumps-iran-strikes-mark-his-biggest-foreign-policy-gamble-2026-02-28/",
+          "id": "9dc273902671",
+          "title": "Trump's Iran strike tests MAGA unity ahead of midterms",
+          "url": "https://www.reuters.com/world/us/trumps-iran-strike-tests-maga-unity-ahead-midterms-2026-02-28/",
           "publisher": "reuters.com",
           "publishedAt": "2026-02-28",
           "sourcePublishedAt": "2026-02-28",
           "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
+          "snippet": "Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Security"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 3,
-          "risk_score": 55,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": []
-          },
-          "preview": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
-          "preview_source": "fallback_summary",
-          "language": "en",
-          "insight2": {
-            "s1": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
-            "confidence": "HIGH",
-            "evidence": []
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "befbf9709a92",
-          "title": "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
-          "url": "https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
-          "publisher": "apnews.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 1",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks becoming ensnared by that very type of conflict. The ...",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "Security"
-          ],
+          "event_types": [],
           "sentiment": "Negative",
           "materiality": 2,
-          "risk_score": 60,
+          "risk_score": 50,
           "entities": [],
           "tags": [
             "Elections",
@@ -1401,13 +1089,56 @@
           "metrics": {
             "numbers": []
           },
-          "preview": "Trump justified the action as necessary to prevent Iran from obtaining nuclear weapons or developing missiles capable of reaching the US, less than a year after he said airstrikes \u201cobliterated\u201d their capability. US intelligence has also said Iran\u2019s weapons capability was substantially degraded.",
-          "preview_source": "trafilatura",
+          "preview": "WASHINGTON, Feb 28 (Reuters) - Some of the most prominent voices within Donald Trump's MAGA movement spoke out on Saturday against his attack on Iran, warning it could hurt Republicans in November's ...",
+          "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks becoming ensnared by that very type of conflict",
+            "s1": "Conservative critics pointed to potential risks for Republicans after the president campaigned in 2024 on a promise to focus on the economy and not start wars",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
             "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "8dedf04fe5ad",
+          "title": "Putin slams killing of Iran's Khamenei but offers little beyond condolences so far",
+          "url": "https://www.reuters.com/world/middle-east/putin-says-killing-khamenei-is-cynical-murder-2026-03-01/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-03-01",
+          "sourcePublishedAt": "2026-03-01",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Russian President Putin on Sunday condemned the killing of Iranian Supreme Leader Ayatollah Ali Khamenei as a \"cynical\" murder but he offered little in public to Moscow's ally beyond condolences",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
             "confidence": "HIGH",
             "evidence": []
           },
@@ -1499,20 +1230,32 @@
               },
               {
                 "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
                 "value": "24",
-                "context": "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
                 "value": "7",
-                "context": "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "25",
-                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "value": "14",
+                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
                 "score": 0
               },
               {
@@ -1539,7 +1282,7 @@
             "confidence": "HIGH",
             "evidence": [
               "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
-              "New Hampshire private school Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026"
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
             ]
           },
           "icons": [
@@ -1552,10 +1295,10 @@
           "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d",
           "publisher": "apnews.com",
           "publishedAt": "2026-02-25",
-          "sourcePublishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-26",
           "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Venezuela\u2019s attorney general, who for years played a central role in the government\u2019s repressive apparatus, resigned Wednesday as pressure grew for ...",
+          "snippet": "Venezuela\u2019s attorney general resigns but lawmakers immediately shift him into a top human rights job.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
@@ -1573,17 +1316,69 @@
             "updated": false
           },
           "metrics": {
-            "numbers": []
+            "numbers": [
+              {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
+                "score": 0
+              }
+            ]
           },
           "preview": "Tarek William Saab, a close ally of former President Nicol\u00e1s Maduro, submitted his resignation to the ruling party-controlled National Assembly without offering a reason for his decision. He had held the role of Venezuela\u2019s chief prosecutor since 2017 despite repeated accusations of human rights violations against him and his office.",
           "preview_source": "trafilatura",
           "language": "en",
           "insight2": {
-            "s1": "Venezuela\u2019s attorney general, who for years played a central role in the government\u2019s repressive apparatus, resigned Wednesday as pressure grew for",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk.",
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk, with 25 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
-            "evidence": []
+            "evidence": [
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
+            ]
           },
           "icons": [
             "NEW"
@@ -1642,7 +1437,7 @@
           "sourcePublishedAt": "2026-02-24",
           "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released since the amnesty law took ef ...",
+          "snippet": "Venezuela\u2019s National Assembly says thousands of people have regained freedom under a new amnesty law.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [
@@ -1665,15 +1460,51 @@
             "numbers": [
               {
                 "label": "Detentions and releases",
-                "value": "3,200",
-                "context": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released\u2026",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
                 "score": 3
               },
               {
                 "label": "Detentions and releases",
                 "value": "3,200",
-                "context": "... A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully\u2026",
+                "context": "have regained freedom under a new amnesty law. Venezuela says more than 3,200 people have been fully released since\u2026",
                 "score": 3
+              },
+              {
+                "label": "Detentions and releases",
+                "value": "3,200",
+                "context": "remo A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully\u2026",
+                "score": 3
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "86",
+                "context": "Ali Khamenei, who led the Islamic Republic since 1989, is dead at 86 How succession works in Iran and who could be the\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "24",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "7",
+                "context": "Notable Deaths TOP STORIES Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "14",
+                "context": "life in Texas detention center Texas bar shooting leaves 3 dead and 14 wounded as FBI investigates possible terrorism\u2026",
+                "score": 0
               }
             ]
           },
@@ -1681,13 +1512,13 @@
           "preview_source": "trafilatura",
           "language": "en",
           "insight2": {
-            "s1": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released since the amnesty law took ef",
-            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 3,200 as a measurable reference point for scenario tracking.",
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 25 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released\u2026",
-              "... A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully\u2026"
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "have regained freedom under a new amnesty law. Venezuela says more than 3,200 people have been fully released since\u2026"
             ]
           },
           "icons": [

@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-03-01T05:22:25.208172+00:00",
+  "run_at": "2026-03-01T19:21:24.209786+00:00",
   "alerts": [
     {
       "type": "New sanctions",
       "triggered": true,
-      "detail": "4 sanctions-related signals in current cycle."
+      "detail": "5 sanctions-related signals in current cycle."
     },
     {
       "type": "Oil export change >10%",
@@ -19,12 +19,12 @@
     {
       "type": "Executive decree",
       "triggered": true,
-      "detail": "8 governance/decree-related signals detected."
+      "detail": "10 governance/decree-related signals detected."
     },
     {
       "type": "Protest escalation",
       "triggered": true,
-      "detail": "4 security/protest indicators detected."
+      "detail": "2 security/protest indicators detected."
     }
   ]
 }
