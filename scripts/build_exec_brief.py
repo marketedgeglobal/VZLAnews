@@ -201,9 +201,7 @@ def build_publication_bullet(publications):
     )
 
 
-def build_exec_bullets(news_items, publications):
-    with open(LATEST_JSON, "r", encoding="utf-8") as handle:
-        latest = json.load(handle)
+def build_exec_bullets(latest, news_items, publications):
     bullets = build_news_bullets(latest, news_items)
     bullets.append(build_publication_bullet(publications))
     final = [norm(bullet) for bullet in bullets if norm(bullet)]
@@ -226,7 +224,7 @@ def main():
             publications = []
 
     top_news = choose_top_news(items, n=12)
-    bullets = build_exec_bullets(top_news, publications)
+    bullets = build_exec_bullets(latest, top_news, publications)
 
     output = {
         "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
