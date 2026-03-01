@@ -442,6 +442,7 @@ def main() -> None:
 
     opportunities = []
     today = datetime.datetime.now(datetime.timezone.utc).date()
+    recent_cutoff = today - datetime.timedelta(days=60)
     seen: set[str] = set()
 
     for item in items:
@@ -483,6 +484,13 @@ def main() -> None:
         if is_expired_deadline(deadline, today):
             continue
 
+        published_raw = str(item.get("publishedAt") or item.get("dateISO") or "")
+        published_date = _parse_iso_date(published_raw)
+        if published_date == datetime.date.min:
+            continue
+        if published_date < recent_cutoff:
+            continue
+
         dedupe_key = f"{norm(item.get('url', '')).lower()}|{norm(item.get('title', '')).lower()}"
         if dedupe_key in seen:
             continue
@@ -494,7 +502,7 @@ def main() -> None:
             "url": item.get("url"),
             "sector": item.get("sector"),
             "publisher": item.get("publisher") or "",
-            "publishedAt": item.get("publishedAt") or item.get("dateISO") or "",
+            "publishedAt": published_date.isoformat(),
             "deadline": deadline,
             "amount": amount,
             "score": score,
