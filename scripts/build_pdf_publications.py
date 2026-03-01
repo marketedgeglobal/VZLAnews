@@ -15,7 +15,9 @@ TODAY = datetime.date.today()
 YEAR_MAX = TODAY.year
 YEAR_MIN = TODAY.year - 2
 TARGET_YEARS = set(range(YEAR_MIN, YEAR_MAX + 1))
-OUT_JSON = "docs/data/pdf_publications_recent.json"
+OUT_JSON_RECENT = "docs/data/pdf_publications_recent.json"
+OUT_JSON_2025 = "docs/data/pdf_publications_2025.json"
+OUT_JSON_2025_2026 = "docs/data/pdf_publications_2025_2026.json"
 
 UA = "Mozilla/5.0 (compatible; MarketEdgeVZLAnews/1.0; +https://marketedgeglobal.github.io/VZLAnews/)"
 
@@ -572,6 +574,22 @@ def _merge_items(primary: list[dict], secondary: list[dict]) -> list[dict]:
     return merged
 
 
+def _write_output(path: str, publications: list[dict], year_range: list[int], year_label: str) -> None:
+    output = {
+        "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "yearRange": year_range,
+        "yearLabel": year_label,
+        "count": len(publications),
+        "publications": publications,
+    }
+    if len(year_range) == 1:
+        output["year"] = year_range[0]
+
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(output, fh, ensure_ascii=False, indent=2)
+
+
 def main() -> None:
     with open(LATEST_JSON, "r", encoding="utf-8") as fh:
         data = json.load(fh)
@@ -684,17 +702,20 @@ def main() -> None:
     publications.sort(key=lambda publication: str(publication.get("publishedAt") or ""), reverse=True)
 
     year_range_sorted = sorted(TARGET_YEARS)
-    output = {
-        "asOf": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "yearRange": year_range_sorted,
-        "yearLabel": f"{year_range_sorted[0]}-{year_range_sorted[-1]}",
-        "count": len(publications),
-        "publications": publications[:25],
-    }
+    publications_recent = publications[:25]
+    publications_2025 = [p for p in publications_recent if int(p.get("year") or 0) == 2025]
+    publications_2025_2026 = [
+        p for p in publications_recent if int(p.get("year") or 0) in {2025, 2026}
+    ]
 
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
-    with open(OUT_JSON, "w", encoding="utf-8") as fh:
-        json.dump(output, fh, ensure_ascii=False, indent=2)
+    _write_output(
+        OUT_JSON_RECENT,
+        publications_recent,
+        year_range_sorted,
+        f"{year_range_sorted[0]}-{year_range_sorted[-1]}",
+    )
+    _write_output(OUT_JSON_2025, publications_2025, [2025], "2025")
+    _write_output(OUT_JSON_2025_2026, publications_2025_2026, [2025, 2026], "2025-2026")
 
 
 if __name__ == "__main__":
