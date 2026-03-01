@@ -272,7 +272,7 @@
     }
 
     function renderExecBriefCard(brief) {
-        const rows = (brief && Array.isArray(brief.rows)) ? brief.rows.slice(0, 6) : [];
+        const rows = (brief && Array.isArray(brief.rows)) ? brief.rows.slice(0, 3) : [];
         const body = rows.length
             ? `<div class="exec-rows">
                 ${rows.map((row) => `
