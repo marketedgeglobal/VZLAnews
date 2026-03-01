@@ -6,7 +6,7 @@
     "source": "france24.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "A cargo ship teems with workers in hard hats at the Port of Houston, the latest US vessel headed to Venezuela after President Donald Trump lifted restrictions to boost oil production in the crisis-hit\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -29,7 +29,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "El Departamento de Justicia de los Estados Unidos dio un paso definitivo para formalizar la incautaci\u00f3n del superpetrolero Skipper y su cargamento.",
     "summary_confidence": "High (Feed snippet)",
@@ -47,7 +47,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "Venezuela es un gigante en pleno despertar. Tras analizar en entregas anteriores la esencia de gobernar con direcci\u00f3n y la importancia de la planificaci\u00f3n estrat\u00e9gica, bajo la visi\u00f3n de Bienvenidos al futuro, entramos ahora en la fase decisiva: ejecutar y construir una\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -68,7 +68,7 @@
     "source": "zawya.com",
     "source_quality": "Tier 3",
     "published": "2026-02-27",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber (AEC) Sign Memorandum of Understanding (MoU) to Drive Energy Investment, Collaboration ...",
     "summary_confidence": "High (Feed snippet)",
@@ -92,7 +92,7 @@
     "source": "trinidadexpress.com",
     "source_quality": "Tier 3",
     "published": "2026-02-27",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "Days after US Secretary of State Marco Rubio met with Prime minister Kamla Persad-Bissessar at Caricom\u2019s 50th Regular Meeting of the Conference of Heads of Government, representatives of energy giant,.",
     "summary_confidence": "High (Feed snippet)",
@@ -114,7 +114,7 @@
     "source": "jpost.com",
     "source_quality": "Tier 3",
     "published": "2026-02-26",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "Venezuela's oil ministry suspends 19 production-sharing contracts, including projects in Lake Maracaibo and the Orinoco Belt, as part of a broader review of deals linked to US sanctions.",
     "summary_confidence": "High (Feed snippet)",
@@ -141,7 +141,7 @@
     "source": "indianexpress.com",
     "source_quality": "Tier 3",
     "published": "2026-02-26",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
     "summary": "The suspension has had no impact on the country's oil and gas \u2060output \u200bso far, the sources said.",
     "summary_confidence": "High (Feed snippet)",
@@ -161,30 +161,74 @@
     ]
   },
   {
-    "id": "url::https://money.usnews.com/investing/news/articles/2026-02-13/exclusive-venezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say",
-    "title": "Exclusive-Venezuela's PDVSA Selling Oil Only to Individually Licensed Companies, Sources Say",
-    "url": "https://money.usnews.com/investing/news/articles/2026-02-13/exclusive-venezuelas-pdvsa-selling-oil-only-to-individually-licensed-companies-sources-say",
-    "source": "money.usnews.com",
-    "source_quality": "Tier 3",
-    "published": "2026-02-13",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "id": "url::https://www.reuters.com/world/americas/rubio-travels-meet-caribbean-leaders-us-squeezes-cuba-venezuela-2026-02-23/",
+    "title": "Rubio travels to meet Caribbean leaders as US squeezes Cuba, Venezuela",
+    "url": "https://www.reuters.com/world/americas/rubio-travels-meet-caribbean-leaders-us-squeezes-cuba-venezuela-2026-02-23/",
+    "source": "reuters.com",
+    "source_quality": "Tier 1",
+    "published": "2026-02-23",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Extractives & Mining",
-    "summary": "HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past \u2060two weeks, four sources from companies seeking ...",
+    "summary": "Trump officials have been pressing an interim administration in Caracas to allow U.S. firms access to oil and to instigate reforms since the U.S.",
     "summary_confidence": "High (Feed snippet)",
     "event_types": [
-      "Sanctions",
-      "Oil production/export"
+      "Oil production/export",
+      "Regulatory reform",
+      "Security"
     ],
     "sentiment": "Neutral",
     "materiality": 3,
+    "risk_score": 55,
+    "entities": [],
+    "tags": [
+      "Energy"
+    ]
+  },
+  {
+    "id": "url::https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/",
+    "title": "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources say",
+    "url": "https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/",
+    "source": "reuters.com",
+    "source_quality": "Tier 1",
+    "published": "2026-02-18",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Extractives & Mining",
+    "summary": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize profits, rather than purchasing through ...",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Oil production/export"
+    ],
+    "sentiment": "Neutral",
+    "materiality": 4,
     "risk_score": 60,
     "entities": [
-      "PDVSA",
-      "OFAC"
+      "PDVSA"
     ],
     "tags": [
-      "Sanctions",
       "Energy"
+    ]
+  },
+  {
+    "id": "url::https://www.reuters.com/business/energy/guyanas-oil-growth-potential-rises-venezuela-tensions-set-ease-2026-02-17/",
+    "title": "Guyana's oil growth potential rises as Venezuela tensions set to ease",
+    "url": "https://www.reuters.com/business/energy/guyanas-oil-growth-potential-rises-venezuela-tensions-set-ease-2026-02-17/",
+    "source": "reuters.com",
+    "source_quality": "Tier 1",
+    "published": "2026-02-17",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Extractives & Mining",
+    "summary": "The tiny oil-producing nation of Guyana, already one of the world's fastest-growing economies, has a window of opportunity for more expansion amid ongoing U.S. activity in neighboring Venezuela, ...",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Oil production/export"
+    ],
+    "sentiment": "Positive",
+    "materiality": 3,
+    "risk_score": 27,
+    "entities": [],
+    "tags": [
+      "Energy",
+      "Infrastructure"
     ]
   },
   {
@@ -194,7 +238,7 @@
     "source": "venezuelanalysis.com",
     "source_quality": "Tier 2",
     "published": "2026-02-18",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Food & Agriculture",
     "summary": "Natalia Burdynska Schuurman researched Venezuela's construction of food sovereignty under the Bolivarian Revolution and amid US sanctions.",
     "summary_confidence": "High (Feed snippet)",
@@ -218,7 +262,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Health & Water",
     "summary": "Washington. El ataque militar a gran escala lanzado este s\u00e1bado contra Ir\u00e1n por Estados Unidos, en coordinaci\u00f3n con Israel, se suma a la serie de bombardeos ordenados durante su segundo mandato por el presidente estadounidense, Donald Trump, quien regres\u00f3 al poder el a\u00f1o pasado\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -232,13 +276,56 @@
     "tags": []
   },
   {
+    "id": "url::https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
+    "title": "Trump pushes US toward war with Iran as advisers urge focus on economy",
+    "url": "https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
+    "source": "reuters.com",
+    "source_quality": "Tier 1",
+    "published": "2026-02-20",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Health & Water",
+    "summary": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the ...",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [],
+    "sentiment": "Neutral",
+    "materiality": 2,
+    "risk_score": 30,
+    "entities": [],
+    "tags": [
+      "Elections"
+    ]
+  },
+  {
+    "id": "url::https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
+    "title": "Venezuela Suspends 19 Oil Production Contracts",
+    "url": "https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
+    "source": "finance.yahoo.com",
+    "source_quality": "Tier 3",
+    "published": "2026-02-27",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Finance & Investment",
+    "summary": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law.",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Oil production/export",
+      "Regulatory reform"
+    ],
+    "sentiment": "Positive",
+    "materiality": 2,
+    "risk_score": 12,
+    "entities": [],
+    "tags": [
+      "Energy"
+    ]
+  },
+  {
     "id": "url::https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
     "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
     "url": "https://www.zawya.com/en/press-release/africa-press-releases/africa-venezuela-advance-practical-trade-and-investment-cooperation-qjr2lho9",
     "source": "zawya.com",
     "source_quality": "Tier 3",
     "published": "2026-02-26",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Finance & Investment",
     "summary": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
     "summary_confidence": "High (Feed snippet)",
@@ -252,13 +339,59 @@
     "tags": []
   },
   {
+    "id": "url::https://finance.yahoo.com/news/venezuela-grant-more-oil-blocks-012655616.html",
+    "title": "Venezuela to Grant More Oil Blocks to Chevron",
+    "url": "https://finance.yahoo.com/news/venezuela-grant-more-oil-blocks-012655616.html",
+    "source": "finance.yahoo.com",
+    "source_quality": "Tier 3",
+    "published": "2026-02-25",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Finance & Investment",
+    "summary": "Chevron Corporation (NYSE:CVX) is included among the 14 Best LNG Stocks to Buy Now. Chevron Corporation (NYSE:CVX) manufactures and sells a range of high-quality refined products, including gasoline, diesel, marine and aviation fuels, premium base oil, finished lubricants, and\u2026",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Oil production/export"
+    ],
+    "sentiment": "Neutral",
+    "materiality": 2,
+    "risk_score": 30,
+    "entities": [
+      "Chevron"
+    ],
+    "tags": [
+      "Energy"
+    ]
+  },
+  {
+    "id": "url::https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html",
+    "title": "Trump has big plans for Venezuela's oil but are they feasible?",
+    "url": "https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html",
+    "source": "sg.finance.yahoo.com",
+    "source_quality": "Tier 3",
+    "published": "2026-02-15",
+    "retrieved": "2026-03-01 05:03 UTC",
+    "sector": "Finance & Investment",
+    "summary": "The US president wants American energy firms to start extracting the crude but they are reluctant.",
+    "summary_confidence": "High (Feed snippet)",
+    "event_types": [
+      "Oil production/export"
+    ],
+    "sentiment": "Neutral",
+    "materiality": 3,
+    "risk_score": 45,
+    "entities": [],
+    "tags": [
+      "Energy"
+    ]
+  },
+  {
     "id": "url::https://www.elnacional.com/2026/03/sandra-caula-memoria-y-transtierro/",
     "title": "Sandra Caula: Memoria y transtierro",
     "url": "https://www.elnacional.com/2026/03/sandra-caula-memoria-y-transtierro/",
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-03-01",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Fil\u00f3sofa, profesora en la Universidad Central de Venezuela y en la Universidad Cat\u00f3lica Andr\u00e9s Bello, traductora, cronista y editora, Sandra Caula ha ganado el premio Transgen\u00e9rico 2024 (Fundaci\u00f3n Para la cultura Urbana) con su primera novela, Gram\u00e1tica sensible (2025),\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -278,7 +411,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda para la Convivencia Democr\u00e1tica en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado que 31 militares fueron excarcelados con \u00abmedidas alternativas\u00bb con el objetivo de contribuir a la paz\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -298,7 +431,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "El viernes 27 de febrero circul\u00f3 la versi\u00f3n de que el mayor general Miguel Rodr\u00edguez Torres, exministro del Interior y Justicia, aterrizar\u00eda a las 9:00 de la noche en el aeropuerto internacional de Maiquet\u00eda, procedente desde Madrid, Espa\u00f1a. Este posible regreso se enmarca en un\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -318,7 +451,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda, Jorge Arreaza, inform\u00f3 de la excarcelaci\u00f3n de 31 militares.",
     "summary_confidence": "High (Feed snippet)",
@@ -340,7 +473,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Leandro Palmar y Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras hac\u00edan una cobertura en una plaza de Maracaibo, estado Zulia. Al tiempo los llevaron a Tocor\u00f3n.",
     "summary_confidence": "High (Feed snippet)",
@@ -360,7 +493,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Un padre y su hija de 8 a\u00f1os murieron durante un incendio ocurrido en una residencia ubicada en el municipio Maracaibo, estado Zulia.",
     "summary_confidence": "High (Feed snippet)",
@@ -381,7 +514,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
     "summary_confidence": "High (Feed snippet)",
@@ -401,7 +534,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "La Fiscal\u00eda General del Estado y la Polic\u00eda Nacional de Ecuador allanaron este s\u00e1bado la sede del movimiento Revoluci\u00f3n Ciudadana.",
     "summary_confidence": "High (Feed snippet)",
@@ -421,7 +554,7 @@
     "source": "elnacional.com",
     "source_quality": "Tier 3",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "Miguel Uribe Londo\u00f1o aclar\u00f3 que su hip\u00f3tesis sobre la participaci\u00f3n del r\u00e9gimen venezolano a\u00fan no tiene confirmaci\u00f3n total: \"Seguramente utilizaron al gobierno venezolano de Maduro como c\u00f3mplice. Esa es una hip\u00f3tesis m\u00eda, no tengo eso comprobado.",
     "summary_confidence": "High (Feed snippet)",
@@ -445,7 +578,7 @@
     "source": "elpitazo.net",
     "source_quality": "Tier 2",
     "published": "2026-02-28",
-    "retrieved": "2026-03-01 04:49 UTC",
+    "retrieved": "2026-03-01 05:03 UTC",
     "sector": "Cross-cutting / Policy / Risk",
     "summary": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
     "summary_confidence": "High (Feed snippet)",

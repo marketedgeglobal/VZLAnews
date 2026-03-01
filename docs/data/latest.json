@@ -1,18 +1,19 @@
 {
-  "runAt": "2026-03-01T04:49:30.643921+00:00",
-  "totalItems": 32,
+  "runAt": "2026-03-01T05:03:35.875164+00:00",
+  "totalItems": 56,
   "sectors": [
     {
       "name": "Extractives & Mining",
       "synth": {
         "bullets": [
-          "Officials reported An illustration of oil rigs over a background of a Venezuelan flag.",
-          "Field updates show HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past \u2060two\u2026",
-          "Separate sources indicate Issued on: 01/03/2026 - 02:27 3 min Reading time Share Trump\u2019s Venezuela shift drives surge in oilfield equipment demand, majors stay wary \u00a9 RONALDO\u2026"
+          "Officials reported U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize\u2026",
+          "Field updates show An illustration of oil rigs over a background of a Venezuelan flag.",
+          "Separate sources indicate HOUSTON, Feb 13 (Reuters) - Venezuela's state-run oil company PDVSA has refused to \u2060sell oil \u2060to companies without individual U.S. licenses in the past\u2026"
         ],
         "drivers": [
           "Oil production/export",
           "Political transition",
+          "Regulatory reform",
           "Sanctions"
         ],
         "watch": [
@@ -22,6 +23,70 @@
         ]
       },
       "items": [
+        {
+          "id": "284fde5ff4f3",
+          "title": "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources say",
+          "url": "https://www.reuters.com/business/energy/us-refiners-phillips-66-citgo-seek-buy-crude-directly-venezuela-sources-say-2026-02-18/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-18",
+          "sourcePublishedAt": "2026-02-18",
+          "sourceTier": "Tier 1",
+          "sector": "Extractives & Mining",
+          "snippet": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize profits, rather than purchasing through ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 4,
+          "risk_score": 60,
+          "entities": [
+            "PDVSA"
+          ],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Policy or market figure",
+                "value": "66",
+                "context": "April to maximize profits, rather than purchasing through ... U.S. refiners Phillips 66 and Citgo Petroleum are seeking\u2026",
+                "score": 0
+              },
+              {
+                "label": "Policy or market figure",
+                "value": "66",
+                "context": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan",
+                "score": 0
+              }
+            ]
+          },
+          "preview": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize profits, rather than purchasing through ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan state oil company PDVSA starting in April to maximize profits, rather than purchasing through",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in extractives & mining, with 66 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "April to maximize profits, rather than purchasing through ... U.S. refiners Phillips 66 and Citgo Petroleum are seeking\u2026",
+              "U.S. refiners Phillips 66 and Citgo Petroleum are seeking to buy heavy crude directly from Venezuelan"
+            ]
+          },
+          "icons": [
+            "ENERGY",
+            "NEW"
+          ]
+        },
         {
           "id": "1b51d4fe2a5d",
           "title": "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
@@ -52,7 +117,7 @@
           "flags": {
             "risk": true,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -123,8 +188,7 @@
           "icons": [
             "RISK",
             "POLICY",
-            "ENERGY",
-            "NEW"
+            "ENERGY"
           ]
         },
         {
@@ -157,7 +221,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -176,7 +240,102 @@
           "icons": [
             "RISK",
             "POLICY",
+            "ENERGY"
+          ]
+        },
+        {
+          "id": "4c364187c788",
+          "title": "Rubio travels to meet Caribbean leaders as US squeezes Cuba, Venezuela",
+          "url": "https://www.reuters.com/world/americas/rubio-travels-meet-caribbean-leaders-us-squeezes-cuba-venezuela-2026-02-23/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-23",
+          "sourcePublishedAt": "2026-02-23",
+          "sourceTier": "Tier 1",
+          "sector": "Extractives & Mining",
+          "snippet": "Trump officials have been pressing an interim administration in Caracas to allow U.S. firms access to oil and to instigate reforms since the U.S.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export",
+            "Regulatory reform",
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 55,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Trump officials have been pressing an interim administration in Caracas to allow U.S. firms access to oil and to instigate reforms since the U.S. military launched an attack on Venezuela on January 3, ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Trump officials have been pressing an interim administration in Caracas to allow U.S. firms access to oil and to instigate reforms since the U.S",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around extractives & mining decisions.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
             "ENERGY",
+            "NEW"
+          ]
+        },
+        {
+          "id": "ce1c6543ad33",
+          "title": "Guyana's oil growth potential rises as Venezuela tensions set to ease",
+          "url": "https://www.reuters.com/business/energy/guyanas-oil-growth-potential-rises-venezuela-tensions-set-ease-2026-02-17/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-17",
+          "sourcePublishedAt": "2026-02-17",
+          "sourceTier": "Tier 1",
+          "sector": "Extractives & Mining",
+          "snippet": "The tiny oil-producing nation of Guyana, already one of the world's fastest-growing economies, has a window of opportunity for more expansion amid ongoing U.S. activity in neighboring Venezuela, ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export"
+          ],
+          "sentiment": "Positive",
+          "materiality": 3,
+          "risk_score": 27,
+          "entities": [],
+          "tags": [
+            "Energy",
+            "Infrastructure"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "The tiny oil-producing nation of Guyana, already one of the world's fastest-growing economies, has a window of opportunity for more expansion amid ongoing U.S. activity in neighboring Venezuela, ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "The tiny oil-producing nation of Guyana, already one of the world's fastest-growing economies, has a window of opportunity for more expansion amid ongoing U.S. activity in neighboring Venezuela,",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "ENERGY",
+            "TRADE",
             "NEW"
           ]
         },
@@ -387,7 +546,7 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": true,
+            "new": false,
             "updated": false
           },
           "metrics": {
@@ -457,8 +616,7 @@
           },
           "icons": [
             "ENERGY",
-            "TRADE",
-            "NEW"
+            "TRADE"
           ]
         },
         {
@@ -727,8 +885,8 @@
       "name": "Health & Water",
       "synth": {
         "bullets": [
-          "Officials reported Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
+          "Officials reported WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters'\u2026",
+          "Field updates show Title: De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato URL Source:\u2026",
           "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
         ],
         "drivers": [
@@ -741,6 +899,49 @@
         ]
       },
       "items": [
+        {
+          "id": "f0c58e0d671f",
+          "title": "Trump pushes US toward war with Iran as advisers urge focus on economy",
+          "url": "https://www.reuters.com/world/middle-east/trump-pushes-us-toward-war-with-iran-advisers-urge-focus-economy-2026-02-21/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "sourceTier": "Tier 1",
+          "sector": "Health & Water",
+          "snippet": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Elections"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "WASHINGTON, Feb 21 (Reuters) - President Donald Trump has pushed the United States to the brink of war with Iran even as aides urge him to focus more on voters' economic worries, highlighting the",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in health & water.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
         {
           "id": "ea3accf446da",
           "title": "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
@@ -827,12 +1028,14 @@
       "name": "Finance & Investment",
       "synth": {
         "bullets": [
-          "Officials reported There might be too much traffic or a configuration error.",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes.",
-          "Additional concrete developments were limited in this cycle; watch next updates for confirmed changes."
+          "Officials reported Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela\u2026",
+          "Field updates show Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to\u2026",
+          "Separate sources indicate Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law."
         ],
         "drivers": [
-          "FX / Inflation"
+          "FX / Inflation",
+          "Oil production/export",
+          "Regulatory reform"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -841,6 +1044,103 @@
         ]
       },
       "items": [
+        {
+          "id": "a3fe549e46ee",
+          "title": "Trump has big plans for Venezuela's oil but are they feasible?",
+          "url": "https://sg.finance.yahoo.com/news/trump-big-plans-venezuelas-oil-002936515.html",
+          "publisher": "sg.finance.yahoo.com",
+          "publishedAt": "2026-02-15",
+          "sourcePublishedAt": "2026-02-16",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "The US president wants American energy firms to start extracting the crude but they are reluctant.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 45,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Oil and production",
+                "value": "$4bn",
+                "context": "in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare that to second-placed Saudi Arabia,\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "$100bn",
+                "context": "Venezuela's opposition says party leader kidnapped hours after being freed Trump seeks $100bn for Venezuela oil, but\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "$100bn",
+                "context": "Getty Images] Trump has asked US oil firms to spend at least $100bn (\u00a375bn) on restoring Venezuela's battered\u2026",
+                "score": 5
+              },
+              {
+                "label": "Oil and production",
+                "value": "300 billion",
+                "context": "his plan to ramp up sales can be realised. Officially, Venezuela has 300 billion barrels of oil reserves \u2013 yet in 2023,\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "211.6 million",
+                "context": "billion barrels of oil reserves \u2013 yet in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "7",
+                "context": "his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela has\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "75bn",
+                "context": "Images] Trump has asked US oil firms to spend at least $100bn (\u00a375bn) on restoring Venezuela's battered infrastructure\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "267 billion",
+                "context": "oil, worth about $4bn. Compare that to second-placed Saudi Arabia, which has 267 billion barrels of reserves, but had\u2026",
+                "score": 3
+              }
+            ]
+          },
+          "preview": "For US energy companies, however, there are huge practical difficulties to be overcome. Venezuela's state-owned oil company, PDVSA, is a shadow of its former self.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "Trump eyes Venezuela visit \u2013 but obstacles to his oil plan remain Robert Plummer - Business reporter 16 February 2026 7 min read In this article: CL=F Venezuela has the world's largest oil reserves, but the industry has\u2026",
+            "s2": "Trump now says that he plans to visit the South American country, although no date has been set",
+            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with $4bn as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "in 2023, it exported just 211.6 million barrels of oil, worth about $4bn. Compare that to second-placed Saudi Arabia,\u2026",
+              "Venezuela's opposition says party leader kidnapped hours after being freed Trump seeks $100bn for Venezuela oil, but\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
         {
           "id": "0845d51e0693",
           "title": "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
@@ -868,36 +1168,82 @@
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Detentions and releases",
-                "value": "403",
-                "context": "could not be satisfied URL Source:\u2026",
-                "score": 3
-              },
-              {
-                "label": "Detentions and releases",
-                "value": "403",
-                "context": "URL Source:\u2026",
-                "score": 3
-              }
-            ]
+            "numbers": []
           },
           "preview": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan ...",
           "preview_source": "fallback_summary",
           "language": "en",
           "insight2": {
-            "s1": "There might be too much traffic or a configuration error",
-            "s2": "Try again later, or contact the app or website owner",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment, with 403 as a measurable reference point for scenario tracking.",
+            "s1": "Leading discussions with Coromoto Godoy Calder\u00f3n, Minister of Foreign Trade of the Bolivarian Republic of Venezuela, the AEC delegation explored strategies to expand African markets for Venezuelan",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in finance & investment.",
             "confidence": "HIGH",
-            "evidence": [
-              "could not be satisfied URL Source:\u2026",
-              "URL Source:\u2026"
-            ]
+            "evidence": []
           },
           "icons": [
             "FX"
+          ]
+        },
+        {
+          "id": "711b00e3a6a4",
+          "title": "Venezuela Suspends 19 Oil Production Contracts",
+          "url": "https://finance.yahoo.com/news/venezuela-suspends-19-oil-production-083000383.html",
+          "publisher": "finance.yahoo.com",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "sourceTier": "Tier 3",
+          "sector": "Finance & Investment",
+          "snippet": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Oil production/export",
+            "Regulatory reform"
+          ],
+          "sentiment": "Positive",
+          "materiality": 2,
+          "risk_score": 12,
+          "entities": [],
+          "tags": [
+            "Energy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": [
+              {
+                "label": "Oil and production",
+                "value": "19",
+                "context": "reviewing foreign participation under a newly amended hydrocarbons law. Venezuela has suspended 19 production-sharing\u2026",
+                "score": 3
+              },
+              {
+                "label": "Oil and production",
+                "value": "19",
+                "context": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly\u2026",
+                "score": 3
+              }
+            ]
+          },
+          "preview": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly amended hydrocarbons law",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around oil production/export, with 19 as a measurable reference point for scenario tracking.",
+            "confidence": "HIGH",
+            "evidence": [
+              "reviewing foreign participation under a newly amended hydrocarbons law. Venezuela has suspended 19 production-sharing\u2026",
+              "Venezuela has suspended 19 production-sharing oil agreements while reviewing foreign participation under a newly\u2026"
+            ]
+          },
+          "icons": [
+            "NEW"
           ]
         }
       ]
@@ -906,13 +1252,15 @@
       "name": "Cross-cutting / Policy / Risk",
       "synth": {
         "bullets": [
-          "Officials reported Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos\u2026",
-          "Field updates show Fil\u00f3sofa, profesora en la Universidad Central de Venezuela y en la Universidad Cat\u00f3lica Andr\u00e9s Bello, traductora, cronista y editora, Sandra Caula ha ganado el\u2026",
-          "Separate sources indicate Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source:\u2026"
+          "Officials reported Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the\u2026",
+          "Field updates show With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
+          "Separate sources indicate President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks\u2026"
         ],
         "drivers": [
-          "FX / Inflation",
-          "Oil production/export"
+          "Oil production/export",
+          "Political transition",
+          "Regulatory reform",
+          "Sanctions"
         ],
         "watch": [
           "Regulatory deadlines",
@@ -921,6 +1269,146 @@
         ]
       },
       "items": [
+        {
+          "id": "7bcc5d9bf09d",
+          "title": "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
+          "url": "https://www.reuters.com/world/americas/spain-urges-eu-lift-sanctions-venezuelas-interim-president-after-amnesty-bill-2026-02-20/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-20",
+          "sourcePublishedAt": "2026-02-20",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the South American country approved a limited ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Sanctions",
+            "Regulatory reform"
+          ],
+          "sentiment": "Negative",
+          "materiality": 3,
+          "risk_score": 80,
+          "entities": [],
+          "tags": [
+            "Sanctions",
+            "Policy"
+          ],
+          "flags": {
+            "risk": true,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the South American country approved a limited ...",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "Spain's foreign minister urged the European Union on Friday to lift its sanctions on Venezuela's interim president, Delcy Rodriguez, after lawmakers in the South American country approved a limited",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: risk management assumptions should tighten because implementation conditions are deteriorating around regulatory reform.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "RISK",
+            "POLICY",
+            "NEW"
+          ]
+        },
+        {
+          "id": "dbbab6c07592",
+          "title": "Trump's Iran strikes mark his biggest foreign policy gamble",
+          "url": "https://www.reuters.com/world/us/trumps-iran-strikes-mark-his-biggest-foreign-policy-gamble-2026-02-28/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Security"
+          ],
+          "sentiment": "Neutral",
+          "materiality": 3,
+          "risk_score": 55,
+          "entities": [],
+          "tags": [
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "With his large-scale attack on Iran, Donald Trump has seized a legacy-defining moment to demonstrate his readiness to exercise raw U.S. military power",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around security.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "befbf9709a92",
+          "title": "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
+          "url": "https://apnews.com/article/trump-iran-strike-conflict-us-war-opposition-8fa7a441a4a696a8562de583395ab0bf",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-28",
+          "sourcePublishedAt": "2026-02-28",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks becoming ensnared by that very type of conflict. The ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [
+            "Security"
+          ],
+          "sentiment": "Negative",
+          "materiality": 2,
+          "risk_score": 60,
+          "entities": [],
+          "tags": [
+            "Elections",
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Trump justified the action as necessary to prevent Iran from obtaining nuclear weapons or developing missiles capable of reaching the US, less than a year after he said airstrikes \u201cobliterated\u201d their capability. US intelligence has also said Iran\u2019s weapons capability was substantially degraded.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "President Donald Trump, whose fierce denunciation of military adventurism abroad fueled his unlikely rise to the top of the Republican Party, risks becoming ensnared by that very type of conflict",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
         {
           "id": "944028338883",
           "title": "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
@@ -1021,21 +1509,21 @@
           ]
         },
         {
-          "id": "1d161ba570f8",
-          "title": "Sandra Caula: Memoria y transtierro",
-          "url": "https://www.elnacional.com/2026/03/sandra-caula-memoria-y-transtierro/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-03-01",
-          "sourcePublishedAt": "2026-03-01",
-          "sourceTier": "Tier 3",
+          "id": "a01ce16af823",
+          "title": "Trump touts economy, energy in Texas, mum on his favorite in Republican Senate race",
+          "url": "https://www.reuters.com/world/us/trump-tout-economy-energy-texas-ahead-republican-primaries-2026-02-27/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-27",
+          "sourcePublishedAt": "2026-02-27",
+          "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Fil\u00f3sofa, profesora en la Universidad Central de Venezuela y en la Universidad Cat\u00f3lica Andr\u00e9s Bello, traductora, cronista y editora, Sandra Caula ha ganado el premio Transgen\u00e9rico 2024 (Fundaci\u00f3n Para la cultura Urbana) con su primera novela, Gram\u00e1tica sensible (2025),\u2026",
+          "snippet": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [],
           "tags": [
             "Policy"
@@ -1043,134 +1531,48 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
             "numbers": []
           },
-          "preview": "Fil\u00f3sofa, profesora en la Universidad Central de Venezuela y en la Universidad Cat\u00f3lica Andr\u00e9s Bello, traductora, cronista y editora, Sandra Caula ha ganado el premio Transgen\u00e9rico 2024 (Fundaci\u00f3n Para la cultura Urbana) con su primera novela, Gram\u00e1tica sensible (2025),\u2026",
+          "preview": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S.",
           "preview_source": "fallback_summary",
-          "language": "es",
+          "language": "en",
           "insight2": {
-            "s1": "Fil\u00f3sofa, profesora en la Universidad Central de Venezuela y en la Universidad Cat\u00f3lica Andr\u00e9s Bello, traductora, cronista y editora, Sandra Caula ha ganado el premio Transgen\u00e9rico 2024 (Fundaci\u00f3n Para la cultura\u2026",
+            "s1": "U.S. President Donald Trump touted his economic and fossil fuel agenda in southern Texas on Friday but was coy about which of three Republican candidates he would back in the state's looming U.S",
             "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
             "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk.",
             "confidence": "HIGH",
             "evidence": []
           },
-          "icons": []
+          "icons": [
+            "NEW"
+          ]
         },
         {
-          "id": "afd9a3cb55d7",
-          "title": "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
-          "url": "https://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
+          "id": "5e53e0f480cc",
+          "title": "Maduro\u2019s lawyer says US is blocking Venezuela government from paying deposed leader\u2019s drug defense",
+          "url": "https://apnews.com/article/maduro-venezuela-criminal-case-9dc08ea33228d05feec7ab3c473dd762",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-26",
+          "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Leandro Palmar y Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras hac\u00edan una cobertura en una plaza de Maracaibo, estado Zulia. Al tiempo los llevaron a Tocor\u00f3n.",
+          "snippet": "The lawyer for deposed Venezuelan leader Nicolas Maduro says the United States is blocking funding for the cost of defending himself against drug trafficking charges.",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
+          "event_types": [
+            "Political transition",
+            "Regulatory reform"
           ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "14",
-                "context": "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "84",
-                "context": "visitas de sus familiares. Leandro estaba angustiado por su madre: Delia, de 84 a\u00f1os, viv\u00eda sola en una urbanizaci\u00f3n de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "111",
-                "context": "Solo se escuchaba el ruido constante del motor. Cuando llegaron al Destacamento 111 de la Guardia Nacional Bolivariana\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "100",
-                "context": "dejaron. Y el tiempo comenz\u00f3 a pasar. Dentro del destacamento hab\u00eda casi 100 personas detenidas que compart\u00edan un solo\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "m\u00e1s tiempo presos, med\u00eda apenas 5,6 metros cuadrados. Los custodios les entregaban 5 litros de agua al d\u00eda a cada uno,\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "incitaci\u00f3n al odio, asociaci\u00f3n para delinquir y alteraci\u00f3n del orden p\u00fablico. El 11 de enero de 2025, cuando ya ten\u00edan\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "Belises Cubill\u00e1n, trabajadores de LUZ Radio, fueron detenidos por guardias nacionales el 9 de enero de 2025, mientras\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Apenas sali\u00f3 de Tocor\u00f3n, la luz del d\u00eda le golpe\u00f3 la cara. Encandilado por la claridad, el periodista Leandro Palmar sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba.",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "Title: Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto URL Source: http://elpitazo.net/alianzas/leandro-palmar-y-belises-cubillan-la-libertad-no-es-solo-un-concepto/ Published Time:\u2026",
-            "s2": "Al tiempo los llevaron a Tocor\u00f3n",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 14 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "sinti\u00f3 que el mundo era m\u00e1s grande de lo que recordaba. Ese 14 de enero llevaba un a\u00f1o y cinco d\u00edas detenido. Lo hab\u00edan\u2026",
-              "tomando posesi\u00f3n para un tercer per\u00edodo presidencial \u2014luego de las elecciones del 28 de julio de 2024, cuyos resultados\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "4c605597945a",
-          "title": "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio",
-          "url": "https://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga, parroquia Cristo de Aranza, en Maracaibo, estado Zulia. El adulto fallecido fue identificado como Harold Castillo, de 48 a\u00f1os, quien era pastor\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [
+            "Maduro"
+          ],
           "tags": [
             "Policy"
           ],
@@ -1183,376 +1585,76 @@
           "metrics": {
             "numbers": [
               {
+                "label": "Detentions and releases",
+                "value": "25",
+                "context": "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+                "score": 3
+              },
+              {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
+                "value": "25",
+                "context": "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "20.4",
-                "context": "* [Entretenimiento](http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/) *\u2026",
+                "value": "25",
+                "context": "Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto Racing MLB NFL TOP STORIES\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "D\u00eda, [\u2026] La entrada Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio se public\u00f3 primero en El Pitazo\u2026",
+                "value": "25",
+                "context": "in Spire gear as a lawsuit court deadline looms Newsletters AP Top 25 Poll Alerts Get email alerts for every college\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "28",
-                "context": "su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado 28 de febrero, en una residencia del sector La Arreaga,\u2026",
+                "value": "24",
+                "context": "York antique store shelf Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
                 "score": 0
               },
               {
                 "label": "Policy or market figure",
-                "value": "8",
-                "context": "Andes](https://elpitazo.net/category/regiones/los-andes/) * [Guayana](https://elpitazo.net/category/regiones/guayana/)\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/)\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "la mayor de 10 a\u00f1os, **muriendo mientras intentaba socorrer a la de 8 a\u00f1os**. Ambos fueron hallados sin vida entre los\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "\u201cSe adelantan las investigaciones por parte Un hombre y su hija de 8 a\u00f1os murieron en un incendio ocurrido este s\u00e1bado\u2026",
+                "value": "7",
+                "context": "York antique store shelf Worms in food, poor medical care, lights on 24/7: Families tell of life in Texas detention\u2026",
                 "score": 0
               }
             ]
           },
-          "preview": "Harold Castillo, de 48 a\u00f1os, quien era pastor evang\u00e9lico, intent\u00f3 salvar a sus dos hijas menores de edad cuando se percat\u00f3 de que las llamas consum\u00edan el inmueble. Una sola sobrevivi\u00f3 y permanece en cuidados intensivos",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "Title: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio URL Source: http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/ Published Time:\u2026",
-            "s2": "Una sola sobrevivi\u00f3 y permanece en cuidados intensivos Por[Redacci\u00f3n El Pitazo](https://elpitazo.net/author/elpitazo/) - 28 de febrero de 2026 ![Image\u2026",
-            "s3": "Implication: near-term decision quality now depends more on monitoring counterpart behavior than on headline announcements alone, with 8 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Time: 2026-02-28T18:51:35+00:00 Markdown Content: Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio -\u2026",
-              "* [Entretenimiento](http://elpitazo.net/sucesos/zulia-l-pastor-evangelico-y-su-hija-de-8-anos-mueren-en-un-incendio/) *\u2026"
-            ]
-          },
-          "icons": [
-            "NEW"
-          ]
-        },
-        {
-          "id": "00a433b0fcae",
-          "title": "Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb",
-          "url": "https://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "El presidente de Foro Penal, abogado Alfredo Romero, inform\u00f3 que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X, la organizaci\u00f3n no gubernamental se\u00f1al\u00f3 que entre los excarcelados se encuentran Roc\u00edo Fern\u00e1ndez,\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "FX / Inflation"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "13",
-                "context": "el chavismo al poder-, establece que se conceder\u00e1 a personas vinculadas con 13 \u00abhechos\u00bb ocurridos en 13 a\u00f1os distintos.\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "223",
-                "context": "la normativa, el pasado 19 de febrero. La amnist\u00eda ha beneficiado a 223 personas \u00abque estaban privadas de libertad\u00bb y a\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "4.534",
-                "context": "ha beneficiado a 223 personas \u00abque estaban privadas de libertad\u00bb y a 4.534 personas que ten\u00edan libertades restringidas\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "que al menos ocho presos pol\u00edticos militares fueron excarcelados en Venezuela este 27 de febrero. En la red social X,\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "el Parlamento aprobara una amnist\u00eda que si bien contempla un per\u00edodo de 27 a\u00f1os, desde 1999 -cuando lleg\u00f3 el chavismo\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "4.757",
-                "context": "comunicaci\u00f3n pol\u00edtica Mapas detallados de regiones En total, agreg\u00f3, se han otorgado **4.757 libertades plenas de las\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "182",
-                "context": "mayor a 15 d\u00edas. Hasta la tarde del jueves, Foro Penal contabilizaba 182 presos pol\u00edticos militares excarcelados, as\u00ed\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "386",
-                "context": "del jueves, Foro Penal contabilizaba 182 presos pol\u00edticos militares excarcelados, as\u00ed como 386 civiles, para un total\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Foro Penal indic\u00f3 que **ambos estaban \u00abarbitrariamente\u00bb detenidos desde agosto de 2024**. En ese momento Venezuela atravesaba una crisis que se desat\u00f3 luego de la cuestionada victoria de **Nicol\u00e1s Maduro** en las presidenciales de julio de ese a\u00f1o proclamada por un organismo electoral af\u00edn al chavismo que no public\u00f3 las actas de votaci\u00f3n.",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "Title: Foro Penal: Excarcelados al menos ocho presos pol\u00edticos militares en Venezuela este #27Feb URL Source: http://elpitazo.net/politica/foro-penal-excarcelados-al-menos-ocho-presos-politicos-militares-en-venezuela/\u2026",
-            "s2": "Para este s\u00e1bado, familiares, activistas y organizaciones no gubernamentales est\u00e1n convocando a una vigilia en las adyacencias de El Helicoide para exigir la liberaci\u00f3n de todos los presos pol\u00edticos El presidente de\u2026",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around fx / inflation, with 13 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "el chavismo al poder-, establece que se conceder\u00e1 a personas vinculadas con 13 \u00abhechos\u00bb ocurridos en 13 a\u00f1os distintos.\u2026",
-              "la normativa, el pasado 19 de febrero. La amnist\u00eda ha beneficiado a 223 personas \u00abque estaban privadas de libertad\u00bb y a\u2026"
-            ]
-          },
-          "icons": [
-            "FX",
-            "NEW"
-          ]
-        },
-        {
-          "id": "986869b8d230",
-          "title": "Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de Amnist\u00eda",
-          "url": "https://elpitazo.net/politica/parlamento-venezolano-anuncia-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda para la Convivencia Democr\u00e1tica en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado que 31 militares fueron excarcelados con \u00abmedidas alternativas\u00bb con el objetivo de contribuir a la paz\u2026",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "5.491",
-                "context": "ten\u00edan libertades restringidas con \u00abmedidas cautelares\u00bb. En total, continu\u00f3, se han otorgado 5.491 libertades plenas de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "seg\u00fan la propia norma, deben resolver en un plazo no mayor a 15 d\u00edas. El Parlamento, controlado por el chavismo, aprob\u00f3\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "31",
-                "context": "de contribuir a la paz\u2026 Title: Parlamento venezolano anuncia la excarcelaci\u00f3n de 31 militares en el marco de la Ley de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8.707",
-                "context": "cautelares\u00bb. En total, continu\u00f3, se han otorgado 5.491 libertades plenas de las 8.707 solicitudes que han recibido las\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "255",
-                "context": "han salido de prisi\u00f3n** -------------------------------------- Arreaza tambi\u00e9n inform\u00f3 que un total de **255 personas\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "13",
-                "context": "desde 1999 hasta 2026, pero que se aplicar\u00e1 de forma espec\u00edfica a 13 \u00abhechos\u00bb ocurridos en 13 a\u00f1os distintos, lo que\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "618",
-                "context": "indic\u00f3 que desde enero hasta la fecha ha verificado la excarcelaci\u00f3n de 618 de estos detenidos. \u00abPara la libertad de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "13",
-                "context": "pero que se aplicar\u00e1 de forma espec\u00edfica a 13 \u00abhechos\u00bb ocurridos en 13 a\u00f1os distintos, lo que excluye el resto del\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Este s\u00e1bado la oposici\u00f3n mayoritaria de Venezuela, agrupada en la Plataforma Unitaria Democr\u00e1tica (PUD), tambi\u00e9n se pronunci\u00f3 para exigir exigi\u00f3 liberaciones masivas y transparentes de presos pol\u00edticos. La PUD indic\u00f3 que desde enero hasta la fecha ha verificado la excarcelaci\u00f3n de 618 de estos detenidos.",
-          "preview_source": "jina",
-          "language": "es",
-          "insight2": {
-            "s1": "The publication reports movement in cross-cutting / policy / risk with concrete operational relevance in Venezuela.",
-            "s2": "A trav\u00e9s de un mensaje en X, el diputado indic\u00f3 que el Sistema de Justicia Militar de la Fuerza Armada Nacional Bolivariana (FANB) acord\u00f3 otorgar estas medidas el viernes a los militares que, dijo, \u00ab**ya se encuentran\u2026",
-            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions, with 5.491 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "ten\u00edan libertades restringidas con \u00abmedidas cautelares\u00bb. En total, continu\u00f3, se han otorgado 5.491 libertades plenas de\u2026",
-              "seg\u00fan la propia norma, deben resolver en un plazo no mayor a 15 d\u00edas. El Parlamento, controlado por el chavismo, aprob\u00f3\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "0c9024462a1b",
-          "title": "Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda",
-          "url": "https://www.elnacional.com/2026/02/jorge-arreaza-anuncio-la-excarcelacion-de-31-militares-en-el-marco-de-la-ley-de-amnistia/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda, Jorge Arreaza, inform\u00f3 de la excarcelaci\u00f3n de 31 militares.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [
-            "FX / Inflation"
-          ],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": false,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "31",
-                "context": "Sistema de Justicia Militar de la FANB, acord\u00f3 otorgar medidas alternativas a 31 efectivos militares procesados, que ya\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "618",
-                "context": "conformamos con una jaula m\u00e1s grande\" febrero 28, 2026 Plataforma Unitaria report\u00f3 618 liberaciones de presos pol\u00edticos\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "Helicoide este #28Feb febrero 28, 2026 Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "31",
-                "context": "Viajes y Turismo Hor\u00f3scopo Venezuela \u00bb Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "31",
-                "context": "marco de la ley de amnist\u00eda Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda A\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "13",
-                "context": "desde 1999 hasta 2026. Sin embargo, se aplicar\u00e1 de forma espec\u00edfica a 13 \"hechos\" ocurridos en 13 a\u00f1os distintos. Esto\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "otorgar estas medidas el viernes a los militares Por El Nacional febrero 28, 2026 6:11 pm Foto referencial / Cortes\u00eda\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "6",
-                "context": "medidas el viernes a los militares Por El Nacional febrero 28, 2026 6:11 pm Foto referencial / Cortes\u00eda El presidente\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "El presidente de la comisi\u00f3n parlamentaria para la aplicaci\u00f3n de la Ley de Amnist\u00eda en Venezuela, el diputado Jorge Arreaza, inform\u00f3 este s\u00e1bado de la excarcelaci\u00f3n de 31 militares con \"medidas alternativas\". Esto tiene como objetivo contribuir a la paz y al encuentro nacional.",
+          "preview": "Attorney Barry Pollack told a Manhattan federal judge in an email last week that the U.S. Treasury Department had blocked the authorization of legal fees that the government of Venezuela is required to pay for Maduro and First Lady Cilia Flores under its law and custom.",
           "preview_source": "trafilatura",
-          "language": "es",
+          "language": "en",
           "insight2": {
-            "s1": "Jorge Arreaza anunci\u00f3 la excarcelaci\u00f3n de 31 militares en el marco de la ley de amnist\u00eda Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica\u2026",
-            "s2": "Esto tiene como objetivo contribuir a la paz y al encuentro nacional",
-            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around fx / inflation, with 31 as a measurable reference point for scenario tracking.",
+            "s1": "The Afternoon Wire Get caught up on what you may have missed throughout the day",
+            "s2": "See All Newsletters AP QUIZZES Test Your News I.Q",
+            "s3": "Implication: the political economy signal now points to tighter bargaining space around cross-cutting / policy / risk decisions, with 25 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "Sistema de Justicia Militar de la FANB, acord\u00f3 otorgar medidas alternativas a 31 efectivos militares procesados, que ya\u2026",
-              "conformamos con una jaula m\u00e1s grande\" febrero 28, 2026 Plataforma Unitaria report\u00f3 618 liberaciones de presos pol\u00edticos\u2026"
+              "Top 25 Poll Alerts Get email alerts for every college football Top 25 Poll release. The Sports Wire Your home base for\u2026",
+              "politics. See All Newsletters Sports SECTIONS 2026 Winter Olympics Men\u2019s Hoops Top 25 Women\u2019s Hoops Top 25 NBA NHL Auto\u2026"
             ]
           },
           "icons": [
-            "FX"
+            "NEW"
           ]
         },
         {
-          "id": "c39bf280c3c2",
-          "title": "\u00bfMiguel Rodr\u00edguez Torres regres\u00f3 a Venezuela? Esto es lo que se sabe",
-          "url": "https://elpitazo.net/politica/miguel-rodriguez-torres-regreso-a-venezuela-esto-es-lo-que-se-sabe/",
-          "publisher": "elpitazo.net",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 2",
+          "id": "4dc4df95fb13",
+          "title": "Venezuela attorney general resigns, then lands acting ombudsman role in surprise move",
+          "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "El viernes 27 de febrero circul\u00f3 la versi\u00f3n de que el mayor general Miguel Rodr\u00edguez Torres, exministro del Interior y Justicia, aterrizar\u00eda a las 9:00 de la noche en el aeropuerto internacional de Maiquet\u00eda, procedente desde Madrid, Espa\u00f1a. Este posible regreso se enmarca en un\u2026",
+          "snippet": "Venezuela\u2019s attorney general, who for years played a central role in the government\u2019s repressive apparatus, resigned Wednesday as pressure grew for ...",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
           "event_types": [],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [],
           "tags": [
             "Policy"
@@ -1560,189 +1662,88 @@
           "flags": {
             "risk": false,
             "opportunity": false,
-            "new": false,
+            "new": true,
             "updated": false
           },
           "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "21",
-                "context": "ni acceso a la luz del sol o al aire libre. El 21 de enero de 2023 sali\u00f3 de Venezuela rumbo a Espa\u00f1a, tras negociaciones",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "12",
-                "context": "gubernamentales, las cuales fueron presentadas ante la Corte Penal Internacional. \u2013 **El 12 de febrero de ese a\u00f1o,** se\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "5",
-                "context": "de la Revoluci\u00f3n\u201d. En el hecho result\u00f3 abatido el l\u00edder del Colectivo 5 de Marzo,** El viernes 27 de febrero circul\u00f3 la\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "hecho result\u00f3 abatido el l\u00edder del Colectivo 5 de Marzo,** El viernes 27 de febrero circul\u00f3 la versi\u00f3n de que el mayor\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "27",
-                "context": "se sabe URL Source: http://elpitazo.net/politica/miguel-rodriguez-torres-regreso-a-venezuela-esto-es-lo-que-se-sabe/\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "visto en el vuelo comercial de Air Europa que aterriz\u00f3 a las 9:10 p.m. del viernes en Maiquet\u00eda, no se descarta su\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10",
-                "context": "visto en el vuelo comercial de Air Europa que aterriz\u00f3 a las 9:10 p.m. del viernes en Maiquet\u00eda, no se descarta su\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "9",
-                "context": "general **Miguel Rodr\u00edguez Torres**, exministro del Interior y Justicia, aterrizar\u00eda a las 9:00 de la noche en el\u2026",
-                "score": 0
-              }
-            ]
+            "numbers": []
           },
-          "preview": "El viernes 27 de febrero circul\u00f3 la versi\u00f3n de que el mayor general Miguel Rodr\u00edguez Torres, exministro del Interior y Justicia, aterrizar\u00eda a las 9:00 de la noche en el aeropuerto internacional de Maiquet\u00eda, procedente desde Madrid, Espa\u00f1a. Este posible regreso se enmarca en un\u2026",
+          "preview": "Tarek William Saab, a close ally of former President Nicol\u00e1s Maduro, submitted his resignation to the ruling party-controlled National Assembly without offering a reason for his decision. He had held the role of Venezuela\u2019s chief prosecutor since 2017 despite repeated accusations of human rights violations against him and his office.",
+          "preview_source": "trafilatura",
+          "language": "en",
+          "insight2": {
+            "s1": "Venezuela\u2019s attorney general, who for years played a central role in the government\u2019s repressive apparatus, resigned Wednesday as pressure grew for",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": []
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "4a7caae78192",
+          "title": "Insight: Spain's looming migrant amnesty strains services, sends applicants scrambling",
+          "url": "https://www.reuters.com/world/europe/spains-looming-migrant-amnesty-strains-services-sends-applicants-scrambling-2026-02-26/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-25",
+          "sourcePublishedAt": "2026-02-25",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before ...",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Migration",
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before ...",
           "preview_source": "fallback_summary",
-          "language": "es",
+          "language": "en",
           "insight2": {
-            "s1": "Title: \u00bfMiguel Rodr\u00edguez Torres regres\u00f3 a Venezuela?",
-            "s2": "Esto es lo que se sabe URL Source: http://elpitazo.net/politica/miguel-rodriguez-torres-regreso-a-venezuela-esto-es-lo-que-se-sabe/ Published Time: 2026-02-28T22:22:50+00:00 Markdown Content: El viernes 27 de febrero\u2026",
-            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 21 as a measurable reference point for scenario tracking.",
+            "s1": "Spain's newest drive to fast-track legal status for at least half a million undocumented migrants has already burdened immigration offices and sparked anxiety among prospective applicants weeks before",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk.",
             "confidence": "HIGH",
-            "evidence": [
-              "ni acceso a la luz del sol o al aire libre. El 21 de enero de 2023 sali\u00f3 de Venezuela rumbo a Espa\u00f1a, tras negociaciones",
-              "gubernamentales, las cuales fueron presentadas ante la Corte Penal Internacional. \u2013 **El 12 de febrero de ese a\u00f1o,** se\u2026"
-            ]
-          },
-          "icons": []
-        },
-        {
-          "id": "7cfaff446020",
-          "title": "Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo",
-          "url": "https://www.elnacional.com/2026/02/un-padre-y-su-hija-de-8-anos-murieron-en-incendio-de-una-residencia-en-maracaibo/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
-          "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "Un padre y su hija de 8 a\u00f1os murieron durante un incendio ocurrido en una residencia ubicada en el municipio Maracaibo, estado Zulia.",
-          "snippet_status": "",
-          "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
-          "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
-          "entities": [],
-          "tags": [
-            "Infrastructure",
-            "Policy"
-          ],
-          "flags": {
-            "risk": false,
-            "opportunity": false,
-            "new": true,
-            "updated": false
-          },
-          "metrics": {
-            "numbers": [
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "Viajes y Turismo Hor\u00f3scopo Venezuela \u00bb Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "618",
-                "context": "conformamos con una jaula m\u00e1s grande\" febrero 28, 2026 Plataforma Unitaria report\u00f3 618 liberaciones de presos pol\u00edticos\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "a una de ellas The post Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo appeared first\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "8",
-                "context": "una de ellas Por El Nacional febrero 28, 2026 4:10 pm Actualizado 8:11 pm Incendio en una residencia en Maracaibo dej\u00f3\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "una de ellas Por El Nacional febrero 28, 2026 4:10 pm Actualizado 8:11 pm Incendio en una residencia en Maracaibo dej\u00f3\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "10",
-                "context": "logr\u00f3 rescatar a una de ellas Por El Nacional febrero 28, 2026 4:10 pm Actualizado 8:11 pm Incendio en una residencia\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "6",
-                "context": "Padre e hija murieron en incendio El incendio se produjo a las 6:30 a.m. de este s\u00e1bado 28 de febrero en una casa del\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "30",
-                "context": "Padre e hija murieron en incendio El incendio se produjo a las 6:30 a.m. de este s\u00e1bado 28 de febrero en una casa del\u2026",
-                "score": 0
-              }
-            ]
-          },
-          "preview": "Un padre y su hija de 8 a\u00f1os murieron durante un incendio ocurrido en una residencia ubicada en el municipio Maracaibo, estado Zulia. Los cuerpos fueron localizados entre los escombros.",
-          "preview_source": "trafilatura",
-          "language": "es",
-          "insight2": {
-            "s1": "Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo - EL NACIONAL Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia\u2026",
-            "s2": "Los cuerpos fueron localizados entre los escombros",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk, with 8 as a measurable reference point for scenario tracking.",
-            "confidence": "HIGH",
-            "evidence": [
-              "Viajes y Turismo Hor\u00f3scopo Venezuela \u00bb Un padre y su hija de 8 a\u00f1os murieron en incendio de una residencia en Maracaibo\u2026",
-              "conformamos con una jaula m\u00e1s grande\" febrero 28, 2026 Plataforma Unitaria report\u00f3 618 liberaciones de presos pol\u00edticos\u2026"
-            ]
+            "evidence": []
           },
           "icons": [
-            "TRADE",
             "NEW"
           ]
         },
         {
-          "id": "6e897fd9e737",
-          "title": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo por supuesta financiaci\u00f3n de Venezuela",
-          "url": "https://www.elnacional.com/2026/02/fiscalia-de-ecuador-allana-la-sede-del-correismo/",
-          "publisher": "elnacional.com",
-          "publishedAt": "2026-02-28",
-          "sourcePublishedAt": "2026-02-28",
-          "sourceTier": "Tier 3",
+          "id": "779913837acc",
+          "title": "Venezuela says more than 3,200 people have been fully released since amnesty law took effect",
+          "url": "https://apnews.com/article/venezuela-political-prisoners-detained-amnesty-delcy-38494341c7f1fc5c6b3f2936a7830fb8",
+          "publisher": "apnews.com",
+          "publishedAt": "2026-02-24",
+          "sourcePublishedAt": "2026-02-24",
+          "sourceTier": "Tier 1",
           "sector": "Cross-cutting / Policy / Risk",
-          "snippet": "La Fiscal\u00eda General del Estado y la Polic\u00eda Nacional de Ecuador allanaron este s\u00e1bado la sede del movimiento Revoluci\u00f3n Ciudadana.",
+          "snippet": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released since the amnesty law took ef ...",
           "snippet_status": "",
           "summary_confidence": "High (Feed snippet)",
-          "event_types": [],
+          "event_types": [
+            "Regulatory reform"
+          ],
           "sentiment": "Neutral",
-          "materiality": 1,
-          "risk_score": 15,
+          "materiality": 2,
+          "risk_score": 30,
           "entities": [],
           "tags": [
             "Policy"
@@ -1756,67 +1757,75 @@
           "metrics": {
             "numbers": [
               {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
-                "score": 0
+                "label": "Detentions and releases",
+                "value": "3,200",
+                "context": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released\u2026",
+                "score": 3
               },
               {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "preventiva. Campa\u00f1a Venezuela Ecuador Fiscal\u00eda MINUTO A MINUTO Relacionadas Un muerto y 11 heridos tras ataques iran\u00edes\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "l\u00edder supremo iran\u00ed que se mantuvo en el poder desde 1989 febrero 28, 2026 Los iran\u00edes celebran el anuncio de la muerte\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "15",
-                "context": "(2007-2017) asegur\u00f3 en X que \"en lugar de combatir el crimen organizado, 15 polic\u00edas est\u00e1n allanando la sede de la RC5\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "11",
-                "context": "lo se\u00f1alaba como presunto autor de la violaci\u00f3n de una ni\u00f1a. El 11 de febrero, el Ministerio de Salud revel\u00f3 que abri\u00f3\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "con los hechos que se investigan. pic.twitter.com/ayW28nErWP \u2014 Fiscal\u00eda Ecuador (@FiscaliaEcuador) February 28, 2026\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "22",
-                "context": "el anuncio de la muerte de Jamenei febrero 28, 2026 Asciende a 22 la cifra de muertos por accidente de avi\u00f3n militar\u2026",
-                "score": 0
-              },
-              {
-                "label": "Policy or market figure",
-                "value": "28",
-                "context": "Fiscal\u00eda de M\u00e9xico entrega el cuerpo del Mencho a su familia febrero 28, 2026 Contenido Patrocinado CONTACTOS [email\u2026",
-                "score": 0
+                "label": "Detentions and releases",
+                "value": "3,200",
+                "context": "... A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully\u2026",
+                "score": 3
               }
             ]
           },
-          "preview": "\"Yo he venido a dar la versi\u00f3n sobre el caso 'Caja Chica' porque el pa\u00eds necesita un ba\u00f1o de verdad. Yo traslad\u00e9 por disposici\u00f3n del presidente Correa dinero desde Venezuela a Ecuador.",
+          "preview": "CARACAS, Venezuela (AP) \u2014 A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released since the amnesty law took effect four days ago. This group includes both former detainees and those previously under house arrest or other restrictive measures.",
           "preview_source": "trafilatura",
-          "language": "es",
+          "language": "en",
           "insight2": {
-            "s1": "Fiscal\u00eda de Ecuador allana la sede del corre\u00edsmo Ver Portada Venezuela Pol\u00edtica Ciudad Regiones Sucesos Educaci\u00f3n Protestas Servicios Mundo EE UU Europa Colombia Latinoam\u00e9rica Espa\u00f1a Inmigraci\u00f3n Econom\u00eda Finanzas\u2026",
-            "s2": "En su cuenta de la red social X, la Fiscal\u00eda confirm\u00f3 que el allanamiento tuvo lugar en la capital de Ecuador, Quito, y se realiz\u00f3 \"con el fin de recabar indicios\" en el marco del caso denominado 'Caja Chica '",
-            "s3": "Implication: stakeholder leverage appears to be rotating, which can change policy sequencing and implementation timing in cross-cutting / policy / risk, with 28 as a measurable reference point for scenario tracking.",
+            "s1": "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released since the amnesty law took ef",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: execution risk should be re-priced as administrative and political constraints converge in cross-cutting / policy / risk, with 3,200 as a measurable reference point for scenario tracking.",
             "confidence": "HIGH",
             "evidence": [
-              "indicios\" en el marco del caso denominado 'Caja Chica' Por EFE febrero 28, 2026 1:44 pm Cortes\u00eda Fiscal\u00eda de Ecuador La\u2026",
-              "preventiva. Campa\u00f1a Venezuela Ecuador Fiscal\u00eda MINUTO A MINUTO Relacionadas Un muerto y 11 heridos tras ataques iran\u00edes\u2026"
+              "A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully released\u2026",
+              "... A special commission of Venezuela\u2019s National Assembly announced Tuesday that over 3,200 people have been fully\u2026"
             ]
+          },
+          "icons": [
+            "NEW"
+          ]
+        },
+        {
+          "id": "35f30b1b5b45",
+          "title": "Takeaways from Trump's State of the Union address to Congress",
+          "url": "https://www.reuters.com/legal/government/takeaways-trumps-state-union-address-congress-2026-02-25/",
+          "publisher": "reuters.com",
+          "publishedAt": "2026-02-24",
+          "sourcePublishedAt": "2026-02-24",
+          "sourceTier": "Tier 1",
+          "sector": "Cross-cutting / Policy / Risk",
+          "snippet": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living.",
+          "snippet_status": "",
+          "summary_confidence": "High (Feed snippet)",
+          "event_types": [],
+          "sentiment": "Neutral",
+          "materiality": 2,
+          "risk_score": 30,
+          "entities": [],
+          "tags": [
+            "Elections",
+            "Policy"
+          ],
+          "flags": {
+            "risk": false,
+            "opportunity": false,
+            "new": true,
+            "updated": false
+          },
+          "metrics": {
+            "numbers": []
+          },
+          "preview": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living.",
+          "preview_source": "fallback_summary",
+          "language": "en",
+          "insight2": {
+            "s1": "President Donald Trump addressed Congress against a backdrop of rising tensions with Iran and voter frustration with the high cost of living",
+            "s2": "The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response.",
+            "s3": "Implication: institutions should re-base short-cycle scenarios because counterpart incentives are shifting around cross-cutting / policy / risk.",
+            "confidence": "HIGH",
+            "evidence": []
           },
           "icons": [
             "NEW"

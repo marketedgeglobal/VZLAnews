@@ -1,24 +1,24 @@
 {
-  "run_at": "2026-03-01T04:49:30.643921+00:00",
+  "run_at": "2026-03-01T05:03:35.875164+00:00",
   "trend_summary": {
-    "freq_7d": 33.5,
+    "freq_7d": 46.0,
     "intensity_30d": "\u2192 Stable",
     "direction_90d": "\u2192 Stable"
   },
-  "sanctions_index": 49,
+  "sanctions_index": 64,
   "sector_briefs": {
     "Extractives": {
       "health": 6,
-      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Sanctions. Risk pressure is mixed with an average score of 36/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in extractives, signal flow is concentrated around Oil production/export, Political transition, Regulatory reform. Risk pressure is mixed with an average score of 39/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "Exclusive-Venezuela's PDVSA Selling Oil Only to Individually Licensed Companies, Sources Say",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
+        "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources sa",
+        "Exclusive-Venezuela's PDVSA Selling Oil Only to Individually Licensed Companies, Sources Say"
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro, sources say",
-        "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
-        "Petr\u00f3leos de Venezuela S.A. (PDVSA), Venezuela\u2019s Hydrocarbon Ministry, African Energy Chamber ("
+        "Exclusive: US refiners Phillips 66, Citgo seek to buy crude directly from Venezuela, sources sa",
+        "Rubio travels to meet Caribbean leaders as US squeezes Cuba, Venezuela"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -28,14 +28,16 @@
     },
     "Finance": {
       "health": 7,
-      "summary": "This week in finance, signal flow is concentrated around FX / Inflation. Risk pressure is mixed with an average score of 30/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in finance, signal flow is concentrated around FX / Inflation, Oil production/export, Regulatory reform. Risk pressure is mixed with an average score of 29/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Africa, Venezuela Advance Practical Trade and Investment Cooperation"
+        "Trump has big plans for Venezuela's oil but are they feasible?",
+        "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
+        "Venezuela to Grant More Oil Blocks to Chevron"
       ],
       "opportunities": [
         "Africa, Venezuela Advance Practical Trade and Investment Cooperation",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
+        "Venezuela to Grant More Oil Blocks to Chevron",
+        "Venezuela Suspends 19 Oil Production Contracts"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",
@@ -62,12 +64,13 @@
     },
     "Health": {
       "health": 6,
-      "summary": "This week in health, signal flow is concentrated around Security. Risk pressure is mixed with an average score of 45/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in health, signal flow is concentrated around Security. Risk pressure is mixed with an average score of 38/100. Positive momentum appears in 0 items, while 1 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato"
+        "De Venezuela a Ir\u00e1n, los bombardeos ordenados por Trump en su segundo mandato",
+        "Trump pushes US toward war with Iran as advisers urge focus on economy"
       ],
       "opportunities": [
-        "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
+        "Trump pushes US toward war with Iran as advisers urge focus on economy",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage.",
         "Monitor policy/market openings tied to licensing, contracts, or donor leverage."
       ],
@@ -79,11 +82,11 @@
     },
     "Governance": {
       "health": 8,
-      "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 16/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in governance, signal flow is concentrated around FX / Inflation, Oil production/export, Political transition. Risk pressure is mixed with an average score of 25/100. Positive momentum appears in 0 items, while 2 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
-        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo",
-        "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
-        "Zulia l Pastor evang\u00e9lico y su hija de 8 a\u00f1os mueren en un incendio"
+        "Spain urges EU to lift sanctions on Venezuela's interim president after amnesty bill",
+        "Trump\u2019s \u2018America First\u2019 campaign battle cry gives way to military strikes abroad",
+        "Trump's Iran strikes mark his biggest foreign policy gamble"
       ],
       "opportunities": [
         "Leandro Palmar y Belises Cubill\u00e1n: la libertad no es solo un concepto",
@@ -98,16 +101,16 @@
     },
     "Infrastructure": {
       "health": 8,
-      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 22/100. Positive momentum appears in 0 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
+      "summary": "This week in infrastructure, signal flow is concentrated around Oil production/export, Political transition. Risk pressure is mixed with an average score of 24/100. Positive momentum appears in 1 items, while 0 items indicate material downside pressure. Decision context should balance regulatory trajectory, operational feasibility, and partner exposure. Near-term positioning favors scenario planning with trigger-based execution gates.",
       "risks": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
         "Texas port humming as Trump ramps up Venezuela oil",
-        "Trump destaca relaci\u00f3n energ\u00e9tica con Venezuela y plan conjunto para refinar crudo"
+        "Repsol is owed $5.4 billion by Venezuela, annual report shows"
       ],
       "opportunities": [
         "Venezuela suspends 19 oil, gas production-sharing contracts signed under Maduro government, rep",
         "Texas port humming as Trump ramps up Venezuela oil",
-        "Una visi\u00f3n de futuro que convoque a todos los venezolanos"
+        "Repsol is owed $5.4 billion by Venezuela, annual report shows"
       ],
       "watch": [
         "Executive decrees and regulatory circulars",

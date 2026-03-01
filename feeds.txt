@@ -84,6 +84,17 @@ Google News – Venezuela IMF World Bank financing (en-US) - https://news.google
 Google News – Venezuela public private partnership (en-US) - https://news.google.com/rss/search?q=Venezuela+public+private+partnership+infrastructure&hl=en-US&gl=US&ceid=US:en
 Google News – Venezuela humanitarian logistics (en-US) - https://news.google.com/rss/search?q=Venezuela+humanitarian+logistics+aid&hl=en-US&gl=US&ceid=US:en
 Google News – Venezuela elections governance risk (en-US) - https://news.google.com/rss/search?q=Venezuela+election+governance+risk&hl=en-US&gl=US&ceid=US:en
+Google News – Reuters Venezuela (en-US) - https://news.google.com/rss/search?q=site:reuters.com+Venezuela&hl=en-US&gl=US&ceid=US:en
+Google News – AP Venezuela (en-US) - https://news.google.com/rss/search?q=site:apnews.com+Venezuela&hl=en-US&gl=US&ceid=US:en
+Google News – Financial Times Venezuela (en-US) - https://news.google.com/rss/search?q=site:ft.com+Venezuela&hl=en-US&gl=US&ceid=US:en
+Google News – Bloomberg Venezuela sanctions (en-US) - https://news.google.com/rss/search?q=site:bloomberg.com+Venezuela+sanctions&hl=en-US&gl=US&ceid=US:en
+Google News – Reuters Venezuela oil sanctions (en-US) - https://news.google.com/rss/search?q=site:reuters.com+Venezuela+oil+sanctions&hl=en-US&gl=US&ceid=US:en
+Google News – AP Venezuela economy politics (en-US) - https://news.google.com/rss/search?q=site:apnews.com+Venezuela+economy+politics&hl=en-US&gl=US&ceid=US:en
+Google News – Reuters PDVSA licenses (en-US) - https://news.google.com/rss/search?q=site:reuters.com+PDVSA+license&hl=en-US&gl=US&ceid=US:en
+Google News – Reuters Venezuela debt bonds (en-US) - https://news.google.com/rss/search?q=site:reuters.com+Venezuela+debt+bonds&hl=en-US&gl=US&ceid=US:en
+Google News – Venezuela humanitarian AP Reuters (en-US) - https://news.google.com/rss/search?q=Venezuela+humanitarian+site:reuters.com+OR+site:apnews.com&hl=en-US&gl=US&ceid=US:en
+Bing News – Reuters Venezuela economy - https://www.bing.com/news/search?q=site:reuters.com+venezuela+economy&format=rss
+Bing News – AP Venezuela politics - https://www.bing.com/news/search?q=site:apnews.com+venezuela+politics&format=rss
 
 
 # ============================
