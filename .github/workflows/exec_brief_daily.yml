@@ -1,0 +1,31 @@
+name: Build Executive Rapid Brief
+
+on:
+  schedule:
+    - cron: "25 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  exec-brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build executive rapid brief JSON
+        run: |
+          python scripts/build_exec_brief.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add docs/data/exec_brief.json
+          git commit -m "chore(data): update executive rapid brief" || exit 0
+          git push

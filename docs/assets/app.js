@@ -261,6 +261,35 @@
         }
     }
 
+    async function loadExecBrief() {
+        try {
+            return await loadJson('data/exec_brief.json');
+        } catch {
+            return null;
+        }
+    }
+
+    function renderExecBriefCard(brief) {
+        const bullets = (brief && Array.isArray(brief.bullets)) ? brief.bullets.slice(0, 5) : [];
+        const body = bullets.length
+            ? `<ul class="exec-bullets">${bullets.map((text) => `<li>${esc(text)}</li>`).join('')}</ul>`
+            : '<div class="exec-empty">No executive summary available today.</div>';
+        const date = (brief && brief.asOf) ? String(brief.asOf).slice(0, 10) : '';
+
+        return `
+            <section class="panel exec-card" id="exec-brief">
+                <div class="exec-head">
+                    <div>
+                        <h3>${esc((brief && brief.title) || 'Executive Rapid Brief')}</h3>
+                        <div class="exec-sub">Copy-ready synthesis from today’s Venezuela news and deep-dive publications.</div>
+                    </div>
+                    <div class="exec-date">${esc(date)}</div>
+                </div>
+                ${body}
+            </section>
+        `;
+    }
+
     function renderPdfPubsCard(pubs) {
         const list = (pubs && Array.isArray(pubs.publications)) ? pubs.publications : [];
         const periodLabel = (pubs && pubs.yearLabel) ? pubs.yearLabel : 'Last 3 Years';
@@ -335,12 +364,13 @@
         const root = document.getElementById('app-root');
         if (!root) return;
         try {
-            const [latest, macros, imf, pdfPubs, bd] = await Promise.all([
+            const [latest, macros, imf, pdfPubs, bd, execBrief] = await Promise.all([
                 loadJson('data/latest.json'),
                 loadJson('data/macros.json'),
                 loadIMF(),
                 loadPdfPubs2Y(),
-                loadBdOpps()
+                loadBdOpps(),
+                loadExecBrief()
             ]);
             const debugMode = new URLSearchParams(window.location.search).get('debug') === '1';
             let rejectedBuild = [];
@@ -365,6 +395,7 @@
                 const sectorsHtml = renderSectors(latest, activeLanguage, rejectedRuntime);
                 root.innerHTML = `
                     ${renderLanguageSwitcher(activeLanguage)}
+                    ${renderExecBriefCard(execBrief)}
                     ${renderIMFCard(imf)}
                     ${sectorsHtml || '<section class="panel"><p>No article previews available for the selected language.</p></section>'}
                     ${renderMacros(macros)}
