@@ -16,6 +16,20 @@
         return (declared === 'es' || declared === 'en') ? declared : 'other';
     }
 
+    function formatDisplayDate(raw) {
+        const value = String(raw || '').trim();
+        if (!value) return '';
+        const parsed = Date.parse(value);
+        if (!Number.isFinite(parsed)) {
+            return value;
+        }
+        return new Date(parsed).toLocaleDateString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        });
+    }
+
     function normalizePreview(text) {
         const clean = String(text || '').replace(/\s+/g, ' ').trim();
         if (!clean) return '';
@@ -143,7 +157,7 @@
     function renderItem(item) {
         const preview = normalizePreview(item.preview || '');
         if (preview.length < 60) return '';
-        const sourceDate = (item.sourcePublishedAt || '').trim();
+        const sourceDate = formatDisplayDate(item.sourcePublishedAt || '');
         const isVerified = sourceDate.length > 0;
 
         return `
@@ -249,8 +263,8 @@
                     </div>
                     <div class="opp-meta">
                         ${esc((o.publisher || '').trim() || 'Source')}
-                        ${o.publishedAt ? ` · ${esc(String(o.publishedAt).slice(0, 10))}` : ''}
-                        ${o.deadline ? ` · Deadline: ${esc(o.deadline)}` : ''}
+                        ${o.publishedAt ? ` · ${esc(formatDisplayDate(o.publishedAt))}` : ''}
+                        ${o.deadline ? ` · Deadline: ${esc(formatDisplayDate(o.deadline))}` : ''}
                         ${o.amount ? ` · ${esc(o.amount)}` : ''}
                     </div>
                     <div class="opp-summary">${esc(o.summary || '')}</div>
