@@ -3,7 +3,7 @@ import json
 import os
 import re
 import time as _time
-from urllib.parse import parse_qs, unquote, urlparse
+from urllib.parse import parse_qs, unquote, urljoin, urlparse
 
 import feedparser
 import requests
@@ -295,6 +295,39 @@ def head_is_pdf(url: str) -> tuple[bool, str]:
         return False, url
 
 
+def extract_pdf_links_from_page(url: str) -> list[str]:
+    links: list[str] = []
+    try:
+        response = requests.get(url, allow_redirects=True, timeout=15, headers={"User-Agent": UA})
+    except requests.RequestException:
+        return links
+
+    content_type = (response.headers.get("content-type") or "").lower()
+    if "text/html" not in content_type:
+        return links
+
+    html = response.text or ""
+    hrefs = re.findall(r'href=["\']([^"\']+)["\']', html, flags=re.IGNORECASE)
+    for href in hrefs:
+        href = (href or "").strip()
+        if not href:
+            continue
+        full = urljoin(response.url or url, href)
+        if ".pdf" not in full.lower():
+            continue
+        links.append(full)
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for link in links:
+        key = link.split("#", 1)[0]
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(link)
+    return deduped
+
+
 def split_sentences(text: str) -> list[str]:
     parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ])", (text or "").strip())
     return [part.strip() for part in parts if part.strip()]
@@ -509,7 +542,7 @@ def main() -> None:
                 " ".join(item.get("categories") or []),
             ]
         )
-        relevance_haystack = " ".join([haystack, str(item.get("source_url") or "")])
+        relevance_haystack = " ".join([haystack, str(item.get("url") or ""), str(item.get("source_url") or "")])
         if not vz_relevant(relevance_haystack):
             continue
 
@@ -527,16 +560,40 @@ def main() -> None:
         if not allowed_domain(final_url):
             continue
 
-        pdf = is_pdf_url(final_url)
-        if not pdf:
-            ok, resolved = head_is_pdf(final_url)
-            if not ok:
-                continue
-            pdf = True
-            final_url = resolved
+        candidate_urls: list[str] = [final_url]
+        if not is_pdf_url(final_url):
+            candidate_urls.extend(extract_pdf_links_from_page(final_url))
 
-        if not pdf:
+        chosen_pdf_url = ""
+        seen_candidates: set[str] = set()
+        for candidate in candidate_urls:
+            candidate = (candidate or "").strip()
+            if not candidate:
+                continue
+            key = candidate.split("#", 1)[0]
+            if key in seen_candidates:
+                continue
+            seen_candidates.add(key)
+
+            resolved_candidate = resolve_final_url(candidate)
+            if not resolved_candidate:
+                continue
+            if not allowed_domain(resolved_candidate):
+                continue
+
+            if is_pdf_url(resolved_candidate):
+                chosen_pdf_url = resolved_candidate
+                break
+
+            ok, resolved = head_is_pdf(resolved_candidate)
+            if ok:
+                chosen_pdf_url = resolved
+                break
+
+        if not chosen_pdf_url:
             continue
+
+        final_url = chosen_pdf_url
 
         dedupe_key = final_url.split("#")[0]
         if dedupe_key in seen:
