@@ -23,6 +23,16 @@ BD_FEED_URLS = [
     "https://www.bing.com/news/search?q=site:devbusiness.un.org+venezuela+tender+procurement&format=rss",
     "https://www.bing.com/news/search?q=site:ungm.org+venezuela+tender+procurement&format=rss",
     "https://www.bing.com/news/search?q=venezuela+grant+funding+opportunity+call+for+proposals&format=rss",
+    "https://news.google.com/rss/search?q=site:undp.org+venezuela+procurement+OR+tender+OR+expression+of+interest",
+    "https://news.google.com/rss/search?q=site:unicef.org+venezuela+procurement+OR+tender+OR+rfp",
+    "https://news.google.com/rss/search?q=site:paho.org+venezuela+procurement+OR+tender+OR+call+for+proposals",
+    "https://news.google.com/rss/search?q=site:iadb.org+venezuela+procurement+OR+tender+OR+expression+of+interest",
+    "https://news.google.com/rss/search?q=site:worldbank.org+venezuela+procurement+OR+tender+OR+request+for+proposals",
+    "https://news.google.com/rss/search?q=site:caf.com+venezuela+tender+OR+procurement+OR+call+for+proposals",
+    "https://news.google.com/rss/search?q=site:dgmarket.com+venezuela+tender+OR+procurement",
+    "https://news.google.com/rss/search?q=site:tendersinfo.com+venezuela+tender+OR+procurement",
+    "https://www.bing.com/news/search?q=site:undp.org+venezuela+procurement+tender+rfp&format=rss",
+    "https://www.bing.com/news/search?q=site:worldbank.org+venezuela+procurement+tender+request+for+proposals&format=rss",
 ]
 
 OPP_TERMS = [
