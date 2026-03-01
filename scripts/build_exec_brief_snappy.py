@@ -20,12 +20,26 @@ def split_sentences(s):
   parts = re.split(r"(?<=[\.\!\?])\s+(?=[A-ZÁÉÍÓÚÑ0-9])", (s or "").strip())
   return [p.strip() for p in parts if p.strip()]
 
+def clean_text_block(text):
+  t = norm(text)
+  t = re.sub(r"https?://\S+", "", t)
+  t = re.sub(r"\b(URL Source|Published Time|Markdown Content)\b:?", "", t, flags=re.I)
+  t = re.sub(r"The publication adds implementation detail that clarifies pace, constraints, and expected counterpart response\.?", "", t, flags=re.I)
+  t = re.sub(r"The Afternoon Wire.*$", "", t, flags=re.I)
+  t = re.sub(r"See All Newsletters.*$", "", t, flags=re.I)
+  t = re.sub(r"AP QUIZZES.*$", "", t, flags=re.I)
+  t = re.sub(r"Test Your News I\.Q.*$", "", t, flags=re.I)
+  t = re.sub(r"\*\s*\[[^\]]+\]\([^\)]+\)", "", t)
+  t = re.sub(r"=+", " ", t)
+  t = re.sub(r"\s+", " ", t).strip(" .;:-")
+  return t
+
 def substance(item):
   i2 = item.get("insight2")
   if isinstance(i2, dict):
-    cand = norm((i2.get("s1","") + " " + i2.get("s2","")).strip())
+    cand = clean_text_block((i2.get("s1","") + " " + i2.get("s2","")).strip())
     if cand: return cand
-  return norm(item.get("preview") or item.get("description") or item.get("snippet") or "")
+  return clean_text_block(item.get("preview") or item.get("description") or item.get("snippet") or "")
 
 def get_list(item, key):
   v = item.get(key)
@@ -66,7 +80,19 @@ def choose_best_sentence(text):
   for s in split_sentences(norm(text)):
     if len(s) >= 55:
       return s
-  return norm(text)[:220]
+  return clean_text_block(text)[:220]
+
+def is_noisy_sentence(s):
+  low = (s or "").lower()
+  bad = [
+    "january", "february", "march", "url source", "published time", "markdown content",
+    "the publication reports movement", "(...)", "afternoon wire", "newsletter", "ap quizzes"
+  ]
+  if any(x in low for x in bad):
+    return True
+  if len(s or "") < 45:
+    return True
+  return False
 
 def infer_theme(item, text):
   t = (text or "").lower()
@@ -107,9 +133,14 @@ def pick_snappy(theme, seed):
 
 def build_one_sentence(item):
   text = substance(item)
-  best = choose_best_sentence(text)
+  best = clean_text_block(choose_best_sentence(text))
+  title_fallback = clean_text_block(item.get("title") or "")
+  if is_noisy_sentence(best) and len(title_fallback) >= 25:
+    best = title_fallback
+  if is_noisy_sentence(best):
+    best = "A material development was reported with immediate policy and market implications"
 
-  theme = infer_theme(item, best)
+  theme = infer_theme(item, f"{title_fallback} {best}")
   ents = pick_entities(item)
   evs = pick_event_tags(item)
 
@@ -122,6 +153,8 @@ def build_one_sentence(item):
     ctx = f"{', '.join(evs[:2])}: "
 
   core = best.rstrip(".")
+  if len(core) > 190:
+    core = core[:188].rsplit(" ", 1)[0].rstrip(".,;: ")
   so  = SO_WHAT.get(theme, "This matters for risk and opportunity in Venezuela.")
 
   # Keep it ONE sentence using a semicolon

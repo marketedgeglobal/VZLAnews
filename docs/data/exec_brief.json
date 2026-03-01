@@ -1,22 +1,10 @@
 {
-  "asOf": "2026-03-01T20:25:56.923025Z",
+  "asOf": "2026-03-01T20:26:59.951495Z",
   "title": "Executive Rapid Brief",
   "rows": [
     {
-      "subheading": "Macro conditions move",
-      "sentence": "Policy: Contra Irán URL Source: http://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/ Published Time: 2026-03-01T17:59:57+00:00 Markdown Content: Canciller de… Contra Irán - El Pitazo =============== * [Inicio](https://elpitazo.net/) * [Regiones](https.",
-      "sources": [
-        {
-          "title": "Canciller de Venezuela elimina comunicado en el que condenaba ataque de EE. UU. contra Irán",
-          "url": "https://elpitazo.net/politica/canciller-de-venezuela-elimina-comunicado-en-el-que-condenaba-ataque-de-ee-uu-contra-iran/"
-        }
-      ],
-      "theme": "macro",
-      "publishedAt": "2026-03-01"
-    },
-    {
       "subheading": "Compliance risk re-prices",
-      "sentence": "Sanctions: Natalia Burdynska Schuurman January 31, 2026 February 26, 2026 Venezuelan popular power organizations have developed creative solutions to advance food sovereignty while under the US blockade (FAO) Natalia Burdynska Schuurman defended her MsC thesis at the University of Edinburgh on Venezuela’s struggle fo.",
+      "sentence": "Sanctions: Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate; This changes counterparty risk and deal feasibility.",
       "sources": [
         {
           "title": "Unilateral Sanctions, Food Insecurity and Food Sovereignty Construction in Venezuela: Challenges and Prospects for Zero Hunger in a Transforming Petrostate",
@@ -27,12 +15,36 @@
       "publishedAt": "2026-02-18"
     },
     {
-      "subheading": "New bid pipeline emerges",
-      "sentence": "En su reciente discurso sobre el Estado de la Unión, el presidente Donald Trump dijo que Estados Unidos había recibido más de 80 millones de barriles de petróleo de Venezuela, y describió a la nación como \"nuestro nuevo… The publication adds implementation detail that clarifies pace, constraints, and expected counter.",
+      "subheading": "Regulatory signal spikes",
+      "sentence": "Policy: Tarek William Saab, a close ally of former President Nicolás Maduro, submitted his resignation to the ruling party-controlled National Assembly without offering a reason for his decision; This affects policy continuity and implementation risk.",
       "sources": [
         {
-          "title": "Envíos desde Houston marcan nueva fase en la reactivación petrolera venezolana",
-          "url": "https://www.elnacional.com/2026/03/envios-desde-houston-marcan-fase-en-la-reactivacion-petrolera/"
+          "title": "Venezuela attorney general resigns, then lands acting ombudsman role in surprise move",
+          "url": "https://apnews.com/article/venezuela-attorney-general-resignation-repression-human-rights-44ccb6341428278b13697d6d5949578d"
+        }
+      ],
+      "theme": "governance",
+      "publishedAt": "2026-02-25"
+    },
+    {
+      "subheading": "FX and inflation pressures change",
+      "sentence": "Policy: María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”; This shifts operating assumptions for pricing and stability.",
+      "sources": [
+        {
+          "title": "María Corina Machado anuncia su regreso a Venezuela para preparar una “nueva victoria electoral”",
+          "url": "https://elpitazo.net/politica/maria-corina-machado-anuncia-su-regreso-a-venezuela-para-preparar-una-nueva-victoria-electoral/"
+        }
+      ],
+      "theme": "macro",
+      "publishedAt": "2026-03-01"
+    },
+    {
+      "subheading": "New bid pipeline emerges",
+      "sentence": "Policy: La transición geopolítica en Venezuela no puede entenderse únicamente como un proceso interno de reorganización política o económica Más bien, forma parte de un reordenamiento estratégico; This creates near-term BD entry points if requirements match.",
+      "sources": [
+        {
+          "title": "Venezuela en transición geopolítica",
+          "url": "https://www.elnacional.com/2026/03/venezuela-en-transicion-geopolitica/"
         }
       ],
       "theme": "opportunity",
@@ -40,7 +52,7 @@
     },
     {
       "subheading": "PDVSA signal shifts",
-      "sentence": "Infrastructure: Durante la cuarta edición de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados internacionales, tecnologías emergentes,… The publication adds implementation detail that clarifies pace, constraints, and expect.",
+      "sentence": "Infrastructure: Durante la cuarta edición de Perspectivas Agropecuarias Tendencias Venezuela, realizada en Valencia, representantes del sector para analizar tendencias de consumo, mercados; This influences export revenue and contract risk.",
       "sources": [
         {
           "title": "Agroindustria venezolana podría incrementar su oferta exportable entre 25% y 40% impulsada por una nueva bonanza petrolera",
