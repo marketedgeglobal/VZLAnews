@@ -1,6 +1,23 @@
 {
-  "asOf": "2026-03-01T11:42:42.741162+00:00",
-  "year": 2025,
-  "count": 0,
-  "publications": []
+  "asOf": "2026-03-01T19:42:11.530598+00:00",
+  "yearRange": [
+    2025
+  ],
+  "yearLabel": "2025",
+  "count": 1,
+  "publications": [
+    {
+      "id": "",
+      "title": "Venezuela: Human Development Report 2025",
+      "url": "https://hdr.undp.org/content/human-development-report-2025",
+      "pageUrl": "https://hdr.undp.org/content/human-development-report-2025",
+      "pdfUrl": "https://hdr.undp.org/system/files/documents/global-report-document/hdr2025reporten.pdf",
+      "publisher": "hdr.undp.org",
+      "publishedAt": "2025-05-05",
+      "year": 2025,
+      "sector": "",
+      "abstract": "Artificial intelligence (AI) has broken into a dizzying gallop. While AI feats grab headlines, they privilege technology in a make-believe vacuum, obscuring what really matters: people’s choices. Findings are drawn from open-access material and should be reviewed directly in the source publication page for full methodology. This item is included in the 2024-2026 deep-dive window and can be downloaded at no cost from the hdr.undp.org publication page."
+    }
+  ],
+  "year": 2025
 }
